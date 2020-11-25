@@ -15,6 +15,10 @@
     "url": "https://github.com/YedramKim/ydkim/issues"
   },
   "homepage": "https://github.com/YedramKim/ydkim#readme",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "lerna": "^3.22.1"
   }
