@@ -13,6 +13,9 @@ module.exports = {
 	parserOptions: {
 		ecmaVersion: 2020,
 	},
+	plugins: [
+		'import',
+	],
 	rules: {
 		'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
 		'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
@@ -45,6 +48,32 @@ module.exports = {
 		quotes: ['error', 'single'],
 		'prefer-template': 'error',
 		'template-curly-spacing': 'error',
+		'no-eval': 'error',
+		'no-useless-escape': 'error',
+		'func-names': ['error', 'as-needed'],
+		'space-before-function-paren': 'off',
+		'space-before-blocks': ['error', 'always'],
+		'wrap-iife': ['error', 'inside'],
+		'prefer-rest-params': 'error',
+		'default-param-last': 'error',
+		'no-new-func': 'error',
+		'no-param-reassign': 'error',
+		'prefer-spread': 'error',
+		'function-paren-newline': ['error', 'multiline'],
+		'prefer-arrow-callback': 'error',
+		'arrow-spacing': 'error',
+		'no-confusing-arrow': ['error', {
+			allowParens: true,
+		}],
+		'implicit-arrow-linebreak': ['error', 'beside'],
+		'no-useless-constructor': 'error',
+		'class-methods-use-this': 'error', // ? 과연 쓸모가 있을까?
+		'no-duplicate-imports': 'error',
+		'space-before-keywords': 'error',
+		'import/no-mutable-exports': 'error',
+		'import/prefer-default-export': 'error',
+		'import/first': 'error',
+		'import/no-webpack-loader-syntax': 'error',
 		'import/extensions': ['error', 'always', {
 			js: 'never',
 			jsx: 'never',
