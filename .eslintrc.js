@@ -69,7 +69,6 @@ module.exports = {
 		'no-useless-constructor': 'error',
 		'class-methods-use-this': 'error', // ? 과연 쓸모가 있을까?
 		'no-duplicate-imports': 'error',
-		'space-before-keywords': 'error',
 		'import/no-mutable-exports': 'error',
 		'import/prefer-default-export': 'error',
 		'import/first': 'error',
@@ -81,6 +80,37 @@ module.exports = {
 			tsx: 'never',
 			msj: 'never',
 		}],
+		'generator-star-spacing': ['error', {
+			before: false,
+			after: true,
+		}],
+		'no-restricted-syntax': 'off',
+		'dot-notation': 'error',
+		'prefer-const': ['error', {
+			destructuring: 'all',
+			ignoreReadBeforeAssign: true,
+		}],
+		'one-var': ['error', 'never'],
+		'no-multi-assign': 'error',
+		'no-plusplus': ['error', {
+			allowForLoopAfterthoughts: true,
+		}],
+		'eqeqeq': ['error', 'always'],
+		'no-nested-ternary': 'error',
+		'no-unneeded-ternary': 'error',
+		'no-mixed-operators': 'error',
+		'nonblock-statement-body-position': ['error', 'beside'],
+		'brace-style': ['error', '1tbs'],
+		'no-else-return': 'error',
+		'spaced-comment': ['error', 'always'],
+		'keyword-spacing': ['error', {
+			before: true,
+			after: true,
+		}],
+		'space-infix-ops': ['error', {
+			int32Hint: true,
+		}],
+		'eol-last': ['error', 'always'],
 	},
 	overrides: [
 		{
