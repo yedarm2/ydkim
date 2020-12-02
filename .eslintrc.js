@@ -3,11 +3,13 @@ module.exports = {
 	env: {
 		browser: true,
 		node: true,
+		es6: true,
+		jest: true,
 	},
 	extends: [
 		'eslint:recommended',
 		'plugin:vue/vue3-essential',
-		'@vue/airbnb',
+		// '@vue/airbnb',
 		'@vue/typescript/recommended',
 	],
 	parserOptions: {
@@ -26,13 +28,15 @@ module.exports = {
 		'no-var': 'error',
 		'no-new-object': 'error',
 		'no-tabs': 'off',
-		'object-shorthand': ['error', 'always'],
+		'object-shorthand': ['error', 'always', {
+			avoidQuotes: true,
+		}],
 		indent: ['error', 'tab', {
 			SwitchCase: 1,
 			VariableDeclarator: 1,
 		}],
 		'no-shadow': 'off',
-		'quote-props': 'error',
+		'quote-props': ['error', 'as-needed'],
 		'no-prototype-builtins': 'error',
 		'prefer-object-spread': 'error',
 		'no-array-constructor': 'error',
@@ -57,7 +61,10 @@ module.exports = {
 		'prefer-rest-params': 'error',
 		'default-param-last': 'error',
 		'no-new-func': 'error',
-		'no-param-reassign': 'error',
+		'no-param-reassign': ['error', {
+			props: true,
+			ignorePropertyModificationsFor: ['state'],
+		}],
 		'prefer-spread': 'error',
 		'function-paren-newline': ['error', 'multiline'],
 		'prefer-arrow-callback': 'error',
@@ -111,6 +118,64 @@ module.exports = {
 			int32Hint: true,
 		}],
 		'eol-last': ['error', 'always'],
+		'no-multiple-empty-lines': ['error', {
+			max: 1,
+			maxEOF: 0,
+		}],
+		'newline-per-chained-call': ['error', {
+			ignoreChainWithDepth: 2,
+		}],
+		'no-whitespace-before-property': 'error',
+		'padded-blocks': ['error', 'never'],
+		'space-in-parens': ['error', 'never'],
+		'array-bracket-spacing': ['error', 'never'],
+		'object-curly-spacing': ['error', 'always'], //
+		'max-len': ['error', {
+			code: 100,
+			ignorePattern: true,
+			ignoreTrailingComments: true,
+			ignoreComments: true,
+			ignoreStrings: true,
+			ignoreTemplateLiterals: true,
+			ignoreUrls: true,
+			ignoreRegExpLiterals: true,
+		}],
+		'block-spacing': ['error', 'always'],
+		'comma-spacing': ['error', {
+			before: false,
+			after: true,
+		}],
+		'computed-property-spacing': ['error', 'never'],
+		'func-call-spacing': ['error', 'never'],
+		'key-spacing': ['error', {
+			beforeColon: false,
+			afterColon: true,
+			mode: 'strict',
+		}],
+		'no-trailing-spaces': 'error',
+		'comma-style': ['error', 'last'],
+		'comma-dangle': ['error', 'always-multiline'],
+		semi: ['error', 'always'],
+		'no-new-wrappers': 'error',
+		radix: ['error', 'as-needed'],
+		'id-length': ['error', {
+			properties: 'always',
+			exceptions: ['x', 'y', 'z'],
+		}],
+		camelcase: ['error', {
+			properties: 'always',
+		}],
+		'new-cap': ['error', {
+			newIsCap: true,
+			capIsNew: true,
+			properties: false,
+		}],
+		'no-underscore-dangle': ['error', {
+			allowAfterThis: true,
+			allowAfterSuper: true,
+			enforceInMethodNames: false,
+		}],
+		'linebreak-style': ['error', 'unix'],
 	},
 	overrides: [
 		{
