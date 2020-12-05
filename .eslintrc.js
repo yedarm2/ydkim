@@ -6,17 +6,35 @@ module.exports = {
 		es6: true,
 		jest: true,
 	},
+	settings: {
+		'import/extensions': ['.js', '.jsx', '.ts', '.tsx', '.mjs'],
+		'import/resolver': {
+			webpack: {
+				config: {
+					resolve: {
+						extensions: ['.js', '.jsx', '.ts', '.tsx', '.mjs'],
+					}
+				},
+			},
+			node: {
+				extensions: ['.js', '.jsx', '.ts', '.tsx', '.mjs'],
+			},
+		},
+	},
 	extends: [
 		'eslint:recommended',
 		'plugin:vue/vue3-essential',
 		'plugin:vue/vue3-strongly-recommended',
 		'plugin:vue/vue3-recommended',
 		// '@vue/airbnb',
-		'airbnb-base',
+		// 'airbnb-base',
 		'@vue/typescript/recommended',
+		// 'plugin:@typescript-eslint/recommended',
 	],
+	// parser: 'typescript-eslint/parser',
 	parserOptions: {
 		ecmaVersion: 2020,
+		// project: './tsconfig.json',
 	},
 	plugins: [
 		'import',
@@ -66,7 +84,8 @@ module.exports = {
 		'no-new-func': 'error',
 		'no-param-reassign': ['error', {
 			props: true,
-			ignorePropertyModificationsFor: ['state', 'e', 'event'],
+			// vuex의 state와 reduce의 acc, e.returnvalue를 위해 수정
+			ignorePropertyModificationsFor: ['state', 'acc', 'e', 'event'],
 		}],
 		'prefer-spread': 'error',
 		'function-paren-newline': ['error', 'multiline'],
@@ -187,6 +206,7 @@ module.exports = {
 				max: 2,
 			},
 		}],
+		'import/no-unresolved': 'off',
 	},
 	overrides: [
 		{
