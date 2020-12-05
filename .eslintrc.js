@@ -9,7 +9,10 @@ module.exports = {
 	extends: [
 		'eslint:recommended',
 		'plugin:vue/vue3-essential',
+		'plugin:vue/vue3-strongly-recommended',
+		'plugin:vue/vue3-recommended',
 		// '@vue/airbnb',
+		'airbnb-base',
 		'@vue/typescript/recommended',
 	],
 	parserOptions: {
@@ -63,7 +66,7 @@ module.exports = {
 		'no-new-func': 'error',
 		'no-param-reassign': ['error', {
 			props: true,
-			ignorePropertyModificationsFor: ['state'],
+			ignorePropertyModificationsFor: ['state', 'e', 'event'],
 		}],
 		'prefer-spread': 'error',
 		'function-paren-newline': ['error', 'multiline'],
@@ -132,7 +135,6 @@ module.exports = {
 		'object-curly-spacing': ['error', 'always'], //
 		'max-len': ['error', {
 			code: 100,
-			ignorePattern: true,
 			ignoreTrailingComments: true,
 			ignoreComments: true,
 			ignoreStrings: true,
@@ -176,6 +178,15 @@ module.exports = {
 			enforceInMethodNames: false,
 		}],
 		'linebreak-style': ['error', 'unix'],
+		// ? 고민된다. 활성화시킬지...
+		// 'vue/component-definition-name-casing': ['error', 'kebab-case'],
+		'vue/html-indent': ['error', 'tab'],
+		'vue/max-attributes-per-line': ['error', {
+			singleline: 3,
+			multiline: {
+				max: 2,
+			},
+		}],
 	},
 	overrides: [
 		{
