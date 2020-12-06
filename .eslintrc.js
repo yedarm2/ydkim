@@ -24,13 +24,17 @@ module.exports = {
 	extends: [
 		// '@vue/airbnb',
 		// '@vue/typescript/recommended',
-		// 'airbnb-base',
+		'airbnb-base',
 		'eslint:recommended',
-		'plugin:vue/vue3-essential',
-		'plugin:vue/vue3-strongly-recommended',
-		'plugin:vue/vue3-recommended',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:jest/recommended',
+		'plugin:vue/vue3-essential',
+		'plugin:vue/vue3-recommended',
+		'plugin:vue/vue3-strongly-recommended',
+		'plugin:prettier/recommended',
+		'prettier/@typescript-eslint',
+		'prettier/vue',
+		'prettier/react',
 	],
 	parser: 'vue-eslint-parser',
 	parserOptions: {
@@ -151,9 +155,10 @@ module.exports = {
 			max: 1,
 			maxEOF: 0,
 		}],
-		'newline-per-chained-call': ['error', {
-			ignoreChainWithDepth: 2,
-		}],
+		// * 우선 비활성화
+		// 'newline-per-chained-call': ['error', {
+		// 	ignoreChainWithDepth: 2,
+		// }],
 		'no-whitespace-before-property': 'error',
 		'padded-blocks': ['error', 'never'],
 		'space-in-parens': ['error', 'never'],
