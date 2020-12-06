@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "description": "Monorepo of ydkim",
   "scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "lerna run build"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "lerna run build"
   },
   "repository": {
     "type": "git",

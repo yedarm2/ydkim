@@ -32,15 +32,19 @@ module.exports = {
 		'plugin:@typescript-eslint/recommended',
 		'plugin:jest/recommended',
 	],
-	parser: 'typescript-eslint/parser',
+	parser: 'vue-eslint-parser',
 	parserOptions: {
+		parser: '@typescript-eslint/parser',
+		extraFileExtensions: ['.vue'],
+		ecmaFeatures: {
+			jsx: true,
+		},
 		ecmaVersion: 2020,
-		// project: './tsconfig.json',
 	},
 	plugins: [
 		'import',
 		'jest',
-		'typescript-eslint',
+		'@typescript-eslint',
 	],
 	rules: {
 		'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
@@ -210,6 +214,8 @@ module.exports = {
 			},
 		}],
 		'import/no-unresolved': 'off',
+		'@typescript-eslint/no-explicit-any': 'off',
+		'@typescript-eslint/explicit-function-return-type': 'off',
 	},
 	overrides: [
 		{
