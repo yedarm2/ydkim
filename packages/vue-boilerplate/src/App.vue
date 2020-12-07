@@ -4,5 +4,6 @@
 
 <style lang="scss">
 #app {
+	display: block;
 }
 </style>
