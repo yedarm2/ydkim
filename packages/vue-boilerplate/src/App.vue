@@ -1,5 +1,8 @@
 <template>
-	<div id="app">application</div>
+	<div id="app">
+		application
+		<router-view />
+	</div>
 </template>
 
 <style lang="scss">
