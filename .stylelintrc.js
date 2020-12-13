@@ -140,5 +140,6 @@ module.exports = {
 		'no-eol-whitespace': true,
 		'no-missing-end-of-source-newline': true,
 		'no-empty-first-line': true,
+		'order/order': ['dollar-variables', 'custom-properties', 'declarations', 'rules', 'at-rules'],
 	},
 };
