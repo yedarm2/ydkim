@@ -51,6 +51,8 @@ module.exports = {
 		'@typescript-eslint',
 	],
 	rules: {
+		'no-unused-expressions': 'off',
+		'@typescript-eslint/no-unused-expressions': ['error'],
 		'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
 		'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
 		'prefer-const': ['error', {
@@ -105,7 +107,8 @@ module.exports = {
 		'no-confusing-arrow': ['error', {
 			allowParens: true,
 		}],
-		'implicit-arrow-linebreak': ['error', 'beside'],
+		// * prettier 때문에 쓰지 못한다. ㅠㅠ
+		// 'implicit-arrow-linebreak': ['error', 'beside'],
 		'no-useless-constructor': 'error',
 		'class-methods-use-this': 'error', // ? 과연 쓸모가 있을까?
 		'no-duplicate-imports': 'error',

@@ -1,7 +1,11 @@
 module.exports = {
 	extends: 'stylelint-config-standard',
 
-	plugins: ['stylelint-scss', 'stylelint-order'],
+	plugins: [
+		'stylelint-scss',
+		'stylelint-order',
+		'stylelint-no-unsupported-browser-features',
+	],
 
 	rules: {
 		indentation: 'tab',
@@ -141,5 +145,8 @@ module.exports = {
 		'no-missing-end-of-source-newline': true,
 		'no-empty-first-line': true,
 		'order/order': ['dollar-variables', 'custom-properties', 'declarations', 'rules', 'at-rules'],
+		'plugin/no-unsupported-browser-features': [true, {
+			severity: 'warning',
+		}],
 	},
 };
