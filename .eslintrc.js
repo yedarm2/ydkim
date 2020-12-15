@@ -113,7 +113,7 @@ module.exports = {
 		'class-methods-use-this': 'error', // ? 과연 쓸모가 있을까?
 		'no-duplicate-imports': 'error',
 		'import/no-mutable-exports': 'error',
-		'import/prefer-default-export': 'error',
+		'import/prefer-default-export': 'off',
 		'import/first': 'error',
 		'import/no-webpack-loader-syntax': 'error',
 		'import/extensions': ['error', 'always', {
