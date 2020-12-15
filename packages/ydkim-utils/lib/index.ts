@@ -1,3 +1,3 @@
-import * as generateRandomNumber from './generateRandom';
+import * as generateRandom from './generateRandom';
 
-export { generateRandomNumber };
+export { generateRandom };
