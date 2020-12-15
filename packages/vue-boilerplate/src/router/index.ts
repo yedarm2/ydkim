@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import { createRouter, createWebHistory, createMemoryHistory, RouteRecordRaw } from 'vue-router';
 import Home from '../views/Home.vue';
 
 const routes: Array<RouteRecordRaw> = [
@@ -17,12 +17,15 @@ const routes: Array<RouteRecordRaw> = [
 	},
 ];
 
-const createVueRouter = () =>
+export const createMockRouter = (base?: string) =>
 	createRouter({
-		history: createWebHistory(process.env.BASE_URL),
+		history: createMemoryHistory(base),
 		routes,
 	});
 
-const router = createVueRouter();
+const router = createRouter({
+	history: createWebHistory(process.env.BASE_URL),
+	routes,
+});
 
 export default router;
