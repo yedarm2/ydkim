@@ -17,9 +17,12 @@ const routes: Array<RouteRecordRaw> = [
 	},
 ];
 
-const router = createRouter({
-	history: createWebHistory(process.env.BASE_URL),
-	routes,
-});
+const createVueRouter = () =>
+	createRouter({
+		history: createWebHistory(process.env.BASE_URL),
+		routes,
+	});
+
+const router = createVueRouter();
 
 export default router;
