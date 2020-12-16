@@ -1,7 +1,19 @@
 {
-  "name": "@ydkim/vue-boilerplate",
+  "name": "@ydkim/vue-components",
   "version": "0.1.0",
   "private": true,
+  "description": "vue boilerplate for ydkim monorepo",
+  "author": "yedarm <oncoder@naver.com>",
+  "homepage": "https://github.com/YedramKim/ydkim/tree/master/packages/ydkim-utils#readme",
+  "license": "MIT",
+  "main": "src/main.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YedramKim/ydkim.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YedramKim/ydkim/issues"
+  }
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
