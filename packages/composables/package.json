@@ -1,9 +1,9 @@
 {
-  "name": "ydkim-utils",
+  "name": "@ydkim/composables",
   "version": "0.0.0",
-  "description": "utils for ydkim monorepo",
+  "description": "vue composables for ydkim monorepo",
   "author": "yedarm <oncoder@naver.com>",
-  "homepage": "https://github.com/YedramKim/ydkim/tree/master/packages/ydkim-utils#readme",
+  "homepage": "https://github.com/YedramKim/ydkim/tree/master/packages/ydkim-composables#readme",
   "license": "MIT",
   "main": "lib/index.ts",
   "directories": {
@@ -25,5 +25,8 @@
   },
   "bugs": {
     "url": "https://github.com/YedramKim/ydkim/issues"
+  },
+  "dependencies": {
+    "vue": "^3.0.4"
   }
 }

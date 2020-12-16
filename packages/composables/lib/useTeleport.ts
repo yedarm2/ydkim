@@ -1,5 +1,5 @@
 import { ref, onUnmounted } from 'vue';
-import { generateRandom } from 'ydkim-utils';
+import { generateRandom } from '@ydkim/utils';
 
 export default (element = 'div', teleportParentSelector = '.teleport') => {
 	console.info(1);
