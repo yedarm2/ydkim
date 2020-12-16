@@ -1,13 +1,13 @@
 <template>
-	<div class="home">
-		<h1>This is an about page</h1>
-	</div>
+	<button class="y-button">
+		<slot />
+	</button>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-	name: 'Home',
+	name: 'YButton',
 });
 </script>
