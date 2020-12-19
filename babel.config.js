@@ -8,7 +8,7 @@ module.exports = {
 			{
 				bugfixes: true,
 				module: 'auto',
-				useBuiltIns: 'usabe',
+				useBuiltIns: 'usage',
 				corejs: 3,
 			},
 		],
