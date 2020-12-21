@@ -166,9 +166,10 @@ module.exports = {
 		'padded-blocks': ['error', 'never'],
 		'space-in-parens': ['error', 'never'],
 		'array-bracket-spacing': ['error', 'never'],
-		'object-curly-spacing': ['error', 'always'], //
-		'max-len': ['error', {
+		'object-curly-spacing': ['error', 'always'],
+		'vue/max-len': ['error', {
 			code: 100,
+			template: 1000,
 			ignoreTrailingComments: true,
 			ignoreComments: true,
 			ignoreStrings: true,
