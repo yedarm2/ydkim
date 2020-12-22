@@ -16,7 +16,7 @@ const Template = (args, { argTypes }) => ({
 	components: { Task },
 	props: Object.keys(argTypes),
 	methods: actionsData,
-	template: '<Task v-bind="$props" @pin-tast="onPinTask" @archive-task="onArchiveTask" />',
+	template: '<Task v-bind="$props" @pin-task="onPinTask" @archive-task="onArchiveTask" />',
 });
 
 export const Default = Template.bind({});
