@@ -138,15 +138,15 @@ module.exports = {
 			},
 		],
 		'comment-whitespace-inside': 'always',
-		indentation: 'tab',
 		linebreaks: 'unix',
 		'max-empty-lines': 1,
 		'no-eol-whitespace': true,
-		'no-missing-end-of-source-newline': true,
+		'no-missing-end-of-source-newline': null,
 		'no-empty-first-line': true,
 		'order/order': ['dollar-variables', 'custom-properties', 'declarations', 'rules', 'at-rules'],
 		'plugin/no-unsupported-browser-features': [true, {
 			severity: 'warning',
+			ignore: ['css-fixed'],
 		}],
 	},
 };
