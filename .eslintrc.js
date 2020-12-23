@@ -217,7 +217,8 @@ module.exports = {
 		// 'vue/component-definition-name-casing': ['error', 'kebab-case'],
 		'vue/html-indent': ['error', 'tab'],
 		'vue/max-attributes-per-line': ['error', {
-			singleline: 3,
+			// TODO: 우선 임시로 바꾸자. prettier와 충돌...
+			singleline: 5,
 			multiline: {
 				max: 2,
 			},
