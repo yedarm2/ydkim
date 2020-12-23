@@ -16,7 +16,7 @@ export default defineComponent({
 	props: {
 		parentSelector: {
 			type: String,
-			default: 'body',
+			default: '.teleport-wrapper',
 		},
 	},
 
