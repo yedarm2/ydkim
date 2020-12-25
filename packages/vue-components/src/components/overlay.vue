@@ -36,7 +36,7 @@ export default defineComponent({
 	},
 
 	setup(props, { emit }) {
-		const { parentSelector, transparent, align } = toRefs(props);
+		const { transparent, align } = toRefs(props);
 
 		const closeOverlay = () => {
 			emit('clicked-overlay');
