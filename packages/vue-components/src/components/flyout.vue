@@ -4,7 +4,7 @@
 	</component>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent, onMounted, onUnmounted, ref } from 'vue';
 
 export default defineComponent({

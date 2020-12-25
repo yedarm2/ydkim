@@ -15,7 +15,7 @@ const Template = (args, { argTypes }) => ({
 		YButton,
 		YFlyout,
 	},
-	data: () => ({ isOpeningFlyout: false }),
+	data: () => ({ isOpeningFlyout: true }),
 	methods: {
 		onClickedOutsideFlyout() {
 			actions.onClickedOutsideFlyout();

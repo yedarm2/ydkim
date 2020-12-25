@@ -15,7 +15,7 @@ const Template = (args, { argTypes }) => ({
 		YButton,
 		YOverlay,
 	},
-	data: () => ({ isOpeningOverlay: false }),
+	data: () => ({ isOpeningOverlay: true }),
 	methods: {
 		onClickedOverlay() {
 			actions.onClickedOverlay();
@@ -29,7 +29,7 @@ const Template = (args, { argTypes }) => ({
 				v-if="isOpeningOverlay"
 				@clicked-overlay="onClickedOverlay"
 			>
-				flyout
+				overlay
 			</y-overlay>
 		</div>
 	`,
