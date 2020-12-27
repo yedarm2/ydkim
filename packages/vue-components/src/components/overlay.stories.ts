@@ -15,6 +15,7 @@ const Template = (args, { argTypes }) => ({
 		YButton,
 		YOverlay,
 	},
+	props: Object.keys(argTypes),
 	data: () => ({ isOpeningOverlay: true }),
 	methods: {
 		onClickedOverlay() {
@@ -27,6 +28,7 @@ const Template = (args, { argTypes }) => ({
 			<y-button @click="isOpeningOverlay = true">Open overlay</y-button>
 			<y-overlay
 				v-if="isOpeningOverlay"
+				v-bind="$props"
 				@clicked-overlay="onClickedOverlay"
 			>
 				overlay
@@ -36,3 +38,18 @@ const Template = (args, { argTypes }) => ({
 });
 
 export const Default = Template.bind({});
+
+export const Transparent = Template.bind({});
+Transparent.args = {
+	transparent: true,
+};
+
+export const Top = Template.bind({});
+Top.args = {
+	align: 'TOP',
+};
+
+export const Bottom = Template.bind({});
+Bottom.args = {
+	align: 'BOTTOM',
+};
