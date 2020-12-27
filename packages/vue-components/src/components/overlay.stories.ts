@@ -2,20 +2,20 @@ import { action } from '@storybook/addon-actions';
 import { YButton, YOverlay } from '@ydkim/vue-components';
 
 export default {
+	title: 'components/y-overlay',
 	component: YOverlay,
-	title: 'y-overlay',
 };
 
 const actions = {
 	onClickedOverlay: action('onClickedOverlay'),
 };
 
-const Template = (args, { argTypes }) => ({
+const Template = args => ({
 	components: {
 		YButton,
 		YOverlay,
 	},
-	props: Object.keys(argTypes),
+	props: Object.keys(args),
 	data: () => ({ isOpeningOverlay: true }),
 	methods: {
 		onClickedOverlay() {
@@ -38,18 +38,24 @@ const Template = (args, { argTypes }) => ({
 });
 
 export const Default = Template.bind({});
+Default.args = {
+	align: 'CENTER',
+};
 
 export const Transparent = Template.bind({});
 Transparent.args = {
+	...Default.args,
 	transparent: true,
 };
 
 export const Top = Template.bind({});
 Top.args = {
+	...Default.args,
 	align: 'TOP',
 };
 
 export const Bottom = Template.bind({});
 Bottom.args = {
+	...Default.args,
 	align: 'BOTTOM',
 };

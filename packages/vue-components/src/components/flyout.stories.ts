@@ -2,8 +2,8 @@ import { action } from '@storybook/addon-actions';
 import { YButton, YFlyout } from '@ydkim/vue-components';
 
 export default {
+	title: 'components/y-flyout',
 	component: YFlyout,
-	title: 'y-flyout',
 };
 
 const actions = {
@@ -37,3 +37,4 @@ const Template = (args, { argTypes }) => ({
 });
 
 export const Default = Template.bind({});
+Default.storyName = 'y-flyout';
