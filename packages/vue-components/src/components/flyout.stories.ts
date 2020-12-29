@@ -37,4 +37,3 @@ const Template = (args, { argTypes }) => ({
 });
 
 export const Default = Template.bind({});
-Default.storyName = 'y-flyout';

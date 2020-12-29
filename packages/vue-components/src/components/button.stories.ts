@@ -17,11 +17,15 @@ const Template = args => ({
 	},
 	props: Object.keys(args),
 	methods: actionsData,
-	template: '<y-button v-bind="$props" @click="onClick">{{ content }}</y-button>',
+	template: '<y-button v-bind="$props" @click="onClick">button</y-button>',
 });
 
 export const Default = Template.bind({});
 Default.args = {
 	color: 'gold',
-	content: 'aaa',
+};
+
+export const Red = Template.bind({});
+Red.args = {
+	color: 'red',
 };
