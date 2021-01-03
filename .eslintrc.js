@@ -233,6 +233,8 @@ module.exports = {
 		'@typescript-eslint/no-explicit-any': 'off',
 		'@typescript-eslint/explicit-function-return-type': 'off',
 		'@typescript-eslint/no-var-requires': 'off',
+		'max-classes-per-file': 'off',
+		'lines-between-class-members': 'off',
 	},
 	overrides: [
 		{

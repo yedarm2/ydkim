@@ -26,7 +26,9 @@
       "dom.iterable",
       "scripthost"
     ],
+    "strictNullChecks": true,
     "noImplicitAny": false,
+    "noImplicitThis": false,
   },
   "exclude": [
     "node_modules"
