@@ -21,7 +21,7 @@
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
     "storybook": "node_modules/.bin/start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "node_modules/.bin/build-storybook -s public"
   },
   "dependencies": {
     "core-js": "3.8.1",
