@@ -46,13 +46,13 @@ const testObject = {
 	name: 'bread',
 };
 printValue(testObject, 'id');
-printValue(testObject, 'ida'); // 에러
+// printValue(testObject, 'ida'); // 에러
 
-function create<C extends Fruit>(Factory: new () => Fruit) {
+function create<C extends Fruit>(Factory: new () => C) {
 	return new Factory();
 }
 
-create(Apple);
+// create(Apple);
 
 console.info(
 	'identify<string>, identify, identifyArray, GenericClass',
