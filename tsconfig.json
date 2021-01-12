@@ -29,6 +29,7 @@
     "strictNullChecks": true,
     "noImplicitAny": false,
     "noImplicitThis": false,
+    "experimentalDecorators": true,
   },
   "exclude": [
     "node_modules"
