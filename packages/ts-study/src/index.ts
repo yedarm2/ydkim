@@ -6,5 +6,6 @@ import './study/union';
 import './study/class';
 import './study/enum';
 import './study/generic';
+import './study/advandec-type';
 
 import './study/utility-type';
