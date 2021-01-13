@@ -9,7 +9,15 @@ function classDecorator(value: string) {
 
 function enumerable(value: boolean) {
 	return function(target: any, propertyName: string, descriptor: PropertyDescriptor) {
+		console.log(target);
 		descriptor.enumerable = value;
+	}
+}
+
+function configurable(value: boolean) {
+	return function(target: any, propertyName: string, descriptor: PropertyDescriptor) {
+		console.log(target);
+		descriptor.configurable = value;
 	}
 }
 
@@ -25,5 +33,10 @@ class DecoratedClass1 {
 	@enumerable(false)
 	methods2() {
 		return this.property;
+	}
+
+	@configurable(false)
+	get name() {
+		return `Hi, My name is ${this.property}`;
 	}
 }
