@@ -10,3 +10,4 @@ import './study/generic';
 import './study/advandec-type';
 import './study/utility-type';
 import './study/decorators';
+import './study/namespace'
