@@ -109,7 +109,8 @@ module.exports = {
 		}],
 		// * prettier 때문에 쓰지 못한다. ㅠㅠ
 		// 'implicit-arrow-linebreak': ['error', 'beside'],
-		'no-useless-constructor': 'error',
+		'no-useless-constructor': 'off',
+		'@typescript-eslint/no-useless-constructor': 'error',
 		'class-methods-use-this': 'error', // ? 과연 쓸모가 있을까?
 		'no-duplicate-imports': 'error',
 		'import/no-mutable-exports': 'error',
