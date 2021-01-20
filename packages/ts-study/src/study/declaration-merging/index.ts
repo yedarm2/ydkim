@@ -62,7 +62,7 @@ namespace mergedNamespace {
 namespace mergedNamespace {
 	export interface namespaceInterface3 {
 		number: number;
-		obj1: namespaceInterface3;
+		obj1: namespaceInterface2;
 		// * innerInterface는 별도의 선언에서 export를 하지 않아서 여기에서 사용할 수 없다.
 		// obj2: innerInterface;
 	}
