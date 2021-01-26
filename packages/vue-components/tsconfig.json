@@ -1,4 +1,7 @@
 {
+  "compilerOptions": {
+    "baseUrl": "."
+  },
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",

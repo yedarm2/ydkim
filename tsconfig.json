@@ -14,12 +14,6 @@
       "webpack-env",
       "jest"
     ],
-    "paths": {
-      "@/*": [
-        "src/*"
-      ],
-      "*": ["node_modules/*"]
-    },
     "lib": [
       "esnext",
       "dom",
@@ -30,6 +24,7 @@
     "noImplicitAny": false,
     "noImplicitThis": false,
     "experimentalDecorators": true,
+    "allowJs": true
   },
   "exclude": [
     "node_modules"
