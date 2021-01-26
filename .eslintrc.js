@@ -101,12 +101,14 @@ module.exports = {
 			ignorePropertyModificationsFor: ['state', 'acc', 'e', 'event'],
 		}],
 		'prefer-spread': 'error',
-		'function-paren-newline': ['error', 'multiline'],
+		// * 일단은 비활성화
+		// 'function-paren-newline': ['error', 'multiline'],
 		'prefer-arrow-callback': 'error',
 		'arrow-spacing': 'error',
-		'no-confusing-arrow': ['error', {
-			allowParens: true,
-		}],
+		// * 일단은 비활성화, prettier가 방해한다...
+		// 'no-confusing-arrow': ['error', {
+		// 	allowParens: true,
+		// }],
 		// * prettier 때문에 쓰지 못한다. ㅠㅠ
 		// 'implicit-arrow-linebreak': ['error', 'beside'],
 		'no-useless-constructor': 'off',
