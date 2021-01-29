@@ -24,7 +24,9 @@
     "noImplicitAny": false,
     "noImplicitThis": false,
     "experimentalDecorators": true,
-    "allowJs": true
+    "allowJs": true,
+    "typeRoots": ["./node_modules/@types", "@types"],
+    "declaration": true,
   },
   "exclude": [
     "node_modules"

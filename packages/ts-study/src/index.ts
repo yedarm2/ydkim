@@ -13,3 +13,6 @@ import './study/decorators';
 import './study/namespace';
 import './study/declaration-merging';
 import './study/mixins';
+import './study/d.ts';
+
+export type aa = globalInterface;
