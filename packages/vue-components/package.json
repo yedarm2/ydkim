@@ -20,8 +20,8 @@
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
-    "storybook": "node_modules/.bin/start-storybook -p 6006 -s public",
-    "build-storybook": "node_modules/.bin/build-storybook -s public"
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
     "core-js": "3.8.3",
@@ -31,10 +31,10 @@
     "vue": "3.0.5"
   },
   "devDependencies": {
-    "@andoshin11/storybook-vue3": "0.0.5",
     "@babel/core": "7.12.16",
     "@storybook/addon-essentials": "6.1.17",
     "@storybook/addon-links": "6.1.17",
+    "@storybook/vue3": "6.2.0-alpha.20",
     "@types/jest": "26.0.20",
     "@typescript-eslint/eslint-plugin": "4.15.0",
     "@typescript-eslint/parser": "4.15.0",
