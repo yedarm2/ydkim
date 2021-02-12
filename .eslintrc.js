@@ -226,6 +226,8 @@ module.exports = {
 				max: 2,
 			},
 		}],
+		'vue/valid-next-tick': 'error',
+		'vue/next-tick-style': ['error' , 'promise'],
 		'import/no-unresolved': 'off',
 		'@typescript-eslint/no-explicit-any': 'off',
 		'@typescript-eslint/explicit-function-return-type': 'off',
