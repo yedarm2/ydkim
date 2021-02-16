@@ -234,6 +234,7 @@ module.exports = {
 		'@typescript-eslint/no-var-requires': 'off',
 		'max-classes-per-file': 'off',
 		'lines-between-class-members': 'off',
+		'import/no-extraneous-dependencies': 'off',
 	},
 	overrides: [
 		{
