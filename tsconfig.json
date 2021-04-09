@@ -20,13 +20,14 @@
       "dom.iterable",
       "scripthost"
     ],
-    "strictNullChecks": true,
     "noImplicitAny": false,
     "noImplicitThis": false,
     "experimentalDecorators": true,
     "allowJs": true,
     "typeRoots": ["./node_modules/@types", "@types"],
     "declaration": true,
+    "strictNullChecks": false,
+    "resolveJsonModule": true
   },
   "exclude": [
     "node_modules"
