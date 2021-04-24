@@ -32,9 +32,6 @@ module.exports = {
 		'plugin:vue/vue3-recommended',
 		'plugin:vue/vue3-strongly-recommended',
 		'plugin:prettier/recommended',
-		'prettier/@typescript-eslint',
-		'prettier/vue',
-		'prettier/react',
 	],
 	parser: 'vue-eslint-parser',
 	parserOptions: {
