@@ -148,5 +148,8 @@ module.exports = {
 			severity: 'warning',
 			ignore: ['css-fixed'],
 		}],
+		'no-invalid-position-at-import-rule': 'always',
+		'no-irregular-whitespace': 'always',
+		'selector-attribute-quotes': 'always',
 	},
 };
