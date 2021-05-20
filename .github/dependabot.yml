@@ -1,0 +1,76 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@storybook/addon-links"
+    versions:
+    - 6.2.0
+    - 6.2.1
+    - 6.2.2
+    - 6.2.3
+    - 6.2.4
+    - 6.2.5
+    - 6.2.6
+    - 6.2.7
+    - 6.2.8
+  - dependency-name: "@storybook/addon-essentials"
+    versions:
+    - 6.2.0
+    - 6.2.1
+    - 6.2.2
+    - 6.2.3
+    - 6.2.4
+    - 6.2.5
+    - 6.2.6
+    - 6.2.7
+    - 6.2.8
+  - dependency-name: eslint-config-prettier
+    versions:
+    - 8.0.0
+    - 8.1.0
+    - 8.2.0
+  - dependency-name: stylelint
+    versions:
+    - 13.12.0
+  - dependency-name: eslint-plugin-vue
+    versions:
+    - 7.6.0
+    - 7.7.0
+    - 7.8.0
+  - dependency-name: eslint-plugin-jest
+    versions:
+    - 24.1.10
+    - 24.1.7
+    - 24.2.0
+    - 24.3.0
+    - 24.3.4
+  - dependency-name: "@vue/compiler-sfc"
+    versions:
+    - 3.0.8
+  - dependency-name: vue
+    versions:
+    - 3.0.8
+  - dependency-name: "@types/node"
+    versions:
+    - 14.14.34
+  - dependency-name: stylelint-config-standard
+    versions:
+    - 21.0.0
+  - dependency-name: typescript
+    versions:
+    - 4.1.5
+    - 4.2.2
+  - dependency-name: "@typescript-eslint/eslint-plugin"
+    versions:
+    - 4.15.0
+    - 4.16.0
+  - dependency-name: "@typescript-eslint/parser"
+    versions:
+    - 4.16.0
+  - dependency-name: sass-loader
+    versions:
+    - 11.0.0
