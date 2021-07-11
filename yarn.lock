@@ -8972,15 +8972,15 @@ eslint-plugin-testing-library@^3.9.2:
   dependencies:
     "@typescript-eslint/experimental-utils" "^3.10.1"
 
-eslint-plugin-vue@7.9.0:
-  version "7.9.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-7.9.0.tgz#f8e83a2a908f4c43fc8304f5401d4ff671f3d560"
-  integrity sha512-2Q0qQp5+5h+pZvJKCbG1/jCRUYrdgAz5BYKGyTlp2NU8mx09u3Hp7PsH6d5qef6ojuPoCXMnrbbDxeoplihrSw==
+eslint-plugin-vue@7.13.0:
+  version "7.13.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-7.13.0.tgz#6f3d232bf1fcd0428353b0d581ebaca1c5dbc17a"
+  integrity sha512-u0+jL8h2MshRuMTCLslktxRsPTjlENNcNufhgHu01N982DmHVdeFniyMPoVLLRjACQOwdz3FdlsgYGBMBG+AKg==
   dependencies:
     eslint-utils "^2.1.0"
     natural-compare "^1.4.0"
     semver "^7.3.2"
-    vue-eslint-parser "^7.6.0"
+    vue-eslint-parser "^7.8.0"
 
 eslint-scope@^4.0.3:
   version "4.0.3"
@@ -20395,7 +20395,7 @@ vue-docgen-loader@^1.5.0:
     loader-utils "^1.2.3"
     querystring "^0.2.0"
 
-vue-eslint-parser@^7.0.0, vue-eslint-parser@^7.6.0:
+vue-eslint-parser@^7.0.0, vue-eslint-parser@^7.8.0:
   version "7.8.0"
   resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-7.8.0.tgz#43850bf856c9a69d62c0e12769609c338423684b"
   integrity sha512-ehmmrLZNYLUoKayvVW8l8HyPQIfuYZHiJoQLRP3dapDlTU7bGs4tqIKVGdAEpMuXS/b4R/PImCt7Tkj4UhX1SQ==
@@ -20449,6 +20449,7 @@ vue-jest@^3.0.5:
     vue-template-es2015-compiler "^1.6.0"
 
 "vue-loader-v16@npm:vue-loader@^16.1.0", vue-loader@^16.0.0:
+  name vue-loader-v16
   version "16.3.0"
   resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-16.3.0.tgz#2f195e4ba0fb0e263596d6830df17d1a36e8936c"
   integrity sha512-UDgni/tUVSdwHuQo+vuBmEgamWx88SuSlEb5fgdvHrlJSPB9qMBRF6W7bfPWSqDns425Gt1wxAUif+f+h/rWjg==
