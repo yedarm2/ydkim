@@ -15,6 +15,7 @@
     "url": "https://github.com/YedramKim/ydkim/issues"
   },
   "scripts": {
+    "clean": "npx rimraf node_modules && npx rimraf dist",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",

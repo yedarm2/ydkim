@@ -21,6 +21,7 @@
     "url": "git+https://github.com/YedramKim/ydkim.git"
   },
   "scripts": {
+    "clean": "npx rimraf node_modules && npx rimraf dist",
     "build": "tsc",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
