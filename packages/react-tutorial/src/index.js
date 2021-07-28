@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import StyledComponentApp from './StyledComponentApp';
+import App from './TodoList/App';
 import reportWebVitals from './reportWebVitals';
 
 import * as Sentry from '@sentry/react';
@@ -19,7 +19,7 @@ Sentry.init({
 
 ReactDOM.render(
 	<React.StrictMode>
-		<StyledComponentApp />
+		<App />
 	</React.StrictMode>,
 	document.getElementById('root'),
 );
