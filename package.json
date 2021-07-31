@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "lerna run build",
-    "clean": "lerna run clean && rimraf yarn.lock && rimraf node_modules"
+    "clean": "lerna run clean && rimraf yarn.lock && rimraf node_modules",
+    "force-install": "yarn run clean; yarn install"
   },
   "repository": {
     "type": "git",
