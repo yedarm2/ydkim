@@ -17206,6 +17206,11 @@ react-app-polyfill@^2.0.0:
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
 
+react-async@10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/react-async/-/react-async-10.0.1.tgz#575c083f808303d2f6ca52d11ec7554dbdbd9fcd"
+  integrity sha512-ORUz5ca0B57QgBIzEZM5SuhJ6xFjkvEEs0gylLNlWf06vuVcLZsjIw3wx58jJkZG38p+0nUAxRgFW2b7mnVZzA==
+
 react-colorful@^5.1.2:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/react-colorful/-/react-colorful-5.3.0.tgz#bcbae49c1affa9ab9a3c8063398c5948419296bd"
@@ -20857,6 +20862,7 @@ vue-jest@^3.0.5:
     vue-template-es2015-compiler "^1.6.0"
 
 "vue-loader-v16@npm:vue-loader@^16.1.0", vue-loader@^16.0.0:
+  name vue-loader-v16
   version "16.4.0"
   resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-16.4.0.tgz#79cf923ef00cc396f593b2e7963904640f41cf10"
   integrity sha512-oySoEgEedGw0jz2czEOdb6sycQ2PPyzUmF8Yclj1NTpoTVHGCYCQaGf+jsvxhdDVfhOnDLjkRzT2fLpGOrVPjg==
