@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './learn-redux';
+import App from './learn-redux-middleware';
 import reportWebVitals from './reportWebVitals';
 
 import * as Sentry from '@sentry/react';
