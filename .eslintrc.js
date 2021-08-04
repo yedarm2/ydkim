@@ -232,6 +232,8 @@ module.exports = {
 		'max-classes-per-file': 'off',
 		'lines-between-class-members': 'off',
 		'import/no-extraneous-dependencies': 'off',
+		'vue/require-emit-validator': 'error',
+		'vue/no-this-in-before-route-enter': 'error',
 	},
 	overrides: [
 		{
