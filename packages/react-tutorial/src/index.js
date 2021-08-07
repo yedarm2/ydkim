@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import * as Sentry from '@sentry/react';
+import { Integrations } from '@sentry/tracing';
+
 import './index.css';
 import App from './learn-redux-middleware';
 import reportWebVitals from './reportWebVitals';
-
-import * as Sentry from '@sentry/react';
-import { Integrations } from '@sentry/tracing';
 
 Sentry.init({
 	dsn: 'https://8725a766392e48be979b16791ac6a78f@o922741.ingest.sentry.io/5869797',

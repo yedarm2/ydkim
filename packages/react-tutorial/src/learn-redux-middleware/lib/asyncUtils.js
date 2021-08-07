@@ -30,6 +30,29 @@ export const createPromiseThunkById = (type, promiseCreator, idSelector = defaul
 	};
 };
 
+export const reducerUtils = {
+	initial: (initialData = null) => ({
+		loading: false,
+		data: initialData,
+		error: null,
+	}),
+	loading: (prevState = null) => ({
+		data: prevState,
+		loading: true,
+		error: null,
+	}),
+	success: data => ({
+		data,
+		loading: false,
+		error: null,
+	}),
+	error: error => ({
+		data: null,
+		loading: false,
+		error,
+	}),
+};
+
 export const handleAsyncActions = (type, key, keepData) => {
 	const [SUCCESS, ERROR] = [`${type}_SUCCESS`, `${type}_ERROR`];
 	return (state, action) => {
@@ -89,27 +112,4 @@ export const handleAsyncActionsById = (type, key, keepData) => {
 				return state;
 		}
 	};
-};
-
-export const reducerUtils = {
-	initial: (initialData = null) => ({
-		loading: false,
-		data: initialData,
-		error: null,
-	}),
-	loading: (prevState = null) => ({
-		data: prevState,
-		loading: true,
-		error: null,
-	}),
-	success: data => ({
-		data,
-		loading: false,
-		error: null,
-	}),
-	error: error => ({
-		data: null,
-		loading: false,
-		error,
-	}),
 };

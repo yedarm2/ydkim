@@ -12,5 +12,12 @@ module.exports = {
 				corejs: 3,
 			},
 		],
+		[
+			'react-app',
+			{
+				flow: false,
+				typescript: true,
+			},
+		],
 	],
 };

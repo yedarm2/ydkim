@@ -26,6 +26,8 @@ module.exports = {
 		// '@vue/typescript/recommended',
 		'airbnb-base',
 		'eslint:recommended',
+		'react-app',
+		'react-app/jest',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:jest/recommended',
 		'plugin:vue/vue3-essential',
@@ -90,7 +92,8 @@ module.exports = {
 		'space-before-blocks': ['error', 'always'],
 		'wrap-iife': ['error', 'inside'],
 		'prefer-rest-params': 'error',
-		'default-param-last': 'error',
+		// TODO: reducer 때문에...
+		// 'default-param-last': 'error',
 		'no-new-func': 'error',
 		'no-param-reassign': ['error', {
 			props: true,
@@ -229,11 +232,14 @@ module.exports = {
 		'@typescript-eslint/no-explicit-any': 'off',
 		'@typescript-eslint/explicit-function-return-type': 'off',
 		'@typescript-eslint/no-var-requires': 'off',
+		'@typescript-eslint/explicit-module-boundary-types': 'off',
 		'max-classes-per-file': 'off',
 		'lines-between-class-members': 'off',
 		'import/no-extraneous-dependencies': 'off',
 		'vue/require-emit-validator': 'error',
 		'vue/no-this-in-before-route-enter': 'error',
+		'no-use-before-define': 'off',
+		'@typescript-eslint/no-use-before-define': 'error',
 	},
 	overrides: [
 		{

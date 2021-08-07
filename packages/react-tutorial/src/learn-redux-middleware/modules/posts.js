@@ -19,7 +19,13 @@ const CLEAR_POST = 'CLEAR_POST';
 
 export const getPosts = createPromiseThunk(GET_POSTS, postsApi.getPosts);
 export const getPost = createPromiseThunkById(GET_POST, postsApi.getPostById);
-export const clearPost = () => ({ type: CLEAR_POST });
+/* eslint-disable indent */
+export const goToHome =
+	() =>
+	(_1, _2, { history }) => {
+		history.push('/');
+	};
+/* eslint-enable indent */
 
 const initialState = {
 	posts: reducerUtils.initial(),
