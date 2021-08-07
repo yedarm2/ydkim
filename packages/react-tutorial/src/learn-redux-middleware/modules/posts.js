@@ -1,10 +1,12 @@
+import { getContext, takeEvery, select } from 'redux-saga/effects';
+
 import * as postsApi from '../api/posts';
 import {
 	reducerUtils,
-	createPromiseThunk,
 	handleAsyncActions,
-	createPromiseThunkById,
 	handleAsyncActionsById,
+	createPromiseSaga,
+	createPromiseSagaById,
 } from '../lib/asyncUtils';
 
 const GET_POSTS = 'GET_POSTS';
@@ -14,17 +16,35 @@ const GET_POSTS_ERROR = 'GET_POSTS_ERROR';
 const GET_POST = 'GET_POST';
 const GET_POST_SUCCESS = 'GET_POST_SUCCESS';
 const GET_POST_ERROR = 'GET_POST_ERROR';
+const GO_TO_HOME = 'GO_TO_HOME';
 
 const CLEAR_POST = 'CLEAR_POST';
+const PRINT_STATE = 'PRINT_STATE';
 
-export const getPosts = createPromiseThunk(GET_POSTS, postsApi.getPosts);
-export const getPost = createPromiseThunkById(GET_POST, postsApi.getPostById);
+export const getPosts = () => ({ type: GET_POSTS });
+export const getPost = id => ({ type: GET_POST, payload: id, meta: id });
+export const printState = () => ({ type: PRINT_STATE });
+
+const getPostsSaga = createPromiseSaga(GET_POSTS, postsApi.getPosts);
+const getPostSaga = createPromiseSagaById(GET_POST, postsApi.getPostById);
+function* goToHomerSaga() {
+	const history = yield getContext('history');
+	history.push('/');
+}
+function* printStateSaga() {
+	const state = yield select(state => state.posts);
+	console.log(state);
+}
+
+export function* postsSaga() {
+	yield takeEvery(GET_POSTS, getPostsSaga);
+	yield takeEvery(GET_POST, getPostSaga);
+	yield takeEvery(GO_TO_HOME, goToHomerSaga);
+	yield takeEvery(PRINT_STATE, printStateSaga);
+}
+
 /* eslint-disable indent */
-export const goToHome =
-	() =>
-	(_1, _2, { history }) => {
-		history.push('/');
-	};
+export const goToHome = () => ({ type: GO_TO_HOME });
 /* eslint-enable indent */
 
 const initialState = {
