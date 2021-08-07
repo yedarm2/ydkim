@@ -4,7 +4,7 @@ import * as Sentry from '@sentry/react';
 import { Integrations } from '@sentry/tracing';
 
 import './index.css';
-import App from './learn-redux-middleware';
+import App from './typescript-study';
 import reportWebVitals from './reportWebVitals';
 
 Sentry.init({
