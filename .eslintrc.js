@@ -75,7 +75,6 @@ module.exports = {
 		'no-array-constructor': 'error',
 		'array-callback-return': 'error',
 		'arrow-parens': ['error', 'as-needed'],
-		'arrow-body-style': ['error', 'as-needed'],
 		'prefer-destructuring': ['off', {
 			array: true,
 			object: true,
@@ -138,9 +137,7 @@ module.exports = {
 		}],
 		'one-var': ['error', 'never'],
 		'no-multi-assign': 'error',
-		'no-plusplus': ['error', {
-			allowForLoopAfterthoughts: true,
-		}],
+		'no-plusplus': 'off',
 		'eqeqeq': ['error', 'always'],
 		'no-nested-ternary': 'error',
 		'no-unneeded-ternary': 'error',
