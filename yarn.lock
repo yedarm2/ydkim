@@ -4142,10 +4142,10 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@*", "@types/jest@26.0.24":
-  version "26.0.24"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.24.tgz#943d11976b16739185913a1936e0de0c4a7d595a"
-  integrity sha512-E/X5Vib8BWqZNRlDxj9vYXhsDwPYbPINqKF9BsnSoon4RQ0D9moEuLD8txgyypFLH7J4+Lho9Nr/c8H0Fi+17w==
+"@types/jest@*", "@types/jest@27.0.0":
+  version "27.0.0"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-27.0.0.tgz#f1c28f741371739c7cd0e8edb5ed8e67acfa6c35"
+  integrity sha512-IlpQZVpxufe+3qPaAqEoSPHVSxnJh1cf0BqqWHJeKiAUbwnHdmNzjP3ZCWSZSTbmAGXQPNk9QmM3Bif0pR54rg==
   dependencies:
     jest-diff "^26.0.0"
     pretty-format "^26.0.0"
@@ -21458,6 +21458,7 @@ vue-jest@^3.0.5:
     vue-template-es2015-compiler "^1.6.0"
 
 "vue-loader-v16@npm:vue-loader@^16.1.0", vue-loader@^16.0.0:
+  name vue-loader-v16
   version "16.5.0"
   resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-16.5.0.tgz#09c4e0712466899e34b99a686524f19165fb2892"
   integrity sha512-WXh+7AgFxGTgb5QAkQtFeUcHNIEq3PGVQ8WskY5ZiFbWBkOwcCPRs4w/2tVyTbh2q6TVRlO3xfvIukUtjsu62A==
