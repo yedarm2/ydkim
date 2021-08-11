@@ -22,8 +22,8 @@ module.exports = {
 		},
 	},
 	extends: [
-		// '@vue/airbnb',
-		// '@vue/typescript/recommended',
+		'next',
+		'next/core-web-vitals',
 		'airbnb-base',
 		'eslint:recommended',
 		'react-app',
