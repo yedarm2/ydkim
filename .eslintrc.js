@@ -237,6 +237,7 @@ module.exports = {
 		'vue/no-this-in-before-route-enter': 'error',
 		'no-use-before-define': 'off',
 		'@typescript-eslint/no-use-before-define': 'error',
+		'valid-v-memo': 'error',
 	},
 	overrides: [
 		{
