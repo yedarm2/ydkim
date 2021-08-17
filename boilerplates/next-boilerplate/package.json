@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "clean": "npx rimraf node_modules && npx rimraf dist",
+    "clean": "npx rimraf node_modules && npx rimraf dist && npx rimraf .next",
     "serve": "next start",
     "dev": "next dev",
     "build": "next build",
