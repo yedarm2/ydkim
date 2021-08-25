@@ -6,7 +6,7 @@ import Link from 'next/link';
 const name = '김예닮';
 export const siteTitle = 'Next.js Sample Website';
 
-const Layout: FC<{ home: boolean }> = ({ children, home }) => {
+const Layout: FC<{ home?: boolean }> = ({ children, home }) => {
 	return (
 		<>
 			<div className="container">

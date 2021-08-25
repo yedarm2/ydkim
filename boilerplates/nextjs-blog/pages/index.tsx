@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '../components/layouts';
 import { getSortedPostsData } from '../lib/posts';
+import Date from '../components/date';
 
 const YourComponent = () => (
 	<Image src="/images/profile.jpg" width={144} height={144} alt="Your Name" />
@@ -20,11 +21,13 @@ export default function Home({ allPostsData }) {
 				<ul className="list">
 					{allPostsData.map(({ id, date, title }) => (
 						<li className="listItem" key={id}>
-							{title}
+							<Link href={`/posts/${id}`}>
+								<a>{title}</a>
+							</Link>
 							<br />
-							{id}
-							<br />
-							{date}
+							<small className="lightText">
+								<Date dateString={date} />
+							</small>
 						</li>
 					))}
 				</ul>
