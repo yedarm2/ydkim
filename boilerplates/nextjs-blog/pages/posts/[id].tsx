@@ -17,7 +17,9 @@ const Post: FC<{ postData: any }> = ({ postData }) => {
 					<Date dateString={postData.date} />
 				</div>
 				<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-				<style jsx>{`import '../../style/utils.scss';`}</style>
+				<style jsx>{`
+					import '../../style/utils.scss';
+				`}</style>
 			</Layout>
 		</>
 	);
