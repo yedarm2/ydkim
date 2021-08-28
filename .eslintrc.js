@@ -238,6 +238,14 @@ module.exports = {
 		'no-use-before-define': 'off',
 		'@typescript-eslint/no-use-before-define': 'error',
 		'vue/valid-v-memo': 'error',
+		'vue/no-v-text': 'error',
+		'import/no-anonymous-default-export': [2, {
+			allowArray: true,
+			allowArrowFunction: true,
+			allowAnonymousFunction: true,
+			allowLiteral: true,
+			allowObject: true,
+		}]
 	},
 	overrides: [
 		{
