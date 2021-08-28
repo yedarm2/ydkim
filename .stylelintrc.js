@@ -1,11 +1,7 @@
 module.exports = {
 	extends: 'stylelint-config-standard',
 
-	plugins: [
-		'stylelint-scss',
-		'stylelint-order',
-		'stylelint-no-unsupported-browser-features',
-	],
+	plugins: ['stylelint-scss', 'stylelint-order', 'stylelint-no-unsupported-browser-features'],
 
 	rules: {
 		indentation: 'tab',
@@ -144,10 +140,13 @@ module.exports = {
 		'no-missing-end-of-source-newline': null,
 		'no-empty-first-line': true,
 		'order/order': ['dollar-variables', 'custom-properties', 'declarations', 'rules', 'at-rules'],
-		'plugin/no-unsupported-browser-features': [true, {
-			severity: 'warning',
-			ignore: ['css-fixed'],
-		}],
+		'plugin/no-unsupported-browser-features': [
+			true,
+			{
+				severity: 'warning',
+				ignore: ['css-fixed'],
+			},
+		],
 		'no-invalid-position-at-import-rule': 'always',
 		'no-irregular-whitespace': 'always',
 		'selector-attribute-quotes': 'always',
