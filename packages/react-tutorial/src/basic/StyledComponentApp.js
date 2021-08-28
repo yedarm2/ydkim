@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import Dialog from './components/Dialog';
+import Dialog from '../components/Dialog';
 
 import StyledComponentsButton from './components/StyledComponentsButton';
 
