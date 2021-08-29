@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-export default withRouter(function WithRouterSample({ location, match, history }) {
+export default withRouter(({ location, match, history }) => {
 	return (
 		<div>
 			<h4>location</h4>
