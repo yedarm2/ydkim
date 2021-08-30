@@ -1,6 +1,9 @@
 {
-  "include": [
-    "src"
-  ],
   "extends": "../../tsconfig.json",
+  "include": [
+    "lib"
+  ],
+  "compilerOptions": {
+    "baseUrl": "./src"
+  }
 }
