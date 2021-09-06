@@ -1,13 +1,20 @@
-import { FC } from 'react';
-import { Button, ButtonWrapper } from './CounterButtonWrapper.style';
+import { FC, memo } from 'react';
+import { useCounterDispatch } from '../../contexts';
+import { CounterButton, Wrapper } from './CounterButtonWrapper.style';
 
 const CounterButtonWrapper: FC<CounterButtonProps> = ({ buttonType }) => {
+	const { increment, decrement } = useCounterDispatch();
+
 	return (
-		<ButtonWrapper>
-			<Button buttonType="previous">previous</Button>
-			<Button buttonType="next">next</Button>
-		</ButtonWrapper>
+		<Wrapper>
+			<CounterButton buttonType="previous" onClick={decrement}>
+				decrement
+			</CounterButton>
+			<CounterButton buttonType="next" onClick={increment}>
+				increment
+			</CounterButton>
+		</Wrapper>
 	);
 };
 
-export default CounterButtonWrapper;
+export default memo(CounterButtonWrapper);

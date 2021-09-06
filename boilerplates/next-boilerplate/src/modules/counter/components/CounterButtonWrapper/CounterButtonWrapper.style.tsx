@@ -1,18 +1,16 @@
 import styled from '@emotion/styled';
+import Button from 'src/modules/common/components/Button/Button';
 
-export const Button = styled.button<CounterButtonProps>`
+export const CounterButton = styled(Button)<CounterButtonProps>`
 	width: 100px;
 	height: 30px;
-	border: 0;
-	border-radius: 10px;
 	font-size: 20px;
 
 	background-color: ${({ buttonType }) => (buttonType === 'previous' ? 'green' : 'gold')};
-	cursor: pointer;
 `;
 
-export const ButtonWrapper = styled.div`
-	${Button} {
+export const Wrapper = styled.div`
+	${CounterButton} {
 		&:first-child {
 			margin: 0 20px 0 0;
 		}

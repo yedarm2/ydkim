@@ -1,11 +1,16 @@
 import { FC } from 'react';
+import { CounterProvider } from '../../contexts';
 import CounterButtonWrapper from '../CounterButtonWrapper/CounterButtonWrapper';
+import CounterDisplayer from '../CounterDisplayer/CounterDisplayer';
+import CounterHeader from '../CounterHeader/CounterHeader';
 
 const Counter: FC = () => {
 	return (
-		<div>
+		<CounterProvider>
+			<CounterHeader />
+			<CounterDisplayer />
 			<CounterButtonWrapper buttonType="previous" />
-		</div>
+		</CounterProvider>
 	);
 };
 
