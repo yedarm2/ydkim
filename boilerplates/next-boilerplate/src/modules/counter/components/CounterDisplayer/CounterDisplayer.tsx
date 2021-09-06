@@ -1,5 +1,5 @@
 import { FC, memo } from 'react';
-import { useCounter } from '../../contexts';
+import { useCounter } from '../../hooks';
 import { NumberDisplayer } from './CounterDisplayer.style';
 
 const CounterDisplayer: FC = () => {
