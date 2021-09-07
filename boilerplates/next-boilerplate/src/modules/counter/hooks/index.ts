@@ -1,17 +1,17 @@
-import { useContext } from 'react';
-import { CounterContext, CounterDispatchContext } from '../contexts';
+import { useSelector, useDispatch } from 'react-redux';
+import { increment, decrement } from '../store/counterSlice';
+
+import { RootState } from '../../../store';
 
 export const useCounter = () => {
-	return useContext(CounterContext);
+	return useSelector((state: RootState) => state.counter.value);
 };
 
 export const useCounterDispatch = () => {
-	const dispatch = useContext(CounterDispatchContext);
-	const increment = () => dispatch(1);
-	const decrement = () => dispatch(-1);
+	const dispatch = useDispatch();
 
 	return {
-		increment,
-		decrement,
+		increment: () => dispatch(increment()),
+		decrement: () => dispatch(decrement()),
 	};
 };
