@@ -23,16 +23,16 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "core-js": "3.17.3",
+    "core-js": "3.18.0",
     "register-service-worker": "1.7.2",
     "vue": "3.2.12",
     "vue-router": "4.0.11",
     "vuex": "4.0.2"
   },
   "devDependencies": {
-    "@types/jest": "27.0.1",
-    "@typescript-eslint/eslint-plugin": "4.31.1",
-    "@typescript-eslint/parser": "4.31.1",
+    "@types/jest": "27.0.2",
+    "@typescript-eslint/eslint-plugin": "4.31.2",
+    "@typescript-eslint/parser": "4.31.2",
     "@vue/cli-plugin-babel": "4.5.13",
     "@vue/cli-plugin-e2e-cypress": "4.5.13",
     "@vue/cli-plugin-eslint": "4.5.13",
@@ -55,7 +55,7 @@
     "postcss": "8.3.6",
     "postcss-preset-env": "6.7.0",
     "postcss-reporter": "7.0.2",
-    "sass": "1.41.1",
+    "sass": "1.42.0",
     "sass-loader": "10.1.1",
     "stylelint": "13.13.1",
     "stylelint-config-standard": "22.0.0",
