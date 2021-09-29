@@ -1,7 +1,7 @@
 import '../src/styles/scss/globals.scss';
 import type { AppProps } from 'next/app';
 import { FC } from 'react';
-import StoreProvider from 'src/modules/common/components/StoreProvider';
+import StoreProvider from 'src/features/common/components/StoreProvider';
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
 	return (

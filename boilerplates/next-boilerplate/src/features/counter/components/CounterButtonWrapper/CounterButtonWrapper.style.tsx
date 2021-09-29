@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import Button from 'src/modules/common/components/Button/Button';
+import Button from 'src/features/common/components/Button/Button';
 
 export const CounterButton = styled(Button)<CounterButtonProps>`
 	width: 100px;
