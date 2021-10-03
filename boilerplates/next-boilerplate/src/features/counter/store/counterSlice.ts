@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-interface CounterState {
+// ? export 하지 않으면 '내보낸 변수기 어쩌구 저쩌구...' 에러가 걸린다... 어째서?
+export interface CounterState {
 	value: number;
 }
 

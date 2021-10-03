@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
 
-import counterReducer from '../features/counter/store/counter';
+import counterReducer from '../features/counter/store/counterSlice';
 import { pokemonApi } from '../features/pokemon/store/pokemonQueries';
 
 export const store = configureStore({

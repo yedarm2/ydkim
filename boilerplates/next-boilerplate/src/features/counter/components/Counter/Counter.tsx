@@ -9,7 +9,7 @@ const Counter: FC = () => {
 		<CounterProvider>
 			<CounterHeader />
 			<CounterDisplayer />
-			<CounterButtonWrapper buttonType="previous" />
+			<CounterButtonWrapper />
 		</CounterProvider>
 	);
 };
