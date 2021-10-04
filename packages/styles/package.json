@@ -25,16 +25,24 @@
     "serve": "echo \"serve\" && exit 1",
     "build": "echo \"build\" && exit 1",
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "lint": "echo \"Lint\" && exit 1"
+    "lint": "echo \"Lint\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "bugs": {
     "url": "https://github.com/YedramKim/ydkim/issues"
   },
   "devDependencies": {
+    "@babel/core": "7.15.5",
     "@emotion/babel-plugin": "11.3.0",
+    "@storybook/addon-actions": "6.3.9",
+    "@storybook/addon-essentials": "6.3.9",
+    "@storybook/addon-links": "6.3.9",
+    "@storybook/react": "6.3.9",
     "@typescript-eslint/eslint-plugin": "4.32.0",
     "@typescript-eslint/parser": "4.32.0",
     "babel-jest": "27.2.4",
+    "babel-loader": "8.2.2",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-import": "2.24.2",
