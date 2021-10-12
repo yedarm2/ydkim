@@ -14,16 +14,13 @@ import { takeEvery } from 'redux-saga/effects';
 
 type ReducerFunction<Payload = any> = (state: any, action: PayloadAction<Payload>) => any;
 
-type ActionForCaseReducer<Reducer> = Reducer extends ReducerFunction<infer Payload>
-	? PayloadAction<Payload>
-	: Reducer extends { reducer: ReducerFunction<infer Payload> }
+type ActionForCaseReducer<Reducer> = Reducer extends
+	| ReducerFunction<infer Payload>
+	| { reducer: ReducerFunction<infer Payload> }
 	? PayloadAction<Payload>
 	: AnyAction;
 
-type SagasForActions<
-	State,
-	Reducers extends SliceCaseReducers<State> = SliceCaseReducers<State>,
-> = {
+type SagasForActions<Reducers> = {
 	[ReducerName in keyof Reducers]: (
 		action: ActionForCaseReducer<Reducers[ReducerName]>,
 	) => Generator<any, any, any>;
@@ -33,7 +30,7 @@ interface CreateSliceAndSagaPayload<State, Reducers extends SliceCaseReducers<St
 	name: string;
 	initialState: State;
 	reducers: ValidateSliceCaseReducers<State, Reducers>;
-	sagas?: Partial<SagasForActions<State, Reducers>>;
+	sagas?: Partial<SagasForActions<Reducers>>;
 }
 
 interface CreateSliceAndSagaResult<
