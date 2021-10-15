@@ -40,16 +40,25 @@ interface CreateSliceAndSagaResult<
 	saga: () => Generator<any, any, any>;
 }
 
-const createSliceAndSaga = <
-	State,
-	Reducers extends SliceCaseReducers<State> = SliceCaseReducers<State>,
->({
+const createSliceAndSaga = <State, Reducers extends SliceCaseReducers<State>>({
 	name = '',
 	initialState,
 	reducers,
 	sagas = {},
 }: CreateSliceAndSagaPayload<State, Reducers>): CreateSliceAndSagaResult<State, Reducers> => {
-	const slice = createSlice({ name, initialState, reducers });
+	const composedReducers: object = { ...reducers };
+
+	// * sagas에만 정의되어 있고 reducers에 정의되어 있지 않은 key에 빈 함수를 넣음으로써 빈 리듀서를 추가한다.
+	for (const sagaName of Object.keys(sagas)) {
+		if (Object.prototype.hasOwnProperty.call(composedReducers, sagaName)) continue;
+		composedReducers[sagaName] = () => {};
+	}
+
+	const slice = createSlice({
+		name,
+		initialState,
+		reducers: composedReducers as ValidateSliceCaseReducers<State, Reducers>,
+	});
 
 	const saga = function* () {
 		for (const sagaName of Object.keys(sagas)) {
