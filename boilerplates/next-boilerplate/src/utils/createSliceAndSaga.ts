@@ -49,6 +49,7 @@ const createSliceAndSaga = <State, Reducers extends SliceCaseReducers<State>>({
 	const composedReducers: object = { ...reducers };
 
 	// * sagas에만 정의되어 있고 reducers에 정의되어 있지 않은 key에 빈 함수를 넣음으로써 빈 리듀서를 추가한다.
+	// * 하지만 타입으로 표현하는데에는 실패해서 사용하지 못하는 코드나 마찬가지 일 것 같다...
 	for (const sagaName of Object.keys(sagas)) {
 		if (Object.prototype.hasOwnProperty.call(composedReducers, sagaName)) continue;
 		composedReducers[sagaName] = () => {};
