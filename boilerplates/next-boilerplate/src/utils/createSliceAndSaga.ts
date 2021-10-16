@@ -1,7 +1,5 @@
 import type {
 	SliceCaseReducers,
-	CaseReducer,
-	CaseReducerWithPrepare,
 	PayloadAction,
 	AnyAction,
 	ValidateSliceCaseReducers,
@@ -21,7 +19,7 @@ type ActionForCaseReducer<Reducer> = Reducer extends
 	: AnyAction;
 
 type SagasForActions<Reducers> = {
-	[ReducerName in keyof Reducers]: (
+	[ReducerName in keyof Reducers]?: (
 		action: ActionForCaseReducer<Reducers[ReducerName]>,
 	) => Generator<any, any, any>;
 };
@@ -62,10 +60,11 @@ const createSliceAndSaga = <State, Reducers extends SliceCaseReducers<State>>({
 	});
 
 	const saga = function* () {
-		for (const sagaName of Object.keys(sagas)) {
-			const action = slice.actions[sagaName];
+		for (const reducerName of Object.keys(sagas)) {
+			const action = slice.actions[reducerName];
+			if (!action) continue;
 
-			yield takeEvery(action.type, sagas[sagaName]);
+			yield takeEvery(action.type, sagas[reducerName]);
 		}
 	};
 
