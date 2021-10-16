@@ -1,4 +1,5 @@
 import type {
+	CaseReducer,
 	SliceCaseReducers,
 	PayloadAction,
 	AnyAction,
@@ -10,17 +11,15 @@ import { createSlice } from '@reduxjs/toolkit';
 
 import { takeEvery } from 'redux-saga/effects';
 
-type ReducerFunction<Payload = any> = (state: any, action: PayloadAction<Payload>) => any;
-
-type ActionForCaseReducer<Reducer> = Reducer extends
-	| ReducerFunction<infer Payload>
-	| { reducer: ReducerFunction<infer Payload> }
+type ActionForReducer<Reducer> = Reducer extends CaseReducer<any, PayloadAction<infer Payload>>
+	? PayloadAction<Payload>
+	: Reducer extends { reducer: CaseReducer<any, PayloadAction<infer Payload>> }
 	? PayloadAction<Payload>
 	: AnyAction;
 
 type SagasForActions<Reducers> = {
 	[ReducerName in keyof Reducers]?: (
-		action: ActionForCaseReducer<Reducers[ReducerName]>,
+		action: ActionForReducer<Reducers[ReducerName]>,
 	) => Generator<any, any, any>;
 };
 
