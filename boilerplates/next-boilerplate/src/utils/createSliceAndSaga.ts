@@ -17,7 +17,7 @@ type ActionForReducer<Reducer> = Reducer extends CaseReducer<any, PayloadAction<
 	? PayloadAction<Payload>
 	: AnyAction;
 
-type SagasForActions<Reducers> = {
+type SagasByActions<Reducers> = {
 	[ReducerName in keyof Reducers]?: (
 		action: ActionForReducer<Reducers[ReducerName]>,
 	) => Generator<any, any, any>;
@@ -27,13 +27,11 @@ interface CreateSliceAndSagaPayload<State, Reducers extends SliceCaseReducers<St
 	name: string;
 	initialState: State;
 	reducers: ValidateSliceCaseReducers<State, Reducers>;
-	sagas?: Partial<SagasForActions<Reducers>>;
+	sagas?: SagasByActions<Reducers>;
 }
 
-interface CreateSliceAndSagaResult<
-	State,
-	Reducers extends SliceCaseReducers<State> = SliceCaseReducers<State>,
-> extends Slice<State, Reducers, string> {
+interface CreateSliceAndSagaResult<State, Reducers extends SliceCaseReducers<State>>
+	extends Slice<State, Reducers, string> {
 	saga: () => Generator<any, any, any>;
 }
 
