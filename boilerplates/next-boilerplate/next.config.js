@@ -1,6 +1,8 @@
-module.exports = {
-	reactStrictMode: true,
+const withPlugins = require('next-compose-plugins');
+const withTM = require('next-transpile-modules')(['@ydkim/styles']);
+const withImages = require('next-images');
 
+module.exports = withPlugins([withTM(), withImages], {
 	async redirects() {
 		return [
 			{
@@ -10,4 +12,4 @@ module.exports = {
 			},
 		];
 	},
-};
+});

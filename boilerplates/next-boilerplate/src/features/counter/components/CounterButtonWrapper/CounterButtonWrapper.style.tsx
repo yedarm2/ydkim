@@ -1,6 +1,10 @@
 import styled from '@emotion/styled';
 import Button from 'src/features/common/components/Button/Button';
 
+export interface CounterButtonProps {
+	buttonType: 'previous' | 'next';
+}
+
 export const CounterButton = styled(Button)<CounterButtonProps>`
 	width: 100px;
 	height: 30px;
