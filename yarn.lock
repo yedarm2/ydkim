@@ -5427,15 +5427,15 @@
   resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.0.0-beta.21.1.tgz#f1410f53c42aa67fa3b01ca7bdba891f69d7bc97"
   integrity sha512-FqC4s3pm35qGVeXRGOjTsRzlkJjrBLriDS9YXbflHLsfA9FrcKzIyWnLXoNm+/7930E8rRakXuAc2QkC50swAw==
 
-"@vue/eslint-config-airbnb@5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@vue/eslint-config-airbnb/-/eslint-config-airbnb-5.3.0.tgz#896551d600816a06dff13fdd7d04fd5153379817"
-  integrity sha512-m9ldRhbqaODbcc9mQZjPgnTzyNweZblLMTqMfC2kHWY68dYd3kwG/hvENeZWXJnKKo+eGnoptk+7Zq/c1519ZQ==
+"@vue/eslint-config-airbnb@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@vue/eslint-config-airbnb/-/eslint-config-airbnb-6.0.0.tgz#6270f44dbb18c15d95be8e450966fe41249bba8a"
+  integrity sha512-zoOad6NKIEh8nDOC6fcWMp3i1nYlNF1au80cvTXIEV2w7iRLVo8C10rHAhjCnmgA0Sr+ec1KQxpl7o838DMKOg==
   dependencies:
-    eslint-config-airbnb-base "^14.0.0"
-    eslint-import-resolver-node "^0.3.4"
-    eslint-import-resolver-webpack "^0.13.0"
-    eslint-plugin-import "^2.21.2"
+    eslint-config-airbnb-base "^15.0.0"
+    eslint-import-resolver-node "^0.3.6"
+    eslint-import-resolver-webpack "^0.13.2"
+    eslint-plugin-import "^2.25.3"
 
 "@vue/eslint-config-typescript@9.1.0":
   version "9.1.0"
@@ -9992,14 +9992,15 @@ escodegen@^2.0.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-airbnb-base@^14.0.0:
-  version "14.2.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-airbnb-base/-/eslint-config-airbnb-base-14.2.1.tgz#8a2eb38455dc5a312550193b319cdaeef042cd1e"
-  integrity sha512-GOrQyDtVEc1Xy20U7vsB2yAoB4nBlfH5HZJeatRXHleO+OS5Ot+MWij4Dpltw4/DyIkqUfqz1epfhVR5XWWQPA==
+eslint-config-airbnb-base@^15.0.0:
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-airbnb-base/-/eslint-config-airbnb-base-15.0.0.tgz#6b09add90ac79c2f8d723a2580e07f3925afd236"
+  integrity sha512-xaX3z4ZZIcFLvh2oUNvcX5oEofXda7giYmuplVxoOg5A7EXJMrUyqRgR+mhDhPK8LZ4PttFOBvCYDbX3sUoUig==
   dependencies:
     confusing-browser-globals "^1.0.10"
     object.assign "^4.1.2"
-    object.entries "^1.1.2"
+    object.entries "^1.1.5"
+    semver "^6.3.0"
 
 eslint-config-next@12.0.4:
   version "12.0.4"
@@ -10047,7 +10048,7 @@ eslint-import-resolver-typescript@^2.4.0:
     resolve "^1.20.0"
     tsconfig-paths "^3.9.0"
 
-eslint-import-resolver-webpack@^0.13.0:
+eslint-import-resolver-webpack@^0.13.2:
   version "0.13.2"
   resolved "https://registry.yarnpkg.com/eslint-import-resolver-webpack/-/eslint-import-resolver-webpack-0.13.2.tgz#fc813df0d08b9265cc7072d22393bda5198bdc1e"
   integrity sha512-XodIPyg1OgE2h5BDErz3WJoK7lawxKTJNhgPNafRST6csC/MZC+L5P6kKqsZGRInpbgc02s/WZMrb4uGJzcuRg==
@@ -10099,7 +10100,7 @@ eslint-plugin-flowtype@^5.2.0:
     lodash "^4.17.15"
     string-natural-compare "^3.0.1"
 
-eslint-plugin-import@2.25.3, eslint-plugin-import@^2.21.2, eslint-plugin-import@^2.22.1:
+eslint-plugin-import@2.25.3, eslint-plugin-import@^2.22.1, eslint-plugin-import@^2.25.3:
   version "2.25.3"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.25.3.tgz#a554b5f66e08fb4f6dc99221866e57cfff824766"
   integrity sha512-RzAVbby+72IB3iOEL8clzPLzL3wpDrlwjsTBAQXgyp5SeTqqY+0bFubwuo+y/HLhNZcXV4XqTBO4LGsfyHIDXg==
@@ -17129,7 +17130,7 @@ object.assign@^4.1.0, object.assign@^4.1.2:
     has-symbols "^1.0.1"
     object-keys "^1.1.1"
 
-object.entries@^1.1.0, object.entries@^1.1.2, object.entries@^1.1.5:
+object.entries@^1.1.0, object.entries@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/object.entries/-/object.entries-1.1.5.tgz#e1acdd17c4de2cd96d5a08487cfb9db84d881861"
   integrity sha512-TyxmjUoZggd4OrrU1W66FMDG6CuqJxsFvymeyXI51+vQLN67zYfZseptRge703kKQdo4uccgAKebXFcRCzk4+g==
