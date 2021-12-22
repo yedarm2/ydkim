@@ -295,6 +295,8 @@ module.exports = {
 		'@typescript-eslint/no-use-before-define': 'error',
 		'vue/valid-v-memo': 'error',
 		'vue/no-v-text': 'error',
+		'vue/component-options-name-casing': ['error', 'PascalCase'],
+		'vue/prefer-separate-static-class': 'error',
 		'import/no-anonymous-default-export': [
 			2,
 			{
