@@ -27,6 +27,7 @@
     "build": "echo \"build\" && exit 1",
     "test": "echo \"Error: run tests from root\" && exit 1",
     "lint": "echo \"Lint\" && exit 1",
+    "lint:css": "npx stylelint \"**/*.{css|scss}\"",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
