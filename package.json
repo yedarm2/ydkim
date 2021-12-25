@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "lerna run build",
     "clean": "lerna run clean && rimraf yarn.lock && rimraf node_modules",
-    "ncu": "ncu && lerna exec -- npx ncu",
+    "ncu": "ncu && lerna exec --stream -- npx ncu",
     "force-install": "yarn clean; yarn install"
   },
   "repository": {
