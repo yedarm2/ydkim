@@ -1,7 +1,7 @@
 module.exports = {
-	extends: 'stylelint-config-standard-scss',
+	extends: 'stylelint-config-standard',
 
-	plugins: ['stylelint-order', 'stylelint-no-unsupported-browser-features'],
+	plugins: ['stylelint-scss', 'stylelint-order', 'stylelint-no-unsupported-browser-features'],
 
 	rules: {
 		indentation: 'tab',
