@@ -1,5 +1,5 @@
 module.exports = {
-	extends: 'stylelint-config-standard',
+	extends: 'stylelint-config-standard-scss',
 
 	plugins: ['stylelint-scss', 'stylelint-order', 'stylelint-no-unsupported-browser-features'],
 
@@ -14,7 +14,7 @@ module.exports = {
 		'color-named': 'never',
 		'color-no-hex': null,
 		'length-zero-no-unit': true,
-		'font-weight-notation': 'named-where-possible',
+		'font-weight-notation': 'numeric',
 		'function-url-no-scheme-relative': true,
 		'function-url-scheme-allowed-list': ['data', '/^http/'],
 		'number-max-precision': 1, // * 소수점 제한. 우선 첫째자리까지만 하도록 해보자
@@ -23,7 +23,13 @@ module.exports = {
 		'shorthand-property-no-redundant-values': true,
 		'value-no-vendor-prefix': true,
 		'property-no-vendor-prefix': true,
-		'declaration-block-no-redundant-longhand-properties': true,
+		// * 어쩌면 추후에 ignore 혹은 룰을 사용하지 않을 것 같기도...
+		'declaration-block-no-redundant-longhand-properties': [
+			true,
+			{
+				ignoreShorthands: [],
+			},
+		],
 		'declaration-no-important': true,
 		'selector-max-universal': 0, // * *셀렉터를 완전히 금지시킨다.
 		'selector-max-type': 0, // * html tag 셀렉터를 완전히 금지시킨다.
@@ -31,6 +37,7 @@ module.exports = {
 		'selector-pseudo-element-colon-notation': 'double',
 		'media-feature-name-no-vendor-prefix': true,
 		'at-rule-no-vendor-prefix': true,
+		// * at rule에 필수 적인 프로퍼티들을 정의하는 룰
 		'at-rule-property-required-list': {
 			'font-face': ['font-family', 'src', 'font-display'],
 		},
@@ -150,5 +157,6 @@ module.exports = {
 		'no-invalid-position-at-import-rule': 'always',
 		'no-irregular-whitespace': 'always',
 		'selector-attribute-quotes': 'always',
+		'scss/dollar-variable-pattern': null,
 	},
 };

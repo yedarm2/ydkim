@@ -2,9 +2,16 @@
   "name": "@ydkim/ts-study",
   "version": "0.0.0",
   "description": "typescript 공부",
-  "author": "yedarm <oncoder@naver.com>",
   "homepage": "https://github.com/YedramKim/ydkim/tree/master/packages/ts-study#readme",
+  "bugs": {
+    "url": "https://github.com/YedramKim/ydkim/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YedramKim/ydkim.git"
+  },
   "license": "MIT",
+  "author": "yedarm <oncoder@naver.com>",
   "main": "src/index.ts",
   "directories": {
     "lib": "lib",
@@ -13,27 +20,20 @@
   "files": [
     "lib"
   ],
-  "publishConfig": {
-    "registry": "https://registry.yarnpkg.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YedramKim/ydkim.git"
-  },
   "scripts": {
-    "clean": "npx rimraf node_modules && npx rimraf dist",
     "build": "tsc",
+    "clean": "npx rimraf node_modules && npx rimraf dist",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "bugs": {
-    "url": "https://github.com/YedramKim/ydkim/issues"
+  "dependencies": {
+    "@types/node": "17.0.4"
   },
   "devDependencies": {
     "@types/node": "17.0.4",
     "ts-node": "10.4.0",
     "typescript": "4.5.4"
   },
-  "dependencies": {
-    "@types/node": "17.0.4"
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
   }
 }

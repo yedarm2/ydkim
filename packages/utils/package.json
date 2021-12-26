@@ -3,9 +3,16 @@
   "version": "0.0.0",
   "private": true,
   "description": "utils for ydkim monorepo",
-  "author": "yedarm <oncoder@naver.com>",
   "homepage": "https://github.com/YedramKim/ydkim/tree/master/packages/ydkim-utils#readme",
+  "bugs": {
+    "url": "https://github.com/YedramKim/ydkim/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YedramKim/ydkim.git"
+  },
   "license": "MIT",
+  "author": "yedarm <oncoder@naver.com>",
   "main": "lib/index.ts",
   "directories": {
     "lib": "lib",
@@ -14,18 +21,11 @@
   "files": [
     "lib"
   ],
-  "publishConfig": {
-    "registry": "https://registry.yarnpkg.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YedramKim/ydkim.git"
-  },
   "scripts": {
     "clean": "npx rimraf node_modules && npx rimraf dist",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "bugs": {
-    "url": "https://github.com/YedramKim/ydkim/issues"
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
   }
 }

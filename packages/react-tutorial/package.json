@@ -2,6 +2,25 @@
   "name": "@ydkim/react-tutorial",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "build": "react-scripts build",
+    "clean": "npx rimraf node_modules && npx rimraf dist",
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
     "@sentry/react": "6.16.1",
     "@sentry/tracing": "6.16.1",
@@ -39,24 +58,5 @@
     "use-react-router": "1.0.7",
     "web-vitals": "2.1.2"
   },
-  "scripts": {
-    "clean": "npx rimraf node_modules && npx rimraf dist",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "proxy": "http://localhost:4000",
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "proxy": "http://localhost:4000"
 }
