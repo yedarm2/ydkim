@@ -21,7 +21,7 @@
 		"lib"
 	],
 	"scripts": {
-		"build": "echo \"build\" && exit 1",
+		"build": "yarn run build-storybook",
 		"build-storybook": "build-storybook",
 		"clean": "npx rimraf node_modules && npx rimraf dist",
 		"lint": "echo \"Lint\" && exit 1",
@@ -53,6 +53,7 @@
 		"@typescript-eslint/parser": "5.8.1",
 		"babel-jest": "27.4.5",
 		"babel-loader": "8.2.3",
+		"chromatic": "6.3.3",
 		"eslint": "8.5.0",
 		"eslint-config-prettier": "8.3.0",
 		"eslint-plugin-import": "2.25.3",
