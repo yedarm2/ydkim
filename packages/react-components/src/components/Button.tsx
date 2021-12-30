@@ -1,31 +1,41 @@
 import styled from '@emotion/styled';
+import { css, SerializedStyles } from '@emotion/react';
 
-export const buttonThemeColors = {
-	red: '#fa5252',
-	yellow: '#fcc419',
-	orange: '#ff922b',
-	green: '#40c057',
-	blue: '#228be6',
-	purple: '#7950f2',
-	lime: '#82c91e',
-	gray: '#343a40',
-} as const;
+import { colors, fontSizes, sizeObject, type Color, type Size } from '../variables';
 
 interface ButtonProps {
-	theme?: keyof typeof buttonThemeColors;
+	color?: Color;
+	size: Size;
+	buttonType?: 'default' | 'reverse' | 'pressible';
 }
 
-export const Button = styled.button<ButtonProps>`
-	box-sizing: border-box;
-	background-color: ${props => buttonThemeColors[props.theme]};
+interface ButtonStyle {
+	(props: ButtonProps): SerializedStyles;
+}
+
+const defaultButtonStyle: ButtonStyle = props => css`
 	color: #fff;
-	cursor: pointer;
+	background-color: ${colors[props.color]};
+	border: 2px solid ${colors[props.color]};
+
+	border-radius: 1000px;
+`;
+
+const reverseButtonStyle: ButtonStyle = props => css`
+	color: ${colors[props.color]};
+	background: #fff;
+	border: 2px solid ${colors[props.color]};
+
+	border-radius: 1000px;
+`;
+
+const pressibleButtonStyle: ButtonStyle = props => css`
 	border: 0;
-	padding: 10px;
 	border-radius: 5px;
 	border-bottom: 3px solid rgba(0, 0, 0, 0.2);
 
-	position: relative;
+	background-color: ${colors[props.color]};
+	color: #fff;
 
 	&:active {
 		border-top: 3px solid rgba(0, 0, 0, 0.2);
@@ -33,6 +43,31 @@ export const Button = styled.button<ButtonProps>`
 	}
 `;
 
+const buttonStyles = {
+	default: defaultButtonStyle,
+	reverse: reverseButtonStyle,
+	pressible: pressibleButtonStyle,
+};
+
+const buttonPaddings: sizeObject = {
+	small: '5px 8px',
+	medium: '10px 15px',
+	large: '15px 20px',
+	xLarge: '22px 30px',
+	xxLarge: '30px 40px',
+};
+
+export const Button = styled.button<ButtonProps>`
+	box-sizing: border-box;
+	cursor: pointer;
+	padding: ${props => buttonPaddings[props.size]};
+	font-size: ${props => fontSizes[props.size]};
+	outline: none;
+
+	${props => buttonStyles[props.buttonType]}
+`;
+
 Button.defaultProps = {
-	theme: 'gray',
+	color: 'gray',
+	buttonType: 'default',
 };

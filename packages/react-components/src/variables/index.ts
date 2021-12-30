@@ -15,12 +15,12 @@ export type Size = 'small' | 'medium' | 'large' | 'xLarge' | 'xxLarge';
 
 export const Sizes: Size[] = ['small', 'medium', 'large', 'xLarge', 'xxLarge'];
 
-type sizeObject = {
+export type sizeObject = {
 	[key in Size]: string;
 };
 
 export const fontSizes: sizeObject = {
-	small: '10px',
+	small: '12px',
 	medium: '14px',
 	large: '18px',
 	xLarge: '26px',

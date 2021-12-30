@@ -3,6 +3,7 @@ import { FC } from 'react';
 
 const FlexWrapperStyle = styled.div`
 	display: flex;
+	flex-wrap: wrap;
 	/* justify-content: space-between; */
 	position: relative;
 	border-radius: 5px;
@@ -19,6 +20,10 @@ const FlexWrapperStyle = styled.div`
 		top: 0;
 		transform: translateY(-50%);
 		z-index: 10;
+	}
+
+	& + & {
+		margin-top: 20px;
 	}
 `;
 

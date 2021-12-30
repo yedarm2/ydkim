@@ -28,7 +28,7 @@
 		"lint:css": "npx stylelint \"**/*.{css|scss}\"",
 		"serve": "yarn run storybook",
 		"start": "yarn run serve",
-		"storybook": "start-storybook -p 6006",
+		"storybook": "start-storybook -p 6006 --no-open",
 		"test": "echo \"Error: run tests from root\" && exit 1"
 	},
 	"dependencies": {
