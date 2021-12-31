@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
 import { css, SerializedStyles } from '@emotion/react';
 
-import { colors, fontSizes, sizeObject, type Color, type Size } from '../variables';
+import { colors, fontSizes, SizeObject, Color, Size } from '../variables';
 
-interface ButtonProps {
+export interface ButtonProps {
 	color?: Color;
-	size: Size;
+	size?: Size;
 	buttonType?: 'default' | 'reverse' | 'pressible';
 }
 
@@ -49,7 +49,7 @@ const buttonStyles = {
 	pressible: pressibleButtonStyle,
 };
 
-const buttonPaddings: sizeObject = {
+const buttonPaddings: SizeObject = {
 	small: '5px 8px',
 	medium: '10px 15px',
 	large: '15px 20px',
@@ -69,5 +69,6 @@ export const Button = styled.button<ButtonProps>`
 
 Button.defaultProps = {
 	color: 'gray',
+	size: 'medium',
 	buttonType: 'default',
 };

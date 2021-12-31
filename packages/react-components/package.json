@@ -23,7 +23,7 @@
 	"scripts": {
 		"build": "yarn run build-storybook",
 		"build-storybook": "build-storybook",
-		"clean": "npx rimraf node_modules && npx rimraf dist",
+		"clean": "npx rimraf node_modules && npx rimraf dist && npx rimraf storybook-static",
 		"lint": "echo \"Lint\" && exit 1",
 		"lint:css": "npx stylelint \"**/*.{css|scss}\"",
 		"serve": "yarn run storybook",
