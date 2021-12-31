@@ -7,10 +7,10 @@ const CounterButtonWrapper: FC = () => {
 
 	return (
 		<Wrapper>
-			<CounterButton buttonType="previous" onClick={decrement}>
+			<CounterButton color="green" onClick={decrement}>
 				decrement
 			</CounterButton>
-			<CounterButton buttonType="next" onClick={increment}>
+			<CounterButton color="yellow" onClick={increment}>
 				increment
 			</CounterButton>
 		</Wrapper>
