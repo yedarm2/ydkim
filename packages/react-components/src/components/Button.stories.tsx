@@ -27,7 +27,7 @@ const WholeColorButtons = args => {
 	));
 };
 
-const Template: ComponentStory<typeof Button> = ({ ...args }) => (
+const Template: ComponentStory<typeof Button> = args => (
 	<WholeColorButtons {...args}>Button Test</WholeColorButtons>
 );
 
