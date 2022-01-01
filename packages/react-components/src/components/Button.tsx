@@ -1,6 +1,8 @@
 import styled from '@emotion/styled';
 import { css, SerializedStyles } from '@emotion/react';
 
+import { ElementStyle } from '../types';
+
 import { colors, fontSizes, SizeObject, Color, Size } from '../variables';
 
 export interface ButtonProps {
@@ -9,9 +11,7 @@ export interface ButtonProps {
 	buttonType?: 'default' | 'reverse' | 'pressible';
 }
 
-interface ButtonStyle {
-	(props: ButtonProps): SerializedStyles;
-}
+type ButtonStyle = ElementStyle<ButtonProps>;
 
 const defaultButtonStyle: ButtonStyle = props => css`
 	color: #fff;
