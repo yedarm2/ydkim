@@ -16,15 +16,24 @@ export default {
 } as ComponentMeta<typeof Button>;
 
 const WholeColorButtons = args => {
-	return Sizes.map(size => (
-		<FlexWrapper key={size} title={`버튼 (${size})`}>
-			{Object.keys(colors).map(color => (
-				<Button key={color} {...args} color={color} size={size}>
-					styled button
-				</Button>
-			))}
-		</FlexWrapper>
-	));
+	return (
+		<>
+			<FlexWrapper title="색상별">
+				{Object.keys(colors).map(color => (
+					<Button key={color} {...args} color={color} size="medium">
+						styled button
+					</Button>
+				))}
+			</FlexWrapper>
+			<FlexWrapper title="사이즈별">
+				{Sizes.map(size => (
+					<Button key={size} {...args} color="red" size={size}>
+						styled button
+					</Button>
+				))}
+			</FlexWrapper>
+		</>
+	);
 };
 
 const Template: ComponentStory<typeof Button> = args => (
@@ -44,4 +53,16 @@ Reverse.args = {
 export const Pressable = Template.bind({});
 Pressable.args = {
 	buttonType: 'pressible',
+};
+
+export const FullSize = args => {
+	return (
+		<FlexWrapper title="풀 사이즈 버튼">
+			{['default', 'reverse', 'pressible'].map(type => (
+				<Button key={type} color="red" buttonType={type as 'default'} fullSize css="margin: 0;">
+					풀 사이즈 버튼
+				</Button>
+			))}
+		</FlexWrapper>
+	);
 };

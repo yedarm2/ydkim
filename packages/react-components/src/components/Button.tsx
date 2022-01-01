@@ -9,6 +9,7 @@ export interface ButtonProps {
 	color?: Color;
 	size?: Size;
 	buttonType?: 'default' | 'reverse' | 'pressible';
+	fullSize?: boolean;
 }
 
 type ButtonStyle = ElementStyle<ButtonProps>;
@@ -43,6 +44,10 @@ const pressibleButtonStyle: ButtonStyle = props => css`
 	}
 `;
 
+const fullSizeButtonStyle: ButtonStyle = props => css`
+	width: 100%;
+`;
+
 const buttonStyles = {
 	default: defaultButtonStyle,
 	reverse: reverseButtonStyle,
@@ -63,8 +68,10 @@ export const Button = styled.button<ButtonProps>`
 	padding: ${props => buttonPaddings[props.size]};
 	font-size: ${props => fontSizes[props.size]};
 	outline: none;
+	margin: 0;
 
 	${props => buttonStyles[props.buttonType]}
+	${props => props.fullSize && fullSizeButtonStyle}
 `;
 
 Button.defaultProps = {

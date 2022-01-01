@@ -4,6 +4,7 @@ import { FC } from 'react';
 const FlexWrapperStyle = styled.div`
 	display: flex;
 	flex-wrap: wrap;
+	align-items: flex-start;
 	/* justify-content: space-between; */
 	position: relative;
 	border-radius: 5px;
