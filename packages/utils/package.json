@@ -1,31 +1,50 @@
 {
-  "name": "@ydkim/utils",
-  "version": "0.0.0",
-  "private": true,
-  "description": "utils for ydkim monorepo",
-  "homepage": "https://github.com/YedramKim/ydkim/tree/master/packages/ydkim-utils#readme",
-  "bugs": {
-    "url": "https://github.com/YedramKim/ydkim/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YedramKim/ydkim.git"
-  },
-  "license": "MIT",
-  "author": "yedarm <oncoder@naver.com>",
-  "main": "lib/index.ts",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "scripts": {
-    "clean": "npx rimraf node_modules && npx rimraf dist",
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
-  "publishConfig": {
-    "registry": "https://registry.yarnpkg.com"
-  }
+	"name": "@ydkim/utils",
+	"version": "0.0.0",
+	"private": true,
+	"description": "utils for ydkim monorepo",
+	"homepage": "https://github.com/YedramKim/ydkim/tree/master/packages/ydkim-utils#readme",
+	"bugs": {
+		"url": "https://github.com/YedramKim/ydkim/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/YedramKim/ydkim.git"
+	},
+	"license": "MIT",
+	"author": "yedarm <oncoder@naver.com>",
+	"main": "lib/index.ts",
+	"directories": {
+		"lib": "lib",
+		"test": "__tests__"
+	},
+	"files": [
+		"lib"
+	],
+	"scripts": {
+		"build": "echo \"build\" && exit 1",
+		"clean": "npx rimraf node_modules && npx rimraf dist",
+		"lint": "echo \"Lint\" && exit 1",
+		"serve": "echo \"serve\" && exit 1",
+		"test": "echo \"Error: run tests from root\" && exit 1"
+	},
+	"dependencies": {
+		"classnames": "2.3.1"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "5.8.1",
+		"@typescript-eslint/parser": "5.8.1",
+		"babel-jest": "27.4.5",
+		"eslint": "8.5.0",
+		"eslint-config-prettier": "8.3.0",
+		"eslint-plugin-import": "2.25.3",
+		"eslint-plugin-jest": "25.3.3",
+		"eslint-plugin-prettier": "4.0.0",
+		"jest": "27.4.5",
+		"ts-node": "10.4.0",
+		"typescript": "4.5.4"
+	},
+	"publishConfig": {
+		"registry": "https://registry.yarnpkg.com"
+	}
 }

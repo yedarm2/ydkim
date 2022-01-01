@@ -1,11 +1,11 @@
 import React from 'react';
-import classnames from 'classnames';
+import { classNames } from '@ydkim/utils';
 import './Button.scss';
 
 function Button({ children, size, color, outline, fullWidth, className, ...rest }) {
 	return (
 		<button
-			className={classnames(
+			className={classNames(
 				'button',
 				size,
 				color,
