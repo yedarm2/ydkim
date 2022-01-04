@@ -10,4 +10,6 @@ export const colors = {
 	black: '#212529',
 } as const;
 
+export const disabledColor = '#868e96';
+
 export type Color = keyof typeof colors;
