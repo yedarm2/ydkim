@@ -5,7 +5,7 @@ name: 'React Component Chromatic Deployment'
 on:
   push:
     branches:
-      - main
+      - deploy
 
 # List of jobs
 jobs:
