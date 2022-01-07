@@ -1,5 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { useState } from 'react';
+import { userEvent } from '@storybook/testing-library';
+
 import { Input } from './Input';
 import { FlexWrapper } from './Wrapper';
 
@@ -14,13 +16,22 @@ const Template: ComponentStory<typeof Input> = args => {
 
 	return (
 		<FlexWrapper title="인풋">
-			<Input {...args} value={value} onInput={setValue} placeholder="placeholder" />
-			<Input {...args} value="value" placeholder="placeholder" />
+			<Input
+				{...args}
+				className="input1"
+				value={value}
+				onInput={setValue}
+				placeholder="placeholder"
+			/>
+			<Input {...args} className="input2" value="value" placeholder="placeholder" />
 		</FlexWrapper>
 	);
 };
 
 export const Default = Template.bind({});
+Default.play = async ({ canvasElement }) => {
+	await userEvent.type(canvasElement.querySelector('.input1 input'), 'input test');
+};
 
 export const NormalInput = Template.bind({});
 NormalInput.args = {
