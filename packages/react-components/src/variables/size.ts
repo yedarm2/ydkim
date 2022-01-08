@@ -3,7 +3,7 @@ export type Size = 'small' | 'medium' | 'large' | 'xLarge' | 'xxLarge';
 export const Sizes: Size[] = ['small', 'medium', 'large', 'xLarge', 'xxLarge'];
 
 export type SizeObject = {
-	[key in Size]: string;
+	[key in Size]: string | number;
 };
 
 export const fontSizes: SizeObject = {

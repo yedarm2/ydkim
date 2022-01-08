@@ -23,17 +23,19 @@ const Template: ComponentStory<typeof Input> = args => {
 				onInput={setValue}
 				placeholder="placeholder"
 			/>
-			<Input {...args} className="input2" value="value" placeholder="placeholder" />
 		</FlexWrapper>
 	);
 };
 
 export const Default = Template.bind({});
 Default.play = async ({ canvasElement }) => {
-	await userEvent.type(canvasElement.querySelector('.input1 input'), 'input test');
+	await userEvent.type(canvasElement.querySelector('.input1 input'), '인풋 테스트');
 };
 
 export const NormalInput = Template.bind({});
 NormalInput.args = {
 	isNormalInput: true,
+};
+NormalInput.play = async ({ canvasElement }) => {
+	await Default.play({ canvasElement });
 };
