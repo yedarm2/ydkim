@@ -2,32 +2,31 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Button } from './Button';
 import { FlexWrapper } from './Wrapper';
 
-import { colors, Sizes, type Color, type Size } from '../variables';
+import { colors, Sizes } from '../variables';
 
 export default {
 	title: 'Components/Button',
 	component: Button,
 	argTypes: {
-		// theme: {
-		// 	control: 'color',
-		// 	defaultValue: 'red',
-		// },
+		buttonType: {
+			options: ['default', 'reverse', 'pressible'],
+		},
+		color: {
+			defaultValue: 'red',
+			description: '버튼의 색상',
+		},
+		size: {
+			options: Sizes,
+		},
 	},
 } as ComponentMeta<typeof Button>;
 
 const AllColorSizeButtons = args => {
 	return (
 		<>
-			<FlexWrapper title="색상별">
-				{Object.keys(colors).map(color => (
-					<Button key={color} {...args} color={color} size="medium">
-						styled button
-					</Button>
-				))}
-			</FlexWrapper>
 			<FlexWrapper title="사이즈별">
 				{Sizes.map(size => (
-					<Button key={size} {...args} color="red" size={size}>
+					<Button key={size} {...args} size={size}>
 						styled button
 					</Button>
 				))}
@@ -44,7 +43,7 @@ const AllTypeButtons = args => {
 	return (
 		<FlexWrapper title={args.content || '풀 사이즈 버튼'}>
 			{['default', 'reverse', 'pressible'].map(type => (
-				<Button key={type} color="red" buttonType={type as 'default'} {...args}>
+				<Button key={type} {...args} buttonType={type as 'default'}>
 					{args.content || '풀 사이즈 버튼'}
 				</Button>
 			))}
@@ -59,9 +58,21 @@ Default.args = {
 	buttonType: 'default',
 };
 
+export const RoundedDefault = AllColorSizeTemplate.bind({});
+RoundedDefault.args = {
+	buttonType: 'default',
+	rounded: true,
+};
+
 export const Reverse = AllColorSizeTemplate.bind({});
 Reverse.args = {
 	buttonType: 'reverse',
+};
+
+export const RountedReverse = AllColorSizeTemplate.bind({});
+RountedReverse.args = {
+	buttonType: 'reverse',
+	rounded: true,
 };
 
 export const Pressable = AllColorSizeTemplate.bind({});

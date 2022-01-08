@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { css, SerializedStyles } from '@emotion/react';
+import { css } from '@emotion/react';
 
 import { ElementStyle } from '../types';
 
@@ -9,18 +9,27 @@ export interface ButtonProps {
 	color?: Color;
 	size?: Size;
 	buttonType?: 'default' | 'reverse' | 'pressible';
+	rounded?: boolean;
 	fullSize?: boolean;
 	disabled?: boolean;
 }
 
 type ButtonStyle = ElementStyle<ButtonProps>;
 
+const borderRadiuses: SizeObject = {
+	small: 4,
+	medium: 6,
+	large: 8,
+	xLarge: 10,
+	xxLarge: 12,
+};
+
 const defaultButtonStyle: ButtonStyle = props => css`
 	color: #fff;
 	background-color: ${props.disabled ? disabledColor : colors[props.color]};
 	border: 2px solid ${props.disabled ? disabledColor : colors[props.color]};
 
-	border-radius: 1000px;
+	border-radius: ${props.rounded ? '1000px' : `${borderRadiuses[props.size]}px`};
 `;
 
 const reverseButtonStyle: ButtonStyle = props => css`
@@ -28,7 +37,7 @@ const reverseButtonStyle: ButtonStyle = props => css`
 	background: #fff;
 	border: 2px solid ${props.disabled ? disabledColor : colors[props.color]};
 
-	border-radius: 1000px;
+	border-radius: ${props.rounded ? '1000px' : `${borderRadiuses[props.size]}px`};
 `;
 
 const pressibleButtonStyle: ButtonStyle = props => css`
