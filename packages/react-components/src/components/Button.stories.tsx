@@ -1,8 +1,9 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Button } from './Button';
-import { FlexWrapper } from './Wrapper';
 
-import { colors, Sizes } from '../variables';
+import { FlexWrapper } from './Wrapper';
+import { Button } from './Button';
+
+import { Sizes } from '../variables';
 
 export default {
 	title: 'Components/Button',
@@ -10,6 +11,7 @@ export default {
 	argTypes: {
 		buttonType: {
 			options: ['default', 'reverse', 'pressible'],
+			description: '버튼의 형태',
 		},
 		color: {
 			defaultValue: 'red',
@@ -17,6 +19,13 @@ export default {
 		},
 		size: {
 			options: Sizes,
+			description: '버튼의 zmrl',
+		},
+		fullSize: {
+			description: '버튼의 width를 100%로 설정',
+		},
+		rounded: {
+			description: '버튼을 둥글게 할지 여부 (pressible은 적용되지 않음)',
 		},
 	},
 } as ComponentMeta<typeof Button>;
