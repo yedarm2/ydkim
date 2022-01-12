@@ -4697,16 +4697,16 @@
     resolve-from "^5.0.0"
     store2 "^2.12.0"
 
-"@storybook/vue3@6.4.10":
-  version "6.4.10"
-  resolved "https://registry.yarnpkg.com/@storybook/vue3/-/vue3-6.4.10.tgz#314d537574596bbe7368dfb90aec2ecffcc7c255"
-  integrity sha512-kBonsOGJxqlWtNz+gDmekZeBQ3Zcdpo56QnsOXtAJMsD95ZDhOCdCZqhZThVAQhQc5XFGi+eWz3MeCaikrOkvQ==
+"@storybook/vue3@6.4.12":
+  version "6.4.12"
+  resolved "https://registry.yarnpkg.com/@storybook/vue3/-/vue3-6.4.12.tgz#dcc16cb8c833b0ce8d5d475d201e83230479c681"
+  integrity sha512-XkpakJHKwpQZC+BQXQNv3lPZAnumnahi2XQHvTBU48viz9WnFgSioKIIPapnG2Mem7aiaDNMtm9+2aTcYTiJ+g==
   dependencies:
-    "@storybook/addons" "6.4.10"
-    "@storybook/core" "6.4.10"
-    "@storybook/core-common" "6.4.10"
+    "@storybook/addons" "6.4.12"
+    "@storybook/core" "6.4.12"
+    "@storybook/core-common" "6.4.12"
     "@storybook/csf" "0.0.2--canary.87bc651.0"
-    "@storybook/store" "6.4.10"
+    "@storybook/store" "6.4.12"
     "@types/webpack-env" "^1.16.0"
     core-js "^3.8.2"
     global "^4.4.0"
@@ -24136,6 +24136,7 @@ vue-jest@^3.0.5:
     vue-template-es2015-compiler "^1.6.0"
 
 "vue-loader-v16@npm:vue-loader@^16.1.0", vue-loader@^16.0.0:
+  name vue-loader-v16
   version "16.8.3"
   resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-16.8.3.tgz#d43e675def5ba9345d6c7f05914c13d861997087"
   integrity sha512-7vKN45IxsKxe5GcVCbc2qFU5aWzyiLrYJyUuMz4BQLKctCj/fmCa0w6fGiiQ2cLFetNcek1ppGJQDCup0c1hpA==
