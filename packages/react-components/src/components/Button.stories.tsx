@@ -3,30 +3,39 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { FlexWrapper } from './Wrapper';
 import { Button } from './Button';
 
-import { Sizes } from '../variables';
+import { emotionCommonArgTypes, sizes } from '../variables';
 
 export default {
 	title: 'Components/Button',
 	component: Button,
 	argTypes: {
+		...emotionCommonArgTypes,
 		buttonType: {
 			options: ['default', 'reverse', 'pressible'],
 			description: '버튼의 형태',
+			defaultValue: 'pressible',
+			table: { category: 'Style' },
 		},
 		color: {
-			defaultValue: 'red',
 			description: '버튼의 색상',
+			defaultValue: 'red',
+			table: { category: 'Style' },
 		},
 		size: {
-			options: Sizes,
-			description: '버튼의 zmrl',
+			options: sizes,
+			description: '버튼의 크기',
+			table: { category: 'Style' },
+			control: { type: 'select' },
 		},
 		fullSize: {
 			description: '버튼의 width를 100%로 설정',
+			table: { category: 'Style' },
 		},
 		rounded: {
 			description: '버튼을 둥글게 할지 여부 (pressible은 적용되지 않음)',
+			table: { category: 'Style' },
 		},
+		onClick: { action: 'clicked' },
 	},
 } as ComponentMeta<typeof Button>;
 
@@ -34,7 +43,7 @@ const AllColorSizeButtons = args => {
 	return (
 		<>
 			<FlexWrapper title="사이즈별">
-				{Sizes.map(size => (
+				{sizes.map(size => (
 					<Button key={size} {...args} size={size}>
 						styled button
 					</Button>

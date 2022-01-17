@@ -5,10 +5,14 @@ import { userEvent } from '@storybook/testing-library';
 import { Input } from './Input';
 import { FlexWrapper } from './Wrapper';
 
+import { emotionCommonArgTypes } from '../variables';
+
 export default {
 	title: 'Components/Input',
 	component: Input,
-	argTypes: {},
+	argTypes: {
+		...emotionCommonArgTypes,
+	},
 } as ComponentMeta<typeof Input>;
 
 const Template: ComponentStory<typeof Input> = args => {
@@ -29,7 +33,9 @@ const Template: ComponentStory<typeof Input> = args => {
 
 export const Default = Template.bind({});
 Default.play = async ({ canvasElement }) => {
-	await userEvent.type(canvasElement.querySelector('.input1 input'), '인풋 테스트');
+	await userEvent.type(canvasElement.querySelector('.input1 input'), '인풋 테스트', {
+		delay: 100,
+	});
 };
 
 export const NormalInput = Template.bind({});

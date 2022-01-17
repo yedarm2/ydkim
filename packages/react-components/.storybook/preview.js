@@ -1,4 +1,5 @@
 // import '@ydkim/styles';
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
 import { colors } from '../src/variables';
 
@@ -12,5 +13,8 @@ export const parameters = {
 	},
 	backgrounds: {
 		values: Object.entries(colors).map(([name, value]) => ({ name, value })),
+	},
+	viewport: {
+		viewports: INITIAL_VIEWPORTS,
 	},
 };
