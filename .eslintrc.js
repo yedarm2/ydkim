@@ -293,6 +293,12 @@ module.exports = {
 		'vue/no-this-in-before-route-enter': 'error',
 		'no-use-before-define': 'off',
 		'@typescript-eslint/no-use-before-define': 'error',
+		'@typescript-eslint/no-empty-interface': [
+			'error',
+			{
+				allowSingleExtends: false,
+			},
+		],
 		'vue/valid-v-memo': 'error',
 		'vue/no-v-text': 'error',
 		'vue/component-options-name-casing': ['error', 'PascalCase'],
