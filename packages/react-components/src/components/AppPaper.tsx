@@ -36,7 +36,7 @@ const Paper = styled.div`
 export const AppPaper: FC<AppPaperProps> = ({ externalTheme, children }) => {
 	return (
 		<ThemeProvider externalTheme={externalTheme}>
-			<Global styles={globalStyle} />
+			<GlobalStyles />
 			<Paper>{children}</Paper>
 		</ThemeProvider>
 	);
