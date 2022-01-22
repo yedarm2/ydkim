@@ -1,40 +1,30 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "strict": true,
-    "jsx": "preserve",
-    "jsxImportSource": "@emotion/react",
-    "importHelpers": true,
-    "moduleResolution": "node",
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
-    "types": [
-      "webpack-env",
-      "jest"
-    ],
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ],
-    "noImplicitAny": false,
-    "noImplicitThis": false,
-    "experimentalDecorators": true,
-    "allowJs": true,
-    "typeRoots": ["./node_modules/@types", "@types"],
-    "declaration": true,
-    "strictNullChecks": false,
-    "resolveJsonModule": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "isolatedModules": true,
-    "noEmit": true
-  },
-  "exclude": [
-    "node_modules"
-  ],
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"strict": true,
+		"jsx": "preserve",
+		"jsxImportSource": "@emotion/react",
+		"importHelpers": true,
+		"moduleResolution": "node",
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"types": ["webpack-env", "jest"],
+		"lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+		"noImplicitAny": false,
+		"noImplicitThis": false,
+		"experimentalDecorators": true,
+		"allowJs": true,
+		"typeRoots": ["./node_modules/@types", "@types"],
+		"declaration": true,
+		"strictNullChecks": false,
+		"resolveJsonModule": true,
+		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
+		"isolatedModules": false,
+		"noEmit": true
+	},
+	"exclude": ["node_modules"]
 }
