@@ -1,22 +1,14 @@
-import { css, Global } from '@emotion/react';
 import styled from '@emotion/styled';
 import { FC } from 'react';
-import { ThemeType } from '../types';
 
+import { GlobalStyles } from '../utils';
+import { ThemeType } from '../types';
 import { ThemeProvider } from '../utils';
+import { themeMixin } from '../mixins';
 
 export interface AppPaperProps {
 	externalTheme?: ThemeType;
 }
-
-const globalStyle = css`
-	html,
-	body {
-		width: 100vw;
-		height: 100vh;
-		overflow: hidden;
-	}
-`;
 
 const Paper = styled.div`
 	width: 100vw;
@@ -25,10 +17,8 @@ const Paper = styled.div`
 	overflow-x: hidden;
 	overflow-y: auto;
 
-	background-color: ${props => {
-		return props?.theme?.backgroundColor?.primary;
-	}};
-	color: ${props => props?.theme?.color?.primary};
+	${themeMixin.backgroundColor}
+	${themeMixin.color}
 
 	position: relative;
 `;
