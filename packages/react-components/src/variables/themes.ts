@@ -8,16 +8,24 @@ type ThemeMap = {
 };
 
 const lightTheme: Theme = {
-	primary: {
-		textColor: colors.black,
-		backgroundColor: '#fff',
+	color: {
+		primary: colors.black,
+		revert: '#fff',
+	},
+	backgroundColor: {
+		primary: '#fff',
+		revert: colors.black,
 	},
 };
 
 const darkTheme: Theme = {
-	primary: {
-		textColor: '#fff',
-		backgroundColor: colors.black,
+	color: {
+		primary: '#fff',
+		revert: colors.black,
+	},
+	backgroundColor: {
+		primary: colors.black,
+		revert: '#fff',
 	},
 };
 

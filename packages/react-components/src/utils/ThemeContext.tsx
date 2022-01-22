@@ -2,7 +2,7 @@ import { createContext, FC, useContext, useState } from 'react';
 import { ThemeProvider as EmotionThemeProvider, useTheme as useEmotionTheme } from '@emotion/react';
 
 import { ThemeType } from '../types';
-import { themes } from '../variables/themes';
+import { themes } from '../variables';
 
 type SetTheme = (theme: ThemeType) => void;
 
