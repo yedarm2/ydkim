@@ -1,9 +1,23 @@
+import { ThemeProvider } from 'emotion-theming';
+
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { AppPaper } from './AppPaper';
+import { themes } from '../variables';
 
 export default {
 	title: 'Components/AppPaper',
 	component: AppPaper,
+	decorators: [
+		(Story, context) => {
+			const theme = themes[context.args.externalTheme];
+
+			return (
+				<ThemeProvider theme={theme}>
+					<Story {...context} />
+				</ThemeProvider>
+			);
+		},
+	],
 } as ComponentMeta<typeof AppPaper>;
 
 const Template: ComponentStory<typeof AppPaper> = args => <AppPaper {...args} />;
