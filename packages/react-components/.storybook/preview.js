@@ -1,4 +1,4 @@
-// import '@ydkim/styles';
+import '@ydkim/styles';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { ThemeProvider } from '../src/utils';
 

@@ -6,6 +6,14 @@ module.exports = {
 		'@storybook/addon-interactions',
 		'@storybook/addon-a11y',
 	],
+	webpackFinal(config) {
+		config.module.rules.push({
+			test: /\.scss$/,
+			use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+		});
+
+		return config;
+	},
 	features: {
 		interactionsDebugger: true,
 	},
