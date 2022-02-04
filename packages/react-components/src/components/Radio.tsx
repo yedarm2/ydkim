@@ -5,12 +5,7 @@ import { ClassnamesArgument, classNames, generateRandom } from '@ydkim/utils';
 
 import { Color, colors } from '../variables';
 
-export interface RadioStyleProps {
-	isChecked: boolean;
-	color: Color;
-}
-
-export interface RadioProps<Value> extends RadioStyleProps {
+export interface RadioProps<Value> {
 	disabled?: boolean;
 	id?: string;
 	name: string;
@@ -19,9 +14,13 @@ export interface RadioProps<Value> extends RadioStyleProps {
 	modelValue: Value;
 	className?: ClassnamesArgument;
 	onChange: (value: Value, event?: SyntheticEvent) => void;
+	color?: Color;
 }
 
-const RadioWrapper = styled.div<RadioStyleProps>`
+const RadioWrapper = styled.div<{
+	isChecked: boolean;
+	color: Color;
+}>`
 	.label {
 		display: flex;
 		align-items: center;
@@ -70,11 +69,17 @@ export const Radio: <Value>(props: PropsWithChildren<RadioProps<Value>>) => Reac
 	const idString = useMemo(() => id || generateRandom.idString(), [id]);
 	const isChecked = value === modelValue;
 	const changeValue = () => {
+		if (disabled) return;
+
 		onChange(modelValue);
 	};
 
 	return (
-		<RadioWrapper isChecked={isChecked} className={classNames(className)} color={color}>
+		<RadioWrapper
+			isChecked={isChecked}
+			className={classNames(className)}
+			color={disabled ? 'gray' : color}
+		>
 			<input
 				type="radio"
 				name={name}

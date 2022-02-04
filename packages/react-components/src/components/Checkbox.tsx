@@ -64,7 +64,7 @@ export const Checkbox: FC<CheckboxProps> = ({
 	};
 
 	return (
-		<CheckboxWrapper className={classNames(className)} color={color}>
+		<CheckboxWrapper className={classNames(className)} color={disabled ? 'gray' : color}>
 			<input
 				type="checkbox"
 				id={idString}
