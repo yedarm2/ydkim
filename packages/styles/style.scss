@@ -1,6 +1,6 @@
 @import '~sanitize.css';
 
-/* html,
+html,
 body {
 	padding: 0;
 	margin: 0;
@@ -15,4 +15,14 @@ a {
 
 * {
 	box-sizing: border-box;
-} */
+	position: relative;
+}
+
+.a11y {
+	position: absolute !important;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	white-space: nowrap;
+}

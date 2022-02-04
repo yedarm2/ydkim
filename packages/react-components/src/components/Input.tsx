@@ -15,7 +15,7 @@ export interface InputProps {
 	value: string;
 	onInput: OnInputHandler;
 
-	type?: Exclude<HTMLInputTypeAttribute, 'checkbox' | 'radio'>;
+	type?: Exclude<HTMLInputTypeAttribute, 'checkbox' | 'radio' | 'file'>;
 	placeholder?: string;
 	isNormalInput?: boolean;
 	color?: Exclude<Color, 'gray'>;
