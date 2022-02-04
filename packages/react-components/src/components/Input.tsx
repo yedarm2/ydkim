@@ -29,7 +29,6 @@ export const Input: FC<InputProps> = props => {
 
 	return (
 		<InputWrapper isFocused={isFocused} isActive={isActive} color={color} className={classString}>
-			{!isNormalInput && placeholder && <span className="placeholder">{placeholder}</span>}
 			<input
 				type={type}
 				value={value}
@@ -39,6 +38,7 @@ export const Input: FC<InputProps> = props => {
 				placeholder={isNormalInput && placeholder}
 				className="input"
 			/>
+			{!isNormalInput && placeholder && <span className="placeholder">{placeholder}</span>}
 		</InputWrapper>
 	);
 };
