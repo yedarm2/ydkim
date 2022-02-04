@@ -1,7 +1,9 @@
-import { ClassnamesArgument, generateRandom } from '@ydkim/utils';
 import { SyntheticEvent, FC, KeyboardEvent, PropsWithChildren, useMemo } from 'react';
 import { FaRegSquare, FaCheckSquare } from 'react-icons/fa';
 import styled from '@emotion/styled';
+
+import { ClassnamesArgument, classNames, generateRandom } from '@ydkim/utils';
+
 import { Color, colors } from '../variables';
 
 export interface CheckboxStyleProps {
@@ -10,7 +12,7 @@ export interface CheckboxStyleProps {
 
 export interface CommonCheckboxProps extends CheckboxStyleProps {
 	disabled?: boolean;
-	inputId?: string;
+	id?: string;
 	name: string;
 	checkboxOnRight?: boolean;
 	className?: ClassnamesArgument;
@@ -39,15 +41,16 @@ const CheckboxWrapper = styled.div<CheckboxStyleProps>`
 export const Checkbox: FC<CheckboxProps> = ({
 	isChecked,
 	name,
-	inputId,
+	id,
 	disabled,
 	checkboxOnRight,
 	color,
+	className,
 	onChange,
 	onNativeChange,
 	children,
 }) => {
-	const idString = useMemo(() => inputId || generateRandom.idString(), [inputId]);
+	const idString = useMemo(() => id || generateRandom.idString(), [id]);
 	const changeHandler = (event: SyntheticEvent) => {
 		if (disabled) return;
 
@@ -61,7 +64,7 @@ export const Checkbox: FC<CheckboxProps> = ({
 	};
 
 	return (
-		<CheckboxWrapper color={color}>
+		<CheckboxWrapper className={classNames(className)} color={color}>
 			<input
 				type="checkbox"
 				id={idString}

@@ -17,13 +17,7 @@ const StyleTemplate: ComponentStory<typeof Checkbox> = args => {
 	const [checked, setChecked] = useState(false);
 
 	return (
-		<Checkbox
-			{...args}
-			name="checkbox"
-			isChecked={checked}
-			onChange={() => setChecked(!checked)}
-			color="blue"
-		>
+		<Checkbox {...args} name="checkbox" isChecked={checked} onChange={() => setChecked(!checked)}>
 			체크박스
 		</Checkbox>
 	);
