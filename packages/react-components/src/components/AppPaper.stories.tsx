@@ -20,7 +20,9 @@ export default {
 	],
 } as ComponentMeta<typeof AppPaper>;
 
-const Template: ComponentStory<typeof AppPaper> = args => <AppPaper {...args} />;
+const Template: ComponentStory<typeof AppPaper> = args => (
+	<AppPaper {...args}>애플리케이션</AppPaper>
+);
 
 export const Default = Template.bind({});
 Default.args = {
