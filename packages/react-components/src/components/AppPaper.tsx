@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 import { FC } from 'react';
 
-import { GlobalStyles } from '../utils';
 import { ThemeType } from '../types';
 import { ThemeProvider } from '../utils';
 import { themeMixin } from '../mixins';
@@ -26,7 +25,6 @@ const Paper = styled.div`
 export const AppPaper: FC<AppPaperProps> = ({ externalTheme, children }) => {
 	return (
 		<ThemeProvider externalTheme={externalTheme}>
-			<GlobalStyles />
 			<Paper>{children}</Paper>
 		</ThemeProvider>
 	);

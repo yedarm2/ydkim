@@ -1,9 +1,10 @@
 import '@ydkim/styles';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
-import { ThemeProvider } from '../src/utils';
+
+import { ThemeProvider } from 'emotion-theming';
 
 import { colors, themes } from '../src/variables';
-import { ThemeProvider as StorybookThemeProvider } from 'emotion-theming';
+import { AppPaper } from '../src/components';
 
 export const parameters = {
 	actions: { argTypesRegex: '^on[A-Z].*' },
@@ -40,9 +41,11 @@ const withThemeProvider = (Story, context) => {
 	const theme = themes[context.globals.theme];
 
 	return (
-		<StorybookThemeProvider theme={theme}>
-			<Story {...context} />
-		</StorybookThemeProvider>
+		<ThemeProvider theme={theme}>
+			<AppPaper>
+				<Story {...context} />
+			</AppPaper>
+		</ThemeProvider>
 	);
 };
 
