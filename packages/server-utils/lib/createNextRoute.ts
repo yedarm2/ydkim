@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
+import { json, notFound, error as serverError } from './nextApiResponse';
 
 type RequestMethods = 'GET' | 'POST' | 'HEAD' | 'PUT' | 'DELETE' | 'PATCH' | 'OPTIONS';
 
@@ -24,12 +25,12 @@ export const createNextRoute = (routesByMethods: RoutesByMethods) => {
 			if (route) {
 				const { data, meta } = await route(req, res);
 
-				res.status(200).json({ data, meta });
+				json(res, { data, meta });
 			} else {
-				res.status(404);
+				notFound(res);
 			}
 		} catch (error) {
-			console.log('route 에러 발생', error);
+			serverError(res, { error });
 			throw error;
 		}
 	};
