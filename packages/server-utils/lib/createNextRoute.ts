@@ -1,12 +1,12 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { json, notFound, error as serverError } from './nextApiResponse';
+import { end, json, notFound, error as serverError } from './nextApiResponse';
 
 type RequestMethods = 'GET' | 'POST' | 'HEAD' | 'PUT' | 'DELETE' | 'PATCH' | 'OPTIONS';
 
 type NextRouteResult = {
 	data: any;
 	meta?: any;
-};
+} | void;
 
 type NextRoute = (
 	req: NextApiRequest,
@@ -23,15 +23,20 @@ export const createNextRoute = (routesByMethods: RoutesByMethods) => {
 			const route = routesByMethods[req.method.toLowerCase()] as NextRoute;
 
 			if (route) {
-				const { data, meta } = await route(req, res);
+				const result = await route(req, res);
 
-				json(res, { data, meta });
+				if (!result) {
+					return end(res);
+				}
+				const { data, meta } = result;
+
+				return json(res, { data, meta });
 			} else {
-				notFound(res);
+				return notFound(res);
 			}
 		} catch (error) {
-			serverError(res, { error });
-			throw error;
+			console.log('오류 발생', error);
+			return serverError(res, { error });
 		}
 	};
 };

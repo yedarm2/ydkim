@@ -1,19 +1,18 @@
 import { NextApiResponse } from 'next';
 
+export const end = (res: NextApiResponse, status: number = 200) => {
+	res.status(status).end();
+};
+
 export const json = (
 	res: NextApiResponse,
 	{ data, meta, status = 200 }: { data: any; meta: any; status?: number },
-) => {
-	res.status(status).json({ data, meta });
-};
+) => res.status(status).json({ data, meta });
 
-export const notFound = (res: NextApiResponse) => {
+export const notFound = (res: NextApiResponse) =>
 	error(res, { status: 404, error: '404 Not Found' });
-};
 
 export const error = (
 	res: NextApiResponse,
 	{ status = 500, error }: { status?: number; error: any },
-) => {
-	res.status(status).json({ error });
-};
+) => res.status(status).json({ error });

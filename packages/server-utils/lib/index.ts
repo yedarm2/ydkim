@@ -1,4 +1,5 @@
 import * as nextApiResponse from './nextApiResponse';
 
-export * from './createNextRoute';
 export { nextApiResponse };
+export * from './createNextRoute';
+export * from './firebase';
