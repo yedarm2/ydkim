@@ -21002,18 +21002,7 @@ sanitize.css@*, sanitize.css@13.0.0:
   resolved "https://registry.yarnpkg.com/sanitize.css/-/sanitize.css-13.0.0.tgz#2675553974b27964c75562ade3bd85d79879f173"
   integrity sha512-ZRwKbh/eQ6w9vmTjkuG0Ioi3HBwPFce0O+v//ve+aOq1oeCy7jMV2qzzAlpsNuqpqCBjjriM1lbtZbF/Q8jVyA==
 
-sass-loader@10.1.1:
-  version "10.1.1"
-  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-10.1.1.tgz#4ddd5a3d7638e7949065dd6e9c7c04037f7e663d"
-  integrity sha512-W6gVDXAd5hR/WHsPicvZdjAWHBcEJ44UahgxcIE196fW2ong0ZHMPO1kZuI5q0VlvMQZh32gpv69PLWQm70qrw==
-  dependencies:
-    klona "^2.0.4"
-    loader-utils "^2.0.0"
-    neo-async "^2.6.2"
-    schema-utils "^3.0.0"
-    semver "^7.3.2"
-
-sass-loader@^12.3.0:
+sass-loader@12.5.0, sass-loader@^12.3.0:
   version "12.5.0"
   resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-12.5.0.tgz#8010243734ade76371db8ba3df3cb40295f2b81c"
   integrity sha512-POCQch5T2PFYOaHGJJgPoVaxJ76Ks+OIqKsDv2ErD53HE/WdPRehkVqdc5Qbt2fD2iGmgIRILDgQGbSHjmPrCA==
