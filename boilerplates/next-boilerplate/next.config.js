@@ -6,9 +6,12 @@ const withTM = require('next-transpile-modules')([
 	'@ydkim/server-utils',
 	'@ydkim/utils',
 ]);
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+	enabled: process.env.ANALYZE === 'true',
+});
 const withImages = require('next-images');
 
-module.exports = withPlugins([withTM(), withImages], {
+module.exports = withPlugins([withTM(), withImages, withBundleAnalyzer], {
 	async redirects() {
 		return [
 			{
