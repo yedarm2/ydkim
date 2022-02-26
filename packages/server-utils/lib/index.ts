@@ -1,5 +1,3 @@
-import * as nextApiResponse from './nextApiResponse';
-
-export { nextApiResponse };
+export * as nextApiResponse from './nextApiResponse';
 export * from './createNextRoute';
 export * from './firebase';
