@@ -303,6 +303,8 @@ module.exports = {
 		'vue/no-v-text': 'error',
 		'vue/component-options-name-casing': ['error', 'PascalCase'],
 		'vue/prefer-separate-static-class': 'error',
+		'vue/prefer-true-attribute-shorthand': 'error',
+		'vue/prefer-import-from-vue': 'error',
 		'import/no-anonymous-default-export': [
 			2,
 			{
