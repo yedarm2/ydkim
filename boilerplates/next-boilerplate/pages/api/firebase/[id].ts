@@ -1,12 +1,32 @@
-import { createNextRoute } from '@ydkim/server-utils';
+import { createNextRouteWithContext } from '@ydkim/server-utils';
 import { personFireStoreDAO } from '../../../server/dao';
 
-export default createNextRoute({
-	async get(req, res) {
-		const person = await personFireStoreDAO.selectById(Number(req.query.id));
-
+export default createNextRouteWithContext({
+	getContext(req) {
 		return {
-			data: person,
+			personId: Number(req.query.id),
 		};
+	},
+
+	methods: {
+		async get(req, res, { personId }) {
+			const person = await personFireStoreDAO.selectById(personId);
+
+			return {
+				data: person,
+			};
+		},
+
+		async patch(req, res, { personId }) {
+			const params = req.body || {};
+			await personFireStoreDAO.update(personId, {
+				name: params.name,
+				age: params.age && Number(params.age),
+			});
+		},
+
+		async delete(req, res, { personId }) {
+			await personFireStoreDAO.delete(personId);
+		},
 	},
 });

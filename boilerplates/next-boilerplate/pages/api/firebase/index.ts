@@ -1,5 +1,5 @@
 import { createNextRoute } from '@ydkim/server-utils';
-import { personFireStoreDAO } from '../../server/dao';
+import { personFireStoreDAO } from '../../../server/dao';
 
 export default createNextRoute({
 	async get(req, res) {
