@@ -3,27 +3,28 @@ import { end, json, notFound, error as serverError } from './nextApiResponse';
 
 type RequestMethods = 'GET' | 'POST' | 'HEAD' | 'PUT' | 'DELETE' | 'PATCH' | 'OPTIONS';
 
-type NextRouteResult = {
+type CustomNextRouteResult = {
 	data: any;
 	meta?: any;
 } | void;
 
-type NextRoute = (
+type CustomNextRoute<Context = any> = (
 	req: NextApiRequest,
 	res: NextApiResponse,
-) => NextRouteResult | Promise<NextRouteResult>;
+	context?: Context,
+) => CustomNextRouteResult | Promise<CustomNextRouteResult>;
 
-type RoutesByMethods = {
-	[method in Lowercase<RequestMethods>]?: NextRoute;
+type RoutesByMethods<Context = any> = {
+	[method in Lowercase<RequestMethods>]?: CustomNextRoute<Context>;
 };
 
-export const createNextRoute = (routesByMethods: RoutesByMethods) => {
-	return async (req: NextApiRequest, res: NextApiResponse) => {
+export const createNextRoute = (processors: RoutesByMethods) => {
+	return async (req: NextApiRequest, res: NextApiResponse, context?: any) => {
 		try {
-			const route = routesByMethods[req.method.toLowerCase()] as NextRoute;
+			const route = processors[req.method.toLowerCase()] as CustomNextRoute;
 
 			if (route) {
-				const result = await route(req, res);
+				const result = await route(req, res, context);
 
 				if (!result) {
 					return end(res);
@@ -35,9 +36,31 @@ export const createNextRoute = (routesByMethods: RoutesByMethods) => {
 				return notFound(res);
 			}
 		} catch (error) {
-			console.log('오류 발생', error);
 			return serverError(res, { error });
 		}
+	};
+};
+
+// * 타입 지원이 엉망이다. 고치고 싶다...
+export const createNextRouteWithContext = <Context = any>({
+	methods,
+	getContext,
+}: {
+	methods: RoutesByMethods<Context>;
+	getContext: (req: NextApiRequest, res: NextApiResponse) => Context | Promise<Context>;
+}) => {
+	const route = createNextRoute(methods);
+
+	return async (req: NextApiRequest, res: NextApiResponse) => {
+		let context: Context;
+
+		try {
+			context = await getContext(req, res);
+		} catch (error) {
+			return serverError(res, { error });
+		}
+
+		return route(req, res, context);
 	};
 };
 
