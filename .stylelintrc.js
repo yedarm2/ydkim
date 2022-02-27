@@ -32,7 +32,7 @@ module.exports = {
 		],
 		'declaration-no-important': true,
 		'selector-max-universal': 0, // * *셀렉터를 완전히 금지시킨다.
-		'selector-max-type': 0, // * html tag 셀렉터를 완전히 금지시킨다.
+		'selector-max-type': 1, // * html tag 셀렉터를 완전히 금지시킨다.
 		'selector-no-vendor-prefix': true,
 		'selector-pseudo-element-colon-notation': 'double',
 		'media-feature-name-no-vendor-prefix': true,
@@ -160,7 +160,7 @@ module.exports = {
 		'scss/dollar-variable-pattern': null,
 
 		// * 14 이후에 추가된 규칙들 13으로 다운그레이드 후에 문제 없을지 확인이 필요.
-		'custom-property-no-missing-var-function': true,
-		'function-calc-no-unspaced-operator': true,
+		// 'custom-property-no-missing-var-function': true,
+		// 'function-calc-no-unspaced-operator': true,
 	},
 };
