@@ -7,12 +7,9 @@
 	"bugs": {
 		"url": "https://github.com/YedramKim/ydkim/issues"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/YedramKim/ydkim.git"
-	},
+	"repository": "git+https://github.com/YedramKim/ydkim.git",
 	"license": "ISC",
-	"author": "",
+	"author": "yedarm778 <jjkg2000k@naver.com>",
 	"workspaces": {
 		"packages": [
 			"packages/*",
@@ -41,5 +38,6 @@
 	},
 	"devDependencies": {
 		"lerna": "4.0.0"
-	}
+	},
+	"main": "index.js"
 }
