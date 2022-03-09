@@ -165,18 +165,20 @@ export class FireStoreDAO<Data extends object, Record = RecordOf<Data>> {
 		for (const queryDocumentSnapshot of querySnapshot.docs) {
 			const data = queryDocumentSnapshot.data() as Data;
 			const ref = queryDocumentSnapshot.ref;
+			let valuesToUpdate = typeof arg2 === 'function' ? arg2(data) : arg2;
+			valuesToUpdate = Object.keys(valuesToUpdate).reduce((valuesToUpdate, key) => {
+				const value = arg2[key];
+				if (value !== undefined && value !== null) {
+					valuesToUpdate[key] = value;
+				}
 
-			if (typeof arg2 === 'function') {
-				batch.update(ref, {
-					...arg2(data),
-					updatedAt: now,
-				});
-			} else {
-				batch.update(ref, {
-					...arg2,
-					updatedAt: now,
-				});
-			}
+				return valuesToUpdate;
+			}, {});
+
+			batch.update(ref, {
+				...valuesToUpdate,
+				updatedAt: now,
+			});
 		}
 
 		await batch.commit();

@@ -1,32 +1,31 @@
-import { createNextRouteWithContext } from '@ydkim/server-utils';
+import { createNextRoute } from '@ydkim/server-utils';
 import { personFireStoreDAO } from '../../../server/dao';
 
-export default createNextRouteWithContext({
-	getContext(req) {
+const getPersonContext = req => ({
+	personId: Number(req.query.id),
+});
+
+export default createNextRoute({
+	async get(req, res) {
+		const { personId } = getPersonContext(req);
+		const person = await personFireStoreDAO.selectById(personId);
+
 		return {
-			personId: Number(req.query.id),
+			data: person,
 		};
 	},
 
-	methods: {
-		async get(req, res, { personId }) {
-			const person = await personFireStoreDAO.selectById(personId);
+	async patch(req, res) {
+		const { personId } = getPersonContext(req);
+		const params = req.body || {};
+		await personFireStoreDAO.update(personId, {
+			name: params.name,
+			age: params.age && Number(params.age),
+		});
+	},
 
-			return {
-				data: person,
-			};
-		},
-
-		async patch(req, res, { personId }) {
-			const params = req.body || {};
-			await personFireStoreDAO.update(personId, {
-				name: params.name,
-				age: params.age && Number(params.age),
-			});
-		},
-
-		async delete(req, res, { personId }) {
-			await personFireStoreDAO.delete(personId);
-		},
+	async delete(req, res) {
+		const { personId } = getPersonContext(req);
+		await personFireStoreDAO.delete(personId);
 	},
 });

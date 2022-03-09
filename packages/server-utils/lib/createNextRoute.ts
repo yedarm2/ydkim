@@ -41,27 +41,4 @@ export const createNextRoute = (processors: RoutesByMethods) => {
 	};
 };
 
-// * 타입 지원이 엉망이다. 고치고 싶다...
-export const createNextRouteWithContext = <Context = any>({
-	methods,
-	getContext,
-}: {
-	methods: RoutesByMethods<Context>;
-	getContext: (req: NextApiRequest, res: NextApiResponse) => Context | Promise<Context>;
-}) => {
-	const route = createNextRoute(methods);
-
-	return async (req: NextApiRequest, res: NextApiResponse) => {
-		let context: Context;
-
-		try {
-			context = await getContext(req, res);
-		} catch (error) {
-			return serverError(res, { error });
-		}
-
-		return route(req, res, context);
-	};
-};
-
 createNextRoute({});
