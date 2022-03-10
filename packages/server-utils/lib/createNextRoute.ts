@@ -8,23 +8,22 @@ type CustomNextRouteResult = {
 	meta?: any;
 } | void;
 
-type CustomNextRoute<Context = any> = (
+type CustomNextRoute = (
 	req: NextApiRequest,
 	res: NextApiResponse,
-	context?: Context,
 ) => CustomNextRouteResult | Promise<CustomNextRouteResult>;
 
-type RoutesByMethods<Context = any> = {
-	[method in Lowercase<RequestMethods>]?: CustomNextRoute<Context>;
+type RoutesByMethods = {
+	[method in Lowercase<RequestMethods>]?: CustomNextRoute;
 };
 
 export const createNextRoute = (processors: RoutesByMethods) => {
-	return async (req: NextApiRequest, res: NextApiResponse, context?: any) => {
+	return async (req: NextApiRequest, res: NextApiResponse) => {
 		try {
-			const route = processors[req.method.toLowerCase()] as CustomNextRoute;
+			const route = processors[req.method.toLowerCase() as Lowercase<RequestMethods>];
 
 			if (route) {
-				const result = await route(req, res, context);
+				const result = await route(req, res);
 
 				if (!result) {
 					return end(res);
