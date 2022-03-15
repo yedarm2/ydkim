@@ -96,49 +96,39 @@ export class FireStoreDAO<Data extends object, Record = RecordOf<Data>> {
 			: [];
 	}
 
-	private async processQuery(queryParam: QueryParam<Data>) {
+	private async getQuery(queryParam: QueryParam<Data>) {
 		const query =
 			typeof queryParam === 'number'
 				? this.collection.where('id', '==', queryParam)
 				: isQueryOption<Data>(queryParam)
-				? await this.processQueryOption(queryParam as QueryOptionOf<Data>)
+				? await this.selectQuery(queryParam as QueryOptionOf<Data>)
 				: queryParam;
 
-		return query.get();
+		return query;
 	}
 
-	private async processQueryOption(queryOption: QueryOptionOf<Data>) {
+	private async selectQuery(queryOption: QueryOptionOf<Data>) {
 		let query: Query = null;
 
 		if (queryOption.where) {
 			for (const [field, operation, value] of queryOption.where) {
-				query = (query ? query : this.collection).where(field, operation, value);
+				query = query.where(field, operation, value);
 			}
 		}
 
 		query = query.where('removedAt', '<', '\uf8ff');
 
-		if (queryOption.order) {
-			for (const [field, direction] of queryOption.order) {
-				query = (query ? query : this.collection).orderBy(field, direction);
+		return query;
+	}
+
+	private orderQuery(query: Query, orderSchema?: OrderSchemaOf<Data>) {
+		if (orderSchema) {
+			for (const [field, direction] of orderSchema) {
+				query = query.orderBy(field, direction);
 			}
 		} else {
-			query = (query ? query : this.collection).orderBy('id', 'desc');
+			query = query.orderBy('id', 'desc');
 		}
-
-		if (queryOption.limit) {
-			let limit = queryOption.limit;
-
-			if (queryOption.offset) {
-				limit = limit > 0 ? limit + queryOption.offset : limit - queryOption.offset;
-			}
-
-			query =
-				limit > 0
-					? (query ? query : this.collection).limit(limit)
-					: (query ? query : this.collection).limitToLast(limit);
-		}
-
 		return query;
 	}
 
@@ -146,9 +136,29 @@ export class FireStoreDAO<Data extends object, Record = RecordOf<Data>> {
 	select(query: Query): Promise<Data[]>;
 	select(queryOption: QueryOptionOf<Data>): Promise<Data[]>;
 	async select(arg1: QueryParam<Data>) {
-		const querySnapshot = await this.processQuery(arg1);
+		let query = await this.getQuery(arg1);
+		query = this.orderQuery(query);
+		const querySnapshot = await query.get();
 
-		return querySnapshot.docs.map(queryDocumentSnapshot => queryDocumentSnapshot.data() as Data);
+		if (isQueryOption<Data>(arg1)) {
+			const { limit, offset } = arg1;
+
+			if (limit) {
+				const limitCount = Math.abs(limit) + (offset ?? 0);
+				query = limit > 0 ? query.limit(limitCount) : query.limitToLast(limitCount);
+			}
+		}
+
+		let queryResult = querySnapshot.docs.map(
+			queryDocumentSnapshot => queryDocumentSnapshot.data() as Data,
+		);
+
+		if (isQueryOption<Data>(arg1)) {
+			const { offset } = arg1;
+			queryResult = offset > 0 ? queryResult.slice(offset) : queryResult;
+		}
+
+		return queryResult;
 	}
 
 	update(id: number, arg2: Partial<Data>): Promise<number[]>;
@@ -158,7 +168,8 @@ export class FireStoreDAO<Data extends object, Record = RecordOf<Data>> {
 	update(queryOption: QueryOptionOf<Data>, arg2: Partial<Data>): Promise<number[]>;
 	update(queryOption: QueryOptionOf<Data>, arg2: (data: Data) => Partial<Data>): Promise<number[]>;
 	async update(arg1: QueryParam<Data>, arg2: Partial<Data> | ((data: Data) => Partial<Data>)) {
-		const querySnapshot = await this.processQuery(arg1);
+		const query = await this.getQuery(arg1);
+		const querySnapshot = await query.get();
 		const now = new Date().toISOString();
 		const batch = this.database.batch();
 
@@ -190,7 +201,8 @@ export class FireStoreDAO<Data extends object, Record = RecordOf<Data>> {
 	delete(query: Query): Promise<number[]>;
 	delete(queryOption: QueryOptionOf<Data>): Promise<number[]>;
 	async delete(arg1: QueryParam<Data>) {
-		const querySnapshot = await this.processQuery(arg1);
+		const query = await this.getQuery(arg1);
+		const querySnapshot = await query.get();
 		const now = new Date().toISOString();
 		const batch = this.database.batch();
 
