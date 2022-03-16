@@ -51,49 +51,13 @@ export class FireStoreDAO<Data extends object, Record = RecordOf<Data>> {
 		this.idDocument = database.collection(ID_STORE_DOCUMENT_PATH).doc(collectionPath);
 	}
 
-	protected async getIdToCreate() {
+	private async getIdToCreate() {
 		const idSnapshot = await this.idDocument.get();
 		const id = idSnapshot.exists && idSnapshot.data().id ? (idSnapshot.data().id as number) : 0;
 
 		const idToUpdate = id + 1;
 		await this.idDocument.set({ id: idToUpdate });
 		return id;
-	}
-
-	async create(data: Data) {
-		const newId = await this.getIdToCreate();
-		const now = new Date().toISOString();
-		const dataToCreate = {
-			id: newId,
-			...data,
-			createdAt: now,
-			updatedAt: now,
-			removedAt: null as string,
-		};
-
-		await this.collection.add(dataToCreate);
-
-		return dataToCreate as unknown as Record;
-	}
-
-	async selectById(id: number) {
-		const querySnapshot = await this.collection
-			.where('removedAt', '==', null)
-			.where('id', '==', id)
-			.get();
-
-		return querySnapshot.empty ? null : (querySnapshot.docs[0].data() as Record);
-	}
-
-	async selectAll() {
-		const querySnapshot = await this.collection
-			.where('removedAt', '==', null)
-			.orderBy('id', 'desc')
-			.get();
-
-		return !querySnapshot.empty
-			? querySnapshot.docs.map(document => document.data() as Record)
-			: [];
 	}
 
 	private async getQuery(queryParam: QueryParam<Data>) {
@@ -130,6 +94,42 @@ export class FireStoreDAO<Data extends object, Record = RecordOf<Data>> {
 			query = query.orderBy('id', 'desc');
 		}
 		return query;
+	}
+
+	async create(data: Data) {
+		const newId = await this.getIdToCreate();
+		const now = new Date().toISOString();
+		const dataToCreate = {
+			id: newId,
+			...data,
+			createdAt: now,
+			updatedAt: now,
+			removedAt: null as string,
+		};
+
+		await this.collection.add(dataToCreate);
+
+		return dataToCreate as unknown as Record;
+	}
+
+	async selectById(id: number) {
+		const querySnapshot = await this.collection
+			.where('removedAt', '==', null)
+			.where('id', '==', id)
+			.get();
+
+		return querySnapshot.empty ? null : (querySnapshot.docs[0].data() as Record);
+	}
+
+	async selectAll() {
+		const querySnapshot = await this.collection
+			.where('removedAt', '==', null)
+			.orderBy('id', 'desc')
+			.get();
+
+		return !querySnapshot.empty
+			? querySnapshot.docs.map(document => document.data() as Record)
+			: [];
 	}
 
 	select(id: number): Promise<Data[]>;
@@ -216,5 +216,9 @@ export class FireStoreDAO<Data extends object, Record = RecordOf<Data>> {
 		await batch.commit();
 
 		return querySnapshot.docs.map(queryDocumentSnapshot => queryDocumentSnapshot.data().id);
+	}
+
+	getCollection() {
+		return this.collection;
 	}
 }
