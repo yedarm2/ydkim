@@ -112,7 +112,7 @@ export class FireStoreDAO<Data extends object, Record = RecordOf<Data>> {
 
 		if (queryOption.where) {
 			for (const [field, operation, value] of queryOption.where) {
-				query = query.where(field, operation, value);
+				query = (query || this.collection).where(field, operation, value);
 			}
 		}
 
