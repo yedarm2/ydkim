@@ -12,13 +12,8 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const withImages = require('next-images');
 
 module.exports = withPlugins([withTM(), withImages, withBundleAnalyzer], {
-	async redirects() {
-		return [
-			{
-				source: '/',
-				destination: '/counter',
-				permanent: true,
-			},
-		];
+	reactStrictMode: true,
+	experimental: {
+		emotion: true,
 	},
 });
