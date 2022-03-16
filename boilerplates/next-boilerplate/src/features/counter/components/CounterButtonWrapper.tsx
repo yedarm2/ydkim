@@ -1,5 +1,5 @@
 import { FC, memo } from 'react';
-import { useCounterDispatch } from '../../hooks';
+import { useCounterDispatch } from '../hooks';
 import { CounterButton, Wrapper } from './CounterButtonWrapper.style';
 
 const CounterButtonWrapper: FC = () => {
