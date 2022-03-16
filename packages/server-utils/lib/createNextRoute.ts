@@ -35,6 +35,10 @@ export const createNextRoute = (processors: RoutesByMethods) => {
 				return notFound(res);
 			}
 		} catch (error) {
+			if (process.env.NODE_ENV !== 'production') {
+				console.log('router Error');
+				console.error(error);
+			}
 			return serverError(res, { error });
 		}
 	};
