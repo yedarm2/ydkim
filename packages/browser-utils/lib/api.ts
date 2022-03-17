@@ -11,7 +11,7 @@ const api = async <Data, Meta = any>({
 }) => {
 	const response: AxiosResponse<{ data: Data; meta: Meta }> = await axios(url, {
 		method,
-		params,
+		[method === 'GET' ? 'params' : 'data']: params,
 	});
 
 	return response.data;
@@ -23,7 +23,7 @@ export const initializeApi = (config: Partial<AxiosDefaults>) => {
 	}
 };
 
-export const get = <Data, Meta = any>(url: string, params: any) => {
+export const get = <Data, Meta = any>(url: string, params?: any) => {
 	return api<Data, Meta>({
 		url,
 		method: 'GET',
@@ -31,7 +31,7 @@ export const get = <Data, Meta = any>(url: string, params: any) => {
 	});
 };
 
-export const post = <Data, Meta = any>(url: string, params: any) => {
+export const post = <Data, Meta = any>(url: string, params?: any) => {
 	return api<Data, Meta>({
 		url,
 		method: 'POST',
@@ -39,7 +39,7 @@ export const post = <Data, Meta = any>(url: string, params: any) => {
 	});
 };
 
-export const put = <Data, Meta = any>(url: string, params: any) => {
+export const put = <Data, Meta = any>(url: string, params?: any) => {
 	return api<Data, Meta>({
 		url,
 		method: 'PUT',
@@ -48,7 +48,7 @@ export const put = <Data, Meta = any>(url: string, params: any) => {
 };
 
 // * delete는 변수 이름으로 지정할 수 없어서... ㅠㅠ
-export const apiDelete = <Data, Meta = any>(url: string, params: any) => {
+export const apiDelete = <Data, Meta = any>(url: string, params?: any) => {
 	return api<Data, Meta>({
 		url,
 		method: 'DELETE',
