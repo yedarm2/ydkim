@@ -1,8 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
+import createSagaMiddleware from 'redux-saga';
+import { all } from 'redux-saga/effects';
 
-import counterReducer from '../features/counter/store/counterSlice';
+import counterReducer, { counterSaga } from '../features/counter/store/counterSlice';
 import { pokemonApi } from '../features/pokemon/store/pokemonQueries';
+
+const sagaMiddleware = createSagaMiddleware();
 
 export const store = configureStore({
 	reducer: {
@@ -10,7 +14,7 @@ export const store = configureStore({
 		[pokemonApi.reducerPath]: pokemonApi.reducer,
 	},
 	middleware: getDefaultMiddleware => {
-		let middlewares = getDefaultMiddleware().concat(pokemonApi.middleware);
+		let middlewares = getDefaultMiddleware().concat([pokemonApi.middleware, sagaMiddleware]);
 
 		if (process.env.NODE_ENV !== 'production') {
 			middlewares = middlewares.concat(logger);
@@ -18,6 +22,10 @@ export const store = configureStore({
 
 		return middlewares;
 	},
+});
+
+sagaMiddleware.run(function* () {
+	yield all([counterSaga()]);
 });
 
 export type RootState = ReturnType<typeof store.getState>;
