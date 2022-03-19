@@ -1,14 +1,15 @@
 import '../src/styles/scss/global.scss';
+
 import type { AppProps } from 'next/app';
-import { FC } from 'react';
-import StoreProvider from 'src/features/common/components/StoreProvider';
+import type { FC } from 'react';
+import { storeWrapper } from '../src/store';
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
 	return (
-		<StoreProvider>
+		<>
 			<Component {...pageProps} />
-		</StoreProvider>
+		</>
 	);
 };
 
-export default MyApp;
+export default storeWrapper.withRedux(MyApp);
