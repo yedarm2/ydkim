@@ -1,6 +1,10 @@
 import { useEffect } from 'react';
+
 import { useAppDispatch, useAppSelector } from '../../common/hooks';
 import { increment, decrement, load } from '../store/counterSlice';
+
+import { useQuery, useQueryClient, useMutation } from 'react-query';
+import { getCount, sendCount } from '../services/api';
 
 export const useLoadCount = () => {
 	const dispatch = useAppDispatch();
@@ -24,5 +28,27 @@ export const useCounterDispatch = () => {
 	return {
 		increment: () => dispatch(increment()),
 		decrement: () => dispatch(decrement()),
+	};
+};
+
+export const useCounterState = () => {
+	return useQuery('counter', () => getCount().then(result => result.data), {
+		cacheTime: 1000 * 60 * 5,
+	});
+};
+
+export const useCounterMutations = () => {
+	const { data: counter } = useCounterState();
+
+	const queryClient = useQueryClient();
+	const mutateCount = useMutation(sendCount, {
+		onSuccess() {
+			queryClient.invalidateQueries('counter');
+		},
+	});
+
+	return {
+		increment: () => mutateCount.mutate(counter + 1),
+		decrement: () => mutateCount.mutate(counter - 1),
 	};
 };

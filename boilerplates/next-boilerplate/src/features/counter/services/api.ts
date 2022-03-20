@@ -1,7 +1,7 @@
 import { api } from '@ydkim/browser-utils';
 
 export const getCount = () => {
-	return api.get<{ data: number }>('/api/counter');
+	return api.get<number>('/api/counter');
 };
 
 export const sendCount = (count: number) => {

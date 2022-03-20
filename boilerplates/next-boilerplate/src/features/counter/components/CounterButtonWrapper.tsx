@@ -1,10 +1,10 @@
 import { FC, memo } from 'react';
-import { useCounterDispatch, useCounterServerLoading } from '../hooks';
+import { useCounterMutations, useCounterState } from '../hooks';
 import { CounterButton, Wrapper } from './CounterButtonWrapper.style';
 
 const CounterButtonWrapper: FC = () => {
-	const { increment, decrement } = useCounterDispatch();
-	const isLoading = useCounterServerLoading();
+	const { isLoading } = useCounterState();
+	const { increment, decrement } = useCounterMutations();
 
 	return (
 		<Wrapper>

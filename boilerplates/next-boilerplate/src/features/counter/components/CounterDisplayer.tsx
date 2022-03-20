@@ -1,12 +1,11 @@
 import { FC, memo } from 'react';
-import { useCounter, useCounterServerLoading } from '../hooks';
+import { useCounterState } from '../hooks';
 import { NumberDisplayer } from './CounterDisplayer.style';
 
 const CounterDisplayer: FC = () => {
-	const counter = useCounter();
-	const isLoading = useCounterServerLoading();
+	const { data: counter, isLoading } = useCounterState();
 
-	return <NumberDisplayer>{!isLoading ? counter : '--'}</NumberDisplayer>;
+	return <NumberDisplayer>{!isLoading ? JSON.stringify(counter) : '--'}</NumberDisplayer>;
 };
 
 export default memo(CounterDisplayer);
