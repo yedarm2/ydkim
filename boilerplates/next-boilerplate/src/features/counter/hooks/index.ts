@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useAppDispatch, useAppSelector } from '../../../hooks';
+import { useAppDispatch, useAppSelector } from '../../common/hooks';
 import { increment, decrement, load } from '../store/counterSlice';
 
 export const useLoadCount = () => {

@@ -5,11 +5,6 @@ import { createWrapper, HYDRATE } from 'next-redux-wrapper';
 import { rootReducer, rootsaga } from './module';
 import { middlewares } from './middleware';
 
-export const store = configureStore({
-	reducer: rootReducer,
-	middleware: middlewares,
-});
-
 const makeStore = () => {
 	const sagaMiddleware = createSagaMiddleware();
 	const store = configureStore({

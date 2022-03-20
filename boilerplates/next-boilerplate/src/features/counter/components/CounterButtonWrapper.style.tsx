@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import Button from 'src/features/common/components/Button';
+import Button from '../../common/components/Button';
 
 export interface CounterButtonProps {}
 
