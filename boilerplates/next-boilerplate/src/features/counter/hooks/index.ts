@@ -33,7 +33,7 @@ export const useCounterDispatch = () => {
 
 export const useCounterState = () => {
 	return useQuery('counter', () => getCount().then(result => result.data), {
-		cacheTime: 1000 * 60 * 5,
+		staleTime: 1000 * 60,
 	});
 };
 
