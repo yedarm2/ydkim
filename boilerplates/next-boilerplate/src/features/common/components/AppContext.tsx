@@ -11,7 +11,16 @@ interface AppContextProps {
 }
 
 export const AppContext: FC<AppContextProps> = ({ dehydratedState, children }) => {
-	const [queryClient] = useState(() => new QueryClient());
+	const [queryClient] = useState(
+		() =>
+			new QueryClient({
+				defaultOptions: {
+					queries: {
+						staleTime: 1000 * 6,
+					},
+				},
+			}),
+	);
 
 	return (
 		<QueryClientProvider client={queryClient}>

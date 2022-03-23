@@ -32,9 +32,7 @@ export const useCounterDispatch = () => {
 };
 
 export const useCounterState = () => {
-	return useQuery('counter', () => getCount().then(result => result.data), {
-		staleTime: 1000 * 60,
-	});
+	return useQuery('counter', () => getCount().then(result => result.data));
 };
 
 export const useCounterMutations = () => {
