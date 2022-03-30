@@ -18,10 +18,6 @@ const withImages = require('next-images');
 
 const { withSentryConfig } = require('@sentry/nextjs');
 
-const moduleExports = {
-	// Your existing module.exports
-};
-
 const sentryWebpackPluginOptions = {
 	// Additional config options for the Sentry Webpack plugin. Keep in mind that
 	// the following options are set automatically, and overriding them is not
@@ -45,6 +41,10 @@ module.exports = withPlugins(
 		reactStrictMode: true,
 		experimental: {
 			emotion: true,
+		},
+		env: {
+			SENTRY_AUTH_TOKEN: process.env.SENTRY_AUTH_TOKEN,
+			SENTRY_DSN: process.env.SENTRY_DSN,
 		},
 	},
 );
