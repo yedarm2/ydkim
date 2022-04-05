@@ -43,5 +43,3 @@ export const createNextRoute = (processors: RoutesByMethods) => {
 		}
 	};
 };
-
-createNextRoute({});

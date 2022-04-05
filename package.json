@@ -10,6 +10,7 @@
 	"repository": "git+https://github.com/YedramKim/ydkim.git",
 	"license": "ISC",
 	"author": "yedarm778 <jjkg2000k@naver.com>",
+	"main": "index.js",
 	"workspaces": {
 		"packages": [
 			"packages/*",
@@ -38,6 +39,5 @@
 	},
 	"devDependencies": {
 		"lerna": "4.0.0"
-	},
-	"main": "index.js"
+	}
 }
