@@ -2,7 +2,8 @@ import { SyntheticEvent, FC, KeyboardEvent, PropsWithChildren, useMemo } from 'r
 import { FaRegSquare, FaCheckSquare } from 'react-icons/fa';
 import styled from '@emotion/styled';
 
-import { ClassnamesArgument, classNames, generateRandom } from '@ydkim/utils';
+import { generateRandom } from '@ydkim/utils';
+import { ClassnamesArgument, classNames } from '@ydkim/browser-utils';
 
 import { Color, colors } from '../variables';
 

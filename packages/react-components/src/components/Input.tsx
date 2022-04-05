@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { FC, FormEvent, HTMLInputTypeAttribute, useState } from 'react';
 import { css } from '@emotion/react';
 
-import { classNames, ClassnamesArgument } from '@ydkim/utils';
+import { ClassnamesArgument, classNames } from '@ydkim/browser-utils';
 import { Color, colors } from '../variables';
 import { ElementStyle } from '../types';
 

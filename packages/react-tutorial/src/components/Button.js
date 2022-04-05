@@ -1,5 +1,4 @@
-import React from 'react';
-import { classNames } from '@ydkim/utils';
+import { classNames } from '@ydkim/browser-utils';
 import './Button.scss';
 
 function Button({ children, size, color, outline, fullWidth, className, ...rest }) {
@@ -15,7 +14,8 @@ function Button({ children, size, color, outline, fullWidth, className, ...rest 
 				},
 				className,
 			)}
-			{...rest}>
+			{...rest}
+		>
 			{children}
 		</button>
 	);
