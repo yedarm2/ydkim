@@ -27,15 +27,17 @@
 		"deploy": "echo \"deploy\" && exit 1",
 		"lint": "echo \"Lint\" && exit 1",
 		"serve": "echo \"serve\" && exit 1",
-		"test": "echo \"Error: run tests from root\" && exit 1"
+		"test": "jest"
 	},
 	"dependencies": {
 		"@reduxjs/toolkit": "1.8.1",
 		"axios": "0.26.1",
 		"classnames": "2.3.1",
-		"redux-saga": "1.1.3"
+		"redux-saga": "1.1.3",
+		"ts-jest": "27.1.4"
 	},
 	"devDependencies": {
+		"@types/jest": "27.4.1",
 		"@typescript-eslint/eslint-plugin": "5.18.0",
 		"@typescript-eslint/parser": "5.18.0",
 		"babel-jest": "27.5.1",
