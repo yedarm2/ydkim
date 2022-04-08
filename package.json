@@ -24,10 +24,12 @@
 	"scripts": {
 		"build": "lerna run build",
 		"clean": "lerna run clean && rimraf yarn.lock && rimraf node_modules",
-		"force-install": "yarn clean; yarn install",
+		"deploy": "lerna run deploy",
+		"lint": "lerna run lint",
 		"ncu": "ncu && lerna exec --stream -- npx ncu",
+		"serve": "lerna run serve",
 		"sort-package-json": "sort-package-json && lerna exec -- npx sort-package-json",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "lerna run test"
 	},
 	"dependencies": {
 		"create-next-app": "12.1.4",

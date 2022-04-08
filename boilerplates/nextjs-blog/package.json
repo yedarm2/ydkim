@@ -5,8 +5,10 @@
 	"scripts": {
 		"build": "next build",
 		"clean": "npx rimraf node_modules && npx rimraf dist && npx rimraf .next",
+		"deploy": "echo \"deploy\" && exit 1",
 		"dev": "next dev",
 		"lint": "next lint",
+		"serve": "npm start",
 		"start": "next start",
 		"test": "echo \"Error: run tests from root\" && exit 1"
 	},

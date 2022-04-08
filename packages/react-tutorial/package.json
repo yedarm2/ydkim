@@ -5,7 +5,10 @@
 	"scripts": {
 		"build": "react-scripts build",
 		"clean": "npx rimraf node_modules && npx rimraf dist",
+		"deploy": "echo \"deploy\" && exit 1",
 		"eject": "react-scripts eject",
+		"lint": "echo \"lint\" && exit 1",
+		"serve": "npm start",
 		"start": "react-scripts start",
 		"test": "react-scripts test"
 	},
