@@ -15,6 +15,8 @@ const isSuccessResult = (result: any): result is { props: any } => {
 
 interface CustomGetServerSideProps<Props> {
 	(context: CustomGetServerSidePropsContext):
+		| void
+		| Promise<void>
 		| GetServerSidePropsResult<Props>
 		| Promise<GetServerSidePropsResult<Props>>;
 }
@@ -34,6 +36,11 @@ export const createGetServerSideProps = <Props>(
 			};
 
 			const getServerSidePropsResult = await getServerSideProps(customContext);
+			const dehydratedState = queryCache.getAll().length ? dehydrate(queryClient) : null;
+
+			if (!getServerSidePropsResult) {
+				return { props: dehydratedState ? { ...({} as Props), dehydratedState } : ({} as Props) };
+			}
 
 			if (!isSuccessResult(getServerSidePropsResult)) {
 				return getServerSidePropsResult;
@@ -42,9 +49,7 @@ export const createGetServerSideProps = <Props>(
 			const props = await getServerSidePropsResult.props;
 
 			return {
-				props: queryCache.getAll().length
-					? { ...props, dehydratedState: dehydrate(queryClient) }
-					: props,
+				props: dehydratedState ? { ...props, dehydratedState } : props,
 			};
 		} catch (error) {
 			return {
