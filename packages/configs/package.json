@@ -1,0 +1,36 @@
+{
+	"name": "@ydkim/configs",
+	"version": "0.0.0",
+	"description": "configs for ydkim monorepo",
+	"homepage": "https://github.com/YedramKim/ydkim/tree/main/packages/configs#readme",
+	"bugs": {
+		"url": "https://github.com/YedramKim/ydkim/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/YedramKim/ydkim.git"
+	},
+	"license": "MIT",
+	"author": "yedarm <oncoder@naver.com>",
+	"main": "lib/index.ts",
+	"directories": {
+		"lib": "lib",
+		"test": "__tests__"
+	},
+	"files": [
+		"lib"
+	],
+	"scripts": {
+		"build": "echo \"build\" && exit 1",
+		"clean": "npx rimraf node_modules && npx rimraf dist",
+		"deploy": "echo \"deploy\" && exit 1",
+		"lint": "echo \"Lint\" && exit 1",
+		"serve": "echo \"serve\" && exit 1",
+		"test": "echo \"Error: run tests from root\" && exit 1"
+	},
+	"dependencies": {},
+	"devDependencies": {},
+	"publishConfig": {
+		"registry": "https://registry.yarnpkg.com"
+	}
+}
