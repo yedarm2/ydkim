@@ -24,13 +24,13 @@
 		"build": "yarn run build-storybook",
 		"build-storybook": "build-storybook",
 		"clean": "npx rimraf node_modules && npx rimraf dist && npx rimraf storybook-static",
-		"deploy": "echo \"deploy\" && exit 1",
-		"lint": "echo \"Lint\" && exit 1",
+		"deploy": "echo \"deploy\"",
+		"lint": "echo \"Lint\"",
 		"lint:css": "npx stylelint \"**/*.{css|scss}\"",
 		"serve": "yarn run storybook",
 		"start": "yarn run serve",
 		"storybook": "start-storybook -p 6006 --no-open",
-		"test": "echo \"Error: run tests from root\" && exit 1"
+		"test": "echo \"Error: run tests from root\""
 	},
 	"dependencies": {
 		"@emotion/react": "11.9.0",

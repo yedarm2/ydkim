@@ -23,10 +23,10 @@
 	"scripts": {
 		"build": "tsc",
 		"clean": "npx rimraf node_modules && npx rimraf dist",
-		"deploy": "echo \"deploy\" && exit 1",
-		"lint": "echo \"lint\" && exit 1",
-		"serve": "echo \"serve\" && exit 1",
-		"test": "echo \"Error: run tests from root\" && exit 1"
+		"deploy": "echo \"deploy\"",
+		"lint": "echo \"lint\"",
+		"serve": "echo \"serve\"",
+		"test": "echo \"Error: run tests from root\""
 	},
 	"dependencies": {
 		"@types/node": "17.0.28"

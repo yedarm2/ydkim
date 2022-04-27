@@ -5,12 +5,12 @@
 	"scripts": {
 		"build": "next build",
 		"clean": "npx rimraf node_modules && npx rimraf dist && npx rimraf .next",
-		"deploy": "echo \"deploy\" && exit 1",
+		"deploy": "echo \"deploy\"",
 		"dev": "next dev",
 		"lint": "next lint",
 		"serve": "npm start",
 		"start": "next start",
-		"test": "echo \"Error: run tests from root\" && exit 1"
+		"test": "echo \"Error: run tests from root\""
 	},
 	"dependencies": {
 		"date-fns": "2.28.0",

@@ -5,7 +5,7 @@
 	"scripts": {
 		"build": "react-scripts build",
 		"clean": "npx rimraf node_modules && npx rimraf dist && npx rimraf .next",
-		"deploy": "echo \"deploy\" && exit 1",
+		"deploy": "echo \"deploy\"",
 		"eject": "react-scripts eject",
 		"lint": "echo \"no lint\"",
 		"serve": "npm start",

@@ -22,11 +22,11 @@
 		"lib"
 	],
 	"scripts": {
-		"build": "echo \"build\" && exit 1",
+		"build": "echo \"build\"",
 		"clean": "npx rimraf node_modules && npx rimraf dist",
-		"deploy": "echo \"deploy\" && exit 1",
-		"lint": "echo \"Lint\" && exit 1",
-		"serve": "echo \"serve\" && exit 1",
+		"deploy": "echo \"deploy\"",
+		"lint": "echo \"Lint\"",
+		"serve": "echo \"serve\"",
 		"test": "jest"
 	},
 	"dependencies": {

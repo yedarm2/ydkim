@@ -18,11 +18,11 @@
 		"build": "vue-cli-service build",
 		"build-storybook": "build-storybook -s public",
 		"clean": "npx rimraf node_modules && npx rimraf dist",
-		"deploy": "echo \"deploy\" && exit 1",
+		"deploy": "echo \"deploy\"",
 		"lint": "vue-cli-service lint",
 		"serve": "vue-cli-service serve",
 		"storybook": "start-storybook -p 6006 -s public",
-		"test": "npm run test:e2e; npm run test:unit",
+		"test": "echo \"npm run test:e2e; npm run test:unit\"",
 		"test:e2e": "vue-cli-service test:e2e",
 		"test:unit": "vue-cli-service test:unit"
 	},
