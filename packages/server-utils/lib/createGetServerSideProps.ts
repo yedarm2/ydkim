@@ -1,7 +1,7 @@
 import type { GetServerSideProps, GetServerSidePropsContext, GetServerSidePropsResult } from 'next';
 
-import isBot from 'isbot';
 import { QueryClient, dehydrate, DehydratedState } from 'react-query';
+import { isBotRequest } from './isBotRequest';
 
 interface CustomGetServerSidePropsContext extends GetServerSidePropsContext {
 	isBot: boolean;
@@ -26,12 +26,17 @@ export const createGetServerSideProps = <Props>(
 ): GetServerSideProps<(Props & { dehydratedState?: DehydratedState }) | { error: any }> => {
 	return async context => {
 		try {
-			const queryClient = new QueryClient();
+			const queryClient = new QueryClient({
+				defaultOptions: {
+					// * 테스트 환경에서는 cacheTime에 Infinity를 넣어야 할 필요가 있다.
+					queries: process.env.NODE_ENV === 'test' ? { cacheTime: Infinity } : undefined,
+				},
+			});
 			const queryCache = queryClient.getQueryCache();
 
 			const customContext: CustomGetServerSidePropsContext = {
 				...context,
-				isBot: isBot(context.req.headers['user-agent']),
+				isBot: isBotRequest(context.req.headers['user-agent']),
 				queryClient,
 			};
 
