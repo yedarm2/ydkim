@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { FC } from 'react';
+import { FC, PropsWithChildren } from 'react';
 
 import { ThemeType } from '../types';
 import { ThemeProvider } from '../utils';
@@ -22,7 +22,7 @@ const Paper = styled.div`
 	position: relative;
 `;
 
-export const AppPaper: FC<AppPaperProps> = ({ externalTheme, children }) => {
+export const AppPaper: FC<PropsWithChildren<AppPaperProps>> = ({ externalTheme, children }) => {
 	return (
 		<ThemeProvider externalTheme={externalTheme}>
 			<Paper>{children}</Paper>

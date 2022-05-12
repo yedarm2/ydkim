@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, PropsWithChildren } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -6,7 +6,7 @@ import Link from 'next/link';
 const name = '김예닮';
 export const siteTitle = 'Next.js Sample Website';
 
-const Layout: FC<{ home?: boolean }> = ({ children, home }) => {
+const Layout: FC<PropsWithChildren<{ home?: boolean }>> = ({ children, home }) => {
 	return (
 		<>
 			<div className="container">

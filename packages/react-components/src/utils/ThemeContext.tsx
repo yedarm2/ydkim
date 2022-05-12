@@ -1,4 +1,4 @@
-import { createContext, FC, useContext, useState } from 'react';
+import { createContext, FC, PropsWithChildren, useContext, useState } from 'react';
 import { ThemeProvider as EmotionThemeProvider, useTheme as useEmotionTheme } from '@emotion/react';
 
 import { ThemeType } from '../types';
@@ -12,7 +12,10 @@ interface ThemeProviderProps {
 
 const SetThemeContext = createContext<SetTheme>(null);
 
-export const ThemeProvider: FC<ThemeProviderProps> = ({ children, externalTheme }) => {
+export const ThemeProvider: FC<PropsWithChildren<ThemeProviderProps>> = ({
+	children,
+	externalTheme,
+}) => {
 	const [themeType, setTheme] = useState<ThemeType>('light');
 	const theme = themes[externalTheme || themeType];
 

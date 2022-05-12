@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { FC } from 'react';
+import { FC, PropsWithChildren } from 'react';
 
 const FlexWrapperStyle = styled.div`
 	display: flex;
@@ -32,7 +32,7 @@ interface FlexWrapperProps {
 	title: string;
 }
 
-export const FlexWrapper: FC<FlexWrapperProps> = ({ title, children }) => {
+export const FlexWrapper: FC<PropsWithChildren<FlexWrapperProps>> = ({ title, children }) => {
 	return (
 		<FlexWrapperStyle>
 			<div className="title">{title}</div>

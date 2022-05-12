@@ -1,9 +1,9 @@
-import { useState, useCallback, FC, createContext, useContext } from 'react';
+import { useState, useCallback, FC, createContext, useContext, PropsWithChildren } from 'react';
 
 export const CounterContext = createContext<number | null>(null);
 export const CounterDispatchContext = createContext<(number: number) => void | null>(null);
 
-export const CounterProvider: FC = ({ children }) => {
+export const CounterProvider: FC<PropsWithChildren<{}>> = ({ children }) => {
 	const [count, setCount] = useState(0);
 	const dispatch = useCallback((valueToAdd: number) => setCount(number => number + valueToAdd), []);
 

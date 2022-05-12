@@ -39,7 +39,7 @@ const CheckboxWrapper = styled.div<CheckboxStyleProps>`
 	}
 `;
 
-export const Checkbox: FC<CheckboxProps> = ({
+export const Checkbox: FC<PropsWithChildren<CheckboxProps>> = ({
 	isChecked,
 	name,
 	id,

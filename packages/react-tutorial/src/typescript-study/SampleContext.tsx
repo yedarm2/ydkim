@@ -1,4 +1,11 @@
-import React, { createContext, Dispatch, useContext, useReducer, FC } from 'react';
+import React, {
+	createContext,
+	Dispatch,
+	useContext,
+	useReducer,
+	FC,
+	PropsWithChildren,
+} from 'react';
 
 type Color = 'red' | 'orange' | 'yellow';
 
@@ -46,7 +53,7 @@ type SampleDispatch = Dispatch<Action>;
 const SampleStateContext = createContext<State>(null);
 const SampleDispatchContext = createContext<SampleDispatch>(null);
 
-export const SampleProvider: FC = ({ children }) => {
+export const SampleProvider: FC<PropsWithChildren<{}>> = ({ children }) => {
 	const [state, dispatch] = useReducer(reducer, {
 		count: 0,
 		text: 'hello',

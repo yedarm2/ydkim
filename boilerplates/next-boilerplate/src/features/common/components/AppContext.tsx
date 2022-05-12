@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import type { FC, PropsWithChildren } from 'react';
 
 import { useState } from 'react';
 import { QueryClient, QueryClientProvider, Hydrate } from 'react-query';
@@ -10,7 +10,10 @@ interface AppContextProps {
 	};
 }
 
-export const AppContext: FC<AppContextProps> = ({ dehydratedState, children }) => {
+export const AppContext: FC<PropsWithChildren<AppContextProps>> = ({
+	dehydratedState,
+	children,
+}) => {
 	const [queryClient] = useState(
 		() =>
 			new QueryClient({
