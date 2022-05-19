@@ -1,10 +1,9 @@
 import '@ydkim/styles';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
-import { ThemeProvider } from 'emotion-theming';
-
 import { colors, themes } from '../src/variables';
 import { AppPaper } from '../src/components';
+import { ThemeProvider } from '../src/utils';
 
 export const parameters = {
 	actions: { argTypesRegex: '^on[A-Z].*' },
@@ -38,10 +37,8 @@ export const globalTypes = {
 };
 
 const withThemeProvider = (Story, context) => {
-	const theme = themes[context.globals.theme];
-
 	return (
-		<ThemeProvider theme={theme}>
+		<ThemeProvider externalTheme={context.globals.theme}>
 			<AppPaper>
 				<Story {...context} />
 			</AppPaper>
