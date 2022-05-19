@@ -3391,19 +3391,19 @@
   resolved "https://registry.yarnpkg.com/@soda/get-current-script/-/get-current-script-1.0.2.tgz#a53515db25d8038374381b73af20bb4f2e508d87"
   integrity sha512-T7VNNlYVM1SgQ+VsMYhnDkcGmWhQdL0bDyGm5TlQ3GBXnJscEClUUOKduWTmm2zCnvNLC1hc3JpuXjs/nFOc5w==
 
-"@storybook/addon-a11y@6.5.0":
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-6.5.0.tgz#416ac9aa7c1243a841f9a55926d51f134161be91"
-  integrity sha512-Wf805e+oq/SQD4X2DD2tKSjdoiIJcJmmysJEQRyi/x2g1JJ9IM7jPs87YjAlzp7LD2UzgEKhahcy+ecPePEGBg==
+"@storybook/addon-a11y@6.5.3":
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-6.5.3.tgz#ea6267476372685e20188cf3be3f5a2f1807534c"
+  integrity sha512-tPZ9aBP1/y7HL8BalKXhs0chyi3D//JUVtXlKIwVS+VYAnFRTMI+f3I2GsgXvulkAEHZLtOwZRn7pWhO51J4ow==
   dependencies:
-    "@storybook/addons" "6.5.0"
-    "@storybook/api" "6.5.0"
-    "@storybook/channels" "6.5.0"
-    "@storybook/client-logger" "6.5.0"
-    "@storybook/components" "6.5.0"
-    "@storybook/core-events" "6.5.0"
+    "@storybook/addons" "6.5.3"
+    "@storybook/api" "6.5.3"
+    "@storybook/channels" "6.5.3"
+    "@storybook/client-logger" "6.5.3"
+    "@storybook/components" "6.5.3"
+    "@storybook/core-events" "6.5.3"
     "@storybook/csf" "0.0.2--canary.4566f4d.1"
-    "@storybook/theming" "6.5.0"
+    "@storybook/theming" "6.5.3"
     axe-core "^4.2.0"
     core-js "^3.8.2"
     global "^4.4.0"
@@ -3924,7 +3924,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/client-logger@6.5.0", "@storybook/client-logger@^6.4.0 || >=6.5.0-0":
+"@storybook/client-logger@6.5.0":
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-6.5.0.tgz#97030cfb285422b24394cdcbbeda174226a2d96b"
   integrity sha512-JDuMgvUTRGr3RdbIcBdV0uVOiZfQWbvMipcMuDYvoeI7FqwBH8qi9d3fPDaHAI1DmovUZFxAsBrLObu/wsRM3A==
@@ -3932,7 +3932,7 @@
     core-js "^3.8.2"
     global "^4.4.0"
 
-"@storybook/client-logger@6.5.3":
+"@storybook/client-logger@6.5.3", "@storybook/client-logger@^6.4.0 || >=6.5.0-0":
   version "6.5.3"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-6.5.3.tgz#4794e87d85c03aa6e38efc4c5775b9680cc1bf23"
   integrity sha512-gUJUkDzQdOQBfAQSJffKlZQ6ueUANjTN6u4xA/FIfJM7+I5N43UuS3dFGEjcnZISS5sj7765ct2aZinMzf1NNQ==
