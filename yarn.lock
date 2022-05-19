@@ -3530,21 +3530,21 @@
     regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-interactions@6.5.0":
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-interactions/-/addon-interactions-6.5.0.tgz#8831772201ce5b9ecd67036e5eea1c56256aad4f"
-  integrity sha512-pFhsO86bzPA/79/wydXkp7+cEZx6G8joerXNHwZYTxA2id1wS708D6x/XbWVzyATvkPH3RuZyofJGU72POx8sQ==
+"@storybook/addon-interactions@6.5.3":
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-interactions/-/addon-interactions-6.5.3.tgz#5b1cf338df28130286590d5ee05dc22f687024bf"
+  integrity sha512-Jm0QDiNnjo2nvJG/hWlQ2MAINIMo7dzu4b/UsIEWoYBD0z+w5TAN4QEk7TcCg6rYtGFaKZwRnehOvs75Q/mQiQ==
   dependencies:
     "@devtools-ds/object-inspector" "^1.1.2"
-    "@storybook/addons" "6.5.0"
-    "@storybook/api" "6.5.0"
-    "@storybook/client-logger" "6.5.0"
-    "@storybook/components" "6.5.0"
-    "@storybook/core-common" "6.5.0"
-    "@storybook/core-events" "6.5.0"
+    "@storybook/addons" "6.5.3"
+    "@storybook/api" "6.5.3"
+    "@storybook/client-logger" "6.5.3"
+    "@storybook/components" "6.5.3"
+    "@storybook/core-common" "6.5.3"
+    "@storybook/core-events" "6.5.3"
     "@storybook/csf" "0.0.2--canary.4566f4d.1"
-    "@storybook/instrumenter" "6.5.0"
-    "@storybook/theming" "6.5.0"
+    "@storybook/instrumenter" "6.5.3"
+    "@storybook/theming" "6.5.3"
     core-js "^3.8.2"
     global "^4.4.0"
     jest-mock "^27.0.6"
@@ -3924,7 +3924,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/client-logger@6.5.0", "@storybook/client-logger@^6.4.0 || >=6.5.0-0":
+"@storybook/client-logger@6.5.0":
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-6.5.0.tgz#97030cfb285422b24394cdcbbeda174226a2d96b"
   integrity sha512-JDuMgvUTRGr3RdbIcBdV0uVOiZfQWbvMipcMuDYvoeI7FqwBH8qi9d3fPDaHAI1DmovUZFxAsBrLObu/wsRM3A==
@@ -3932,7 +3932,7 @@
     core-js "^3.8.2"
     global "^4.4.0"
 
-"@storybook/client-logger@6.5.3":
+"@storybook/client-logger@6.5.3", "@storybook/client-logger@^6.4.0 || >=6.5.0-0":
   version "6.5.3"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-6.5.3.tgz#4794e87d85c03aa6e38efc4c5775b9680cc1bf23"
   integrity sha512-gUJUkDzQdOQBfAQSJffKlZQ6ueUANjTN6u4xA/FIfJM7+I5N43UuS3dFGEjcnZISS5sj7765ct2aZinMzf1NNQ==
@@ -4254,14 +4254,14 @@
   dependencies:
     "@types/jest" ">=26.0.0"
 
-"@storybook/instrumenter@6.5.0", "@storybook/instrumenter@^6.4.0", "@storybook/instrumenter@^6.4.0 || >=6.5.0-0":
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/@storybook/instrumenter/-/instrumenter-6.5.0.tgz#cc4f45a89c9eacaab385ebd94f70354df53fbfb8"
-  integrity sha512-vBrDyGtYrRwFmB9qx7jV/tRF5Q4uu1VDbzw32KMkrcaYXzBFkbv5Vvf4jw3h/HU9NvuH18dnm7jizqqjOPGFFQ==
+"@storybook/instrumenter@6.5.3", "@storybook/instrumenter@^6.4.0", "@storybook/instrumenter@^6.4.0 || >=6.5.0-0":
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/@storybook/instrumenter/-/instrumenter-6.5.3.tgz#9c72d52ca6a1fd4db2dca8792cc42a797c7e476f"
+  integrity sha512-Dh7EjqbhKowFlmfBLdgq0OTBgm3HQbhzs82q9oM2sCcXJJyjlYSdne/JDuWY2NDGV30aiwqvCGkvr/w1OUh/xg==
   dependencies:
-    "@storybook/addons" "6.5.0"
-    "@storybook/client-logger" "6.5.0"
-    "@storybook/core-events" "6.5.0"
+    "@storybook/addons" "6.5.3"
+    "@storybook/client-logger" "6.5.3"
+    "@storybook/core-events" "6.5.3"
     core-js "^3.8.2"
     global "^4.4.0"
 
