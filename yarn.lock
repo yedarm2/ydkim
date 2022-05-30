@@ -3549,21 +3549,21 @@
     regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-interactions@6.5.5":
-  version "6.5.5"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-interactions/-/addon-interactions-6.5.5.tgz#fab0995d8ff8ae5fa333fe7e4f051e4f7316a3f0"
-  integrity sha512-V7igk2P/KTDMXKJafA4HMhtq0MErvjYWPrY6ifjptcuJhuykQIdRlvEtfIlN9cKOVb0yw9gktXB3Gpujb6xW5Q==
+"@storybook/addon-interactions@6.5.6":
+  version "6.5.6"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-interactions/-/addon-interactions-6.5.6.tgz#cdebea023bfc9be9278288b213cf949ef36f37a4"
+  integrity sha512-HfYnrkiFvI/05Jlr5Iw+sS/BO0kNGqf494CLvfE2p/8O+hPkSqA0AGXTbE/SCPIFSQT/UCHMDYU9QDnEY+xkAg==
   dependencies:
     "@devtools-ds/object-inspector" "^1.1.2"
-    "@storybook/addons" "6.5.5"
-    "@storybook/api" "6.5.5"
-    "@storybook/client-logger" "6.5.5"
-    "@storybook/components" "6.5.5"
-    "@storybook/core-common" "6.5.5"
-    "@storybook/core-events" "6.5.5"
+    "@storybook/addons" "6.5.6"
+    "@storybook/api" "6.5.6"
+    "@storybook/client-logger" "6.5.6"
+    "@storybook/components" "6.5.6"
+    "@storybook/core-common" "6.5.6"
+    "@storybook/core-events" "6.5.6"
     "@storybook/csf" "0.0.2--canary.4566f4d.1"
-    "@storybook/instrumenter" "6.5.5"
-    "@storybook/theming" "6.5.5"
+    "@storybook/instrumenter" "6.5.6"
+    "@storybook/theming" "6.5.6"
     core-js "^3.8.2"
     global "^4.4.0"
     jest-mock "^27.0.6"
@@ -4273,18 +4273,7 @@
   dependencies:
     "@types/jest" ">=26.0.0"
 
-"@storybook/instrumenter@6.5.5":
-  version "6.5.5"
-  resolved "https://registry.yarnpkg.com/@storybook/instrumenter/-/instrumenter-6.5.5.tgz#46cedee900e614fbe1290d092ea03dd84a41c280"
-  integrity sha512-qZZl2g6b9hOj/aKLfS7GEbEzOfgLQCyS4aLhjKxapHqNYvWSCNNvzsqiTGySdkJr9YSx9KveEiC9sasHHuNR0w==
-  dependencies:
-    "@storybook/addons" "6.5.5"
-    "@storybook/client-logger" "6.5.5"
-    "@storybook/core-events" "6.5.5"
-    core-js "^3.8.2"
-    global "^4.4.0"
-
-"@storybook/instrumenter@^6.4.0", "@storybook/instrumenter@^6.4.0 || >=6.5.0-0":
+"@storybook/instrumenter@6.5.6", "@storybook/instrumenter@^6.4.0", "@storybook/instrumenter@^6.4.0 || >=6.5.0-0":
   version "6.5.6"
   resolved "https://registry.yarnpkg.com/@storybook/instrumenter/-/instrumenter-6.5.6.tgz#6fab26113102f741235486908826dfb60908689c"
   integrity sha512-WIBmULyt0BqvMj82KZk+UfbwqX+geBLupJbyhr6Nv2ImAVoLMzfyR/NOzVWST1VEbSKnTmRmbvKa7/LkOaDS+A==
