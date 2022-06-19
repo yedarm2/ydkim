@@ -1,0 +1,51 @@
+{
+	"name": "@ydkim/core-boilerplate",
+	"version": "0.0.0",
+	"description": "backend boilerplate for ydkim monorepo",
+	"homepage": "https://github.com/YedramKim/ydkim/tree/main/packages/boilerplate#readme",
+	"bugs": {
+		"url": "https://github.com/YedramKim/ydkim/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/YedramKim/ydkim.git"
+	},
+	"license": "MIT",
+	"author": "yedarm <oncoder@naver.com>",
+	"main": "lib/index.ts",
+	"directories": {
+		"lib": "lib",
+		"test": "__tests__"
+	},
+	"files": [
+		"lib"
+	],
+	"scripts": {
+		"build": "echo \"build\"",
+		"clean": "npx rimraf node_modules && npx rimraf dist",
+		"deploy": "echo \"deploy\"",
+		"lint": "echo \"Lint\"",
+		"serve": "echo \"serve\"",
+		"test": "echo \"Error: run tests from root\""
+	},
+	"dependencies": {
+		"@types/jest": "28.1.1",
+		"@types/node": "18.0.0"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "5.28.0",
+		"@typescript-eslint/parser": "5.28.0",
+		"babel-jest": "28.1.1",
+		"eslint": "8.17.0",
+		"eslint-config-prettier": "8.5.0",
+		"eslint-plugin-import": "2.26.0",
+		"eslint-plugin-jest": "26.5.3",
+		"eslint-plugin-prettier": "4.0.0",
+		"jest": "27.5.1",
+		"ts-node": "10.8.1",
+		"typescript": "4.7.4"
+	},
+	"publishConfig": {
+		"registry": "https://registry.yarnpkg.com"
+	}
+}
