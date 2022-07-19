@@ -39,7 +39,7 @@ module.exports = withPlugins(
 	],
 	{
 		reactStrictMode: true,
-		experimental: {
+		compiler: {
 			emotion: true,
 		},
 		env: {
