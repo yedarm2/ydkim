@@ -1,6 +1,6 @@
 import type { GetServerSideProps, GetServerSidePropsContext, GetServerSidePropsResult } from 'next';
 
-import { QueryClient, dehydrate, DehydratedState } from 'react-query';
+import { QueryClient, dehydrate, DehydratedState } from '@tanstack/react-query';
 import { isBotRequest } from './isBotRequest';
 
 interface CustomGetServerSidePropsContext extends GetServerSidePropsContext {

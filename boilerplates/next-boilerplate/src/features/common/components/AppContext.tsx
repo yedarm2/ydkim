@@ -1,8 +1,8 @@
 import type { FC, PropsWithChildren } from 'react';
 
 import { useState } from 'react';
-import { QueryClient, QueryClientProvider, Hydrate } from 'react-query';
-import { ReactQueryDevtools } from 'react-query/devtools';
+import { QueryClient, QueryClientProvider, Hydrate } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 interface AppContextProps {
 	dehydratedState?: {

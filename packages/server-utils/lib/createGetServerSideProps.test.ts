@@ -71,7 +71,7 @@ describe('createGetServerSideProps', () => {
 
 		test('react-query 테스트', async () => {
 			const getServerSideProps = createGetServerSideProps(({ queryClient }) => {
-				queryClient.setQueryData('test', 'test');
+				queryClient.setQueryData(['test'], 'test');
 			});
 
 			const result = await getServerSideProps(defaultContext);

@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../../common/hooks';
 import { increment, decrement, load } from '../store/counterSlice';
 
-import { useQuery, useQueryClient, useMutation } from 'react-query';
+import { useQuery, useQueryClient, useMutation } from '@tanstack/react-query';
 import { getCount, sendCount } from '../services/api';
 
 export const useLoadCount = () => {
@@ -32,7 +32,7 @@ export const useCounterDispatch = () => {
 };
 
 export const useCounterState = () => {
-	return useQuery('counter', () => getCount().then(result => result.data));
+	return useQuery(['counter'], () => getCount().then(result => result.data));
 };
 
 export const useCounterMutations = () => {
@@ -41,7 +41,7 @@ export const useCounterMutations = () => {
 	const queryClient = useQueryClient();
 	const mutateCount = useMutation(sendCount, {
 		onSuccess() {
-			queryClient.invalidateQueries('counter');
+			queryClient.invalidateQueries(['counter']);
 		},
 	});
 
