@@ -3691,19 +3691,19 @@
   resolved "https://registry.yarnpkg.com/@soda/get-current-script/-/get-current-script-1.0.2.tgz#a53515db25d8038374381b73af20bb4f2e508d87"
   integrity sha512-T7VNNlYVM1SgQ+VsMYhnDkcGmWhQdL0bDyGm5TlQ3GBXnJscEClUUOKduWTmm2zCnvNLC1hc3JpuXjs/nFOc5w==
 
-"@storybook/addon-a11y@6.5.10":
-  version "6.5.10"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-6.5.10.tgz#a907cbd3f1889ba367828435a58ecc9dac42f6ba"
-  integrity sha512-BnDbLg7YEAX1aEyiB+gDFYMXIbiSFH/M0CdwPCq7T7o8cqULKOHtQkndMja1soMxsqHAVH8AGvVVZ8VlaxaJ3Q==
+"@storybook/addon-a11y@6.5.11":
+  version "6.5.11"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-6.5.11.tgz#01130488ceb977e90a14dc93a778e2ab47cec9f6"
+  integrity sha512-C8THPj0hlU6RW1diidP4K5RmD8oFZC1F8cAoTHrIU55TvyAT+okDG+5bfVSb44uOV2M8ZuAREHHus/SiV2b3bQ==
   dependencies:
-    "@storybook/addons" "6.5.10"
-    "@storybook/api" "6.5.10"
-    "@storybook/channels" "6.5.10"
-    "@storybook/client-logger" "6.5.10"
-    "@storybook/components" "6.5.10"
-    "@storybook/core-events" "6.5.10"
+    "@storybook/addons" "6.5.11"
+    "@storybook/api" "6.5.11"
+    "@storybook/channels" "6.5.11"
+    "@storybook/client-logger" "6.5.11"
+    "@storybook/components" "6.5.11"
+    "@storybook/core-events" "6.5.11"
     "@storybook/csf" "0.0.2--canary.4566f4d.1"
-    "@storybook/theming" "6.5.10"
+    "@storybook/theming" "6.5.11"
     axe-core "^4.2.0"
     core-js "^3.8.2"
     global "^4.4.0"
@@ -4198,6 +4198,20 @@
     "@storybook/client-logger" "6.5.10"
     "@storybook/csf" "0.0.2--canary.4566f4d.1"
     "@storybook/theming" "6.5.10"
+    core-js "^3.8.2"
+    memoizerific "^1.11.3"
+    qs "^6.10.0"
+    regenerator-runtime "^0.13.7"
+    util-deprecate "^1.0.2"
+
+"@storybook/components@6.5.11":
+  version "6.5.11"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-6.5.11.tgz#57ddec21b51161da2317dd1e9c944597cf335dd8"
+  integrity sha512-7dlkqaEUa5x1diGzWHWf4P5CS5s51FyB/KTGorKVzxgS6Q+M86ayAwdO5GSZa5wz8llzhOPeKI0diputRC6oeQ==
+  dependencies:
+    "@storybook/client-logger" "6.5.11"
+    "@storybook/csf" "0.0.2--canary.4566f4d.1"
+    "@storybook/theming" "6.5.11"
     core-js "^3.8.2"
     memoizerific "^1.11.3"
     qs "^6.10.0"
