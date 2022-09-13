@@ -1,3 +1,4 @@
 import * as generateRandom from './generateRandom';
+import * as arrayUtil from './arrayUtil';
 
-export { generateRandom };
+export { arrayUtil, generateRandom };

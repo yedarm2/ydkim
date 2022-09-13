@@ -27,7 +27,7 @@
 		"deploy": "echo \"deploy\"",
 		"lint": "echo \"Lint\"",
 		"serve": "echo \"serve\"",
-		"test": "echo \"Error: run tests from root\""
+		"test": "jest"
 	},
 	"dependencies": {
 		"classnames": "2.3.1"
