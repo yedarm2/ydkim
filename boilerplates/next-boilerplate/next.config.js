@@ -5,6 +5,7 @@ const withTM = require('next-transpile-modules')([
 	'@ydkim/hooks',
 	'@ydkim/server-utils',
 	'@ydkim/utils',
+	'@ydkim/core-boilerplate',
 ]);
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
 	enabled: process.env.ANALYZE === 'true',
