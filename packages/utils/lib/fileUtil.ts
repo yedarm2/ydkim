@@ -1,1 +1,1 @@
-export { readFile, writeFile } from 'fs-extra';
+export { readFile, writeFile, readJson, writeJson } from 'fs-extra';
