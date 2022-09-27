@@ -12,3 +12,8 @@ export const seperate = <T>(array: T[], seperateFunction: (item: T) => boolean):
 		[[], []],
 	);
 };
+
+export const createArray = <T = any>(
+	length: number,
+	mapper: (index: number) => T = () => undefined,
+) => Array.from({ length }, (_, index) => mapper(index));
