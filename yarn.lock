@@ -3631,6 +3631,16 @@
     "@sentry/utils" "7.14.1"
     tslib "^1.9.3"
 
+"@sentry/tracing@7.14.2":
+  version "7.14.2"
+  resolved "https://registry.yarnpkg.com/@sentry/tracing/-/tracing-7.14.2.tgz#77f36618f10202a502dec4454dff43c6ede832d9"
+  integrity sha512-KCZogsvqUYiR9vNPWXVgSM00CF+yfYJaBd363fN3HUbjya4j96cHJg65zf6oy85Igr6IGclYaTkoEbiZ6xdNDw==
+  dependencies:
+    "@sentry/hub" "7.14.2"
+    "@sentry/types" "7.14.2"
+    "@sentry/utils" "7.14.2"
+    tslib "^1.9.3"
+
 "@sentry/types@7.14.1":
   version "7.14.1"
   resolved "https://registry.yarnpkg.com/@sentry/types/-/types-7.14.1.tgz#8d46c41595b2730f3426d54d1d0a9376b8739e33"
