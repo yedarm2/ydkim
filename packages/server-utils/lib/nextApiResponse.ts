@@ -6,7 +6,7 @@ export const end = (res: NextApiResponse, status: number = 200) => {
 
 export const json = (
 	res: NextApiResponse,
-	{ data, meta, status = 200 }: { data: any; meta: any; status?: number },
+	{ data, meta, status = 200 }: { data: any; meta?: any; status?: number },
 ) => res.status(status).json({ data, meta });
 
 export const notFound = (res: NextApiResponse) =>

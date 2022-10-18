@@ -16,7 +16,7 @@ export const getServerSideProps = storeWrapper.getServerSideProps(store =>
 		const counter = await counterSingleValueDAO.getValue();
 		store.dispatch(setValue(counter));
 
-		await queryClient.prefetchQuery('counter', () => counterSingleValueDAO.getValue());
+		await queryClient.prefetchQuery(['counter'], () => counterSingleValueDAO.getValue());
 
 		return {
 			props: {},

@@ -1,13 +1,11 @@
-import { createNextRoute } from '@ydkim/server-utils';
+import { createNextRoute, nextApiResponse } from '@ydkim/server-utils';
 import { TodoPayload, todoService } from '@ydkim/core-boilerplate';
 
 export default createNextRoute({
-	async get() {
+	async get(req, res) {
 		const todoList = await todoService.getTodoList();
 
-		return {
-			data: todoList,
-		};
+		nextApiResponse.json(res, { data: todoList });
 	},
 
 	async post(req) {
