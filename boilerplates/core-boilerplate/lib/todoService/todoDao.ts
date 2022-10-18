@@ -3,7 +3,7 @@ import { ITodo } from './todo.interface';
 
 class TodoFireStoreDao extends FireStoreDAO<Omit<ITodo, 'id'>> {
 	constructor() {
-		super('todo');
+		super('todo-boilerplate');
 	}
 }
 
