@@ -3,7 +3,7 @@ export interface TodoPayload {
 	jobContent: string;
 }
 
-export interface Todo {
+export interface ITodo {
 	id: number;
 	jobName: string;
 	jobContent: string;
