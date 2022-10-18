@@ -122,13 +122,14 @@ export class FireStoreDAO<Data extends object, Record = RecordOf<Data>> {
 	}
 
 	async selectAll() {
-		const querySnapshot = await this.collection
-			.where('removedAt', '==', null)
-			.orderBy('id', 'desc')
-			.get();
+		const querySnapshot = await this.collection.orderBy('id', 'desc').get();
 
 		return !querySnapshot.empty
-			? querySnapshot.docs.map(document => document.data() as Record)
+			? querySnapshot.docs
+					.map(document => document.data() as Record)
+					.filter(data => {
+						return !(data as { removedAt?: string }).removedAt;
+					})
 			: [];
 	}
 
