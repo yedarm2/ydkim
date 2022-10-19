@@ -3,7 +3,7 @@ import { NextApiRequest } from 'next';
 import { createNextRoute } from '@ydkim/server-utils';
 import { TodoPayload, todoService } from '@ydkim/core-boilerplate';
 
-const getTodoId = (req: NextApiRequest) => req.body.id as number;
+const getTodoId = (req: NextApiRequest) => Number(req.query.id as unknown as number);
 
 export default createNextRoute({
 	async get(req) {

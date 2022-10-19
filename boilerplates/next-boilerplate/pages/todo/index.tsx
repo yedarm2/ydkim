@@ -1,7 +1,7 @@
 import { todoService } from '@ydkim/core-boilerplate';
 import { createGetServerSideProps } from '@ydkim/server-utils';
 import { QUERY_KEYS } from 'src/todo/constants';
-import { TodoIndexView } from 'src/todo/views/TodoIndex';
+import { TodoIndexView } from 'src/todo/views/TodoIndexView';
 
 const TodoIndex = () => {
 	return <TodoIndexView />;
