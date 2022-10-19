@@ -47,6 +47,14 @@ export const put = <Data, Meta = any>(url: string, params?: any) => {
 	});
 };
 
+export const patch = <Data, Meta = any>(url: string, params?: any) => {
+	return api<Data, Meta>({
+		url,
+		method: 'PATCH',
+		params,
+	});
+};
+
 // * delete는 변수 이름으로 지정할 수 없어서... ㅠㅠ
 export const apiDelete = <Data, Meta = any>(url: string, params?: any) => {
 	return api<Data, Meta>({
