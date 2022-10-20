@@ -9,6 +9,10 @@ export const getTodoList = () => {
 	return api.get<ITodo[]>('/todo').then(response => response.data);
 };
 
+export const getTodo = (todoId: number) => {
+	return api.get<ITodo>(`/todo/${todoId}`).then(response => response.data);
+};
+
 export const createTodo = (payload: TodoPayload) => {
 	return api.post('/todo', payload);
 };

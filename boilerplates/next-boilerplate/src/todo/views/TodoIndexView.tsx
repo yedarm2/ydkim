@@ -13,9 +13,16 @@ export const TodoIndexView = () => {
 			</Link>
 			<ul>
 				{todoList?.map(todoData => (
-					<li key={todoData.id} onClick={() => toggleTodo(todoData)}>
-						<input type="checkbox" checked={todoData.isCompleted} readOnly />
-						{todoData.jobName}: {todoData.jobContent}
+					<li key={todoData.id}>
+						<input
+							type="checkbox"
+							checked={todoData.isCompleted}
+							readOnly
+							onClick={() => toggleTodo(todoData)}
+						/>
+						<Link href={`/todo/${todoData.id}`}>
+							<a>{todoData.jobName}</a>
+						</Link>
 					</li>
 				))}
 			</ul>
