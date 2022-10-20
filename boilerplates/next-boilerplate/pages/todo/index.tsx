@@ -7,8 +7,10 @@ const TodoIndex = () => {
 	return <TodoIndexView />;
 };
 
-export const getServerSideProps = createGetServerSideProps(async ({ queryClient }) => {
-	await queryClient.prefetchQuery(QUERY_KEYS.TODO_LIST(), todoService.getTodoList);
+export const getServerSideProps = createGetServerSideProps(async ({ queryClient, isSSR }) => {
+	if (!isSSR) {
+		await queryClient.prefetchQuery(QUERY_KEYS.TODO_LIST(), todoService.getTodoList);
+	}
 });
 
 export default TodoIndex;

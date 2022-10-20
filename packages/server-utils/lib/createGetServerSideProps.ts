@@ -5,6 +5,7 @@ import { isBotRequest } from './isBotRequest';
 
 interface CustomGetServerSidePropsContext extends GetServerSidePropsContext {
 	isBot: boolean;
+	isSSR: boolean;
 	queryClient: QueryClient;
 }
 
@@ -20,6 +21,8 @@ interface CustomGetServerSideProps<Props> {
 		| GetServerSidePropsResult<Props>
 		| Promise<GetServerSidePropsResult<Props>>;
 }
+
+const isSSRRequest = (url: string) => /^\/_next/.test(url);
 
 export const createGetServerSideProps = <Props>(
 	getServerSideProps: CustomGetServerSideProps<Props>,
@@ -37,6 +40,7 @@ export const createGetServerSideProps = <Props>(
 			const customContext: CustomGetServerSidePropsContext = {
 				...context,
 				isBot: isBotRequest(context.req.headers['user-agent']),
+				isSSR: isSSRRequest(context.req.url),
 				queryClient,
 			};
 
