@@ -96,7 +96,7 @@ export class FireStoreDAO<Data extends object, Record = RecordOf<Data>> {
 		return query;
 	}
 
-	async create(data: Data) {
+	async create(data: Omit<Data, 'id'>) {
 		const newId = await this.getIdToCreate();
 		const now = new Date().toISOString();
 		const dataToCreate = {

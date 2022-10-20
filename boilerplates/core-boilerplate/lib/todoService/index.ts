@@ -21,7 +21,7 @@ export const createTodo = async (payload: TodoPayload) => {
 	return todoToCreate;
 };
 
-export const editTodo = async (id: number, payload: Partial<Omit<ITodo, 'id'>>) => {
+export const editTodo = async (id: number, payload: Partial<ITodo>) => {
 	const updatedTodoIds = await todoFireStoreDao.update(id, payload);
 
 	if (updatedTodoIds.length === 0) throw new Error('존재하지 않는 Todo의 id 입니다.');
