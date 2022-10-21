@@ -133,3 +133,8 @@ storybook-static
 
 # Sentry
 .sentryclirc
+
+# playwight
+/test-results/
+/playwright-report/
+/playwright/.cache/
