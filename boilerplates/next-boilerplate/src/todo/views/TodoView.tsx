@@ -13,9 +13,7 @@ export const TodoView = () => {
 		<div>
 			<h2>{todo.jobName}</h2>
 			<p>{todo.jobContent}</p>
-			<Link href="/todo">
-				<a>목록으로</a>
-			</Link>
+			<Link href="/todo">목록으로</Link>
 		</div>
 	);
 };

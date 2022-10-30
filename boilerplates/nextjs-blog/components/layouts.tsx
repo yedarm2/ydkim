@@ -38,21 +38,17 @@ const Layout: FC<PropsWithChildren<{ home?: boolean }>> = ({ children, home }) =
 					) : (
 						<>
 							<Link href="/">
-								<a>
-									<Image
-										priority
-										src="/images/profile.jpg"
-										className="borderCircle"
-										width={108}
-										height={108}
-										alt={name}
-									/>
-								</a>
+								<Image
+									priority
+									src="/images/profile.jpg"
+									className="borderCircle"
+									width={108}
+									height={108}
+									alt={name}
+								/>
 							</Link>
 							<h2 className="headingLg">
-								<Link href="/">
-									<a className="colorInherit">{name}</a>
-								</Link>
+								<Link href="/">{name}</Link>
 							</h2>
 						</>
 					)}

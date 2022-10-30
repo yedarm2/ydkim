@@ -21,9 +21,7 @@ export default function Home({ allPostsData }) {
 				<ul className="list">
 					{allPostsData.map(({ id, date, title }) => (
 						<li className="listItem" key={id}>
-							<Link href={`/posts/${id}`}>
-								<a>{title}</a>
-							</Link>
+							<Link href={`/posts/${id}`}>{title}</Link>
 							<br />
 							<small className="lightText">
 								<Date dateString={date} />
