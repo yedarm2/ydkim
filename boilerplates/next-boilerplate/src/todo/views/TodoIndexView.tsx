@@ -8,9 +8,7 @@ export const TodoIndexView = () => {
 
 	return (
 		<div>
-			<Link href="/todo/new">
-				<a>todo 목록 추가</a>
-			</Link>
+			<Link href="/todo/new">todo 목록 추가</Link>
 			<ul>
 				{todoList?.map(todoData => (
 					<li key={todoData.id}>
@@ -20,9 +18,7 @@ export const TodoIndexView = () => {
 							readOnly
 							onClick={() => toggleTodo(todoData)}
 						/>
-						<Link href={`/todo/${todoData.id}`}>
-							<a>{todoData.jobName}</a>
-						</Link>
+						<Link href={`/todo/${todoData.id}`}>{todoData.jobName}</Link>
 					</li>
 				))}
 			</ul>

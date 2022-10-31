@@ -2,9 +2,15 @@ import { todoService } from '@ydkim/core-boilerplate';
 import { createGetServerSideProps } from '@ydkim/server-utils';
 import { QUERY_KEYS } from 'src/todo/constants';
 import { TodoView } from 'src/todo/views/TodoView';
+import { TodoViewSeo } from 'src/todo/views/TodoViewSeo';
 
 export default () => {
-	return <TodoView />;
+	return (
+		<>
+			<TodoViewSeo />
+			<TodoView />
+		</>
+	);
 };
 
 export const getServerSideProps = createGetServerSideProps(
