@@ -20,3 +20,7 @@ export const createTodo = (payload: TodoPayload) => {
 export const checkTodo = (id: number, checked: boolean) => {
 	return api.patch(`/todo/${id}`, { checked });
 };
+
+export const deleteTodo = (id: number) => {
+	return api.apiDelete(`/todo/${id}`);
+};
