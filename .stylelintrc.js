@@ -158,9 +158,8 @@ module.exports = {
 		'no-irregular-whitespace': 'always',
 		'selector-attribute-quotes': 'always',
 		'scss/dollar-variable-pattern': null,
-
-		// * 14 이후에 추가된 규칙들 13으로 다운그레이드 후에 문제 없을지 확인이 필요.
 		'custom-property-no-missing-var-function': true,
 		'function-calc-no-unspaced-operator': true,
+		'media-feature-range-notation': true,
 	},
 };
