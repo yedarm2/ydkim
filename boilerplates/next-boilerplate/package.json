@@ -10,7 +10,8 @@
 		"lint": "next lint",
 		"serve": "yarn run serve",
 		"start": "next start",
-		"test": "echo \"Error: run tests from root\""
+		"test": "npx playwright test",
+		"show-test-report": "npx playwright show-report"
 	},
 	"dependencies": {
 		"@emotion/react": "11.10.5",
