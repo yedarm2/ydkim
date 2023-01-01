@@ -1,0 +1,84 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model GICharacter {
+	id Int @id @default(autoincrement())
+	name String
+	element Element
+	star Int @db.TinyInt
+	characterAscensionMaterialId Int // 정예 토벌 재료
+	localSpecialtyId Int // 특산물
+	commonAscensionMaterialId Int // 캐릭터, 무기 돌파 재료
+	highTalentLevelUpMaterialId Int // 주간 보스 재료
+	talentLevelUpMaterialId Int //특성 육성 재료
+}
+
+enum Element {
+	pyro // 불
+	hydro // 물
+	cryo // 얼음
+	electro // 번개
+	dendro // 풀
+	geo // 땅
+	anemo // 바람
+}
+
+model GIWeapon {
+	id Int @id @default(autoincrement())
+	name String
+	type WeaponType
+	star Int @db.TinyInt
+	characterAscensionMaterialId Int // 무기 돌파 재료
+	commonAscensionMaterial1Id Int // 캐릭터, 무기 돌파 재료1
+	commonAscensionMaterial2Id Int // 캐릭터, 무기 돌파 재료2
+}
+
+enum WeaponType {
+	sword // 한손검
+	claymore // 양손검
+	polearm // 장병기
+	catalyst // 법구
+	bow // 활
+}
+
+model GIArtifact {
+	id Int @id @default(autoincrement())
+	name String
+	star Int @db.TinyInt
+}
+
+model GIMaterial {
+	id Int @id @default(autoincrement())
+	name1 String
+	name2 String
+	name3 String
+}
+
+model GIExperienceTable {
+	id Int @id @default(autoincrement())
+}
+
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+  posts Post[]
+}
+
+model Post {
+  id        Int     @id @default(autoincrement())
+  title     String
+  content   String?
+  published Boolean @default(false)
+  author    User    @relation(fields: [authorId], references: [id])
+  authorId  Int
+}
