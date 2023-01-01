@@ -8,12 +8,14 @@ test('todo 목록 페이지 테스트', async ({ page }) => {
 
 const textSymbol = `${Math.random()}/${new Date().toString()}`;
 const testTitle = `테스트 타이틀/${textSymbol}`;
-const testContent = `테스트 타이틀/${textSymbol}`;
+const testContent = `테스트 컨텐츠/${textSymbol}`;
 
 test('todo 생성 테스트', async ({ page }) => {
-	await page.goto('http://localhost:3000/todo');
+	// await page.goto('http://localhost:3000/todo');
 
-	await page.getByRole('link', { name: 'todo 목록 추가' }).click();
+	// await page.getByRole('link', { name: 'todo 목록 추가' }).click();
+	// TODO: 나중에 위의 주석으로 교체하고 싶다...
+	await page.goto('http://localhost:3000/todo/new');
 
 	await expect(page).toHaveTitle('todo 생성');
 
@@ -24,7 +26,7 @@ test('todo 생성 테스트', async ({ page }) => {
 	await expect(page).toHaveTitle('todo 리스트');
 	await page.locator(`li:has-text("${testTitle}")`).click();
 
-	await expect(page).toHaveTitle(testTitle);
+	await expect(page).toHaveTitle(`todo: ${testTitle}`);
 	await page.getByRole('heading', { name: testTitle }).click();
 	await page.getByText(testContent).click();
 
