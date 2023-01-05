@@ -11,6 +11,7 @@ datasource db {
 }
 
 model GICharacter {
+	@@map("GICharacter")
 	id Int @id @default(autoincrement())
 	name String
 	element Element
@@ -33,6 +34,7 @@ enum Element {
 }
 
 model GIWeapon {
+	@@map("GIWeapon")
 	id Int @id @default(autoincrement())
 	name String
 	type WeaponType
@@ -51,12 +53,14 @@ enum WeaponType {
 }
 
 model GIArtifact {
+	@@map("GIArtifact")
 	id Int @id @default(autoincrement())
 	name String
 	star Int @db.TinyInt
 }
 
 model GIMaterial {
+	@@map("GIMaterial")
 	id Int @id @default(autoincrement())
 	name1 String
 	name2 String
@@ -64,10 +68,12 @@ model GIMaterial {
 }
 
 model GIExperienceTable {
+	@@map("GIExperienceTable")
 	id Int @id @default(autoincrement())
 }
 
 model User {
+	@@map("User")
   id    Int     @id @default(autoincrement())
   email String  @unique
   name  String?
@@ -75,6 +81,7 @@ model User {
 }
 
 model Post {
+	@@map("Post")
   id        Int     @id @default(autoincrement())
   title     String
   content   String?
