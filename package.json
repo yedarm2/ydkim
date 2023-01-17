@@ -32,11 +32,11 @@
 		"test": "lerna run test"
 	},
 	"dependencies": {
-		"create-next-app": "13.1.1",
+		"create-next-app": "13.1.2",
 		"create-react-app": "5.0.1",
 		"npm-check-updates": "16.6.2",
-		"prettier": "2.8.2",
-		"rimraf": "3.0.2",
+		"prettier": "2.8.3",
+		"rimraf": "4.0.7",
 		"sort-package-json": "2.1.0"
 	},
 	"devDependencies": {
