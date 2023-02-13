@@ -10,17 +10,17 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model GICharacter {
-	@@map("GICharacter")
+model GCharacter {
+	@@map("GCharacter")
 	id Int @id @default(autoincrement())
 	name String
 	element Element
 	star Int @db.TinyInt
-	characterAscensionMaterialId Int // 정예 토벌 재료
-	localSpecialtyId Int // 특산물
-	commonAscensionMaterialId Int // 캐릭터, 무기 돌파 재료
-	highTalentLevelUpMaterialId Int // 주간 보스 재료
-	talentLevelUpMaterialId Int //특성 육성 재료
+	normalBossMaterialId Int // 정예 토벌 재료
+	localSpecialtyMaterialId Int // 특산물
+	normalMonsterMaterialCategory String // 캐릭터, 무기 돌파 재료
+	weeklyBossMaterialId Int // 주간 보스 재료
+	skillLevelUpMaterialCategory Int //특성 육성 재료
 }
 
 enum Element {
@@ -33,15 +33,15 @@ enum Element {
 	anemo // 바람
 }
 
-model GIWeapon {
-	@@map("GIWeapon")
+model GWeapon {
+	@@map("GWeapon")
 	id Int @id @default(autoincrement())
 	name String
 	type WeaponType
 	star Int @db.TinyInt
-	characterAscensionMaterialId Int // 무기 돌파 재료
-	commonAscensionMaterial1Id Int // 캐릭터, 무기 돌파 재료1
-	commonAscensionMaterial2Id Int // 캐릭터, 무기 돌파 재료2
+	weaponLevelUpMaterialCategory Int // 무기 돌파 재료
+	normalMonsterMaterial1Category String // 캐릭터, 무기 돌파 재료1
+	normalMonsterMaterial2Category String // 캐릭터, 무기 돌파 재료2
 }
 
 enum WeaponType {
@@ -52,23 +52,33 @@ enum WeaponType {
 	bow // 활
 }
 
-model GIArtifact {
-	@@map("GIArtifact")
+model GArtifact {
+	@@map("GArtifact")
 	id Int @id @default(autoincrement())
 	name String
 	star Int @db.TinyInt
 }
 
-model GIMaterial {
-	@@map("GIMaterial")
+model GMaterial {
+	@@map("GMaterial")
 	id Int @id @default(autoincrement())
-	name1 String
-	name2 String
-	name3 String
+	name String
+	star Int @db.TinyInt
+	type MaterialType
+	category String?
 }
 
-model GIExperienceTable {
-	@@map("GIExperienceTable")
+enum MaterialType {
+	normalBoss // 정예토벌보스
+	localSpecialty // 특산품
+	normalMonster
+	weeklyBoss
+	skillLevelUp
+	weaponLevelUp
+}
+
+model GExperienceTable {
+	@@map("GExperienceTable")
 	id Int @id @default(autoincrement())
 }
 
