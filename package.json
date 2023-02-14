@@ -13,6 +13,7 @@
 	"main": "index.js",
 	"workspaces": {
 		"packages": [
+			"apps/*",
 			"packages/*",
 			"boilerplates/*"
 		],

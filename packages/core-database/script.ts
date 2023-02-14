@@ -1,14 +1,26 @@
 import { PrismaClient } from '@prisma/client';
 
-const prisma = new PrismaClient();
+const prisma = new PrismaClient({
+	log: ['info', 'warn', 'error', { emit: 'event', level: 'query' }],
+});
+
+prisma.$on('query', event => {
+	console.log('Query: ' + event.query);
+	console.log('Params: ' + event.params);
+	console.log('Duration: ' + event.duration + 'ms');
+});
 
 (async () => {
-	// const users = await prisma.user.findMany({
-	// 	include: {
-	// 		posts: true,
-	// 		_count: true,
-	// 	},
-	// });
+	const users = await prisma.user.findMany({
+		include: {
+			posts: true,
+		},
+	});
+	const posts = await prisma.post.findMany({
+		include: {
+			author: true,
+		},
+	});
 	// console.dir(users, { depth: null });
 	// const user = await prisma.user.create({
 	// 	data: {
@@ -24,13 +36,13 @@ const prisma = new PrismaClient();
 	// 	},
 	// });
 	// console.log(user);
-	const updatedUser = await prisma.user.updateMany({
-		where: {
-			name: 'Rovert',
-		},
-		data: {
-			name: 'John',
-		},
-	});
-	console.log(updatedUser);
+	// const updatedUser = await prisma.user.updateMany({
+	// 	where: {
+	// 		name: 'Rovert',
+	// 	},
+	// 	data: {
+	// 		name: 'John',
+	// 	},
+	// });
+	// console.log(updatedUser);
 })().finally(() => prisma.$disconnect());
