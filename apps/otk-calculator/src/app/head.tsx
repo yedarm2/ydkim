@@ -1,3 +1,4 @@
+'use client';
 const Head = () => (
 	<>
 		<title>SG 계산기</title>

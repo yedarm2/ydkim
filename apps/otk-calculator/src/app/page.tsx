@@ -1,11 +1,8 @@
-import { RootLinks } from '@/modules/main/components';
+'use client';
+import { SubPageIntro } from '@/modules/main/components';
 
 const Main = () => {
-	return (
-		<main>
-			<RootLinks />
-		</main>
-	);
+	return <SubPageIntro />;
 };
 
 export default Main;

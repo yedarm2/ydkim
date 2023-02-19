@@ -1,1 +1,2 @@
-export { RootLinks } from './RootLinks';
+export { SubPageIntro } from './SubPageIntro';
+export { SubPageLink } from './SubPageLink';
