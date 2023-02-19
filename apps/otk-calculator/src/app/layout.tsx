@@ -1,10 +1,15 @@
+'use client';
+import { GlobalStyle } from '@/modules/common/components';
 import { PropsWithChildren } from 'react';
 
 const Layout = ({ children }: PropsWithChildren) => {
 	return (
 		<html lang="ko">
 			<head />
-			<body>{children}</body>
+			<body>
+				<GlobalStyle />
+				{children}
+			</body>
 		</html>
 	);
 };
