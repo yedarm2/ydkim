@@ -31,16 +31,16 @@
 	"dependencies": {
 		"@types/jest": "29.5.0",
 		"@types/node": "18.15.11",
-		"@types/react": "18.0.33",
+		"@types/react": "18.0.34",
 		"@types/react-dom": "18.0.11",
 		"sanitize.css": "13.0.0"
 	},
 	"devDependencies": {
 		"@babel/core": "7.21.4",
-		"postcss-preset-env": "8.3.0",
+		"postcss-preset-env": "8.3.1",
 		"postcss-reporter": "7.0.5",
 		"stylelint": "15.4.0",
-		"stylelint-config-standard-scss": "7.0.1",
+		"stylelint-config-standard-scss": "8.0.0",
 		"stylelint-no-unsupported-browser-features": "6.1.0",
 		"stylelint-order": "6.0.3",
 		"stylelint-scss": "4.6.0"
