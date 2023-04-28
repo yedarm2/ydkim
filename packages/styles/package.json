@@ -30,9 +30,9 @@
 	},
 	"dependencies": {
 		"@types/jest": "29.5.1",
-		"@types/node": "18.16.0",
-		"@types/react": "18.0.38",
-		"@types/react-dom": "18.0.11",
+		"@types/node": "18.16.2",
+		"@types/react": "18.2.0",
+		"@types/react-dom": "18.2.1",
 		"sanitize.css": "13.0.0"
 	},
 	"devDependencies": {
@@ -40,7 +40,7 @@
 		"postcss-preset-env": "8.3.2",
 		"postcss-reporter": "7.0.5",
 		"stylelint": "15.6.0",
-		"stylelint-config-standard-scss": "8.0.0",
+		"stylelint-config-standard-scss": "9.0.0",
 		"stylelint-no-unsupported-browser-features": "6.1.0",
 		"stylelint-order": "6.0.3",
 		"stylelint-scss": "4.6.0"
