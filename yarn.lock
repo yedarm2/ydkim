@@ -3187,12 +3187,12 @@
     prop-types "^15.7.2"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-mdx-gfm@7.0.12":
-  version "7.0.12"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-mdx-gfm/-/addon-mdx-gfm-7.0.12.tgz#f5e209419e16c27d47e5ef588c5591d51d7d8998"
-  integrity sha512-shl4LVrwwjw9H0IB9VzrOjtuvA28SrOKMsvwj06skQgH9aHJMA2SmgPnQIBoQmgUM+x+6g2vaSz9Z82iAo8ESw==
+"@storybook/addon-mdx-gfm@7.0.13":
+  version "7.0.13"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-mdx-gfm/-/addon-mdx-gfm-7.0.13.tgz#90e0ecdb748e34d6b5982f4b1e607ad83059df46"
+  integrity sha512-kZ/zlBqzxLm/vmE+XtmQVXfkM4end05KLC3kNdSI4Mw1JUq3DniZQ7HHamiXzqGpiLYA/xjMQiCc/LrRkONA3g==
   dependencies:
-    "@storybook/node-logger" "7.0.12"
+    "@storybook/node-logger" "7.0.13"
     remark-gfm "^3.0.1"
     ts-dedent "^2.0.0"
 
@@ -3638,6 +3638,16 @@
   version "7.0.12"
   resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-7.0.12.tgz#f7e8f3ff6ac0f6500089430cab1236771ebeffe9"
   integrity sha512-VL+NXzc9NuOP6/9alg4Sofz9kh8tmlo3p+UtCIYCHH088yCsB3XsNhkG9lF1C5EZVWcuHxc2u6MMF3ezOjvKfQ==
+  dependencies:
+    "@types/npmlog" "^4.1.2"
+    chalk "^4.1.0"
+    npmlog "^5.0.1"
+    pretty-hrtime "^1.0.3"
+
+"@storybook/node-logger@7.0.13":
+  version "7.0.13"
+  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-7.0.13.tgz#82d7bb397cc71c9a1d5a5175b14ecfb4e2c3ff6b"
+  integrity sha512-+rvOuRiREdWnycexAairee0SC8qWwGDaCC06vAN36QG9E6zqcYpAQfb2GmROtJpLOpd6MnUoL2+eYGXlurnfrQ==
   dependencies:
     "@types/npmlog" "^4.1.2"
     chalk "^4.1.0"
@@ -15695,6 +15705,7 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
