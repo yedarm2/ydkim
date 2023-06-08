@@ -1,11 +1,3 @@
-# `core-boilerplate`
+# core-boilerplate
 
-> TODO: description
-
-## Usage
-
-```
-const {} = require('@ydkim/core-boilerplate');
-
-// TODO: DEMONSTRATE API
-```
+백엔드 관련 패키지 생성 용의를 위한 보일러플레이트...

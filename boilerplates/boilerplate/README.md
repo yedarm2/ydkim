@@ -1,11 +1,3 @@
-# `boilerplate`
+# boilerplate
 
-> TODO: description
-
-## Usage
-
-```
-const boilerplate = require('boilerplate');
-
-// TODO: DEMONSTRATE API
-```
+패키지 생성 용의를 위한 보일러플레이트...

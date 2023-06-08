@@ -1,11 +1,3 @@
-# `ydkim-utils`
+# utils
 
-> TODO: description
-
-## Usage
-
-```
-const ydkimUtils = require('ydkim-utils');
-
-// TODO: DEMONSTRATE API
-```
+프론트엔드, 백엔드 공통으로 사용하는 코드 모음 패키지
