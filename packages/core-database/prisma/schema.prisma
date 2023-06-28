@@ -10,92 +10,90 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model GCharacter {
-	@@map("GCharacter")
-	id Int @id @default(autoincrement())
-	name String
-	element Element
-	star Int @db.TinyInt
-	normalBossMaterialId Int // 정예 토벌 재료
-	localSpecialtyMaterialId Int // 특산물
-	normalMonsterMaterialCategory String // 캐릭터, 무기 돌파 재료
-	weeklyBossMaterialId Int // 주간 보스 재료
-	skillLevelUpMaterialCategory Int //특성 육성 재료
+model Student {
+  id             Int                @id @default(autoincrement())
+  studentImageId Int
+  combatClass    StudentCombatClass
+  star           Int                @db.TinyInt
+	weaponType WeaponType
+	weaponImageId  Int
+	role StudentRole
+  attackType     StudentAttackType
+  armorType      StudentArmorType
+	schoolId Int
+	outdoorsAffinity Affinity
+	indoorsAffinity Affinity
+	equipment1 Int
+	equipment2 Int
+	equipment3 Int
 }
 
-enum Element {
-	pyro // 불
-	hydro // 물
-	cryo // 얼음
-	electro // 번개
-	dendro // 풀
-	geo // 땅
-	anemo // 바람
+model Asset {
+  id      Int       @id @default(autoincrement())
+  url     String
 }
 
-model GWeapon {
-	@@map("GWeapon")
-	id Int @id @default(autoincrement())
+model School {
+	id      Int       @id @default(autoincrement())
 	name String
-	type WeaponType
-	star Int @db.TinyInt
-	weaponLevelUpMaterialCategory Int // 무기 돌파 재료
-	normalMonsterMaterial1Category String // 캐릭터, 무기 돌파 재료1
-	normalMonsterMaterial2Category String // 캐릭터, 무기 돌파 재료2
+	logoImageId Int
+}
+
+enum StudentRole {
+	Attacker
+	Support
+	Tank
+	Tactical_Support
+}
+
+enum StudentCombatClass {
+  Striker
+  Special
+}
+
+enum StudentAttackType {
+  Explosive // 폭발
+  Penetration // 관통
+  Mystic // 신비
+}
+
+enum StudentArmorType {
+  Light // 경장갑
+  Heavy // 중장갑
+  Special // 특수장갑
+  Elastic // 탄력장갑
 }
 
 enum WeaponType {
-	sword // 한손검
-	claymore // 양손검
-	polearm // 장병기
-	catalyst // 법구
-	bow // 활
+  HG // 권총
+  SG // 샷건
+  SMG // 기관단총
+  AR // 돌격소총
+  SR // 저녁총
+  MG // 기관총
+  RG // 레일건
+  GL // 유탄발사기
+  MT // 박격포
+  // FT // 화염방사기
 }
 
-model GArtifact {
-	@@map("GArtifact")
-	id Int @id @default(autoincrement())
-	name String
-	star Int @db.TinyInt
+enum Affinity {
+	D
+	C
+	B
+	A
+	S
+	SS
 }
 
-model GMaterial {
-	@@map("GMaterial")
-	id Int @id @default(autoincrement())
-	name String
-	star Int @db.TinyInt
-	type MaterialType
-	category String?
-}
-
-enum MaterialType {
-	normalBoss // 정예토벌보스
-	localSpecialty // 특산품
-	normalMonster
-	weeklyBoss
-	skillLevelUp
-	weaponLevelUp
-}
-
-model GExperienceTable {
-	@@map("GExperienceTable")
-	id Int @id @default(autoincrement())
-}
-
-model User {
-	@@map("User")
-  id    Int     @id @default(autoincrement())
-  email String  @unique
-  name  String?
-  posts Post[]
-}
-
-model Post {
-	@@map("Post")
-  id        Int     @id @default(autoincrement())
-  title     String
-  content   String?
-  published Boolean @default(false)
-  author    User    @relation(fields: [authorId], references: [id])
-  authorId  Int
+enum equipment {
+	Hat // 모자
+	Gloves // 장갑
+	Shoes // 신발
+	Bag // 가방
+	Badge // 배지
+	Hairpin // 헤어핀
+	Charm // 부적
+	Watch // 손목시계
+	Necklace // 목걸이
 }
