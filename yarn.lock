@@ -11583,10 +11583,10 @@ npm-bundled@^3.0.0:
   dependencies:
     npm-normalize-package-bin "^3.0.0"
 
-npm-check-updates@16.10.17:
-  version "16.10.17"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-16.10.17.tgz#1f28b024235c2ecc34ce7361c0376d61953b556c"
-  integrity sha512-ZoIbWYJhlgMDoByq1WC6Ys3E76IvNCxgS54tPUFbK5J/nqf/BCJt6xiMPAEa7G1HuyAruG+orUF9uTsTGUZl8g==
+npm-check-updates@16.10.18:
+  version "16.10.18"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-16.10.18.tgz#6f6fcbc57c519e7ad12d370a18de8afdf021b597"
+  integrity sha512-dmfhCMX7+UNrBeftBGb1rMX4Qi6+FOI5cuu1VkLeE4LIazbiEYsdgTG+GQywYry+BR9R3EfOXITYPfgRhcdznw==
   dependencies:
     chalk "^5.3.0"
     cli-table3 "^0.6.3"
@@ -14304,6 +14304,7 @@ string-length@^4.0.1:
     strip-ansi "^6.0.0"
 
 "string-width-cjs@npm:string-width@^4.2.0", "string-width@^1.0.2 || 2 || 3 || 4", string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -14382,6 +14383,7 @@ string_decoder@~1.1.1:
     safe-buffer "~5.1.0"
 
 "strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+  name strip-ansi-cjs
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
@@ -15723,6 +15725,7 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
