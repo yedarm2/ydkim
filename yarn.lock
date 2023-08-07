@@ -4055,10 +4055,10 @@
   resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-4.32.5.tgz#1c9da404ba4906c35b3998ba03ea4ab44019750c"
   integrity sha512-UOxiDYmzYWD21ASIUnW3w+Nq3LcW1BPFFfIyZOor6UsRl76KGLlvUhJ402/dof1JxcQFPK7nZ5iUGPVqLiT8zg==
 
-"@tanstack/react-query-devtools@4.32.5":
-  version "4.32.5"
-  resolved "https://registry.yarnpkg.com/@tanstack/react-query-devtools/-/react-query-devtools-4.32.5.tgz#c859c3a812f52f32b6750fcaf921919746083de4"
-  integrity sha512-4JJjf8M2Q3X0fs5GTzq3DvVemeyEw1ASiFdAyVxuMCh8D4m45aqNMuYGsRTNVN2JMNnuLaBKctSB8t0iTNIEZQ==
+"@tanstack/react-query-devtools@4.32.6":
+  version "4.32.6"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query-devtools/-/react-query-devtools-4.32.6.tgz#651002855459f65304802595cce55b205831a250"
+  integrity sha512-Gd9pBkm2sbeze9P5Yp8R7y0rZVUdoIOhduomDjz138WdJuVbRS4Y8p6gX2uMJFsUFVe7jA6fX/D6NfQ9o5OS/A==
   dependencies:
     "@tanstack/match-sorter-utils" "^8.7.0"
     superjson "^1.10.0"
@@ -15723,6 +15723,7 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
