@@ -6516,10 +6516,10 @@ cosmiconfig@^8.2.0:
     parse-json "^5.0.0"
     path-type "^4.0.0"
 
-create-next-app@13.4.17:
-  version "13.4.17"
-  resolved "https://registry.yarnpkg.com/create-next-app/-/create-next-app-13.4.17.tgz#161c69047dcff5519391a56bcdbd72643e436c74"
-  integrity sha512-X7InCTMk+uhd2eE9TVqcSvC7JwMO6jbRTtgmlY2hf7n0MA+NoN0mFLXRTHFFtjZxe3b33tvhGdcitqnPAO8gnA==
+create-next-app@13.4.18:
+  version "13.4.18"
+  resolved "https://registry.yarnpkg.com/create-next-app/-/create-next-app-13.4.18.tgz#ffa804237dc262ffd48d72b617a59590f51e6155"
+  integrity sha512-S3CMNf2eW3666DzW7T4Yzfkia5WMN/kxXQXF1GUXi6U6X1UKsGvWPz+6mJcsx4YnXQAUoBhSPdMThFVgq3psSg==
 
 create-react-app@5.0.1:
   version "5.0.1"
@@ -16001,6 +16001,7 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
