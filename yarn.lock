@@ -15818,10 +15818,10 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
-vaul@0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/vaul/-/vaul-0.4.1.tgz#cf2535eeb4aa00f2bb92e6f571a9f2b1254ed56d"
-  integrity sha512-H6VlyuPDM2Icktic6oeE7oZ+uOsht+9UegzP935CJ9JAeyiWXpDFIU57EUVJnnUkfs1Z2OdsfW5UxNHySrZJ3g==
+vaul@0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/vaul/-/vaul-0.4.5.tgz#fa4e5b9d534a15fce0ddeaad34cc4fd47423c469"
+  integrity sha512-6H7Jlm9yi2Iyc4ZnE7DS7dgI1F7eo3sFCD1+4xk1nVQMSQ4ku8scftSLGZK8IqlmezNQguI/PtlZybkckmpFZA==
   dependencies:
     "@radix-ui/react-dialog" "^1.0.4"
 
@@ -16029,6 +16029,7 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
