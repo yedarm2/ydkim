@@ -6527,10 +6527,10 @@ create-jest@^29.7.0:
     jest-util "^29.7.0"
     prompts "^2.0.1"
 
-create-next-app@13.5.1:
-  version "13.5.1"
-  resolved "https://registry.yarnpkg.com/create-next-app/-/create-next-app-13.5.1.tgz#8c87d444c5135f4f3df42c407d7628ef5a31df85"
-  integrity sha512-RNipJnEoUsazI6pMWtSXYHpgXrsMYVsbonLnEX7vhYJjTJOquDJPhmyXubif3ZyPFjg6BiDYxtW0sB3IFO58XA==
+create-next-app@13.5.2:
+  version "13.5.2"
+  resolved "https://registry.yarnpkg.com/create-next-app/-/create-next-app-13.5.2.tgz#830e63847a8bc58f828605a8027536ca7fe0b134"
+  integrity sha512-UQBX87EWTWfojnpSkABERrhSmWU9p9mA1a9qClvcMMV4quqHxwKbQ1slP5u2LHmuAlgGzIwmUzu08ZdDLz54hg==
 
 create-react-app@5.0.1:
   version "5.0.1"
@@ -16086,6 +16086,7 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
