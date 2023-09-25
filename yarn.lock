@@ -3556,12 +3556,12 @@
     prop-types "^15.7.2"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-mdx-gfm@7.4.4":
-  version "7.4.4"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-mdx-gfm/-/addon-mdx-gfm-7.4.4.tgz#6c903b5d31b8d9013a83c48f9dee4381e41a236b"
-  integrity sha512-9EQCfkMqP5yAH1dhOtCHRkRzNKwb/gZnUIy8E+G6V2ebemlATwDyWKkLI1bWNaDFc8yuyHW+4KNnbUf9S2LWLw==
+"@storybook/addon-mdx-gfm@7.4.5":
+  version "7.4.5"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-mdx-gfm/-/addon-mdx-gfm-7.4.5.tgz#9b1e677d81a8a7dcbb809d45a8cb17910fed1045"
+  integrity sha512-Yk4PSKRruGkvHvAZo7t+NlREsMr2PP7HV1I6qPI57aMJj7eo+UqyyC8UJAfnyOi6FRQD0l7nzwYzwSugPchDIg==
   dependencies:
-    "@storybook/node-logger" "7.4.4"
+    "@storybook/node-logger" "7.4.5"
     remark-gfm "^3.0.1"
     ts-dedent "^2.0.0"
 
@@ -4004,6 +4004,11 @@
   version "7.4.4"
   resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-7.4.4.tgz#956dd076612118d926ee136b1a2747afe99059f1"
   integrity sha512-KrxGAg1DbIZrVh2gOwoGGC+mSSmrEZTHKnJjAHrcNUODxT8MQxsVner6Z0fKisDlucLV9rjLcUH7/3AhCwWEiQ==
+
+"@storybook/node-logger@7.4.5":
+  version "7.4.5"
+  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-7.4.5.tgz#910581defe4063395c50b1d43f6bb8ea6a945e4d"
+  integrity sha512-fJSykphbryuEYj1qihbaTH5oOzD4NkptRxyf2uyBrpgkr5tCTq9d7GHheqaBuIdi513dsjlcIR7z5iHxW7ZD+Q==
 
 "@storybook/postinstall@7.4.4":
   version "7.4.4"
@@ -16092,6 +16097,7 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
