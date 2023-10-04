@@ -27,7 +27,7 @@
 		"clean": "lerna run clean && rimraf yarn.lock && rimraf node_modules",
 		"deploy": "lerna run deploy",
 		"lint": "lerna run lint",
-		"ncu": "ncu && lerna exec --stream -- npx ncu",
+		"ncu": "ncu && npx lerna exec --stream -- npx ncu",
 		"serve": "lerna run serve",
 		"sort-package-json": "sort-package-json && lerna exec -- npx sort-package-json",
 		"test": "lerna run test"
@@ -37,10 +37,10 @@
 		"create-react-app": "5.0.1",
 		"npm-check-updates": "16.14.4",
 		"prettier": "3.0.3",
-		"rimraf": "5.0.2",
-		"sort-package-json": "2.5.1"
+		"rimraf": "5.0.5",
+		"sort-package-json": "2.6.0"
 	},
 	"devDependencies": {
-		"lerna": "6.6.2"
+		"lerna": "7.3.0"
 	}
 }
