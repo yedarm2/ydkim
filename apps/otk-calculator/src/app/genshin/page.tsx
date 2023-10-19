@@ -1,6 +1,9 @@
 'use client';
+
+import { GenshinRootPage } from '@/modules/genshin/components';
+
 const Main = () => {
-	return <main>Genshin impact</main>;
+	return <GenshinRootPage />;
 };
 
 export default Main;
