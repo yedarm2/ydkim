@@ -1,3 +1,5 @@
+import '@/styled-system/global.css';
+import { css } from '@/styled-system/css';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -10,7 +12,22 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="ko">
-			<body className={inter.className}>{children}</body>
+			<body
+				className={css({
+					backgroundColor: 'gold',
+				})}
+			>
+				<span
+					className={css({
+						backgroundColor: 'gold',
+						fontWeight: 'bold',
+						fontSize: '14px',
+					})}
+				>
+					aaa
+				</span>
+				{children}
+			</body>
 		</html>
 	);
 }
