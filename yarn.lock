@@ -7214,10 +7214,10 @@ chownr@^2.0.0:
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-2.0.0.tgz#15bfbe53d2eab4cf70f18a8cd68ebe5b3cb1dece"
   integrity sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==
 
-chromatic@7.4.0:
-  version "7.4.0"
-  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-7.4.0.tgz#f53dc86aabb79618b8e0f532b50486db380c6068"
-  integrity sha512-ORsoNgXiAxIEvbdVEqOu4lMZuVMGoM3kiO/toTrAEdh0ej9jIMm2VYqvGVdYGgIWO0xOD9Bn6A34gGeqCsZ1lQ==
+chromatic@7.5.0:
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-7.5.0.tgz#551fa41cfbdadbd28aaa764fdb4461246fa02b3c"
+  integrity sha512-9B1rT8/L71BZTmAGXFBvKGrudnVZ4uBcGFckx0ZEMvOXboI0DOyr1/ehmSB1YmPOhu+r/7dy2jfTEzPmYcpXJg==
 
 ci-info@^3.2.0, ci-info@^3.3.1, ci-info@^3.6.1, ci-info@^3.8.0:
   version "3.9.0"
@@ -10780,7 +10780,7 @@ is-unicode-supported@^0.1.0:
   resolved "https://registry.yarnpkg.com/is-unicode-supported/-/is-unicode-supported-0.1.0.tgz#3f26c76a809593b52bfa2ecb5710ed2779b522a7"
   integrity sha512-knxG2q4UC3u8stRGyAVJCOdxFmv5DZiRcdlIaAQXAbSfJya+OhopNotLQrstBhququ4ZpuKbDc/8S6mgXgPFPw==
 
-is-unicode-supported@^1.1.0, is-unicode-supported@^1.3.0:
+is-unicode-supported@^1.1.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/is-unicode-supported/-/is-unicode-supported-1.3.0.tgz#d824984b616c292a2e198207d4a609983842f714"
   integrity sha512-43r2mRvz+8JRIKnWJ+3j8JtjRKZ6GmjzfaE/qiBJnikNnYv/6bagRJ1kUhNk8R5EX/GkobD+r+sfxCPJsiKBLQ==
@@ -17804,6 +17804,7 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
