@@ -32,16 +32,22 @@ export const useCounterDispatch = () => {
 };
 
 export const useCounterState = () => {
-	return useQuery(['counter'], () => getCount().then(result => result.data));
+	return useQuery({
+		queryKey: ['counter'],
+		queryFn: () => getCount().then(result => result.data),
+	});
 };
 
 export const useCounterMutations = () => {
 	const { data: counter } = useCounterState();
 
 	const queryClient = useQueryClient();
-	const mutateCount = useMutation(sendCount, {
+	const mutateCount = useMutation({
+		mutationFn: sendCount,
 		onSuccess() {
-			queryClient.invalidateQueries(['counter']);
+			queryClient.invalidateQueries({
+				queryKey: ['counter'],
+			});
 		},
 	});
 
