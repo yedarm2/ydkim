@@ -1,5 +1,4 @@
 import '@/styled-system/global.css';
-import { css } from '@/styled-system/css';
 import { Inter } from 'next/font/google';
 import { QueryContainer } from '@/components/react-query/QueryClientProvider';
 
