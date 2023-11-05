@@ -1,15 +1,11 @@
+import { createSchool } from '@/actions/form';
 import { Input } from '@/components/form/Input';
-
-const submitSchoolForm = async (formData: FormData) => {
-	'use server';
-	console.log('formData', formData);
-};
 
 const SchoolForm = () => {
 	return (
-		<form action={submitSchoolForm}>
+		<form action={createSchool}>
 			<Input name="name" placeholder="학교 이름" />
-			<Input type="file" name="학교 파일" placeholder="학교 이미지" />
+			<Input type="file" name="schoolImage" placeholder="학교 이미지" />
 			<button>생성</button>
 		</form>
 	);

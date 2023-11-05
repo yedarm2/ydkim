@@ -17,6 +17,7 @@ if (!getApps().length) {
 
 	initializeApp({
 		credential,
+		storageBucket: 'ydkim-68e4c.appspot.com',
 	});
 }
 
