@@ -1,4 +1,4 @@
-import { getStorage, Storage } from 'firebase-admin/storage';
+import { getStorage, Storage, getDownloadURL } from 'firebase-admin/storage';
 import { firebaseApp } from './_app';
 
 type Bucket = ReturnType<Storage['bucket']>;
@@ -13,9 +13,10 @@ export class CloudStorage {
 	}
 
 	async uploadFile(file: File) {
-		const bucketFile = this.bucket.file(file.name);
-		const bucketFileStream = this.bucket.file(file.name).createWriteStream();
-		const arrayBuffer = await file.arrayBuffer();
+		const bucketFile = this.bucket.file(`test/${file.name}`);
+		const bucketFileStream = bucketFile.createWriteStream();
+		const fileArrayBuffer = await file.arrayBuffer();
+		const fileBuffer = Buffer.from(fileArrayBuffer);
 
 		return new Promise<string>((resolve, reject) => {
 			bucketFileStream.on('error', error => {
@@ -23,10 +24,10 @@ export class CloudStorage {
 			});
 
 			bucketFileStream.on('finish', () => {
-				resolve(`https://storage.googleapis.com/${this.bucket.name}/${bucketFile.name}`);
+				resolve(getDownloadURL(bucketFile));
 			});
 
-			bucketFileStream.end(Buffer.from(arrayBuffer));
+			bucketFileStream.end(fileBuffer);
 		});
 	}
 }
