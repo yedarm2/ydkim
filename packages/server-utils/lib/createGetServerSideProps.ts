@@ -15,7 +15,9 @@ const isSuccessResult = (result: any): result is { props: any } => {
 };
 
 interface CustomGetServerSideProps<Props> {
-	(context: CustomGetServerSidePropsContext):
+	(
+		context: CustomGetServerSidePropsContext,
+	):
 		| void
 		| Promise<void>
 		| GetServerSidePropsResult<Props>
