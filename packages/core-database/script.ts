@@ -11,16 +11,16 @@ prisma.$on('query', event => {
 });
 
 (async () => {
-	const users = await prisma.user.findMany({
-		include: {
-			posts: true,
-		},
-	});
-	const posts = await prisma.post.findMany({
-		include: {
-			author: true,
-		},
-	});
+	// const users = await prisma.user.findMany({
+	// 	include: {
+	// 		posts: true,
+	// 	},
+	// });
+	// const posts = await prisma.post.findMany({
+	// 	include: {
+	// 		author: true,
+	// 	},
+	// });
 	// console.dir(users, { depth: null });
 	// const user = await prisma.user.create({
 	// 	data: {
