@@ -11,39 +11,42 @@ datasource db {
 }
 
 model Student {
-  id             Int                @id @default(autoincrement())
-  studentImageId Int
-  combatClass    StudentCombatClass
-  star           Int                @db.TinyInt
-	weaponType WeaponType
-	weaponImageId  Int
-	role StudentRole
-  attackType     StudentAttackType
-  armorType      StudentArmorType
-	schoolId Int
-	outdoorsAffinity Affinity
-	indoorsAffinity Affinity
-	equipment1 Int
-	equipment2 Int
-	equipment3 Int
+  id               Int                @id @default(autoincrement())
+  studentImageId   Int
+  combatClass      StudentCombatClass // 스트라이커, 스페셜
+  star             Int                @db.TinyInt // 몇성인지
+  weaponType       WeaponType // 무기타입
+  weaponImageId    Int
+  role             StudentRole // 학생 역할
+  attackType       StudentAttackType // 공격 속성
+  armorType        StudentArmorType // 장갑 속성
+  schoolId         Int // 학교
+  urbanAffinity    Affinity
+  outdoorsAffinity Affinity
+  indoorsAffinity  Affinity
+  equipment1       Int
+  equipment2       Int
+  equipment3       Int
 }
 
 model Asset {
-  id      Int       @id @default(autoincrement())
-  url     String
+  id     Int      @id @default(autoincrement())
+  url    String
+  School School[]
 }
 
 model School {
-	id      Int       @id @default(autoincrement())
-	name String
-	logoImageId Int
+  id           Int    @id @default(autoincrement())
+  name         String
+  imageAsset   Asset  @relation(fields: [imageAssetId], references: [id])
+  imageAssetId Int
 }
 
 enum StudentRole {
-	Attacker
-	Support
-	Tank
-	Tactical_Support
+  Attacker
+  Support
+  Tank
+  Tactical_Support
 }
 
 enum StudentCombatClass {
@@ -78,22 +81,22 @@ enum WeaponType {
 }
 
 enum Affinity {
-	D
-	C
-	B
-	A
-	S
-	SS
+  D
+  C
+  B
+  A
+  S
+  SS
 }
 
 enum equipment {
-	Hat // 모자
-	Gloves // 장갑
-	Shoes // 신발
-	Bag // 가방
-	Badge // 배지
-	Hairpin // 헤어핀
-	Charm // 부적
-	Watch // 손목시계
-	Necklace // 목걸이
+  Hat // 모자
+  Gloves // 장갑
+  Shoes // 신발
+  Bag // 가방
+  Badge // 배지
+  Hairpin // 헤어핀
+  Charm // 부적
+  Watch // 손목시계
+  Necklace // 목걸이
 }

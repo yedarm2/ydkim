@@ -13,7 +13,7 @@ export class CloudStorage {
 	}
 
 	async uploadFile(file: File) {
-		const bucketFile = this.bucket.file(`test/${file.name}`);
+		const bucketFile = this.bucket.file(file.name);
 		const bucketFileStream = bucketFile.createWriteStream();
 		const fileArrayBuffer = await file.arrayBuffer();
 		const fileBuffer = Buffer.from(fileArrayBuffer);
