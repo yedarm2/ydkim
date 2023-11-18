@@ -1,0 +1,22 @@
+import { SchoolDao, schoolDao } from '@ydkim/core-database';
+import { AssetService, assetService } from '../assetService';
+import { SchoolCreatePayload } from './schoolService.interface';
+
+export * from './schoolService.interface';
+
+export class SchoolService {
+	schoolDao: SchoolDao;
+	assetService: AssetService;
+
+	constructor() {
+		this.schoolDao = schoolDao;
+		this.assetService = assetService;
+	}
+
+	async createSchool(payload: SchoolCreatePayload) {
+		const imageFileAsset = await this.assetService.uploadAsset(payload.imageFile, 'school');
+		return this.schoolDao.create(payload, imageFileAsset.id);
+	}
+}
+
+export const schoolService = new SchoolService();
