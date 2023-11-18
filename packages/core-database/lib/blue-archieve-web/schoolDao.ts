@@ -16,7 +16,10 @@ export class SchoolDao extends BaseDao {
 	}
 
 	getSchoolById(schoolId: number) {
-		return this.prismaClient.school.findFirst({ where: { id: schoolId } });
+		return this.prismaClient.school.findFirst({
+			where: { id: schoolId },
+			include: { imageAsset: true },
+		});
 	}
 }
 
