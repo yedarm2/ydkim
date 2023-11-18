@@ -12,9 +12,16 @@ export class CloudStorage {
 		this.bucket = this.storage.bucket();
 	}
 
-	async uploadFile(file: File) {
+	private getFilePath(folderPath: string, fileName: string) {
+		const regExpToFilterFolderName = /(^\/)|(\/$)/g;
+		return `${folderPath.replace(regExpToFilterFolderName, '')}/${fileName}`;
+	}
+
+	async uploadFile(file: File, folderPath = '') {
 		try {
-			const bucketFile = this.bucket.file(file.name);
+			const filePath = this.getFilePath(folderPath, file.name);
+
+			const bucketFile = this.bucket.file(filePath);
 			const bucketFileStream = bucketFile.createWriteStream();
 			const fileArrayBuffer = await file.arrayBuffer();
 			const fileBuffer = Buffer.from(fileArrayBuffer);
@@ -38,8 +45,9 @@ export class CloudStorage {
 		}
 	}
 
-	async deleteFile(fileName) {
-		const bucketFile = this.bucket.file(fileName);
+	async deleteFile(fileName, folderPath = '') {
+		const filePath = this.getFilePath(folderPath, fileName);
+		const bucketFile = this.bucket.file(filePath);
 		await bucketFile.delete();
 	}
 }
