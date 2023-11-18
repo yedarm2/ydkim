@@ -13,21 +13,35 @@ export class CloudStorage {
 	}
 
 	async uploadFile(file: File) {
-		const bucketFile = this.bucket.file(file.name);
-		const bucketFileStream = bucketFile.createWriteStream();
-		const fileArrayBuffer = await file.arrayBuffer();
-		const fileBuffer = Buffer.from(fileArrayBuffer);
+		try {
+			const bucketFile = this.bucket.file(file.name);
+			const bucketFileStream = bucketFile.createWriteStream();
+			const fileArrayBuffer = await file.arrayBuffer();
+			const fileBuffer = Buffer.from(fileArrayBuffer);
 
-		return new Promise<string>((resolve, reject) => {
-			bucketFileStream.on('error', error => {
-				reject(error);
+			const fileUploadPromise = new Promise<string>((resolve, reject) => {
+				bucketFileStream.on('error', error => {
+					reject(error);
+				});
+
+				bucketFileStream.on('finish', () => {
+					resolve(getDownloadURL(bucketFile));
+				});
+
+				bucketFileStream.end(fileBuffer);
 			});
 
-			bucketFileStream.on('finish', () => {
-				resolve(getDownloadURL(bucketFile));
-			});
+			return await fileUploadPromise;
+		} catch (error) {
+			console.error('파일 업로드 도중에 에러가 발생했습니다', error);
+			throw error;
+		}
+	}
 
-			bucketFileStream.end(fileBuffer);
-		});
+	async deleteFile(fileName) {
+		const bucketFile = this.bucket.file(fileName);
+		await bucketFile.delete();
 	}
 }
+
+export const cloudStorage = new CloudStorage();
