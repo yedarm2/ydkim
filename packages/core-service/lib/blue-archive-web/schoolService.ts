@@ -17,6 +17,14 @@ export class SchoolService {
 		const imageFileAsset = await this.assetService.uploadAsset(payload.imageFile, 'school');
 		return this.schoolDao.create(payload, imageFileAsset.id);
 	}
+
+	getSchoolList() {
+		return this.schoolDao.getSchoolList();
+	}
+
+	getSchoolById(schoolId: number) {
+		return this.schoolDao.getSchoolById(schoolId);
+	}
 }
 
 export const schoolService = new SchoolService();

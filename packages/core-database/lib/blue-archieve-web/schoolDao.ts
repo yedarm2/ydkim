@@ -10,6 +10,14 @@ export class SchoolDao extends BaseDao {
 			},
 		});
 	}
+
+	getSchoolList() {
+		return this.prismaClient.school.findMany();
+	}
+
+	getSchoolById(schoolId: number) {
+		return this.prismaClient.school.findFirst({ where: { id: schoolId } });
+	}
 }
 
 export const schoolDao = new SchoolDao();
