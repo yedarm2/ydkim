@@ -1,5 +1,5 @@
 import { AssetDao, assetDao } from '@ydkim/core-infra';
-import { CloudStorage, cloudStorage } from '@ydkim/server-utils';
+import { CloudStorage, cloudStorage } from '@ydkim/core-infra';
 
 export class AssetService {
 	private assetDao: AssetDao;
