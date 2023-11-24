@@ -1,4 +1,4 @@
-import { createSchool } from '@/actions/form';
+import { createSchool } from '@/controllers/form';
 import { Input } from '@/components/form/Input';
 
 const SchoolForm = () => {
