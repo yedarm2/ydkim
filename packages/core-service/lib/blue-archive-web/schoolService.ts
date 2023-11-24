@@ -1,4 +1,4 @@
-import { SchoolDao, schoolDao } from '@ydkim/core-database';
+import { SchoolDao, schoolDao } from '@ydkim/core-infra';
 import { AssetService, assetService } from '../assetService';
 import { SchoolCreatePayload } from './schoolService.interface';
 

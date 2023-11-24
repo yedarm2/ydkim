@@ -1,11 +1,11 @@
-# `core-database`
+# `core-infra`
 
 > TODO: description
 
 ## Usage
 
 ```
-const {} = require('@ydkim/core-database');
+const {} = require('@ydkim/core-infra');
 
 // TODO: DEMONSTRATE API
 ```
