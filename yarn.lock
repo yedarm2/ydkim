@@ -4378,10 +4378,10 @@
   resolved "https://registry.yarnpkg.com/@tanstack/query-devtools/-/query-devtools-5.8.8.tgz#9f30e0eac3537724b7da5f479b009b1fc86c2e06"
   integrity sha512-JbmXB0+aSYDLd5PtUijD82YqS1xodtgeuaAixuopmcdp4CpEO3DF35Soa88PEpM8Dgrt+piwAhHlbNvrY+4CnA==
 
-"@tanstack/react-query-devtools@5.8.8":
-  version "5.8.8"
-  resolved "https://registry.yarnpkg.com/@tanstack/react-query-devtools/-/react-query-devtools-5.8.8.tgz#39c701d6c6f92237ba1f3355b1502cf1cc9a9ee4"
-  integrity sha512-oC60LSopUHptugBOJ/N56AwiT4tsc9U0bp3lPWX087faw949XEve8TRfA1e/qUkwQN8/IrzCRjuDOPpHr8gmdw==
+"@tanstack/react-query-devtools@5.8.9":
+  version "5.8.9"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query-devtools/-/react-query-devtools-5.8.9.tgz#6861f32a0194fe8f57516ff3d629687622eae9f0"
+  integrity sha512-TxTmQCxWP9vmWz44XuE09uzQ5ggcsdLFlm/kfYJ7Lq8ZXyYlw4pQqmJvrhHmVuzDFYjp+XNBZLNioAklUlMVow==
   dependencies:
     "@tanstack/query-devtools" "5.8.8"
 
@@ -9685,11 +9685,6 @@ is-unicode-supported@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/is-unicode-supported/-/is-unicode-supported-0.1.0.tgz#3f26c76a809593b52bfa2ecb5710ed2779b522a7"
   integrity sha512-knxG2q4UC3u8stRGyAVJCOdxFmv5DZiRcdlIaAQXAbSfJya+OhopNotLQrstBhququ4ZpuKbDc/8S6mgXgPFPw==
-
-is-unicode-supported@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/is-unicode-supported/-/is-unicode-supported-1.3.0.tgz#d824984b616c292a2e198207d4a609983842f714"
-  integrity sha512-43r2mRvz+8JRIKnWJ+3j8JtjRKZ6GmjzfaE/qiBJnikNnYv/6bagRJ1kUhNk8R5EX/GkobD+r+sfxCPJsiKBLQ==
 
 is-weakmap@^2.0.1:
   version "2.0.1"
@@ -16249,6 +16244,7 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
