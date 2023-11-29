@@ -3593,12 +3593,12 @@
   dependencies:
     "@sinonjs/commons" "^3.0.0"
 
-"@storybook/addon-a11y@7.6.0":
-  version "7.6.0"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-7.6.0.tgz#456ac21be0907c433d5538db80e291841522c833"
-  integrity sha512-jJbrcqVt6/qn7vbV0tPsd3m8W9eheafBGz2lix5I68ZoaEZNqhlrr3r1pKqlqRkAyisAUI+ctrZsqhqid88VPQ==
+"@storybook/addon-a11y@7.6.1":
+  version "7.6.1"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-7.6.1.tgz#5be49ca3226cae5d05616613d4cab2e79405b0f6"
+  integrity sha512-w6lQbU/+uMc0J2vtHmChE7P9L1kRkCRrr6ZwYhkysvDj4PWF74CrbMGNAtHu6TYm+7rFsuJD8kQGYPge1Bng2Q==
   dependencies:
-    "@storybook/addon-highlight" "7.6.0"
+    "@storybook/addon-highlight" "7.6.1"
     axe-core "^4.2.0"
 
 "@storybook/addon-actions@7.6.0":
@@ -3680,6 +3680,13 @@
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/@storybook/addon-highlight/-/addon-highlight-7.6.0.tgz#0a17590a277223667c330be4ef439d85060304a2"
   integrity sha512-9Ho4L47k9e36kIgNa0RA9ZXzn7AWmq/sXBMRK7PcgrMiKvYdRQMU0AMHDvICg2vI8IkMVXTEaT/CQPefG3XT0Q==
+  dependencies:
+    "@storybook/global" "^5.0.0"
+
+"@storybook/addon-highlight@7.6.1":
+  version "7.6.1"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-highlight/-/addon-highlight-7.6.1.tgz#387e2e72e5955225ece1e0e4588b64c17295a080"
+  integrity sha512-NcaIQA1clfKY8P13PlL7yypASaxNcLQ3+fjYa6ysS1dnXw4dV2ecPpYQD8/+sUXOTVtbSdtlVZIvPlmKrO2c5g==
   dependencies:
     "@storybook/global" "^5.0.0"
 
@@ -9568,11 +9575,6 @@ is-unicode-supported@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/is-unicode-supported/-/is-unicode-supported-0.1.0.tgz#3f26c76a809593b52bfa2ecb5710ed2779b522a7"
   integrity sha512-knxG2q4UC3u8stRGyAVJCOdxFmv5DZiRcdlIaAQXAbSfJya+OhopNotLQrstBhququ4ZpuKbDc/8S6mgXgPFPw==
-
-is-unicode-supported@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/is-unicode-supported/-/is-unicode-supported-1.3.0.tgz#d824984b616c292a2e198207d4a609983842f714"
-  integrity sha512-43r2mRvz+8JRIKnWJ+3j8JtjRKZ6GmjzfaE/qiBJnikNnYv/6bagRJ1kUhNk8R5EX/GkobD+r+sfxCPJsiKBLQ==
 
 is-weakmap@^2.0.1:
   version "2.0.1"
@@ -16111,6 +16113,7 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
