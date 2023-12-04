@@ -1,4 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const { createVanillaExtractPlugin } = require('@vanilla-extract/next-plugin');
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
+
+const withVanillaExtract = createVanillaExtractPlugin();
+
+module.exports = withVanillaExtract(nextConfig);

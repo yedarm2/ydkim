@@ -1,7 +1,8 @@
 'use client';
 import { PropsWithChildren } from 'react';
 
-import { layoutContainer, rootLayoutStyle } from './RoolLayout.style';
+import { layoutContainer } from './RoolLayout.style';
+import { rootLayoutStyle } from './RootLayout.css';
 
 export const RootLayout = ({ children }: PropsWithChildren) => {
 	return (
