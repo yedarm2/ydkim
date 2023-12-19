@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import { layoutStyle } from './layout.style';
+import { layoutStyle } from './layout.css';
 
 const FormLayout = ({ children }: PropsWithChildren) => {
 	return (

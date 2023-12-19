@@ -1,9 +1,8 @@
 'use client';
 import { HTMLInputTypeAttribute } from 'react';
 import { SetState } from '@/types/react';
-import { cx } from '@/styled-system/css';
-import { inputStyle } from './Input.style';
-
+import { inputStyle } from './Input.css';
+import { classNames } from '@ydkim/browser-utils';
 interface InputProps {
 	type?: HTMLInputTypeAttribute;
 	name?: string;
@@ -20,7 +19,7 @@ export const Input = ({ type = 'text', name, placeholder, value, setValue }: Inp
 			placeholder={placeholder}
 			value={value}
 			onInput={event => setValue?.((event.target as HTMLInputElement).value)}
-			className={cx(inputStyle)}
+			className={classNames(inputStyle)}
 		/>
 	);
 };

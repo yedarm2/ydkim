@@ -6,3 +6,12 @@ export const rootLayoutStyle = style({
 	padding: '20px 10px',
 	backgroundImage: `url(${bgKivotos.src})`,
 });
+
+export const layoutContainer = style({
+	margin: '0 auto',
+	boxShadow: '0 0 5px rgba(160 160 160 / 1)',
+	minHeight: 'calc(100vh - 40px)',
+	backgroundColor: '#fff',
+	borderRadius: '5px',
+	padding: '10px',
+});
