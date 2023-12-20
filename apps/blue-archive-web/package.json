@@ -3,7 +3,6 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"prepare": "panda codegen",
 		"build": "next build",
 		"clean": "npx rimraf node_modules && npx rimraf dist && npx rimraf .next",
 		"deploy": "echo \"deploy\"",
