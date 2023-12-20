@@ -1,4 +1,4 @@
-import '@/assets/styles/styles.css';
+import '@/assets/styles/styles.scss';
 import { Inter } from 'next/font/google';
 import { QueryContainer } from '@/components/react-query/QueryClientProvider';
 import { RootLayout } from '@/components/common/RootLayout';

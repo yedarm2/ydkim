@@ -8,6 +8,7 @@ export const rootLayoutStyle = style({
 });
 
 export const layoutContainer = style({
+	maxWidth: '1000px',
 	margin: '0 auto',
 	boxShadow: '0 0 5px rgba(160 160 160 / 1)',
 	minHeight: 'calc(100vh - 40px)',
