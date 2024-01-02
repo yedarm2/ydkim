@@ -1,9 +1,6 @@
-import '@/assets/styles/styles.css';
-import { Inter } from 'next/font/google';
+import '@/assets/styles/styles.scss';
 import { QueryContainer } from '@/components/react-query/QueryClientProvider';
 import { RootLayout } from '@/components/common/RootLayout';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
 	title: '블루아카이브 계산기',

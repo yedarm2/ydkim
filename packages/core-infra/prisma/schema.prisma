@@ -40,6 +40,14 @@ model School {
   name         String
   imageAsset   Asset  @relation(fields: [imageAssetId], references: [id])
   imageAssetId Int
+  Club         Club[]
+}
+
+model Club {
+  id       Int    @id @default(autoincrement())
+  name     String
+  school   School @relation(fields: [schoolId], references: [id])
+  schoolId Int
 }
 
 enum StudentRole {

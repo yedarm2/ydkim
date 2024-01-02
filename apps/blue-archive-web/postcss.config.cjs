@@ -1,7 +1,6 @@
 module.exports = {
-  plugins: {
-    '@pandacss/dev/postcss': {},
-		stylelint: {},
+	plugins: {
+		// stylelint: {},
 		autoprefixer: {},
 		'postcss-preset-env': {},
 		// TODO: 나중에 적용해보자 (https://github.com/postcss/postcss-media-minmax)
@@ -10,5 +9,5 @@ module.exports = {
 		// 'postcss-reporter': {
 		// 	clearReportedMessages: true,
 		// },
-  },
-}
+	},
+};
