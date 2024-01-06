@@ -1,15 +1,7 @@
-import { createSchool } from '@/controllers/school';
-import { Button, Input } from '@/components/form';
-import { FileUploader } from '@/components/form/FileUploader';
+import { SchoolForm } from '@/components/school/form/SchoolForm';
 
-const SchoolForm = () => {
-	return (
-		<form action={createSchool}>
-			<Input name="name" placeholder="학교 이름" required />
-			<FileUploader name="schoolImage" placeholder="학교 이미지" required />
-			<Button>생성1</Button>
-		</form>
-	);
+const SchoolFormPage = () => {
+	return <SchoolForm />;
 };
 
-export default SchoolForm;
+export default SchoolFormPage;

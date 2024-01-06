@@ -1,18 +1,7 @@
-import { schoolService } from '@ydkim/core-service';
-import Link from 'next/link';
+import { SchoolList } from '@/components/school/form/SchoolList';
 
-const SchoolForm = async () => {
-	const schoolList = await schoolService.getSchoolList();
-
-	return (
-		<ul>
-			{schoolList.map(school => (
-				<li key={school.id}>
-					{school.id})<Link href={`/school/${school.id}`}>{school.name}</Link>
-				</li>
-			))}
-		</ul>
-	);
+const SchoolListPage = async () => {
+	return <SchoolList />;
 };
 
-export default SchoolForm;
+export default SchoolListPage;
