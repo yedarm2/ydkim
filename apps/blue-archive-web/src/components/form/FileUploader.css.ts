@@ -19,10 +19,14 @@ export const fileUploaderElementStyle = style({
 	alignItems: 'center',
 	border: '2px solid #aaa',
 	borderRadius: '3px',
-});
-
-export const fileUploaderElementStyleDragging = style({
-	borderColor: '#ffa93a',
+	selectors: {
+		['&.dragging']: {
+			borderColor: '#ffa93a',
+		},
+		['&.error']: {
+			borderColor: '#ff3a3a',
+		},
+	},
 });
 
 export const fileUploaderDefaultSvgStyle = style({
