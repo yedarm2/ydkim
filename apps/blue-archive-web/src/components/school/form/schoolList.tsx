@@ -1,7 +1,7 @@
 import { schoolService } from '@ydkim/core-service';
 import Link from 'next/link';
 
-const SchoolList = async () => {
+export const SchoolList = async () => {
 	const schoolList = await schoolService.getSchoolList();
 
 	return (
@@ -14,5 +14,3 @@ const SchoolList = async () => {
 		</ul>
 	);
 };
-
-export default SchoolList;
