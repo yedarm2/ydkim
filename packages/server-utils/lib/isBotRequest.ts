@@ -1,1 +1,1 @@
-export { default as isBotRequest } from 'isbot';
+export { isbot as isBotRequest } from 'isbot';
