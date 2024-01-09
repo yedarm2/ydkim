@@ -1,14 +1,20 @@
 import { globalStyle, style } from '@vanilla-extract/css';
 
-export const schoolFormStyle = style({
+export const formStyle = style({
 	padding: '10px 20px',
 });
 
-export const schoolFormTitleStyle = style({
+globalStyle(`${formStyle} > .title`, {
 	margin: '0 0 10px',
 });
 
-export const schoolFormRowStyle = style({
+globalStyle(`${formStyle} .submit-button`, {
+	margin: '10px 0 0',
+	padding: '5px 0',
+	width: '90px',
+});
+
+export const formRowStyle = style({
 	display: 'flex',
 	alignItems: 'center',
 	minHeight: '50px',
@@ -20,21 +26,16 @@ export const schoolFormRowStyle = style({
 	},
 });
 
-globalStyle(`${schoolFormRowStyle} .title`, {
+globalStyle(`${formRowStyle} .label`, {
+	padding: '0 0 0 15px',
 	width: '120px',
 });
-globalStyle(`${schoolFormRowStyle} .divider`, {
+globalStyle(`${formRowStyle} .divider`, {
 	width: '1px',
 	height: '100px',
 	margin: '10px 20px',
 	backgroundColor: '#aaa',
 });
-globalStyle(`${schoolFormRowStyle} .content`, {
+globalStyle(`${formRowStyle} .content`, {
 	flex: '1 1 auto',
-});
-
-globalStyle(`${schoolFormStyle} .submit-button`, {
-	margin: '10px 0 0',
-	padding: '5px 0',
-	width: '90px',
 });
