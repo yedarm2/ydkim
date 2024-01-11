@@ -12,7 +12,7 @@ export interface FormTemplateProps extends Omit<FormHTMLAttributes<HTMLFormEleme
 
 export const FormTemplate = ({
 	title,
-	buttonText,
+	buttonText = '생성',
 	className,
 	children,
 	...formProps

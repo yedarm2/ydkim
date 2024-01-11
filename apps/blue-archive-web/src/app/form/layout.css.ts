@@ -1,7 +1,7 @@
 import { style } from '@vanilla-extract/css';
 
 export const layoutStyle = style({
-	display: 'flex',
-	flexDirection: 'row',
+	display: 'grid',
+	gridTemplateColumns: '100px 1fr',
 	gap: '10px',
 });
