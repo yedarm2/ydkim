@@ -18,7 +18,7 @@ export class AssetService {
 				url: fileUrl,
 			});
 		} catch (error) {
-			console.log(
+			console.error(
 				'업로드한 파일 정보 저장 도중에 에러가 발생했습니다. 업로드한 파일을 삭제하겠습니다.',
 				error,
 			);
