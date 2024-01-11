@@ -3,6 +3,12 @@ import { firebaseApp } from './_app';
 
 type Bucket = ReturnType<Storage['bucket']>;
 
+export interface UploadFilePayload {
+	file: File;
+	fileName?: string;
+	folderPath?: string;
+}
+
 export class CloudStorage {
 	protected storage: Storage;
 	protected bucket: Bucket;
@@ -17,9 +23,9 @@ export class CloudStorage {
 		return `${folderPath.replace(regExpToFilterFolderName, '')}/${fileName}`;
 	}
 
-	async uploadFile(file: File, folderPath = '') {
+	async uploadFile({ file, fileName, folderPath = '' }: UploadFilePayload) {
 		try {
-			const filePath = this.getFilePath(folderPath, file.name);
+			const filePath = this.getFilePath(folderPath, fileName ?? file.name);
 
 			const bucketFile = this.bucket.file(filePath);
 			const bucketFileStream = bucketFile.createWriteStream();

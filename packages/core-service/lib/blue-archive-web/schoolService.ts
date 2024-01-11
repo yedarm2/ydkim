@@ -14,7 +14,11 @@ export class SchoolService {
 	}
 
 	async createSchool(payload: SchoolCreatePayload) {
-		const imageFileAsset = await this.assetService.uploadAsset(payload.imageFile, 'school');
+		const imageFileAsset = await this.assetService.uploadAsset({
+			file: payload.imageFile,
+			fileName: `${payload.name}_로고`,
+			folderPath: 'school_logo',
+		});
 		return this.schoolDao.create(payload, imageFileAsset.id);
 	}
 
