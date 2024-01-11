@@ -10,11 +10,13 @@ import {
 } from './FileUploader.css';
 import { classNames } from '@ydkim/browser-utils';
 
-interface FileUploaderProps extends Omit<InputProps, 'type'> {}
+interface FileUploaderProps extends Omit<InputProps, 'type' | 'string'> {
+	className?: string;
+}
 
 type DragState = 'dragging' | 'error' | 'none';
 
-export const FileUploader = ({ ...props }: FileUploaderProps) => {
+export const FileUploader = ({ className, ...props }: FileUploaderProps) => {
 	const defaultInputId = useId();
 	const inputId = props.id ?? defaultInputId;
 
@@ -50,7 +52,7 @@ export const FileUploader = ({ ...props }: FileUploaderProps) => {
 	};
 
 	return (
-		<div className={fileUploaderStyle}>
+		<div className={classNames(fileUploaderStyle, className)}>
 			<label
 				htmlFor={inputId}
 				className={classNames(fileUploaderElementStyle, dragState)}
