@@ -32,22 +32,25 @@ model Student {
 model Asset {
   id     Int      @id @default(autoincrement())
   url    String
-  School School[]
+  School School?
+  Club   Club?
 }
 
 model School {
   id           Int    @id @default(autoincrement())
   name         String
   imageAsset   Asset  @relation(fields: [imageAssetId], references: [id])
-  imageAssetId Int
+  imageAssetId Int @unique
   Club         Club[]
 }
 
 model Club {
-  id       Int    @id @default(autoincrement())
-  name     String
-  school   School @relation(fields: [schoolId], references: [id])
-  schoolId Int
+  id          Int    @id @default(autoincrement())
+  name        String
+  school      School @relation(fields: [schoolId], references: [id])
+  schoolId    Int
+  logoAsset   Asset? @relation(fields: [logoAssetId], references: [id])
+  logoAssetId Int? @unique
 }
 
 enum StudentRole {
