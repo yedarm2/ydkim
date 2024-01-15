@@ -1,9 +1,19 @@
-import { FormHTMLAttributes, PropsWithChildren, ReactNode } from 'react';
+import {
+	Children,
+	FormHTMLAttributes,
+	JSXElementConstructor,
+	PropsWithChildren,
+	ReactElement,
+	ReactNode,
+	cloneElement,
+	isValidElement,
+} from 'react';
 
 import { classNames } from '@ydkim/browser-utils';
 import { Button } from './Button';
 import { PropsWithClass } from '@/types/react';
 import { formRowStyle, formStyle } from './FormTemplate.css';
+import { Input, InputProps } from './Input';
 
 export interface FormTemplateProps extends Omit<FormHTMLAttributes<HTMLFormElement>, 'title'> {
 	title?: ReactNode;
@@ -35,8 +45,17 @@ export interface FormTemplateRowProps {
 FormTemplate.Row = ({
 	label,
 	className,
-	children,
+	children: _children,
 }: PropsWithChildren<PropsWithClass<FormTemplateRowProps>>) => {
+	const children = Children.map(_children, child => {
+		if (!isValidElement(child) || child.type !== Input) return child;
+
+		return cloneElement(child, {
+			...child.props,
+			placeholder: label,
+		} as InputProps);
+	});
+
 	return (
 		<div className={classNames(formRowStyle, className)}>
 			<div className="label">{label}</div>
