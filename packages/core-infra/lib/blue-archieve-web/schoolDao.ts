@@ -1,8 +1,14 @@
-import { PrismaClient, Prisma } from '@prisma/client';
+import { Prisma } from '@prisma/client';
 import { BaseDao } from '../dao/_baseDao';
 
+export { School } from '@prisma/client';
+
+export interface RawCreateSchoolPayload {
+	name: string;
+}
+
 export class SchoolDao extends BaseDao {
-	create(schoolData: Prisma.SchoolCreateManyImageAssetInput, imageAssetId: number) {
+	create(schoolData: RawCreateSchoolPayload, imageAssetId: number) {
 		return this.prismaClient.school.create({
 			data: {
 				name: schoolData.name,

@@ -1,4 +1,4 @@
-export interface SchoolCreatePayload {
+export interface CreateSchoolPayload {
 	name: string;
 	imageFile: File;
 }

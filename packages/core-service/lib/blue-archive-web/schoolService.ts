@@ -1,6 +1,6 @@
 import { SchoolDao, schoolDao } from '@ydkim/core-infra';
 import { AssetService, assetService } from '../assetService';
-import { SchoolCreatePayload } from './schoolService.interface';
+import { CreateSchoolPayload } from './schoolService.interface';
 
 export * from './schoolService.interface';
 
@@ -13,12 +13,13 @@ export class SchoolService {
 		this.assetService = assetService;
 	}
 
-	async createSchool(payload: SchoolCreatePayload) {
+	async createSchool(payload: CreateSchoolPayload) {
 		const imageFileAsset = await this.assetService.uploadAsset({
 			file: payload.imageFile,
 			fileName: `${payload.name}_로고`,
 			folderPath: 'school_logo',
 		});
+
 		return this.schoolDao.create(payload, imageFileAsset.id);
 	}
 
