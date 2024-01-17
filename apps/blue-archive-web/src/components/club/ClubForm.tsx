@@ -3,12 +3,12 @@ import { Option } from '@/types/common';
 import { FormTemplate } from '@/components/form/FormTemplate';
 import { Input } from '../form';
 import { FileUploader } from '@/components/form/FileUploader';
-import { FormHTMLAttributes } from 'react';
+import { FormAction } from '@/types/next';
 
 interface ClubFormProps {
 	school?: School;
 	schoolOptionList?: Option[];
-	action: FormHTMLAttributes<HTMLFormElement>['action'];
+	action: FormAction;
 }
 
 export const ClubForm = ({ school, schoolOptionList, action }: ClubFormProps) => {
