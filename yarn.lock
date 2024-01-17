@@ -6240,10 +6240,10 @@ chownr@^2.0.0:
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-2.0.0.tgz#15bfbe53d2eab4cf70f18a8cd68ebe5b3cb1dece"
   integrity sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==
 
-chromatic@10.3.0:
-  version "10.3.0"
-  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-10.3.0.tgz#cbf686a4bec6e40743126952780fd60eb34dbee7"
-  integrity sha512-NhNMrpGOn8clK6SpLiFe3HjrabUv6T0W548/qwKKj6rpMcRBWv16gVDERwKQ1uLiCiXHZM/gapytVazAkDhvPA==
+chromatic@10.3.1:
+  version "10.3.1"
+  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-10.3.1.tgz#6574c47daf34f2e8d82ceafa511b523f59c0edc7"
+  integrity sha512-IHczKH3K3vVeZGE3XyCy/T8EQH2mGUEyQ9QUuULrWlYCfo760cnzehdTjrpuIUetkHtv7noA5Hmn6joQlz3Ufw==
 
 ci-info@^3.2.0, ci-info@^3.6.1:
   version "3.9.0"
@@ -16011,6 +16011,7 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
