@@ -5065,10 +5065,10 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
-"@vanilla-extract/babel-plugin-debug-ids@^1.0.2":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/babel-plugin-debug-ids/-/babel-plugin-debug-ids-1.0.3.tgz#ce07190343b51ed658b385bdce1e79952a4e8526"
-  integrity sha512-vm4jYu1xhSa6ofQ9AhIpR3DkAp4c+eoR1Rpm8/TQI4DmWbmGbOjYRcqV0aWsfaIlNhN4kFuxFMKBNN9oG6iRzA==
+"@vanilla-extract/babel-plugin-debug-ids@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/babel-plugin-debug-ids/-/babel-plugin-debug-ids-1.0.4.tgz#09bafadcc22b5d06b68ad04ea1eccca1627068d1"
+  integrity sha512-mevYcVMwsT6960xnXRw/Rr2K7SOEwzwVBApg/2SJ3eg2KGsHfj1rN0oQ12WdoTT3RzThq+0551bVQKPvQnjeaA==
   dependencies:
     "@babel/core" "^7.20.7"
 
@@ -5089,14 +5089,14 @@
     modern-ahocorasick "^1.0.0"
     outdent "^0.8.0"
 
-"@vanilla-extract/integration@^6.0.0":
-  version "6.2.4"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-6.2.4.tgz#bd8a5ec0916051c1ef5fb66d8484a5cad8d8c58d"
-  integrity sha512-+AfymNMVq9sEUe0OJpdCokmPZg4Zi6CqKaW/PnUOfDwEn53ighHOMOBl5hAgxYR8Kiz9NG43Bn00mkjWlFi+ng==
+"@vanilla-extract/integration@^6.2.5":
+  version "6.2.5"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-6.2.5.tgz#63056634fe969ce2c45506cd6b9587622fd0b06b"
+  integrity sha512-CK8KyxteNQZtUgo8TCMIYb93SD6vk5bWPPOco853Om2BoxqRV1MgAQkjSUVPR3XxVFl6BGyYLN7D++3+9/82/g==
   dependencies:
     "@babel/core" "^7.20.7"
     "@babel/plugin-syntax-typescript" "^7.20.0"
-    "@vanilla-extract/babel-plugin-debug-ids" "^1.0.2"
+    "@vanilla-extract/babel-plugin-debug-ids" "^1.0.4"
     "@vanilla-extract/css" "^1.14.0"
     esbuild "0.17.6"
     eval "0.1.8"
@@ -5105,27 +5105,27 @@
     lodash "^4.17.21"
     mlly "^1.1.0"
     outdent "^0.8.0"
-    vite "^4.1.4"
-    vite-node "^0.28.5"
+    vite "^5.0.10"
+    vite-node "^1.1.0"
 
-"@vanilla-extract/next-plugin@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/next-plugin/-/next-plugin-2.3.2.tgz#e82bf1c343f01e2ba5971ea7ab5a6a4f7b8d8668"
-  integrity sha512-wBulJAhmr8guYo5YxrfsA1T/TQ3tbMJjNtE6QrVZvs1NTnT9/WAmf4IVrbUvQbH+LBj5LXO8dRzueGPAvepSng==
+"@vanilla-extract/next-plugin@2.3.3":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/next-plugin/-/next-plugin-2.3.3.tgz#1c5857fce511be69c54af7488c746eecbe9bde7e"
+  integrity sha512-Akpfk7NSGwNmcjSVafSob55mMVd3acJwRTHpZTwxEQ8d1JRe1Wd5TqbzvFRNRyf8yzelWgA9eDNptQ+QCDKG0g==
   dependencies:
-    "@vanilla-extract/webpack-plugin" "^2.3.1"
+    "@vanilla-extract/webpack-plugin" "^2.3.2"
 
 "@vanilla-extract/private@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/private/-/private-1.0.3.tgz#7ec72bc2ff6fe51f9d650f962e8d1989b073690f"
   integrity sha512-17kVyLq3ePTKOkveHxXuIJZtGYs+cSoev7BlP+Lf4916qfDhk/HBjvlYDe8egrea7LNPHKwSZJK/bzZC+Q6AwQ==
 
-"@vanilla-extract/webpack-plugin@^2.3.1":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/webpack-plugin/-/webpack-plugin-2.3.1.tgz#359d93b8b579560c1dadc6ae8eb655126332e02e"
-  integrity sha512-S767iP+S67Uh+BsTe+u60BMbtRqZAxzjK7gYd6a+1hcbMKznYxdQMeP2qs9wr+NhRqZFrNxewo3/ztMnN85TOg==
+"@vanilla-extract/webpack-plugin@^2.3.2":
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/webpack-plugin/-/webpack-plugin-2.3.2.tgz#e06d1b134cd0f3ad2d2a2058b46375d1170e2e46"
+  integrity sha512-0i8esTzofsPD4yj2m8oOLwcpWpE6h1nAJaEgehqUofijExNPM+BQ/wOum8dZr2kY6VLwubN51Pf9Stq5PGl8VA==
   dependencies:
-    "@vanilla-extract/integration" "^6.0.0"
+    "@vanilla-extract/integration" "^6.2.5"
     chalk "^4.1.1"
     debug "^4.3.1"
     loader-utils "^2.0.0"
@@ -7461,7 +7461,7 @@ esbuild@0.17.6:
     "@esbuild/win32-ia32" "0.17.6"
     "@esbuild/win32-x64" "0.17.6"
 
-esbuild@^0.18.0, esbuild@^0.18.10:
+esbuild@^0.18.0:
   version "0.18.20"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.18.20.tgz#4709f5a34801b43b799ab7d6d82f7284a9b7a7a6"
   integrity sha512-ceqxoedUrcayh7Y7ZX6NdbbDzGROiyVBgC4PriJThBKSVPWnnFHZAkfI1lJT8QFkOwH4qOS2SJkS4wvpGl8BpA==
@@ -13075,7 +13075,7 @@ postcss@8.4.31:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-postcss@8.4.33, postcss@^8.4.21, postcss@^8.4.27, postcss@^8.4.32:
+postcss@8.4.33, postcss@^8.4.21, postcss@^8.4.32:
   version "8.4.33"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.33.tgz#1378e859c9f69bf6f638b990a0212f43e2aaa742"
   integrity sha512-Kkpbhhdjw2qQs2O2DGX+8m5OVqEcbB9HRBvuYM9pgrjEFUg30A9LmXNlTAUj4S9kgtGyrMbTzVjH7E+s5Re2yg==
@@ -13988,7 +13988,7 @@ rollup@2.78.0:
   optionalDependencies:
     fsevents "~2.3.2"
 
-"rollup@^2.25.0 || ^3.3.0", rollup@^3.27.1:
+"rollup@^2.25.0 || ^3.3.0":
   version "3.29.4"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.29.4.tgz#4d70c0f9834146df8705bfb69a9a19c9e1109981"
   integrity sha512-oWzmBZwvYrU0iJHtDmhsm662rC15FRXmcjCk1xD771dFDx5jJ02ufAQQTn0etB2emNk4J9EZg/yWKpsn9BWGRw==
@@ -15795,21 +15795,18 @@ vfile@^5.0.0:
     unist-util-stringify-position "^3.0.0"
     vfile-message "^3.0.0"
 
-vite-node@^0.28.5:
-  version "0.28.5"
-  resolved "https://registry.yarnpkg.com/vite-node/-/vite-node-0.28.5.tgz#56d0f78846ea40fddf2e28390899df52a4738006"
-  integrity sha512-LmXb9saMGlrMZbXTvOveJKwMTBTNUH66c8rJnQ0ZPNX+myPEol64+szRzXtV5ORb0Hb/91yq+/D3oERoyAt6LA==
+vite-node@^1.1.0:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/vite-node/-/vite-node-1.2.1.tgz#bca96ae91b2b1ee9a7aa73685908362d70ce26a8"
+  integrity sha512-fNzHmQUSOY+y30naohBvSW7pPn/xn3Ib/uqm+5wAJQJiqQsU0NBR78XdRJb04l4bOFKjpTWld0XAfkKlrDbySg==
   dependencies:
     cac "^6.7.14"
     debug "^4.3.4"
-    mlly "^1.1.0"
-    pathe "^1.1.0"
+    pathe "^1.1.1"
     picocolors "^1.0.0"
-    source-map "^0.6.1"
-    source-map-support "^0.5.21"
-    vite "^3.0.0 || ^4.0.0"
+    vite "^5.0.0"
 
-vite@5.0.11:
+vite@5.0.11, vite@^5.0.0, vite@^5.0.10:
   version "5.0.11"
   resolved "https://registry.yarnpkg.com/vite/-/vite-5.0.11.tgz#31562e41e004cb68e1d51f5d2c641ab313b289e4"
   integrity sha512-XBMnDjZcNAw/G1gEiskiM1v6yzM4GE5aMGvhWTlHAYYhxb7S3/V1s3m2LDHa8Vh6yIWYYB0iJwsEaS523c4oYA==
@@ -15819,17 +15816,6 @@ vite@5.0.11:
     rollup "^4.2.0"
   optionalDependencies:
     fsevents "~2.3.3"
-
-"vite@^3.0.0 || ^4.0.0", vite@^4.1.4:
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-4.5.1.tgz#3370986e1ed5dbabbf35a6c2e1fb1e18555b968a"
-  integrity sha512-AXXFaAJ8yebyqzoNB9fu2pHoo/nWX+xZlaRwoeYUxEqBO+Zj4msE5G+BhGBll9lYEKv9Hfks52PAF2X7qDYXQA==
-  dependencies:
-    esbuild "^0.18.10"
-    postcss "^8.4.27"
-    rollup "^3.27.1"
-  optionalDependencies:
-    fsevents "~2.3.2"
 
 walker@^1.0.8:
   version "1.0.8"
@@ -16003,6 +15989,7 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
