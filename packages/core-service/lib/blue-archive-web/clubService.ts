@@ -1,7 +1,7 @@
 import { ClubDao, clubDao } from '@ydkim/core-infra';
 import { AssetService, assetService } from '../assetService';
 import { CreateClubPayload } from './clubService.interface';
-import { SchoolService } from './schoolService';
+import { SchoolService, schoolService } from './schoolService';
 
 export * from './clubService.interface';
 
@@ -13,6 +13,7 @@ export class ClubService {
 	constructor() {
 		this.clubDao = clubDao;
 		this.assetService = assetService;
+		this.schoolService = schoolService;
 	}
 
 	async createClub(payload: CreateClubPayload) {

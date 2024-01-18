@@ -1,7 +1,6 @@
 import { createSchool } from '@/controllers/school';
 import { Input } from '@/components/form';
-import { FileUploader } from '@/components/form/FileUploader';
-import { FormTemplate } from '@/components/form/FormTemplate';
+import { FormTemplate, FileUploader } from '@/components/form';
 
 export const SchoolForm = () => {
 	return (

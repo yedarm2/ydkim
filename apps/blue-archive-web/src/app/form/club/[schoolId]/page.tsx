@@ -2,6 +2,7 @@ import { ClubForm } from '@/components/club/ClubForm';
 import { NextPageParams } from '@/types/next';
 import { schoolService } from '@ydkim/core-service';
 import { NotFoundException } from '../errorClass';
+import { createClub } from '@/controllers/club';
 
 const ClubFormPage = async ({ params }: NextPageParams<{ schoolId: string }>) => {
 	const schoolId = parseInt(params.schoolId);
@@ -15,7 +16,7 @@ const ClubFormPage = async ({ params }: NextPageParams<{ schoolId: string }>) =>
 		throw new NotFoundException();
 	}
 
-	return <ClubForm school={school} />;
+	return <ClubForm school={school} action={createClub} />;
 };
 
 export default ClubFormPage;
