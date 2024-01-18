@@ -3676,12 +3676,12 @@
   dependencies:
     "@sinonjs/commons" "^3.0.0"
 
-"@storybook/addon-a11y@7.6.9":
-  version "7.6.9"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-7.6.9.tgz#ebeb0b4979bbe42a12b6da88fd3782561946e940"
-  integrity sha512-TMr6X8rd0qIAoNHP4Sb+YcQR13lB1uEWNv7lFJc7lcZVUV9ZtxqrQ3lbZDrPaTU1rpBoWXNUGMKjd6Teq9WDAw==
+"@storybook/addon-a11y@7.6.10":
+  version "7.6.10"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-7.6.10.tgz#ad2a266d52c0b9909f221133ea41b9ffb0e7d9f7"
+  integrity sha512-TP17m4TAWLSSd2x9cWNg7d0MCZZCojYIG83RZMXAb55jt8gKJBMDbupOoDLydBsABQa5Uk9ZP0D/CvumMon8RA==
   dependencies:
-    "@storybook/addon-highlight" "7.6.9"
+    "@storybook/addon-highlight" "7.6.10"
     axe-core "^4.2.0"
 
 "@storybook/addon-actions@7.6.9":
@@ -3758,6 +3758,13 @@
     "@storybook/node-logger" "7.6.9"
     "@storybook/preview-api" "7.6.9"
     ts-dedent "^2.0.0"
+
+"@storybook/addon-highlight@7.6.10":
+  version "7.6.10"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-highlight/-/addon-highlight-7.6.10.tgz#19cad3d67655e9b9eef3d2f6760789fc29ba0790"
+  integrity sha512-dIuS5QmoT1R+gFOcf6CoBa6D9UR5/wHCfPqPRH8dNNcCLtIGSHWQ4v964mS5OCq1Huj7CghmR15lOUk7SaYwUA==
+  dependencies:
+    "@storybook/global" "^5.0.0"
 
 "@storybook/addon-highlight@7.6.9":
   version "7.6.9"
@@ -16003,6 +16010,7 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
