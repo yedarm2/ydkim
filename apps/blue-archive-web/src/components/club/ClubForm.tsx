@@ -14,7 +14,7 @@ export const ClubForm = ({ school, schoolOptionList, action }: ClubFormProps) =>
 	return (
 		<FormTemplate title="동아리 생성" buttonText="생성" action={action}>
 			<FormTemplate.Row label="학교">
-				{schoolOptionList && <Select optionList={schoolOptionList} />}
+				{schoolOptionList && <Select name="schoolId" optionList={schoolOptionList} />}
 				{school && (
 					<>
 						<Input type="hidden" name="schoolId" value={school.id} />
