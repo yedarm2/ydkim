@@ -1,4 +1,4 @@
-import { SchoolList } from '@/components/school/form/SchoolList';
+import { SchoolList } from '@/components/school/SchoolList';
 
 const SchoolListPage = async () => {
 	return <SchoolList />;

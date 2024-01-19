@@ -1,4 +1,4 @@
-import { SchoolForm } from '@/components/school/form/SchoolForm';
+import { SchoolForm } from '@/components/school/SchoolForm';
 
 const SchoolFormPage = () => {
 	return <SchoolForm />;

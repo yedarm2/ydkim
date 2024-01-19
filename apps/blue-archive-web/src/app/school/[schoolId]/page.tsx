@@ -1,4 +1,4 @@
-import { SchoolView } from '@/components/school/form/SchoolView';
+import { SchoolView } from '@/components/school/SchoolView';
 
 const SchoolViewPage = async (props: { params: { schoolId: string } }) => {
 	const { schoolId: schoolIdString } = props.params;
