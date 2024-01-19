@@ -30,6 +30,15 @@ export class SchoolService {
 	getSchoolById(schoolId: number) {
 		return this.schoolDao.getSchoolById(schoolId);
 	}
+
+	async getSchoolOptionList() {
+		const schoolList = await this.getSchoolList();
+
+		return schoolList.map(school => ({
+			value: school.id,
+			option: school.name,
+		}));
+	}
 }
 
 export const schoolService = new SchoolService();

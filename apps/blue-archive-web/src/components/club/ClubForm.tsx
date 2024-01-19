@@ -1,6 +1,6 @@
 import { School } from '@ydkim/core-infra';
 import { Option } from '@/types/common';
-import { FormTemplate, FileUploader } from '@/components/form';
+import { FormTemplate, FileUploader, Select } from '@/components/form';
 import { Input } from '../form';
 import { FormAction } from '@/types/next';
 
@@ -14,6 +14,7 @@ export const ClubForm = ({ school, schoolOptionList, action }: ClubFormProps) =>
 	return (
 		<FormTemplate title="동아리 생성" buttonText="생성" action={action}>
 			<FormTemplate.Row label="학교">
+				{schoolOptionList && <Select optionList={schoolOptionList} />}
 				{school && (
 					<>
 						<Input type="hidden" name="schoolId" value={school.id} />
