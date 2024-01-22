@@ -23,6 +23,7 @@ export class ClubService {
 			? await this.assetService.uploadAsset({
 					file: payload.logoImageFile,
 					fileName: `${school.name}_${payload.name}_로고`,
+					folderPath: 'club_logo',
 				})
 			: undefined;
 

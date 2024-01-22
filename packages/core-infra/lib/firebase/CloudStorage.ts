@@ -6,7 +6,7 @@ type Bucket = ReturnType<Storage['bucket']>;
 export interface UploadFilePayload {
 	file: File;
 	fileName?: string;
-	folderPath?: string;
+	folderPath: string;
 }
 
 export class CloudStorage {
@@ -20,10 +20,11 @@ export class CloudStorage {
 
 	private getFilePath(folderPath: string, fileName: string) {
 		const regExpToFilterFolderName = /(^\/)|(\/$)/g;
+
 		return `${folderPath.replace(regExpToFilterFolderName, '')}/${fileName}`;
 	}
 
-	async uploadFile({ file, fileName, folderPath = '' }: UploadFilePayload) {
+	async uploadFile({ file, fileName, folderPath }: UploadFilePayload) {
 		try {
 			const filePath = this.getFilePath(folderPath, fileName ?? file.name);
 
