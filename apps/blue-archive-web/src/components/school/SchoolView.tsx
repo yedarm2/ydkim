@@ -10,7 +10,7 @@ export const SchoolView = async ({ school }: SchoolViewProps) => {
 		<ul>
 			<li>학교 이름: {school?.name}</li>
 			<li>
-				학교 로고: <img src={school?.imageAsset.url} alt="" />
+				학교 로고: <img src={school?.imageAsset?.url} alt="" />
 			</li>
 			<li>
 				<Link href="/school">돌아가기</Link>

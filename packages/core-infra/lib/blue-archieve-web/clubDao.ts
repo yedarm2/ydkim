@@ -1,8 +1,6 @@
 import { Prisma } from '@prisma/client';
 import { BaseDao } from '../dao/_baseDao';
 
-export { Club } from '@prisma/client';
-
 export interface RawCreateClubPayload {
 	name: string;
 	schoolId: number;

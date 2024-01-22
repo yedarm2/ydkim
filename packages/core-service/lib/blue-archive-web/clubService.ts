@@ -1,6 +1,6 @@
 import { ClubDao, clubDao } from '@ydkim/core-infra';
 import { AssetService, assetService } from '../assetService';
-import { Club, CreateClubPayload } from './clubService.interface';
+import { Club, ClubDetail, CreateClubPayload } from './clubService.interface';
 import { SchoolService, schoolService } from './schoolService';
 
 export * from './clubService.interface';
@@ -28,6 +28,20 @@ export class ClubService {
 			: undefined;
 
 		return this.clubDao.create(payload, logoImageFileAsset.id);
+	}
+
+	getClubList(): Promise<Club[]> {
+		return this.clubDao.getClubList();
+	}
+
+	async getClubById(clubId: number): Promise<ClubDetail> {
+		const club = await this.clubDao.getClubById(clubId);
+		const school = await this.schoolService.getSchoolById(club.schoolId);
+
+		return {
+			...club,
+			school,
+		};
 	}
 }
 

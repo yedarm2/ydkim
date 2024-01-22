@@ -1,4 +1,4 @@
-import { School, schoolService } from '@ydkim/core-service';
+import { School } from '@ydkim/core-service';
 import Link from 'next/link';
 
 interface SchoolListProps {

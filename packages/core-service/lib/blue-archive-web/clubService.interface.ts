@@ -1,4 +1,5 @@
 import { Asset } from '../assetService';
+import { SchoolDetail } from './schoolService.interface';
 
 export interface CreateClubPayload {
 	name: string;
@@ -12,5 +13,6 @@ export interface Club {
 }
 
 export interface ClubDetail extends Club {
-	logoAsset: Asset;
+	logoAsset?: Asset;
+	school: SchoolDetail;
 }

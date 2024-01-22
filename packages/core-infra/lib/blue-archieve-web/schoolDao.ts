@@ -1,8 +1,6 @@
 import { Prisma } from '@prisma/client';
 import { BaseDao } from '../dao/_baseDao';
 
-export { School } from '@prisma/client';
-
 export interface RawCreateSchoolPayload {
 	name: string;
 }
