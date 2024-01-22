@@ -1,9 +1,11 @@
-import { schoolService } from '@ydkim/core-service';
+import { School, schoolService } from '@ydkim/core-service';
 import Link from 'next/link';
 
-export const SchoolList = async () => {
-	const schoolList = await schoolService.getSchoolList();
+interface SchoolListProps {
+	schoolList: School[];
+}
 
+export const SchoolList = async ({ schoolList }: SchoolListProps) => {
 	return (
 		<ul>
 			{schoolList.map(school => (

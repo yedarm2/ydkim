@@ -1,7 +1,10 @@
 import { SchoolList } from '@/components/school/SchoolList';
+import { schoolService } from '@ydkim/core-service';
 
 const SchoolListPage = async () => {
-	return <SchoolList />;
+	const schoolList = await schoolService.getSchoolList();
+
+	return <SchoolList schoolList={schoolList} />;
 };
 
 export default SchoolListPage;

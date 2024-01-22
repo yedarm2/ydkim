@@ -1,6 +1,6 @@
 import { ClubDao, clubDao } from '@ydkim/core-infra';
 import { AssetService, assetService } from '../assetService';
-import { CreateClubPayload } from './clubService.interface';
+import { Club, CreateClubPayload } from './clubService.interface';
 import { SchoolService, schoolService } from './schoolService';
 
 export * from './clubService.interface';
@@ -16,7 +16,7 @@ export class ClubService {
 		this.schoolService = schoolService;
 	}
 
-	async createClub(payload: CreateClubPayload) {
+	async createClub(payload: CreateClubPayload): Promise<Club> {
 		const school = await this.schoolService.getSchoolById(payload.schoolId);
 
 		const logoImageFileAsset = payload.logoImageFile

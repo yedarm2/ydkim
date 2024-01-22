@@ -1,6 +1,6 @@
 import { SchoolDao, schoolDao } from '@ydkim/core-infra';
 import { AssetService, assetService } from '../assetService';
-import { CreateSchoolPayload } from './schoolService.interface';
+import { CreateSchoolPayload, School, SchoolDetail } from './schoolService.interface';
 
 export * from './schoolService.interface';
 
@@ -23,11 +23,11 @@ export class SchoolService {
 		return this.schoolDao.create(payload, imageFileAsset.id);
 	}
 
-	getSchoolList() {
+	getSchoolList(): Promise<School[]> {
 		return this.schoolDao.getSchoolList();
 	}
 
-	getSchoolById(schoolId: number) {
+	getSchoolById(schoolId: number): Promise<SchoolDetail> {
 		return this.schoolDao.getSchoolById(schoolId);
 	}
 

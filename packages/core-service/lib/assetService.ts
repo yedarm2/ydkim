@@ -1,5 +1,8 @@
 import { AssetDao, UploadFilePayload, assetDao } from '@ydkim/core-infra';
 import { CloudStorage, cloudStorage } from '@ydkim/core-infra';
+import { Asset } from './assetService.interface';
+
+export * from './assetService.interface';
 
 export class AssetService {
 	private assetDao: AssetDao;
@@ -10,7 +13,7 @@ export class AssetService {
 		this.cloudStorage = cloudStorage;
 	}
 
-	async uploadAsset(payload: UploadFilePayload) {
+	async uploadAsset(payload: UploadFilePayload): Promise<Asset> {
 		const fileUrl = await this.cloudStorage.uploadFile(payload);
 
 		try {

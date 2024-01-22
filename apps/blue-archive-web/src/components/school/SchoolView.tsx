@@ -1,13 +1,11 @@
-import { schoolService } from '@ydkim/core-service';
+import { SchoolDetail, schoolService } from '@ydkim/core-service';
 import Link from 'next/link';
 
 interface SchoolViewProps {
-	schoolId: number;
+	school: SchoolDetail;
 }
 
-export const SchoolView = async ({ schoolId }: SchoolViewProps) => {
-	const school = await schoolService.getSchoolById(schoolId);
-
+export const SchoolView = async ({ school }: SchoolViewProps) => {
 	return (
 		<ul>
 			<li>학교 이름: {school?.name}</li>
