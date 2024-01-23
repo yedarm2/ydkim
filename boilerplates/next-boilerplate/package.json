@@ -19,8 +19,8 @@
 		"@next/bundle-analyzer": "14.1.0",
 		"@reduxjs/toolkit": "2.0.1",
 		"@sentry/nextjs": "7.94.1",
-		"@tanstack/react-query": "5.17.15",
-		"@tanstack/react-query-devtools": "5.17.15",
+		"@tanstack/react-query": "5.17.19",
+		"@tanstack/react-query-devtools": "5.17.21",
 		"@types/jest": "29.5.11",
 		"@types/node": "20.11.5",
 		"@types/react": "18.2.48",
@@ -44,7 +44,7 @@
 	},
 	"devDependencies": {
 		"@emotion/babel-plugin": "11.11.0",
-		"@playwright/test": "1.41.0",
+		"@playwright/test": "1.41.1",
 		"@typescript-eslint/eslint-plugin": "5.61.0",
 		"@typescript-eslint/parser": "5.61.0",
 		"eslint": "8.56.0",
@@ -61,7 +61,7 @@
 		"stylelint-config-standard-scss": "13.0.0",
 		"stylelint-no-unsupported-browser-features": "8.0.0",
 		"stylelint-order": "6.0.4",
-		"stylelint-scss": "6.0.0",
+		"stylelint-scss": "6.1.0",
 		"typescript": "5.3.3"
 	}
 }
