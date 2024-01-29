@@ -1,5 +1,6 @@
 import {
 	Children,
+	FC,
 	FormHTMLAttributes,
 	PropsWithChildren,
 	ReactNode,
@@ -12,6 +13,7 @@ import { Button } from './Button';
 import { PropsWithClass } from '@/types/react';
 import { formRowStyle, formStyle } from './FormTemplate.css';
 import { Input, InputProps } from './Input';
+import { Select } from './Select';
 
 export interface FormTemplateProps extends Omit<FormHTMLAttributes<HTMLFormElement>, 'title'> {
 	title?: ReactNode;
@@ -40,13 +42,15 @@ export interface FormTemplateRowProps {
 	label: string;
 }
 
+const inputComponents: FC<any>[] = [Input, Select];
+
 FormTemplate.Row = ({
 	label,
 	className,
 	children: _children,
 }: PropsWithChildren<PropsWithClass<FormTemplateRowProps>>) => {
 	const children = Children.map(_children, child => {
-		if (!isValidElement(child) || child.type !== Input) return child;
+		if (!isValidElement(child) || !inputComponents.includes(Input)) return child;
 
 		return cloneElement(child, {
 			...child.props,

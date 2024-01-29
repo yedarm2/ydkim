@@ -1,8 +1,8 @@
-import { School } from '@ydkim/core-infra';
 import { Option } from '@/types/common';
 import { FormTemplate, FileUploader, Select } from '@/components/form';
 import { Input } from '../form';
 import { FormAction } from '@/types/next';
+import { School } from '@ydkim/core-service';
 
 interface ClubFormProps {
 	school?: School;
