@@ -5045,19 +5045,19 @@
     vite "^5.0.11"
     vite-node "^1.2.0"
 
-"@vanilla-extract/next-plugin@2.3.3":
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/next-plugin/-/next-plugin-2.3.3.tgz#1c5857fce511be69c54af7488c746eecbe9bde7e"
-  integrity sha512-Akpfk7NSGwNmcjSVafSob55mMVd3acJwRTHpZTwxEQ8d1JRe1Wd5TqbzvFRNRyf8yzelWgA9eDNptQ+QCDKG0g==
+"@vanilla-extract/next-plugin@2.3.5":
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/next-plugin/-/next-plugin-2.3.5.tgz#b3221672571fc45083def593a214df4229aff759"
+  integrity sha512-oDVvzaLjiYbKttK0O5Mrv2ANKWF4SRQtV2ngOvPyCG1RQVjjeuAA9NW+PFMxiP8lRDCt6PkLcW2E2k592Kfpzg==
   dependencies:
-    "@vanilla-extract/webpack-plugin" "^2.3.2"
+    "@vanilla-extract/webpack-plugin" "^2.3.4"
 
 "@vanilla-extract/private@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/private/-/private-1.0.3.tgz#7ec72bc2ff6fe51f9d650f962e8d1989b073690f"
   integrity sha512-17kVyLq3ePTKOkveHxXuIJZtGYs+cSoev7BlP+Lf4916qfDhk/HBjvlYDe8egrea7LNPHKwSZJK/bzZC+Q6AwQ==
 
-"@vanilla-extract/webpack-plugin@^2.3.2":
+"@vanilla-extract/webpack-plugin@^2.3.4":
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/webpack-plugin/-/webpack-plugin-2.3.4.tgz#9fedfca9ad2793d62a810672347ee4d792768d5d"
   integrity sha512-xYldP6Tte4rv5aYWQqfbKQsDAHVln6+XAVEXdvdr/2Jz59AWYEu69DgbOtWjXDjzP/sRh30IKmbfyahlLkmmrw==
@@ -15880,6 +15880,7 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
