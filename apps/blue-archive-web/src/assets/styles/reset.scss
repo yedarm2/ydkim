@@ -32,6 +32,12 @@ ol[role='list'] {
 	list-style: none;
 }
 
+ul,
+ol {
+	list-style-type: none;
+	padding: 0;
+}
+
 /* 핵심 body의 기본값을 설정합니다. */
 body {
 	min-height: 100vh;
@@ -87,4 +93,13 @@ textarea:not([rows]) {
 /* 고정된 모든 항목에는 여분의 스크롤 여백이 있어야 합니다. */
 :target {
 	scroll-margin-block: 5ex;
+}
+
+.a11y {
+	position: absolute !important;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	white-space: nowrap;
 }
