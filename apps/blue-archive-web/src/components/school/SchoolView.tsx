@@ -13,6 +13,9 @@ export const SchoolView = async ({ school }: SchoolViewProps) => {
 				학교 로고: <img src={school?.imageAsset?.url} alt="" />
 			</li>
 			<li>
+				<Link href={`/form/club/${school.id}`}>동아리 생성</Link>
+			</li>
+			<li>
 				<Link href="/school">돌아가기</Link>
 			</li>
 		</ul>
