@@ -1,7 +1,9 @@
-import { globalStyle, style } from '@vanilla-extract/css';
+import { createVar, globalStyle, style } from '@vanilla-extract/css';
 
 const blueColor = '#128afa';
 const blueLightColor = '#c0e0ff';
+
+export const tableGridTemplateColumns = createVar();
 
 export const tableStyle = style({
 	border: `1px solid ${blueColor}`,
@@ -24,7 +26,7 @@ export const tableRowStyle = style({
 
 globalStyle(`${tableRowStyle} .list-content`, {
 	display: 'grid',
-	gridTemplateColumns: '50px 1fr',
+	gridTemplateColumns: tableGridTemplateColumns,
 	lineHeight: '35px',
 });
 

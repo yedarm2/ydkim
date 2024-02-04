@@ -8,7 +8,7 @@ interface SchoolListProps {
 
 export const SchoolList = async ({ schoolList }: SchoolListProps) => {
 	return (
-		<TableList columns={['id', '학교']}>
+		<TableList columns={['id', '학교']} ratios="50px 1fr">
 			{schoolList.map(school => (
 				<TableList.Row href={`/school/${school.id}`}>
 					<TableList.Column>{school.id}</TableList.Column>

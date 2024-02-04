@@ -1,20 +1,36 @@
 import Link from 'next/link';
 import { PropsWithChildren } from 'react';
-import { tableColumnStyle, tableRowStyle, tableStyle } from './TableList.css';
+import {
+	tableColumnStyle,
+	tableGridTemplateColumns,
+	tableRowStyle,
+	tableStyle,
+} from './TableList.css';
 import { PropsWithClass } from '@/types/react';
 import { classNames } from '@ydkim/browser-utils';
+import { assignInlineVars } from '@vanilla-extract/dynamic';
 
 interface TableProps {
 	columns: string[];
+	ratios: string | number[];
 }
 
 export const TableList = ({
-	className,
 	columns,
+	ratios,
+	className,
 	children,
 }: PropsWithClass<PropsWithChildren<TableProps>>) => {
+	const gridTemplateColumns =
+		typeof ratios === 'string' ? ratios : ratios.map(ratio => `${ratio}fr`).join(' ');
+
 	return (
-		<ul className={classNames(tableStyle, className)}>
+		<ul
+			className={classNames(tableStyle, className)}
+			style={assignInlineVars({
+				[tableGridTemplateColumns]: gridTemplateColumns,
+			})}
+		>
 			<TableList.Row className="head">
 				{columns.map(column => (
 					<TableList.Column key={column}>{column}</TableList.Column>
