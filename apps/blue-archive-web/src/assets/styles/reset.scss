@@ -69,6 +69,11 @@ a:not([class]) {
 	color: currentColor;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 /* 이미지 관련 작업을 더 쉽게 합니다. */
 img,
 picture {
