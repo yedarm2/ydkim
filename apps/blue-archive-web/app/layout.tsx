@@ -1,5 +1,5 @@
 import '@/assets/styles/styles.scss';
-import { QueryContainer } from '@/components/react-query/QueryClientProvider';
+import { QueryContainer } from '@/components/providers/QueryClientProvider';
 import { RootLayout } from '@/components/common/RootLayout';
 
 export const metadata = {

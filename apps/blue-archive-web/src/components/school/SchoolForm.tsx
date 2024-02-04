@@ -1,4 +1,4 @@
-import { createSchool } from '@/controllers/school';
+import { createSchool } from '@/presentations/school';
 import { Input } from '@/components/form';
 import { FormTemplate, FileUploader } from '@/components/form';
 
