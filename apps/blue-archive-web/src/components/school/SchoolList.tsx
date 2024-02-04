@@ -1,5 +1,6 @@
 import { School } from '@ydkim/core-service';
 import Link from 'next/link';
+import { TableList } from '../common/TableList';
 
 interface SchoolListProps {
 	schoolList: School[];
@@ -7,12 +8,13 @@ interface SchoolListProps {
 
 export const SchoolList = async ({ schoolList }: SchoolListProps) => {
 	return (
-		<ul>
+		<TableList columns={['id', '학교']}>
 			{schoolList.map(school => (
-				<li key={school.id}>
-					{school.id})<Link href={`/school/${school.id}`}>{school.name}</Link>
-				</li>
+				<TableList.Row href={`/school/${school.id}`}>
+					<TableList.Column>{school.id}</TableList.Column>
+					<TableList.Column>{school.name}</TableList.Column>
+				</TableList.Row>
 			))}
-		</ul>
+		</TableList>
 	);
 };
