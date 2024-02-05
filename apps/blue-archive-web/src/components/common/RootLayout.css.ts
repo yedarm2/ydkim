@@ -1,5 +1,6 @@
 import { style } from '@vanilla-extract/css';
 import bgKivotos from '@/assets/common/bg_kivotos.jpg';
+import { themeVars } from '@/shared/theme.css';
 
 export const rootLayoutStyle = style({
 	minHeight: '100vh',
@@ -12,7 +13,7 @@ export const layoutContainer = style({
 	margin: '0 auto',
 	boxShadow: '0 0 5px rgba(160 160 160 / 1)',
 	minHeight: 'calc(100vh - 40px)',
-	backgroundColor: '#fff',
+	backgroundColor: themeVars.colors.white,
 	borderRadius: '5px',
 	padding: '10px',
 });

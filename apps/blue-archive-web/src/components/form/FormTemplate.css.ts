@@ -1,3 +1,4 @@
+import { themeVars } from '@/shared/theme.css';
 import { globalStyle, style } from '@vanilla-extract/css';
 
 export const formStyle = style({
@@ -18,10 +19,10 @@ export const formRowStyle = style({
 	display: 'flex',
 	alignItems: 'center',
 	minHeight: '50px',
-	borderBottom: '1px solid #aaa',
+	borderBottom: `1px solid ${themeVars.colors.gray200}`,
 	selectors: {
 		'&:first-of-type': {
-			borderTop: '1px solid #aaa',
+			borderTop: `1px solid ${themeVars.colors.gray200}`,
 		},
 	},
 });
@@ -34,7 +35,7 @@ globalStyle(`${formRowStyle} .divider`, {
 	width: '1px',
 	height: '100px',
 	margin: '10px 20px',
-	backgroundColor: '#aaa',
+	backgroundColor: themeVars.colors.gray200,
 });
 globalStyle(`${formRowStyle} .content`, {
 	flex: '1 1 auto',

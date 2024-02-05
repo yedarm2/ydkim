@@ -1,3 +1,4 @@
+import { themeVars } from '@/shared/theme.css';
 import { globalStyle, style } from '@vanilla-extract/css';
 
 export const customSelectStyle = style({
@@ -7,7 +8,7 @@ export const customSelectStyle = style({
 	selectors: {
 		'&:focus': {
 			outline: 'none',
-			borderColor: '#333',
+			borderColor: themeVars.colors.gray100,
 		},
 	},
 });
@@ -19,11 +20,11 @@ export const valueWrapperStyle = style({
 	display: 'flex',
 	alignItems: 'center',
 	justifyContent: 'space-between',
-	border: '1px solid #aaa',
+	border: `1px solid ${themeVars.colors.gray200}`,
 	borderRadius: '5px',
 	selectors: {
 		[`${customSelectStyle}:focus > &`]: {
-			borderColor: '#333',
+			borderColor: themeVars.colors.gray100,
 		},
 	},
 });
@@ -34,9 +35,9 @@ export const optionListStyle = style({
 	position: 'absolute',
 	top: 'calc(100% + 10px)',
 	left: 0,
-	boxShadow: '0 0 1px #000',
+	boxShadow: `0 0 1px ${themeVars.colors.bl}`,
 	borderRadius: '5px',
-	backgroundColor: '#fff',
+	backgroundColor: themeVars.colors.white,
 	zIndex: 100,
 	selectors: {
 		[`${valueWrapperStyle}:not(:focus) + &`]: {
@@ -51,5 +52,5 @@ globalStyle(`${optionListStyle} li`, {
 });
 
 globalStyle(`${optionListStyle} li.focused`, {
-	backgroundColor: '#ddd',
+	backgroundColor: themeVars.colors.gray300,
 });

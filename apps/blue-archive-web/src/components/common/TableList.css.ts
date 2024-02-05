@@ -1,25 +1,23 @@
+import { themeVars } from '@/shared/theme.css';
 import { createVar, globalStyle, style } from '@vanilla-extract/css';
-
-const blueColor = '#128afa';
-const blueLightColor = '#c0e0ff';
 
 export const tableGridTemplateColumns = createVar();
 
 export const tableStyle = style({
-	border: `1px solid ${blueColor}`,
+	border: `1px solid ${themeVars.colors.blue}`,
 	borderRadius: '10px',
 	overflow: 'hidden',
 });
 
 export const tableRowStyle = style({
-	backgroundColor: '#fff',
+	backgroundColor: themeVars.colors.white,
 	selectors: {
 		'&.head': {
-			backgroundColor: blueColor,
-			color: '#fff',
+			backgroundColor: themeVars.colors.blue,
+			color: themeVars.colors.white,
 		},
 		'&:not(.head):hover': {
-			backgroundColor: blueLightColor,
+			backgroundColor: themeVars.colors.lightBlue,
 		},
 	},
 });
@@ -31,7 +29,7 @@ globalStyle(`${tableRowStyle} .list-content`, {
 });
 
 globalStyle(`${tableRowStyle}:not(:last-child) .list-content`, {
-	borderBottom: `1px solid ${blueColor}`,
+	borderBottom: `1px solid ${themeVars.colors.blue}`,
 });
 
 export const tableColumnStyle = style({
@@ -39,7 +37,7 @@ export const tableColumnStyle = style({
 
 	selectors: {
 		'&:not(:last-child)': {
-			borderRight: `1px solid ${blueColor}`,
+			borderRight: `1px solid ${themeVars.colors.blue}`,
 		},
 	},
 });

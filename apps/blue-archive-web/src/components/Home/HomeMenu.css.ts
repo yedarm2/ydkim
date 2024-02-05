@@ -1,3 +1,4 @@
+import { themeVars } from '@/shared/theme.css';
 import { globalStyle, style } from '@vanilla-extract/css';
 
 export const homeMenuListStyle = style({
@@ -10,22 +11,20 @@ globalStyle(`${homeMenuListStyle} li`, {
 	flex: '0 0 50%',
 });
 
-const blueColor = '#128afa';
-
 globalStyle(`${homeMenuListStyle} a`, {
 	display: 'block',
 	margin: '10px auto',
-	border: `1px solid ${blueColor}`,
+	border: `1px solid ${themeVars.colors.blue}`,
 	borderRadius: '3px',
 	width: '150px',
 	lineHeight: '40px',
 	textAlign: 'center',
-	color: blueColor,
-	backgroundColor: '#fff',
+	color: themeVars.colors.blue,
+	backgroundColor: themeVars.colors.white,
 	transition: 'background-color, color 0.3s, 0.3s',
 });
 
 globalStyle(`${homeMenuListStyle} a:hover`, {
-	backgroundColor: blueColor,
-	color: '#fff',
+	backgroundColor: themeVars.colors.blue,
+	color: themeVars.colors.white,
 });

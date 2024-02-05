@@ -1,7 +1,7 @@
 import '@/assets/styles/styles.scss';
 import { RootLayout } from '@/components/common/RootLayout';
 import { PropsWithChildren } from 'react';
-import { Providers } from '@/components/providers/providers';
+import { Providers } from '@/components/providers/Providers';
 
 export const metadata = {
 	title: '블루아카이브 계산기',
