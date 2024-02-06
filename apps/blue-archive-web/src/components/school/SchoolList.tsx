@@ -1,5 +1,4 @@
 import { School } from '@ydkim/core-service';
-import Link from 'next/link';
 import { TableList } from '../common/TableList';
 
 interface SchoolListProps {
@@ -15,6 +14,7 @@ export const SchoolList = async ({ schoolList }: SchoolListProps) => {
 					<TableList.Column>{school.name}</TableList.Column>
 				</TableList.Row>
 			))}
+			<TableList.AddLinkRow href="/form/school">학교 추가</TableList.AddLinkRow>
 		</TableList>
 	);
 };
