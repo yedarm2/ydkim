@@ -1,5 +1,5 @@
 import { Club } from '@ydkim/core-service';
-import Link from 'next/link';
+import { TableList } from '../common/TableList';
 
 interface ClubListProps {
 	clubList: Club[];
@@ -7,12 +7,14 @@ interface ClubListProps {
 
 export const ClubList = async ({ clubList }: ClubListProps) => {
 	return (
-		<ul>
+		<TableList columns={['id', '동아리']} ratios="50px 1fr">
 			{clubList.map(club => (
-				<li key={club.id}>
-					{club.id})<Link href={`/club/${club.id}`}>{club.name}</Link>
-				</li>
+				<TableList.Row href={`/club/${club.id}`}>
+					<TableList.Column>{club.id}</TableList.Column>
+					<TableList.Column>{club.name}</TableList.Column>
+				</TableList.Row>
 			))}
-		</ul>
+			<TableList.AddLinkRow href="/form/club">동아리 추가</TableList.AddLinkRow>
+		</TableList>
 	);
 };
