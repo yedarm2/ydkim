@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { PropsWithChildren } from 'react';
 import {
+	tableAddLinkRowStyle,
 	tableColumnStyle,
 	tableGridTemplateColumns,
 	tableRowStyle,
@@ -9,6 +10,7 @@ import {
 import { PropsWithClass } from '@/types/react';
 import { classNames } from '@ydkim/browser-utils';
 import { assignInlineVars } from '@vanilla-extract/dynamic';
+import { FaPlusCircle } from 'react-icons/fa';
 
 interface TableProps {
 	columns: string[];
@@ -41,15 +43,11 @@ export const TableList = ({
 	);
 };
 
-interface TableRowProps {
+interface TableRowProps extends PropsWithChildren, PropsWithClass {
 	href?: string;
 }
 
-TableList.Row = ({
-	className,
-	children,
-	href,
-}: PropsWithClass<PropsWithChildren<TableRowProps>>) => {
+TableList.Row = ({ className, children, href }: TableRowProps) => {
 	const TagName = href ? Link : 'div';
 
 	return (
@@ -63,4 +61,17 @@ TableList.Row = ({
 
 TableList.Column = ({ className, children }: PropsWithClass<PropsWithChildren>) => {
 	return <div className={classNames(tableColumnStyle, className)}>{children}</div>;
+};
+
+interface TableListAddLinkRowProps extends TableRowProps {}
+
+TableList.AddLinkRow = ({ className, children, ...restProps }: TableListAddLinkRowProps) => {
+	return (
+		<TableList.Row className={classNames(tableAddLinkRowStyle, className)} {...restProps}>
+			<TableList.Column>
+				<FaPlusCircle className="plus-icon" />
+				{children}
+			</TableList.Column>
+		</TableList.Row>
+	);
 };

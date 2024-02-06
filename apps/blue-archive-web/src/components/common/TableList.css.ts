@@ -41,3 +41,19 @@ export const tableColumnStyle = style({
 		},
 	},
 });
+
+export const tableAddLinkRowStyle = style({
+	color: themeVars.colors.blue,
+});
+
+globalStyle(`${tableAddLinkRowStyle} ${tableColumnStyle}`, {
+	gridColumn: '1 / -1',
+	display: 'flex',
+	justifyContent: 'center',
+	alignItems: 'center',
+});
+
+globalStyle(`${tableAddLinkRowStyle} .plus-icon`, {
+	margin: '0 10px 0 0',
+	fill: 'currentcolor',
+});
