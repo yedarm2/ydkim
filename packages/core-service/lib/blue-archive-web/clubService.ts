@@ -43,6 +43,10 @@ export class ClubService {
 			school,
 		};
 	}
+
+	async getClubsBySchoolId(schoolId: number): Promise<Club[]> {
+		return this.clubDao.getClubsBySchoolId(schoolId);
+	}
 }
 
 export const clubService = new ClubService();

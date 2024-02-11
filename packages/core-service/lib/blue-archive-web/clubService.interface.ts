@@ -10,6 +10,7 @@ export interface CreateClubPayload {
 export interface Club {
 	id: number;
 	name: string;
+	schoolId: number;
 }
 
 export interface ClubDetail extends Club {

@@ -11,5 +11,5 @@ export interface School {
 }
 
 export interface SchoolDetail extends School {
-	imageAsset?: Asset;
+	imageAsset: Asset;
 }
