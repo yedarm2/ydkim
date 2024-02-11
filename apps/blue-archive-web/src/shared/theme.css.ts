@@ -9,6 +9,7 @@ export const [defaultThemeClass, themeVars] = createTheme({
 		gray100: '#333',
 		gray200: '#aaa',
 		gray300: '#ddd',
+		gray400: '#eee',
 		warn: '#ffa93a',
 		error: '#ff3a3a',
 	},
