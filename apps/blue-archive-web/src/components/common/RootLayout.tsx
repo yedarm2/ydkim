@@ -1,4 +1,3 @@
-'use client';
 import { PropsWithChildren } from 'react';
 import { Noto_Sans_KR } from 'next/font/google';
 import { classNames } from '@ydkim/browser-utils';
