@@ -1,12 +1,15 @@
 import { SchoolView } from '@/components/school/SchoolView';
-import { schoolService } from '@ydkim/core-service';
+import { clubService, schoolService } from '@ydkim/core-service';
 
 const SchoolViewPage = async (props: { params: { schoolId: string } }) => {
 	const { schoolId: schoolIdString } = props.params;
 	const schoolId = parseInt(schoolIdString);
-	const school = await schoolService.getSchoolById(schoolId);
+	const [school, clubList] = await Promise.all([
+		schoolService.getSchoolById(schoolId),
+		clubService.getClubsBySchoolId(schoolId),
+	]);
 
-	return <SchoolView school={school} />;
+	return <SchoolView school={school} clubCount={clubList.length} />;
 };
 
 export default SchoolViewPage;
