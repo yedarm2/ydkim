@@ -3,9 +3,10 @@ import { TableList } from '../common/TableList';
 
 interface ClubListProps {
 	clubList: Club[];
+	schoolId?: number;
 }
 
-export const ClubList = async ({ clubList }: ClubListProps) => {
+export const ClubList = ({ clubList, schoolId }: ClubListProps) => {
 	return (
 		<TableList columns={['id', '동아리']} ratios="50px 1fr">
 			{clubList.map(club => (
@@ -14,7 +15,9 @@ export const ClubList = async ({ clubList }: ClubListProps) => {
 					<TableList.Column>{club.name}</TableList.Column>
 				</TableList.Row>
 			))}
-			<TableList.AddLinkRow href="/form/club">동아리 추가</TableList.AddLinkRow>
+			<TableList.AddLinkRow href={schoolId ? `/form/club/${schoolId}` : '/form/club'}>
+				동아리 추가
+			</TableList.AddLinkRow>
 		</TableList>
 	);
 };
