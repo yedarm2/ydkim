@@ -18,7 +18,7 @@ export class AssetService {
 
 		try {
 			return await this.assetDao.create({
-				url: decodeURIComponent(fileUrl),
+				url: decodeURI(fileUrl),
 			});
 		} catch (error) {
 			console.error(
