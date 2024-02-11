@@ -36,6 +36,12 @@ export class ClubDao extends BaseDao {
 			include: { logoAsset: true },
 		});
 	}
+
+	getClubsBySchoolId(schoolId: number) {
+		return this.prismaClient.club.findMany({
+			where: { schoolId },
+		});
+	}
 }
 
 export const clubDao = new ClubDao();
