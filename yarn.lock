@@ -4258,10 +4258,10 @@
   resolved "https://registry.yarnpkg.com/@tanstack/query-devtools/-/query-devtools-5.20.2.tgz#33780ea54529fecb9e572bd21a731b8f5efb765f"
   integrity sha512-BZfSjhk/NGPbqte5E3Vc1Zbj28uWt///4I0DgzAdWrOtMVvdl0WlUXK23K2daLsbcyfoDR4jRI4f2Z5z/mMzuw==
 
-"@tanstack/react-query-devtools@5.20.2":
-  version "5.20.2"
-  resolved "https://registry.yarnpkg.com/@tanstack/react-query-devtools/-/react-query-devtools-5.20.2.tgz#63d4b243ff839bdc933d109c4ee0af74d9962b6f"
-  integrity sha512-HFthuTbgs06hc/9U+5cq+7mSoa0JzU00eH6zWwpIJTSk0WL3RZJ3TyEMN7TYrHFFAatiE+4dySmTwPwI+nSU+g==
+"@tanstack/react-query-devtools@5.20.5":
+  version "5.20.5"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query-devtools/-/react-query-devtools-5.20.5.tgz#1c60908835a346a86ca12035208a8a7fa624b660"
+  integrity sha512-Wl7IzNuKCb4h41a5iH/YXNwalHItqJPCAr4r8+0iUYOLHNOf3E9P0G4kzZ9sqDoWKxY04qst6Vrij9bwPzLQRQ==
   dependencies:
     "@tanstack/query-devtools" "5.20.2"
 
@@ -15913,6 +15913,7 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
