@@ -14,16 +14,16 @@
 		"test": "npx playwright test"
 	},
 	"dependencies": {
-		"@emotion/react": "11.11.3",
+		"@emotion/react": "11.11.4",
 		"@emotion/styled": "11.11.0",
 		"@next/bundle-analyzer": "14.1.0",
 		"@reduxjs/toolkit": "2.2.1",
-		"@sentry/nextjs": "7.102.1",
+		"@sentry/nextjs": "7.103.0",
 		"@tanstack/react-query": "5.24.1",
 		"@tanstack/react-query-devtools": "5.24.1",
 		"@types/jest": "29.5.12",
 		"@types/node": "20.11.20",
-		"@types/react": "18.2.59",
+		"@types/react": "18.2.60",
 		"@types/react-dom": "18.2.19",
 		"classnames": "2.5.1",
 		"facepaint": "1.2.1",
@@ -44,7 +44,7 @@
 	},
 	"devDependencies": {
 		"@emotion/babel-plugin": "11.11.0",
-		"@playwright/test": "1.41.2",
+		"@playwright/test": "1.42.0",
 		"@typescript-eslint/eslint-plugin": "5.61.0",
 		"@typescript-eslint/parser": "5.61.0",
 		"eslint": "8.57.0",
