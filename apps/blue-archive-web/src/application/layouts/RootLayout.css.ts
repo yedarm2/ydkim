@@ -1,6 +1,6 @@
 import { style } from '@vanilla-extract/css';
 import bgKivotos from '@/assets/common/bg_kivotos.jpg';
-import { themeVars } from '@/shared/theme.css';
+import { themeVars } from '@/shared/ui';
 
 export const rootLayoutStyle = style({
 	minHeight: '100vh',

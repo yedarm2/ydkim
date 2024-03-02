@@ -1,6 +1,6 @@
 import { style } from '@vanilla-extract/css';
 import { inputStyle } from './Input.css';
-import { themeVars } from '@/shared/theme.css';
+import { themeVars } from '@/shared/ui';
 
 export const fileUploaderStyle = style({
 	width: '100px',

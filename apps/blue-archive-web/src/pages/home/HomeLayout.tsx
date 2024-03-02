@@ -1,4 +1,4 @@
-import { HomeMenu } from './HomeMenu';
+import { HomeMenu } from '@/widgets/home/ui/HomeMenu';
 
 export const HomeLayout = () => {
 	return (

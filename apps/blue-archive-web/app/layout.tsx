@@ -1,5 +1,5 @@
 import '@/assets/styles/styles.scss';
-import { RootLayout } from '@/components/common/RootLayout';
+import { RootLayout } from '@/application/layouts/RootLayout';
 import { PropsWithChildren } from 'react';
 import { Providers } from '@/application/providers/Providers';
 import { Metadata } from 'next';

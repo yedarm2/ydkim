@@ -1,4 +1,4 @@
-import { themeVars } from '@/shared/theme.css';
+import { themeVars } from '@/shared/ui';
 import { globalStyle, style } from '@vanilla-extract/css';
 
 export const formStyle = style({
