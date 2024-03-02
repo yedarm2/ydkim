@@ -1,4 +1,4 @@
-import { ClubView } from '@/components/club/ClubView';
+import { ClubView } from '@/pages/club/ui/ClubView';
 import { NextPageParams } from '@/shared/types';
 import { clubService } from '@ydkim/core-service';
 

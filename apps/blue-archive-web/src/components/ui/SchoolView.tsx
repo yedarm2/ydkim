@@ -1,7 +1,7 @@
 import { SchoolDetail, schoolService } from '@ydkim/core-service';
 import Link from 'next/link';
-import { DetailTemplate } from '../common/DetailTemplate';
-import { CardBox } from '../common/CardBox';
+import { DetailTemplate } from '../../../../components/common/DetailTemplate';
+import { CardBox } from '../../../../components/common/CardBox';
 import { schoolViewStyle } from './SchoolView.css';
 import Image from 'next/image';
 

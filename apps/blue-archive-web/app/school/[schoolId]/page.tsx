@@ -1,4 +1,4 @@
-import { SchoolView } from '@/components/school/SchoolView';
+import { SchoolView } from '@/pages/school/ui/SchoolView';
 import { clubService, schoolService } from '@ydkim/core-service';
 
 const SchoolViewPage = async (props: { params: { schoolId: string } }) => {

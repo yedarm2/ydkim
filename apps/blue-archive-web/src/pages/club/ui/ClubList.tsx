@@ -1,5 +1,5 @@
 import { Club } from '@ydkim/core-service';
-import { TableList } from '../common/TableList';
+import { TableList } from '../../../components/common/TableList';
 
 interface ClubListProps {
 	clubList: Club[];

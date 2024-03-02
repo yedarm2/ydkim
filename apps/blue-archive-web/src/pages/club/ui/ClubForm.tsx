@@ -1,6 +1,6 @@
 import { Option } from '@/shared/types';
 import { FormTemplate, FileUploader, Select } from '@/components/form';
-import { Input } from '../form';
+import { Input } from '../../../components/form';
 import { FormAction } from '@/shared/types';
 import { School } from '@ydkim/core-service';
 
