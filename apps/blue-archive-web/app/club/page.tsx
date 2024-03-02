@@ -2,15 +2,16 @@ import { ClubList } from '@/components/club/ClubList';
 import { NextPageParams } from '@/types/next';
 import { clubService } from '@ydkim/core-service';
 
-const ClubViewPage = async ({ searchParams }: NextPageParams<unknown, { school?: string }>) => {
+const ClubListwPage = async ({ searchParams }: NextPageParams<unknown, { school?: string }>) => {
 	const schoolIdString = searchParams?.school;
 	const schoolId = schoolIdString ? parseInt(schoolIdString) : NaN;
+	const hasSchoolId = isNaN(schoolId);
 
-	const clubList = await (isNaN(schoolId)
+	const clubList = await (hasSchoolId
 		? clubService.getClubList()
 		: clubService.getClubsBySchoolId(schoolId));
 
-	return <ClubList clubList={clubList} schoolId={isNaN(schoolId) ? undefined : schoolId} />;
+	return <ClubList clubList={clubList} schoolId={hasSchoolId ? undefined : schoolId} />;
 };
 
-export default ClubViewPage;
+export default ClubListwPage;
