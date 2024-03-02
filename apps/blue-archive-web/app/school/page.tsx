@@ -1,4 +1,4 @@
-import { SchoolList } from '@/pages/school/ui/SchoolList';
+import { SchoolList } from '@/pages/school/SchoolList';
 import { schoolService } from '@ydkim/core-service';
 
 const SchoolListPage = async () => {

@@ -1,5 +1,4 @@
-import { ClubForm } from '@/pages/club/ui/ClubForm';
-import { NextPageParams } from '@/shared/types/next';
+import { ClubForm } from '@/pages/club/ClubForm';
 import { schoolService } from '@ydkim/core-service';
 import { createClub } from '@/presentations/club';
 
