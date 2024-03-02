@@ -1,5 +1,5 @@
 import { School } from '@ydkim/core-service';
-import { TableList } from '../../components/common/TableList';
+import { TableList } from '@/shared/ui';
 
 interface SchoolListProps {
 	schoolList: School[];
