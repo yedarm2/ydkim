@@ -4,7 +4,7 @@ import { Option } from '@/shared/types';
 import { PropsWithClass } from '@/shared/types';
 import { KeyboardEventHandler, useRef, useState } from 'react';
 import { customSelectStyle, optionListStyle, valueWrapperStyle } from './Select.css';
-import { KeyTypes } from '@/shared/keyTypes';
+import { KeyTypes } from '@/shared';
 import { classNames } from '@ydkim/browser-utils';
 
 type SelectValue = number | string;
