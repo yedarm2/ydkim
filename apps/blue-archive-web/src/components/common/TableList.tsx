@@ -7,7 +7,7 @@ import {
 	tableRowStyle,
 	tableStyle,
 } from './TableList.css';
-import { PropsWithClass } from '@/types/react';
+import { PropsWithClass } from '@/shared/types';
 import { classNames } from '@ydkim/browser-utils';
 import { assignInlineVars } from '@vanilla-extract/dynamic';
 import { FaPlusCircle } from 'react-icons/fa';

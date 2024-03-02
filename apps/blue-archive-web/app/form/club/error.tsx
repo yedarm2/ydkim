@@ -1,6 +1,6 @@
 'use client';
 
-import { ErrorPageComponentProps } from '@/types/next';
+import { ErrorPageComponentProps } from '@/shared/types';
 import { useEffect } from 'react';
 import { NotFoundException } from './errorClass';
 

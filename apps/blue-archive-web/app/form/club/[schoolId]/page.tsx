@@ -1,5 +1,5 @@
 import { ClubForm } from '@/components/club/ClubForm';
-import { NextPageParams } from '@/types/next';
+import { NextPageParams } from '@/shared/types';
 import { schoolService } from '@ydkim/core-service';
 import { NotFoundException } from '../errorClass';
 import { createClub } from '@/presentations/club';

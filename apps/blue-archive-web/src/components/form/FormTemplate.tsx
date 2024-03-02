@@ -10,7 +10,7 @@ import {
 
 import { classNames } from '@ydkim/browser-utils';
 import { Button } from './Button';
-import { PropsWithClass } from '@/types/react';
+import { PropsWithClass } from '@/shared/types';
 import { formRowStyle, formStyle } from './FormTemplate.css';
 import { Input, InputProps } from './Input';
 import { Select } from './Select';

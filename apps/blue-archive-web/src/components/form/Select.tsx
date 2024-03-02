@@ -1,7 +1,7 @@
 'use client';
 import { MdKeyboardArrowDown } from 'react-icons/md';
-import { Option } from '@/types/common';
-import { PropsWithClass } from '@/types/react';
+import { Option } from '@/shared/types';
+import { PropsWithClass } from '@/shared/types';
 import { KeyboardEventHandler, useRef, useState } from 'react';
 import { customSelectStyle, optionListStyle, valueWrapperStyle } from './Select.css';
 import { KeyTypes } from '@/shared/keyTypes';

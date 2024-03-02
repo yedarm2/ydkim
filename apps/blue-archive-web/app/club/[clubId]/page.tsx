@@ -1,5 +1,5 @@
 import { ClubView } from '@/components/club/ClubView';
-import { NextPageParams } from '@/types/next';
+import { NextPageParams } from '@/shared/types';
 import { clubService } from '@ydkim/core-service';
 
 const ClubViewPage = async ({ params }: NextPageParams<{ clubId: string }>) => {

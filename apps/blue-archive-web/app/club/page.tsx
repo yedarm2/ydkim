@@ -1,5 +1,5 @@
 import { ClubList } from '@/components/club/ClubList';
-import { NextPageParams } from '@/types/next';
+import { NextPageParams } from '@/shared/types';
 import { clubService } from '@ydkim/core-service';
 
 const ClubListwPage = async ({ searchParams }: NextPageParams<unknown, { school?: string }>) => {

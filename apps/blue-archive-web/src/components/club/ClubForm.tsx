@@ -1,7 +1,7 @@
-import { Option } from '@/types/common';
+import { Option } from '@/shared/types';
 import { FormTemplate, FileUploader, Select } from '@/components/form';
 import { Input } from '../form';
-import { FormAction } from '@/types/next';
+import { FormAction } from '@/shared/types';
 import { School } from '@ydkim/core-service';
 
 interface ClubFormProps {
