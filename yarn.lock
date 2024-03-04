@@ -4279,10 +4279,10 @@
   dependencies:
     defer-to-connect "^2.0.1"
 
-"@tanstack/query-core@5.24.6":
-  version "5.24.6"
-  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-5.24.6.tgz#9bddbeea2e688e797981730b9bfd5bb1d354cdbc"
-  integrity sha512-xYhxiMUPh1JzamVK8VwwkBpIBXVYRyIBW9gjSN+/BB4kL1nS86gnRWeW8L+sacCj1RiyEsysJe3GSvtbIpHdWw==
+"@tanstack/query-core@5.24.8":
+  version "5.24.8"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-5.24.8.tgz#b407546a726ecd4d60b8682dec2ca84ac9eab81e"
+  integrity sha512-yH7KnfXMf10p1U5GffTQzFi2Miiw6WJZImGYGdV7eqa5ZbKO8qVx9lOA9SfhIaJXomrMp1Yz5w/CBhVM3yWeTA==
 
 "@tanstack/query-devtools@5.24.0":
   version "5.24.0"
@@ -4296,12 +4296,12 @@
   dependencies:
     "@tanstack/query-devtools" "5.24.0"
 
-"@tanstack/react-query@5.24.6":
-  version "5.24.6"
-  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-5.24.6.tgz#bc334f7aac742277fb5ba7a57284f7d805735190"
-  integrity sha512-eyIWwHiO1ZirYGzqs0kfRMkf8icuXroFunjnsgntk9YgGFbGoPs3Hxy9/OushNvpnkHT9RwPZb8UfEKzMzzEaQ==
+"@tanstack/react-query@5.24.8":
+  version "5.24.8"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-5.24.8.tgz#9de1423a710bcdfce90df82acaf494659edb6221"
+  integrity sha512-jB3JS9SzDmBySk9VVOTPt/0ixWEb3K3dy9IExlVl/1NouY3N7HzAqG/1d4m6E9eFfKJoLvA/hBksaLu0lw627A==
   dependencies:
-    "@tanstack/query-core" "5.24.6"
+    "@tanstack/query-core" "5.24.8"
 
 "@testing-library/dom@^9.0.0":
   version "9.3.4"
@@ -16069,6 +16069,7 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
