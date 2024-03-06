@@ -6238,10 +6238,10 @@ chroma-js@2.4.2:
   resolved "https://registry.yarnpkg.com/chroma-js/-/chroma-js-2.4.2.tgz#dffc214ed0c11fa8eefca2c36651d8e57cbfb2b0"
   integrity sha512-U9eDw6+wt7V8z5NncY2jJfZa+hUH8XEj8FQHgFJTrUFnJfXYf4Ml4adI2vXZOjqRDpFWtYVWypDfZwnJ+HIR4A==
 
-chromatic@11.0.2:
-  version "11.0.2"
-  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-11.0.2.tgz#69d19b5da15c734e33bd288a7218ca92eb5bf5b4"
-  integrity sha512-jpDb5HlNZrJv1ohJmtlCH5Icf5dD485JXTCu4BWDJ4PxFMcywBFgBxEYW/TNKj9C6WxR85IKKq2DoVzZJTpJGw==
+chromatic@11.0.3:
+  version "11.0.3"
+  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-11.0.3.tgz#32ce9cde4a14d2af2698b971879384a0304dc693"
+  integrity sha512-zdOFWPoNAgzlfMlhCExcpsW/lMkwWccF2m9W3V7pddTWQMStXzs6FMjAxj+C3J+NBeBlcCyr9Jm6i/P3DMjZ7A==
 
 ci-info@^3.2.0, ci-info@^3.6.1:
   version "3.9.0"
@@ -16081,6 +16081,7 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
