@@ -4047,17 +4047,17 @@
   resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-5.26.3.tgz#0e1075de03904165d892e2b801b49f21d6a88b66"
   integrity sha512-kKv7VHIleC7cwpMS3M63mWUFFbdiRo7JZMVUyZ4z/79RZoAi7/vGTVkCrnNqyKl+zwBRkumYL+eiYtyShGZd0A==
 
-"@tanstack/query-devtools@5.24.0":
-  version "5.24.0"
-  resolved "https://registry.yarnpkg.com/@tanstack/query-devtools/-/query-devtools-5.24.0.tgz#b9b7828d42d5034415b1973ff4a154e880b17d59"
-  integrity sha512-pThim455t69zrZaQKa7IRkEIK8UBTS+gHVAdNfhO72Xh4rWpMc63ovRje5/n6iw63+d6QiJzVadsJVdPoodSeQ==
+"@tanstack/query-devtools@5.27.0":
+  version "5.27.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-devtools/-/query-devtools-5.27.0.tgz#3a1f3af481d421c8425576713d70fd67d1bc492d"
+  integrity sha512-kJ/ojdjvGH94m7RjyEdClLh+33+epJMJhEBHMxFHrtXTxKfW5nGZ6yu3Yu0JwzxkvQHVNDkLB5QaA8LV3Yvd0A==
 
-"@tanstack/react-query-devtools@5.26.3":
-  version "5.26.3"
-  resolved "https://registry.yarnpkg.com/@tanstack/react-query-devtools/-/react-query-devtools-5.26.3.tgz#555529374db7da20fd74ab6f65c3f5aec2ed9b49"
-  integrity sha512-byhbST7CDC8cH1tPLPYG/lNMr/QcYMMqxG9+jayiz7H//QScp9+B7cpSItp9QPaN30fCj7pIAlbCifWDcLC4/A==
+"@tanstack/react-query-devtools@5.27.0":
+  version "5.27.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query-devtools/-/react-query-devtools-5.27.0.tgz#e2b485366bfe0578701f4ca7c6ef45ce7e4253c2"
+  integrity sha512-kORxAIyzyO/DlTQFaTVpJgVTbGAYGhBdj/WxuN+xLoJpnvLnkRGmeB675haJFQ4KYnEd0yksyM4OwcwtH004fg==
   dependencies:
-    "@tanstack/query-devtools" "5.24.0"
+    "@tanstack/query-devtools" "5.27.0"
 
 "@tanstack/react-query@5.26.3":
   version "5.26.3"
@@ -15726,6 +15726,7 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
