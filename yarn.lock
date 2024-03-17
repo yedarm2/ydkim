@@ -5519,10 +5519,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/query-core@npm:5.28.0":
-  version: 5.28.0
-  resolution: "@tanstack/query-core@npm:5.28.0"
-  checksum: 10c0/29a5b0e029409d64b2817398df5fd72bfb092cd36cdf92c1fd0bf2e9e1095e0c4dbf2dbc46678aeb84d63ebfbdbc68f4a7d66777a3c558ec4237b8cb314fef6b
+"@tanstack/query-core@npm:5.28.4":
+  version: 5.28.4
+  resolution: "@tanstack/query-core@npm:5.28.4"
+  checksum: 10c0/0aca64c0e20c56fb4b6c0497f29613b0eb5c02eb2e2f99f2ed5616d7c119c18259c7171d25f593d00cd50e9ee1d2e629388968fcd53d0aa7fa95d820fc58cf9c
   languageName: node
   linkType: hard
 
@@ -5545,14 +5545,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/react-query@npm:5.28.0":
-  version: 5.28.0
-  resolution: "@tanstack/react-query@npm:5.28.0"
+"@tanstack/react-query@npm:5.28.4":
+  version: 5.28.4
+  resolution: "@tanstack/react-query@npm:5.28.4"
   dependencies:
-    "@tanstack/query-core": "npm:5.28.0"
+    "@tanstack/query-core": "npm:5.28.4"
   peerDependencies:
     react: ^18.0.0
-  checksum: 10c0/cd508c052a4e560b3ad050938fa993bfca44060c9cd0eaa2c24e63248c2af16a59e7a5be965454c0b1e567d9ddb71bba249164277fa13a6de37dbb38c55a54a1
+  checksum: 10c0/5ffc31cedea548b697770c018fab7fcd35724caf6cf7d40a7370ef6ffeb2427f510ea9745a92ebd6e74f2c4c39a255eabcd2a181c97b54991563ad842945866e
   languageName: node
   linkType: hard
 
@@ -6665,8 +6665,9 @@ __metadata:
   dependencies:
     "@emotion/react": "npm:11.11.4"
     "@emotion/styled": "npm:11.11.0"
+    "@next/bundle-analyzer": "npm:14.1.3"
     "@next/font": "npm:14.1.3"
-    "@tanstack/react-query": "npm:5.28.0"
+    "@tanstack/react-query": "npm:5.28.4"
     "@tanstack/react-query-devtools": "npm:5.28.2"
     "@types/node": "npm:20.11.27"
     "@types/react": "npm:18.2.66"
@@ -6688,6 +6689,8 @@ __metadata:
     eslint-plugin-prettier: "npm:5.1.3"
     express: "npm:4.18.3"
     next: "npm:14.1.3"
+    next-compose-plugins: "npm:2.2.1"
+    next-transpile-modules: "npm:10.0.1"
     postcss: "npm:8.4.35"
     postcss-preset-env: "npm:9.5.1"
     postcss-reporter: "npm:7.1.0"
@@ -6857,7 +6860,7 @@ __metadata:
     "@playwright/test": "npm:1.42.1"
     "@reduxjs/toolkit": "npm:2.2.1"
     "@sentry/nextjs": "npm:7.107.0"
-    "@tanstack/react-query": "npm:5.28.0"
+    "@tanstack/react-query": "npm:5.28.4"
     "@tanstack/react-query-devtools": "npm:5.28.2"
     "@types/jest": "npm:29.5.12"
     "@types/node": "npm:20.11.27"
@@ -6996,7 +6999,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ydkim/server-utils@workspace:packages/server-utils"
   dependencies:
-    "@tanstack/react-query": "npm:5.28.0"
+    "@tanstack/react-query": "npm:5.28.4"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
     "@ydkim/core-infra": "npm:*"
