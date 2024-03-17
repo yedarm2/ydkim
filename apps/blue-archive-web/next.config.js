@@ -1,3 +1,17 @@
+const withPlugins = require('next-compose-plugins');
+const withTM = require('next-transpile-modules')([
+	'@ydkim/react-components',
+	'@ydkim/browser-utils',
+	'@ydkim/hooks',
+	'@ydkim/server-utils',
+	'@ydkim/utils',
+	'@ydkim/core-boilerplate',
+]);
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+	enabled: process.env.ANALYZE === 'true',
+});
+const withImages = require('next-images');
+
 const { createVanillaExtractPlugin } = require('@vanilla-extract/next-plugin');
 
 /** @type {import('next').NextConfig} */
@@ -14,4 +28,7 @@ const nextConfig = {
 
 const withVanillaExtract = createVanillaExtractPlugin();
 
-module.exports = withVanillaExtract(nextConfig);
+module.exports = withPlugins(
+	[withTM(), withImages, withBundleAnalyzer, withVanillaExtract],
+	nextConfig,
+);
