@@ -6734,7 +6734,7 @@ __metadata:
     "@types/jest": "npm:29.5.12"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
-    axios: "npm:1.6.7"
+    axios: "npm:1.6.8"
     babel-jest: "npm:29.7.0"
     classnames: "npm:2.5.1"
     eslint: "npm:8.57.0"
@@ -7720,18 +7720,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:1.6.7":
-  version: 1.6.7
-  resolution: "axios@npm:1.6.7"
-  dependencies:
-    follow-redirects: "npm:^1.15.4"
-    form-data: "npm:^4.0.0"
-    proxy-from-env: "npm:^1.1.0"
-  checksum: 10c0/131bf8e62eee48ca4bd84e6101f211961bf6a21a33b95e5dfb3983d5a2fe50d9fffde0b57668d7ce6f65063d3dc10f2212cbcb554f75cfca99da1c73b210358d
-  languageName: node
-  linkType: hard
-
-"axios@npm:^1.6.0":
+"axios@npm:1.6.8, axios@npm:^1.6.0":
   version: 1.6.8
   resolution: "axios@npm:1.6.8"
   dependencies:
@@ -11335,7 +11324,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.15.4, follow-redirects@npm:^1.15.6":
+"follow-redirects@npm:^1.15.6":
   version: 1.15.6
   resolution: "follow-redirects@npm:1.15.6"
   peerDependenciesMeta:
