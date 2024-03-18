@@ -16166,9 +16166,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-check-updates@npm:16.14.16":
-  version: 16.14.16
-  resolution: "npm-check-updates@npm:16.14.16"
+"npm-check-updates@npm:16.14.17":
+  version: 16.14.17
+  resolution: "npm-check-updates@npm:16.14.17"
   dependencies:
     chalk: "npm:^5.3.0"
     cli-table3: "npm:^0.6.3"
@@ -16205,7 +16205,7 @@ __metadata:
   bin:
     ncu: build/src/bin/cli.js
     npm-check-updates: build/src/bin/cli.js
-  checksum: 10c0/e87c4895b35e6e34c4e0333cceb54340ba4c6272207a71e3e849dcde53e22f5c93a44ebe5b5d1378e77416b0ca45041a4cb7e4e7eca086a7063d796ab79c37d3
+  checksum: 10c0/cc1fc576502f32e9e97e11168c4457c9b6fe034c2ab912bcbb28af1096debf81a8805fcbf9e03b008588fbead5d0bb0a6c9f761684dc54df1a24f52860dd2be7
   languageName: node
   linkType: hard
 
@@ -21890,7 +21890,7 @@ __metadata:
     create-next-app: "npm:14.1.3"
     create-react-app: "npm:5.0.1"
     lerna: "npm:8.1.2"
-    npm-check-updates: "npm:16.14.16"
+    npm-check-updates: "npm:16.14.17"
     prettier: "npm:3.2.5"
     rimraf: "npm:5.0.5"
     sort-package-json: "npm:2.8.0"
