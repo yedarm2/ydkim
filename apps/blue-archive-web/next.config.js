@@ -13,9 +13,13 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const withImages = require('next-images');
 
 const { createVanillaExtractPlugin } = require('@vanilla-extract/next-plugin');
+const path = require('path');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	sassOptions: {
+		includePaths: [path.join(__dirname, 'src', 'assets', 'styles')],
+	},
 	images: {
 		remotePatterns: [
 			{
