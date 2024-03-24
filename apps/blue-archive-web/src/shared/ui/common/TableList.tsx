@@ -33,11 +33,11 @@ export const TableList = ({
 				[tableGridTemplateColumns]: gridTemplateColumns,
 			})}
 		>
-			<TableList.Row className="head">
+			<TableListRow className="head">
 				{columns.map(column => (
-					<TableList.Column key={column}>{column}</TableList.Column>
+					<TableListColumn key={column}>{column}</TableListColumn>
 				))}
-			</TableList.Row>
+			</TableListRow>
 			{children}
 		</ul>
 	);
@@ -47,7 +47,7 @@ interface TableRowProps extends PropsWithChildren, PropsWithClass {
 	href?: string;
 }
 
-TableList.Row = ({ className, children, href }: TableRowProps) => {
+const TableListRow = ({ className, children, href }: TableRowProps) => {
 	const TagName = href ? Link : 'div';
 
 	return (
@@ -59,19 +59,23 @@ TableList.Row = ({ className, children, href }: TableRowProps) => {
 	);
 };
 
-TableList.Column = ({ className, children }: PropsWithClass<PropsWithChildren>) => {
+const TableListColumn = ({ className, children }: PropsWithClass<PropsWithChildren>) => {
 	return <div className={classNames(tableColumnStyle, className)}>{children}</div>;
 };
 
 interface TableListAddLinkRowProps extends TableRowProps {}
 
-TableList.AddLinkRow = ({ className, children, ...restProps }: TableListAddLinkRowProps) => {
+const TableListAddLinkRow = ({ className, children, ...restProps }: TableListAddLinkRowProps) => {
 	return (
-		<TableList.Row className={classNames(tableAddLinkRowStyle, className)} {...restProps}>
-			<TableList.Column>
+		<TableListRow className={classNames(tableAddLinkRowStyle, className)} {...restProps}>
+			<TableListColumn>
 				<FaPlusCircle className="plus-icon" />
 				{children}
-			</TableList.Column>
-		</TableList.Row>
+			</TableListColumn>
+		</TableListRow>
 	);
 };
+
+TableList.Row = TableListRow;
+TableList.Column = TableListColumn;
+TableList.ActiveLinkRow = TableListAddLinkRow;
