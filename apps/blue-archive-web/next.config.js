@@ -1,16 +1,7 @@
 const withPlugins = require('next-compose-plugins');
-const withTM = require('next-transpile-modules')([
-	'@ydkim/react-components',
-	'@ydkim/browser-utils',
-	'@ydkim/hooks',
-	'@ydkim/server-utils',
-	'@ydkim/utils',
-	'@ydkim/core-boilerplate',
-]);
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
 	enabled: process.env.ANALYZE === 'true',
 });
-const withImages = require('next-images');
 
 const { createVanillaExtractPlugin } = require('@vanilla-extract/next-plugin');
 const path = require('path');
@@ -20,6 +11,15 @@ const nextConfig = {
 	sassOptions: {
 		includePaths: [path.join(__dirname, 'src', 'assets', 'styles')],
 	},
+	transpilePackages: [
+		'@ydkim/react-components',
+		'@ydkim/browser-utils',
+		'@ydkim/hooks',
+		'@ydkim/server-utils',
+		'@ydkim/utils',
+		'@ydkim/core-boilerplate',
+		'sanitize.css',
+	],
 	images: {
 		remotePatterns: [
 			{
@@ -32,7 +32,4 @@ const nextConfig = {
 
 const withVanillaExtract = createVanillaExtractPlugin();
 
-module.exports = withPlugins(
-	[withTM(), withImages, withBundleAnalyzer, withVanillaExtract],
-	nextConfig,
-);
+module.exports = withPlugins([withBundleAnalyzer, withVanillaExtract], nextConfig);
