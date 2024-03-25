@@ -5664,15 +5664,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/react-query-devtools@npm:5.28.6":
-  version: 5.28.6
-  resolution: "@tanstack/react-query-devtools@npm:5.28.6"
+"@tanstack/react-query-devtools@npm:5.28.8":
+  version: 5.28.8
+  resolution: "@tanstack/react-query-devtools@npm:5.28.8"
   dependencies:
     "@tanstack/query-devtools": "npm:5.28.6"
   peerDependencies:
-    "@tanstack/react-query": ^5.28.6
+    "@tanstack/react-query": ^5.28.8
     react: ^18.0.0
-  checksum: 10c0/31b3a3ff69f7519d5cf5b01228b8185cbb1fa049de14e98cb5331f9de00c5f4a67e96eb8e12145e60f377fa956f65a4152f317e48338c6ea158c6c7a1d840e72
+  checksum: 10c0/21c8bcfcf3d9fcbf71fee76c6334d8d431ab3d746a027c7a75ac31407bbfbe2dd53d7f5ccda96bae6098dbcbe8e14b575918fab9638838f0f54d6fdd0c566278
   languageName: node
   linkType: hard
 
@@ -6863,7 +6863,7 @@ __metadata:
     "@next/bundle-analyzer": "npm:14.1.4"
     "@next/font": "npm:14.1.4"
     "@tanstack/react-query": "npm:5.28.6"
-    "@tanstack/react-query-devtools": "npm:5.28.6"
+    "@tanstack/react-query-devtools": "npm:5.28.8"
     "@types/node": "npm:20.11.30"
     "@types/react": "npm:18.2.67"
     "@types/react-dom": "npm:18.2.22"
@@ -6885,7 +6885,6 @@ __metadata:
     express: "npm:4.19.1"
     next: "npm:14.1.4"
     next-compose-plugins: "npm:2.2.1"
-    next-transpile-modules: "npm:10.0.1"
     postcss: "npm:8.4.38"
     postcss-preset-env: "npm:9.5.2"
     postcss-reporter: "npm:7.1.0"
@@ -7056,7 +7055,7 @@ __metadata:
     "@reduxjs/toolkit": "npm:2.2.2"
     "@sentry/nextjs": "npm:7.107.0"
     "@tanstack/react-query": "npm:5.28.6"
-    "@tanstack/react-query-devtools": "npm:5.28.6"
+    "@tanstack/react-query-devtools": "npm:5.28.8"
     "@types/jest": "npm:29.5.12"
     "@types/node": "npm:20.11.30"
     "@types/react": "npm:18.2.67"
