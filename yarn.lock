@@ -6885,7 +6885,6 @@ __metadata:
     express: "npm:4.19.1"
     next: "npm:14.1.4"
     next-compose-plugins: "npm:2.2.1"
-    next-transpile-modules: "npm:10.0.1"
     postcss: "npm:8.4.38"
     postcss-preset-env: "npm:9.5.2"
     postcss-reporter: "npm:7.1.0"
@@ -7185,7 +7184,7 @@ __metadata:
     stylelint-scss: "npm:6.2.1"
     ts-node: "npm:10.9.2"
     typescript: "npm:5.4.3"
-    vite: "npm:5.2.2"
+    vite: "npm:5.2.6"
   languageName: unknown
   linkType: soft
 
@@ -21725,9 +21724,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:5.2.2":
-  version: 5.2.2
-  resolution: "vite@npm:5.2.2"
+"vite@npm:5.2.6":
+  version: 5.2.6
+  resolution: "vite@npm:5.2.6"
   dependencies:
     esbuild: "npm:^0.20.1"
     fsevents: "npm:~2.3.3"
@@ -21761,7 +21760,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10c0/472c6a1d41707ef51a5056ccc9e347333a3a975beb6069998d3d7a134555662b856e27628cc1354200c32d63373d7e4ef73385a4e90cc3032e48d06fb77928e5
+  checksum: 10c0/9ccaa65521b738ed5d6ad9cd118584a833191d29649eaa77ccb8096a60ded2ca9014193b8b866ad76054d0c89443f7b68b578686e4e2ef83147273e7788408c2
   languageName: node
   linkType: hard
 
