@@ -6320,6 +6320,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/semver-utils@npm:^1.1.1":
+  version: 1.1.3
+  resolution: "@types/semver-utils@npm:1.1.3"
+  checksum: 10c0/67aaf48cf5d77dc887b8424cb15eedfa4d094d76987138d130e2298e0f4a7f0eb4f2a4cbd6cefb702874953e719881ac92612f6861c8f7b5abd16a0ed06458d1
+  languageName: node
+  linkType: hard
+
 "@types/semver@npm:^7.3.12, @types/semver@npm:^7.3.4":
   version: 7.5.8
   resolution: "@types/semver@npm:7.5.8"
@@ -6885,7 +6892,6 @@ __metadata:
     express: "npm:4.19.1"
     next: "npm:14.1.4"
     next-compose-plugins: "npm:2.2.1"
-    next-transpile-modules: "npm:10.0.1"
     postcss: "npm:8.4.38"
     postcss-preset-env: "npm:9.5.2"
     postcss-reporter: "npm:7.1.0"
@@ -16480,10 +16486,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-check-updates@npm:16.14.17":
-  version: 16.14.17
-  resolution: "npm-check-updates@npm:16.14.17"
+"npm-check-updates@npm:16.14.18":
+  version: 16.14.18
+  resolution: "npm-check-updates@npm:16.14.18"
   dependencies:
+    "@types/semver-utils": "npm:^1.1.1"
     chalk: "npm:^5.3.0"
     cli-table3: "npm:^0.6.3"
     commander: "npm:^10.0.1"
@@ -16519,7 +16526,7 @@ __metadata:
   bin:
     ncu: build/src/bin/cli.js
     npm-check-updates: build/src/bin/cli.js
-  checksum: 10c0/cc1fc576502f32e9e97e11168c4457c9b6fe034c2ab912bcbb28af1096debf81a8805fcbf9e03b008588fbead5d0bb0a6c9f761684dc54df1a24f52860dd2be7
+  checksum: 10c0/5b39f510871235902da6a28d98097cebf60218cf5f313deb62cf601fcd2c91dad40902a22b6db1d77a85b791413c9d06071f7e731c62462b4c9a86ebeab715f1
   languageName: node
   linkType: hard
 
@@ -22270,7 +22277,7 @@ __metadata:
     create-next-app: "npm:14.1.4"
     create-react-app: "npm:5.0.1"
     lerna: "npm:8.1.2"
-    npm-check-updates: "npm:16.14.17"
+    npm-check-updates: "npm:16.14.18"
     prettier: "npm:3.2.5"
     rimraf: "npm:5.0.5"
     sort-package-json: "npm:2.8.0"
