@@ -5554,22 +5554,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/query-devtools@npm:5.28.6":
-  version: 5.28.6
-  resolution: "@tanstack/query-devtools@npm:5.28.6"
-  checksum: 10c0/f11dc9fac3f8a929918ab01409eb3389c974d68f1f4766f3b1233ff9cdbbb515c3bf1c91fb8aaa4fb877c69b3caa9a08053a7cb1da4be22d1e97a25b86ff1d1f
+"@tanstack/query-devtools@npm:5.28.10":
+  version: 5.28.10
+  resolution: "@tanstack/query-devtools@npm:5.28.10"
+  checksum: 10c0/7d055a1f189096a60a0e45623042aeeca285176d15bc0830a0c71c551f7065961ead1a1ae4dce8e189af11b39e2ee0c07aa05f4cf0e32e9e245881b02d7504e5
   languageName: node
   linkType: hard
 
-"@tanstack/react-query-devtools@npm:5.28.8":
-  version: 5.28.8
-  resolution: "@tanstack/react-query-devtools@npm:5.28.8"
+"@tanstack/react-query-devtools@npm:5.28.10":
+  version: 5.28.10
+  resolution: "@tanstack/react-query-devtools@npm:5.28.10"
   dependencies:
-    "@tanstack/query-devtools": "npm:5.28.6"
+    "@tanstack/query-devtools": "npm:5.28.10"
   peerDependencies:
-    "@tanstack/react-query": ^5.28.8
+    "@tanstack/react-query": ^5.28.9
     react: ^18.0.0
-  checksum: 10c0/21c8bcfcf3d9fcbf71fee76c6334d8d431ab3d746a027c7a75ac31407bbfbe2dd53d7f5ccda96bae6098dbcbe8e14b575918fab9638838f0f54d6fdd0c566278
+  checksum: 10c0/4ff21b5e98be59dc121a4934c9d8ce1ba4d5a6936c3b95b80fa3455d2f10a988f07ef18cdbe6078e31ec74f96a3c2fedc35d9b8ce53c89ce26e26e05dafea218
   languageName: node
   linkType: hard
 
@@ -6757,7 +6757,7 @@ __metadata:
     "@next/bundle-analyzer": "npm:14.1.4"
     "@next/font": "npm:14.1.4"
     "@tanstack/react-query": "npm:5.28.8"
-    "@tanstack/react-query-devtools": "npm:5.28.8"
+    "@tanstack/react-query-devtools": "npm:5.28.10"
     "@types/node": "npm:20.11.30"
     "@types/react": "npm:18.2.72"
     "@types/react-dom": "npm:18.2.22"
@@ -6949,7 +6949,7 @@ __metadata:
     "@reduxjs/toolkit": "npm:2.2.2"
     "@sentry/nextjs": "npm:7.108.0"
     "@tanstack/react-query": "npm:5.28.8"
-    "@tanstack/react-query-devtools": "npm:5.28.8"
+    "@tanstack/react-query-devtools": "npm:5.28.10"
     "@types/jest": "npm:29.5.12"
     "@types/node": "npm:20.11.30"
     "@types/react": "npm:18.2.72"
