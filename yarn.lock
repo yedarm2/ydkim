@@ -3731,14 +3731,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@playwright/test@npm:1.43.0":
-  version: 1.43.0
-  resolution: "@playwright/test@npm:1.43.0"
+"@playwright/test@npm:1.43.1":
+  version: 1.43.1
+  resolution: "@playwright/test@npm:1.43.1"
   dependencies:
-    playwright: "npm:1.43.0"
+    playwright: "npm:1.43.1"
   bin:
     playwright: cli.js
-  checksum: 10c0/097dc9db5047d964ba1d1a1776b3298d999c77c64ef3f96613ff76ea885787e3cd120589790daa7fd20adca52abcf30db52be59d64ab4faf9b118840f3b0d031
+  checksum: 10c0/6f1398c3c66657729a14d7c2d239e2f678c37610c3163b4ad1f028cbb6b88fc845cd9033a25d35436fa86d3dfcc57ecb49028c09f7aea1389c4257e4ac9124cd
   languageName: node
   linkType: hard
 
@@ -6195,23 +6195,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^16.8.0 || ^17.0.0 || ^18.0.0":
+"@types/react@npm:*, @types/react@npm:18.2.77, @types/react@npm:^16.8.0 || ^17.0.0 || ^18.0.0":
   version: 18.2.77
   resolution: "@types/react@npm:18.2.77"
   dependencies:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
   checksum: 10c0/9114149933dbee3fdf5900786e660afe3146e8e277424aaf94dca50e29f1de56802b38a83bb65166ff53da086062bb8d001af563a6c906fe3540bdc46554d05a
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:18.2.76":
-  version: 18.2.76
-  resolution: "@types/react@npm:18.2.76"
-  dependencies:
-    "@types/prop-types": "npm:*"
-    csstype: "npm:^3.0.2"
-  checksum: 10c0/2bdff894675698bcfdf591e74c7e427cce25e7dbfe21882d8958280e4cc9a07b11d918bf33a38e21fc835b659a25555f0797c5c432bb46b7f1ebc304cae496ed
   languageName: node
   linkType: hard
 
@@ -6786,7 +6776,7 @@ __metadata:
     "@tanstack/react-query": "npm:5.29.2"
     "@tanstack/react-query-devtools": "npm:5.29.2"
     "@types/node": "npm:20.12.7"
-    "@types/react": "npm:18.2.76"
+    "@types/react": "npm:18.2.77"
     "@types/react-dom": "npm:18.2.25"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
@@ -6813,7 +6803,7 @@ __metadata:
     react-dom: "npm:18.2.0"
     react-icons: "npm:5.0.1"
     sanitize.css: "npm:13.0.0"
-    sass: "npm:1.74.1"
+    sass: "npm:1.75.0"
     server-only: "npm:0.0.1"
     stylelint: "npm:16.3.1"
     stylelint-config-standard-scss: "npm:13.1.0"
@@ -6972,14 +6962,14 @@ __metadata:
     "@emotion/react": "npm:11.11.4"
     "@emotion/styled": "npm:11.11.5"
     "@next/bundle-analyzer": "npm:14.2.0"
-    "@playwright/test": "npm:1.43.0"
+    "@playwright/test": "npm:1.43.1"
     "@reduxjs/toolkit": "npm:2.2.3"
     "@sentry/nextjs": "npm:7.110.0"
     "@tanstack/react-query": "npm:5.29.2"
     "@tanstack/react-query-devtools": "npm:5.29.2"
     "@types/jest": "npm:29.5.12"
     "@types/node": "npm:20.12.7"
-    "@types/react": "npm:18.2.76"
+    "@types/react": "npm:18.2.77"
     "@types/react-dom": "npm:18.2.25"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
@@ -7007,7 +6997,7 @@ __metadata:
     redux-logger: "npm:3.0.6"
     redux-saga: "npm:1.3.0"
     sanitize.css: "npm:13.0.0"
-    sass: "npm:1.74.1"
+    sass: "npm:1.75.0"
     serve: "npm:14.2.1"
     stylelint: "npm:16.3.1"
     stylelint-config-standard-scss: "npm:13.1.0"
@@ -7026,7 +7016,7 @@ __metadata:
     "@emotion/styled": "npm:11.11.5"
     "@next/font": "npm:14.2.0"
     "@types/node": "npm:20.12.7"
-    "@types/react": "npm:18.2.76"
+    "@types/react": "npm:18.2.77"
     "@types/react-dom": "npm:18.2.25"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
@@ -7042,7 +7032,7 @@ __metadata:
     postcss-reporter: "npm:7.1.0"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
-    sass: "npm:1.74.1"
+    sass: "npm:1.75.0"
     stylelint: "npm:16.3.1"
     stylelint-config-standard-scss: "npm:13.1.0"
     stylelint-no-unsupported-browser-features: "npm:8.0.1"
@@ -7071,7 +7061,7 @@ __metadata:
     "@storybook/testing-library": "npm:0.2.2"
     "@types/jest": "npm:29.5.12"
     "@types/node": "npm:20.12.7"
-    "@types/react": "npm:18.2.76"
+    "@types/react": "npm:18.2.77"
     "@types/react-dom": "npm:18.2.25"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
@@ -7094,7 +7084,7 @@ __metadata:
     react-dom: "npm:18.2.0"
     react-icons: "npm:5.0.1"
     sanitize.css: "npm:13.0.0"
-    sass: "npm:1.74.1"
+    sass: "npm:1.75.0"
     serve: "npm:14.2.1"
     storybook: "npm:8.0.8"
     style-loader: "npm:1.3.0"
@@ -7139,7 +7129,7 @@ __metadata:
     "@babel/core": "npm:7.24.4"
     "@types/jest": "npm:29.5.12"
     "@types/node": "npm:20.12.7"
-    "@types/react": "npm:18.2.76"
+    "@types/react": "npm:18.2.77"
     "@types/react-dom": "npm:18.2.25"
     postcss-preset-env: "npm:9.5.5"
     postcss-reporter: "npm:7.1.0"
@@ -17441,27 +17431,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright-core@npm:1.43.0":
-  version: 1.43.0
-  resolution: "playwright-core@npm:1.43.0"
+"playwright-core@npm:1.43.1":
+  version: 1.43.1
+  resolution: "playwright-core@npm:1.43.1"
   bin:
     playwright-core: cli.js
-  checksum: 10c0/3afdcc79176e0c872b3bb66994ef6288b10819dfb800234b81134a35daffc8100596d65ccff10faa8941a450a259a78f446db570898e53031abba7f542602c6a
+  checksum: 10c0/e99f087c5f2b9ab6c379945311ea6e9e90c33cefecd8f950a0716e498dfdded738d6738266af307806d7730eacda8410c7563030690b9acf80c0b268781470b6
   languageName: node
   linkType: hard
 
-"playwright@npm:1.43.0":
-  version: 1.43.0
-  resolution: "playwright@npm:1.43.0"
+"playwright@npm:1.43.1":
+  version: 1.43.1
+  resolution: "playwright@npm:1.43.1"
   dependencies:
     fsevents: "npm:2.3.2"
-    playwright-core: "npm:1.43.0"
+    playwright-core: "npm:1.43.1"
   dependenciesMeta:
     fsevents:
       optional: true
   bin:
     playwright: cli.js
-  checksum: 10c0/82506d3937416439d42ed7940e03b62225651a049792b7c122cd1fb4318674e5789dbcd38e31c8e2f41d99e3b7dc9aa0898bfdd26dff5456eb3f89a166252bd8
+  checksum: 10c0/7edc1e12b8f3b791c7e8d1f9c595be35c6eaf8100f9550d5e35e979aca0bc229734e65f200f2a02dc7e21630cc40c171d7b25f5f6ccf628c79e4a2d4690909ab
   languageName: node
   linkType: hard
 
@@ -19304,16 +19294,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:1.74.1":
-  version: 1.74.1
-  resolution: "sass@npm:1.74.1"
+"sass@npm:1.75.0":
+  version: 1.75.0
+  resolution: "sass@npm:1.75.0"
   dependencies:
     chokidar: "npm:>=3.0.0 <4.0.0"
     immutable: "npm:^4.0.0"
     source-map-js: "npm:>=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 10c0/4610257ee27823276ce4998a534b4ee9f313e5a0b3d3899e70e0f87096feeae4cd8dd3c2f765b52f57dd87f5dab22370ef63f95a837a189fbb9401396d5ce717
+  checksum: 10c0/1564ab2c8041c99a330cec93127fe8abcf65ac63eecb471610ed7f3126a2599a58b788a3a98eb8719f7f40b9b04e00c92bc9e11a9c2180ad582b8cba9fb030b0
   languageName: node
   linkType: hard
 
