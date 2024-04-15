@@ -1,5 +1,5 @@
 import { createSchool } from '@/handlers/school';
-import { SchoolForm } from '@/pages/school/SchoolForm';
+import { SchoolForm } from '@/templates/school/SchoolForm';
 
 const SchoolFormPage = () => {
 	return <SchoolForm action={createSchool} />;

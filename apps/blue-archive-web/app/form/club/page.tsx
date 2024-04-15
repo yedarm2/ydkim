@@ -1,4 +1,4 @@
-import { ClubForm } from '@/pages/club/ClubForm';
+import { ClubForm } from '@/templates/club/ClubForm';
 import { schoolService } from '@ydkim/core-service';
 import { createClub } from '@/handlers/club';
 

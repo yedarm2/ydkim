@@ -1,4 +1,4 @@
-import { HomeLayout } from '@/pages/home/HomeLayout';
+import { HomeLayout } from '@/templates/home/HomeLayout';
 
 export default function Home() {
 	return <HomeLayout />;

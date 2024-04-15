@@ -1,4 +1,4 @@
-import { ClubForm } from '@/pages/club/ClubForm';
+import { ClubForm } from '@/templates/club/ClubForm';
 import { NextPageParams } from '@/shared/types';
 import { schoolService } from '@ydkim/core-service';
 import { NotFoundException } from '@/shared/lib';
