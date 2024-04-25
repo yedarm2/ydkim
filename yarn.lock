@@ -3163,99 +3163,99 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/bundle-analyzer@npm:14.2.2":
-  version: 14.2.2
-  resolution: "@next/bundle-analyzer@npm:14.2.2"
+"@next/bundle-analyzer@npm:14.2.3":
+  version: 14.2.3
+  resolution: "@next/bundle-analyzer@npm:14.2.3"
   dependencies:
     webpack-bundle-analyzer: "npm:4.10.1"
-  checksum: 10c0/69e1d896031ac9b975ce66a00b40debd7139eedb5320931f445273e9b22545dec51f3e20151396c1bbc6ad6f3bfa0232daf703af7ede53a36eaacba0f7ed2acd
+  checksum: 10c0/f219e372ca211b161a530fcbcc7395e049e9dc039c37279cae56eed1ddfc678e8f28b12813548f0901276b932dee591067f4683b8502e03156ce1c79ff3a50a4
   languageName: node
   linkType: hard
 
-"@next/env@npm:14.2.2":
-  version: 14.2.2
-  resolution: "@next/env@npm:14.2.2"
-  checksum: 10c0/45f5fe2e47b20b10e71400ae0a201a6f36644ff77681b4f4342106d69dead85a968940f1bb55e6ed9293089a7f2f51ab41ac90bad970fde7722afa840491b61f
+"@next/env@npm:14.2.3":
+  version: 14.2.3
+  resolution: "@next/env@npm:14.2.3"
+  checksum: 10c0/25ab3ac2739c8e5ce35e1f50373238c5c428ab6b01d448ba78a6068dcdef88978b64f9a92790c324b2926ccc41390a67107154a0b0fee32fe980a485f4ef20d8
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:14.2.2":
-  version: 14.2.2
-  resolution: "@next/eslint-plugin-next@npm:14.2.2"
+"@next/eslint-plugin-next@npm:14.2.3":
+  version: 14.2.3
+  resolution: "@next/eslint-plugin-next@npm:14.2.3"
   dependencies:
     glob: "npm:10.3.10"
-  checksum: 10c0/57bc8e9aac4c7de06edc0a27895803c6d987b7262d035eb5c1dd8c17545e2a3fc50f329052b229ae1093a320893b7a0265a77188a10ea62ffc893fa9060a5243
+  checksum: 10c0/de9af2c7465cce4eb4cb50654aa2548d4d2af788c8992d02e2b863b1bf4f99e3b6604d1f0775f8e50aca6a53cf30d51f4ac56810d1625d401548267ca5f1d883
   languageName: node
   linkType: hard
 
-"@next/font@npm:14.2.2":
-  version: 14.2.2
-  resolution: "@next/font@npm:14.2.2"
+"@next/font@npm:14.2.3":
+  version: 14.2.3
+  resolution: "@next/font@npm:14.2.3"
   peerDependencies:
     next: "*"
-  checksum: 10c0/6a56d7097d79d6e6accf9ba315aaf17c22d5804e65d71762f8ad5853ec0cf3888300ce53565e91efe621f5b17c92773741dc13d1154b14d7ff5d68084f9a0090
+  checksum: 10c0/e436515f7830d82d772a0edbd630112c0a5937b6ebecb6995939493fd63c8874bc77b1357f3dfd527f454f44dcd85241aa250ff566c4c8546eac70903ed95364
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-arm64@npm:14.2.2":
-  version: 14.2.2
-  resolution: "@next/swc-darwin-arm64@npm:14.2.2"
+"@next/swc-darwin-arm64@npm:14.2.3":
+  version: 14.2.3
+  resolution: "@next/swc-darwin-arm64@npm:14.2.3"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-x64@npm:14.2.2":
-  version: 14.2.2
-  resolution: "@next/swc-darwin-x64@npm:14.2.2"
+"@next/swc-darwin-x64@npm:14.2.3":
+  version: 14.2.3
+  resolution: "@next/swc-darwin-x64@npm:14.2.3"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-gnu@npm:14.2.2":
-  version: 14.2.2
-  resolution: "@next/swc-linux-arm64-gnu@npm:14.2.2"
+"@next/swc-linux-arm64-gnu@npm:14.2.3":
+  version: 14.2.3
+  resolution: "@next/swc-linux-arm64-gnu@npm:14.2.3"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-musl@npm:14.2.2":
-  version: 14.2.2
-  resolution: "@next/swc-linux-arm64-musl@npm:14.2.2"
+"@next/swc-linux-arm64-musl@npm:14.2.3":
+  version: 14.2.3
+  resolution: "@next/swc-linux-arm64-musl@npm:14.2.3"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-gnu@npm:14.2.2":
-  version: 14.2.2
-  resolution: "@next/swc-linux-x64-gnu@npm:14.2.2"
+"@next/swc-linux-x64-gnu@npm:14.2.3":
+  version: 14.2.3
+  resolution: "@next/swc-linux-x64-gnu@npm:14.2.3"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-musl@npm:14.2.2":
-  version: 14.2.2
-  resolution: "@next/swc-linux-x64-musl@npm:14.2.2"
+"@next/swc-linux-x64-musl@npm:14.2.3":
+  version: 14.2.3
+  resolution: "@next/swc-linux-x64-musl@npm:14.2.3"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-win32-arm64-msvc@npm:14.2.2":
-  version: 14.2.2
-  resolution: "@next/swc-win32-arm64-msvc@npm:14.2.2"
+"@next/swc-win32-arm64-msvc@npm:14.2.3":
+  version: 14.2.3
+  resolution: "@next/swc-win32-arm64-msvc@npm:14.2.3"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-win32-ia32-msvc@npm:14.2.2":
-  version: 14.2.2
-  resolution: "@next/swc-win32-ia32-msvc@npm:14.2.2"
+"@next/swc-win32-ia32-msvc@npm:14.2.3":
+  version: 14.2.3
+  resolution: "@next/swc-win32-ia32-msvc@npm:14.2.3"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@next/swc-win32-x64-msvc@npm:14.2.2":
-  version: 14.2.2
-  resolution: "@next/swc-win32-x64-msvc@npm:14.2.2"
+"@next/swc-win32-x64-msvc@npm:14.2.3":
+  version: 14.2.3
+  resolution: "@next/swc-win32-x64-msvc@npm:14.2.3"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -4427,53 +4427,53 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry-internal/feedback@npm:7.112.1":
-  version: 7.112.1
-  resolution: "@sentry-internal/feedback@npm:7.112.1"
+"@sentry-internal/feedback@npm:7.112.2":
+  version: 7.112.2
+  resolution: "@sentry-internal/feedback@npm:7.112.2"
   dependencies:
-    "@sentry/core": "npm:7.112.1"
-    "@sentry/types": "npm:7.112.1"
-    "@sentry/utils": "npm:7.112.1"
-  checksum: 10c0/825c7b2bcfe6825fbfc6853eefcef48e0c39544cfd440e366e9cac21598c10147814745a5ba298bc694f436adc1e1991bed0a1566a20599404799610c567cf02
+    "@sentry/core": "npm:7.112.2"
+    "@sentry/types": "npm:7.112.2"
+    "@sentry/utils": "npm:7.112.2"
+  checksum: 10c0/ee71656ecc82f03802d7da5534c0613b6d45f0c34df7fbb5804e63bb0e33f251bad3afa679112060d920cb5714dcc56d05ef9dadae384a05b43e022fee88697d
   languageName: node
   linkType: hard
 
-"@sentry-internal/replay-canvas@npm:7.112.1":
-  version: 7.112.1
-  resolution: "@sentry-internal/replay-canvas@npm:7.112.1"
+"@sentry-internal/replay-canvas@npm:7.112.2":
+  version: 7.112.2
+  resolution: "@sentry-internal/replay-canvas@npm:7.112.2"
   dependencies:
-    "@sentry/core": "npm:7.112.1"
-    "@sentry/replay": "npm:7.112.1"
-    "@sentry/types": "npm:7.112.1"
-    "@sentry/utils": "npm:7.112.1"
-  checksum: 10c0/e0dec49d486db982f3533da8f6c0456eedcb57a3e103f5607268be0a6a02d8bc49650905d0add2c92fb4a4674e88eb43659d46b19d26ef893e2cb55bff56702d
+    "@sentry/core": "npm:7.112.2"
+    "@sentry/replay": "npm:7.112.2"
+    "@sentry/types": "npm:7.112.2"
+    "@sentry/utils": "npm:7.112.2"
+  checksum: 10c0/5a5204e94089f3faeeeacf61fd3628638ab95cd82c3b8ff84886106f3c41b4f74d0eb7ac4f8c9bc2eb5150f97d354baf89f512b7d3140f1b431b4d5829176046
   languageName: node
   linkType: hard
 
-"@sentry-internal/tracing@npm:7.112.1":
-  version: 7.112.1
-  resolution: "@sentry-internal/tracing@npm:7.112.1"
+"@sentry-internal/tracing@npm:7.112.2":
+  version: 7.112.2
+  resolution: "@sentry-internal/tracing@npm:7.112.2"
   dependencies:
-    "@sentry/core": "npm:7.112.1"
-    "@sentry/types": "npm:7.112.1"
-    "@sentry/utils": "npm:7.112.1"
-  checksum: 10c0/e3097ed3f45e3ffbcc4a6f155051bbec9014341dba336a522fa0895f1c8f3c30d93560e127cf496688b961976e9824f6a6058c2dd9e6a32ad6611a5a4959251e
+    "@sentry/core": "npm:7.112.2"
+    "@sentry/types": "npm:7.112.2"
+    "@sentry/utils": "npm:7.112.2"
+  checksum: 10c0/bca1681cd5d687614ff1888fff227b41aa0e61a46895a673102bf6913595c8c6de7b71294422c9b50bfa07a66021c20aa4292c1d3a460bca4be27042cb549efe
   languageName: node
   linkType: hard
 
-"@sentry/browser@npm:7.112.1":
-  version: 7.112.1
-  resolution: "@sentry/browser@npm:7.112.1"
+"@sentry/browser@npm:7.112.2":
+  version: 7.112.2
+  resolution: "@sentry/browser@npm:7.112.2"
   dependencies:
-    "@sentry-internal/feedback": "npm:7.112.1"
-    "@sentry-internal/replay-canvas": "npm:7.112.1"
-    "@sentry-internal/tracing": "npm:7.112.1"
-    "@sentry/core": "npm:7.112.1"
-    "@sentry/integrations": "npm:7.112.1"
-    "@sentry/replay": "npm:7.112.1"
-    "@sentry/types": "npm:7.112.1"
-    "@sentry/utils": "npm:7.112.1"
-  checksum: 10c0/d92084eea01e042a1e5c3223e120b3600d1b966bdcb8263698a94b2063dcf14f12f4de0f4f9ef175da223f6a3e09ef054cef774248da24149cde29659e75a209
+    "@sentry-internal/feedback": "npm:7.112.2"
+    "@sentry-internal/replay-canvas": "npm:7.112.2"
+    "@sentry-internal/tracing": "npm:7.112.2"
+    "@sentry/core": "npm:7.112.2"
+    "@sentry/integrations": "npm:7.112.2"
+    "@sentry/replay": "npm:7.112.2"
+    "@sentry/types": "npm:7.112.2"
+    "@sentry/utils": "npm:7.112.2"
+  checksum: 10c0/35adcbe213e8e35575467c59f234d8b58b99e4be3769ec8e26cde16064c9eb85f900e15603d245022a9abba799852649f6c0f25cfe89fe756a6f8a0e6a11a022
   languageName: node
   linkType: hard
 
@@ -4493,40 +4493,40 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/core@npm:7.112.1":
-  version: 7.112.1
-  resolution: "@sentry/core@npm:7.112.1"
+"@sentry/core@npm:7.112.2":
+  version: 7.112.2
+  resolution: "@sentry/core@npm:7.112.2"
   dependencies:
-    "@sentry/types": "npm:7.112.1"
-    "@sentry/utils": "npm:7.112.1"
-  checksum: 10c0/8dd059e2f155ed2ab8ad3fd1e5681e3091115e526e2b87f56be8c3dde0870614ac7f334d03fea7a63be31eccdfa31b6444b41e3985dd92b001be73000ca6ac0c
+    "@sentry/types": "npm:7.112.2"
+    "@sentry/utils": "npm:7.112.2"
+  checksum: 10c0/560e9566f410610c2adc1fb2617bc57f85cede9849daf7caef01ef1c49281e2be159215261aa9570aa5c94fcb1a12068670b75ae68aa62467537088bf817d125
   languageName: node
   linkType: hard
 
-"@sentry/integrations@npm:7.112.1":
-  version: 7.112.1
-  resolution: "@sentry/integrations@npm:7.112.1"
+"@sentry/integrations@npm:7.112.2":
+  version: 7.112.2
+  resolution: "@sentry/integrations@npm:7.112.2"
   dependencies:
-    "@sentry/core": "npm:7.112.1"
-    "@sentry/types": "npm:7.112.1"
-    "@sentry/utils": "npm:7.112.1"
+    "@sentry/core": "npm:7.112.2"
+    "@sentry/types": "npm:7.112.2"
+    "@sentry/utils": "npm:7.112.2"
     localforage: "npm:^1.8.1"
-  checksum: 10c0/991c29680130127d1403960b709295400d5e0ae8d21d7f06427ed97e8c6124929e31a0e6e1dd1626b5b573972a70481bf63643270c4fd2c24f23952a51b55907
+  checksum: 10c0/fa1b92eb16c748d0b1635bff1e172888f1f39c6d8e239382a702a36c79d2580f30c73e9899cddc27cecb2f015b6e9a2e2c3a76d8626b4af758145cc672de0759
   languageName: node
   linkType: hard
 
-"@sentry/nextjs@npm:7.112.1":
-  version: 7.112.1
-  resolution: "@sentry/nextjs@npm:7.112.1"
+"@sentry/nextjs@npm:7.112.2":
+  version: 7.112.2
+  resolution: "@sentry/nextjs@npm:7.112.2"
   dependencies:
     "@rollup/plugin-commonjs": "npm:24.0.0"
-    "@sentry/core": "npm:7.112.1"
-    "@sentry/integrations": "npm:7.112.1"
-    "@sentry/node": "npm:7.112.1"
-    "@sentry/react": "npm:7.112.1"
-    "@sentry/types": "npm:7.112.1"
-    "@sentry/utils": "npm:7.112.1"
-    "@sentry/vercel-edge": "npm:7.112.1"
+    "@sentry/core": "npm:7.112.2"
+    "@sentry/integrations": "npm:7.112.2"
+    "@sentry/node": "npm:7.112.2"
+    "@sentry/react": "npm:7.112.2"
+    "@sentry/types": "npm:7.112.2"
+    "@sentry/utils": "npm:7.112.2"
+    "@sentry/vercel-edge": "npm:7.112.2"
     "@sentry/webpack-plugin": "npm:1.21.0"
     chalk: "npm:3.0.0"
     resolve: "npm:1.22.8"
@@ -4539,76 +4539,76 @@ __metadata:
   peerDependenciesMeta:
     webpack:
       optional: true
-  checksum: 10c0/dce8cdc4c3812d39156744330b3792f1f072ad386f3c7c9cdf07331036b879a62ed24386c1d8048a7c57c67b64378f8395a23d92847a51fd64ae402261b9e2c3
+  checksum: 10c0/8a05b1cb6623fda17235cddd2896766f040031491a8327f9d3b5efb71c0852122cdfdea91e6544f1e3bef3e13ccdca062dcd1a0712ac8a8d01bb92de42a892ee
   languageName: node
   linkType: hard
 
-"@sentry/node@npm:7.112.1":
-  version: 7.112.1
-  resolution: "@sentry/node@npm:7.112.1"
+"@sentry/node@npm:7.112.2":
+  version: 7.112.2
+  resolution: "@sentry/node@npm:7.112.2"
   dependencies:
-    "@sentry-internal/tracing": "npm:7.112.1"
-    "@sentry/core": "npm:7.112.1"
-    "@sentry/integrations": "npm:7.112.1"
-    "@sentry/types": "npm:7.112.1"
-    "@sentry/utils": "npm:7.112.1"
-  checksum: 10c0/c02d535d6cd01865ae3e7abb336c406b223f046f1ae3ff5e2505352218aed547128a1977d894aa80a30d43a004072cc6069896f992453297a1051f69a43c40cd
+    "@sentry-internal/tracing": "npm:7.112.2"
+    "@sentry/core": "npm:7.112.2"
+    "@sentry/integrations": "npm:7.112.2"
+    "@sentry/types": "npm:7.112.2"
+    "@sentry/utils": "npm:7.112.2"
+  checksum: 10c0/9a64d31e12195fb1aed630b42ab30ebdb275b085eb2dcfa96e9dd0a19f5cbb4a72127a1f031c947ae4ade5057dddeaeed11a0848da9354fc79bbcac659f44772
   languageName: node
   linkType: hard
 
-"@sentry/react@npm:7.112.1":
-  version: 7.112.1
-  resolution: "@sentry/react@npm:7.112.1"
+"@sentry/react@npm:7.112.2":
+  version: 7.112.2
+  resolution: "@sentry/react@npm:7.112.2"
   dependencies:
-    "@sentry/browser": "npm:7.112.1"
-    "@sentry/core": "npm:7.112.1"
-    "@sentry/types": "npm:7.112.1"
-    "@sentry/utils": "npm:7.112.1"
+    "@sentry/browser": "npm:7.112.2"
+    "@sentry/core": "npm:7.112.2"
+    "@sentry/types": "npm:7.112.2"
+    "@sentry/utils": "npm:7.112.2"
     hoist-non-react-statics: "npm:^3.3.2"
   peerDependencies:
     react: 15.x || 16.x || 17.x || 18.x
-  checksum: 10c0/6e846940c2996e208c9b8eadf2476b3eba64cb802658a2a2681fb1cc44641a978344e2be43e56146d8fb01d9fd6bfe6eb2620a0ed071c29faff38e65b47d7a7c
+  checksum: 10c0/17b2dd38fc2cadf4386ae7b46ffe0c74978386b5e4dd2a7e655af344c6e51aafa98c5cc58131a32b1627aaa01cda658b5261298d40e1973e791fd78daab19e46
   languageName: node
   linkType: hard
 
-"@sentry/replay@npm:7.112.1":
-  version: 7.112.1
-  resolution: "@sentry/replay@npm:7.112.1"
+"@sentry/replay@npm:7.112.2":
+  version: 7.112.2
+  resolution: "@sentry/replay@npm:7.112.2"
   dependencies:
-    "@sentry-internal/tracing": "npm:7.112.1"
-    "@sentry/core": "npm:7.112.1"
-    "@sentry/types": "npm:7.112.1"
-    "@sentry/utils": "npm:7.112.1"
-  checksum: 10c0/0cb363833074a62bf35baf57729233de592acab509c8e765965d75f511299a93fd17385fbe14afd7d998bf94d07f95fa2631f32b7375466337488e1f3d3cdd13
+    "@sentry-internal/tracing": "npm:7.112.2"
+    "@sentry/core": "npm:7.112.2"
+    "@sentry/types": "npm:7.112.2"
+    "@sentry/utils": "npm:7.112.2"
+  checksum: 10c0/5608e86f4fb90f052021a708f02fc6b53adff61301803fc6ccc6859c452b6bac3d972864643140e27917b24dc47fe6541446bc403963a4783059230e3eb29391
   languageName: node
   linkType: hard
 
-"@sentry/types@npm:7.112.1":
-  version: 7.112.1
-  resolution: "@sentry/types@npm:7.112.1"
-  checksum: 10c0/984a79d5b6a3895f835790e1c1869feb7d08fea0f0b4e98607c88f95207780a6a310c73125868295852f69acd8ba51e34275911e4b6e4e3a00cba1c271f2ce29
+"@sentry/types@npm:7.112.2":
+  version: 7.112.2
+  resolution: "@sentry/types@npm:7.112.2"
+  checksum: 10c0/2f3a49113b4bcabaa6108f77c752adbe9bf964754e83ea435ba312fd974cc26cd020d8e9f42f98e8051bb1e0ffe383d445afb1f4fb4c074005ee0020a5b5ef48
   languageName: node
   linkType: hard
 
-"@sentry/utils@npm:7.112.1":
-  version: 7.112.1
-  resolution: "@sentry/utils@npm:7.112.1"
+"@sentry/utils@npm:7.112.2":
+  version: 7.112.2
+  resolution: "@sentry/utils@npm:7.112.2"
   dependencies:
-    "@sentry/types": "npm:7.112.1"
-  checksum: 10c0/9c38ef50a7f70e83278e5dadf9d11d52f574e9718e93948b18b2baed9304227eaafe5b59a9fd4fc791ac311277017bfada980a7754092d9ca08c60ca42fa0f93
+    "@sentry/types": "npm:7.112.2"
+  checksum: 10c0/63cca80cef62d6251325a5e61fb1f7cecf3a4726cc88a41d0aedd2a56d6c132ec49d952cc303a3a37c5114b9967380c43185cac1685dfcebe4aae313a57f6152
   languageName: node
   linkType: hard
 
-"@sentry/vercel-edge@npm:7.112.1":
-  version: 7.112.1
-  resolution: "@sentry/vercel-edge@npm:7.112.1"
+"@sentry/vercel-edge@npm:7.112.2":
+  version: 7.112.2
+  resolution: "@sentry/vercel-edge@npm:7.112.2"
   dependencies:
-    "@sentry-internal/tracing": "npm:7.112.1"
-    "@sentry/core": "npm:7.112.1"
-    "@sentry/integrations": "npm:7.112.1"
-    "@sentry/types": "npm:7.112.1"
-    "@sentry/utils": "npm:7.112.1"
-  checksum: 10c0/1e6240f4763ad1d9a8814422496a26e58f8f39fb047505d82584f42f48d050136bdc7332aaee5949a75543a07c73426a9d5e258bb92c7a3c265798b9fe75cfc7
+    "@sentry-internal/tracing": "npm:7.112.2"
+    "@sentry/core": "npm:7.112.2"
+    "@sentry/integrations": "npm:7.112.2"
+    "@sentry/types": "npm:7.112.2"
+    "@sentry/utils": "npm:7.112.2"
+  checksum: 10c0/fc2afca9db3bbf913988197da2d12d63a3cfe4f949fd29a3daf6f4f230bc97669e850790140d03fe9f8b7c9ec804222530f272631baf02eb6c892cd03e587c56
   languageName: node
   linkType: hard
 
@@ -6784,8 +6784,8 @@ __metadata:
   dependencies:
     "@emotion/react": "npm:11.11.4"
     "@emotion/styled": "npm:11.11.5"
-    "@next/bundle-analyzer": "npm:14.2.2"
-    "@next/font": "npm:14.2.2"
+    "@next/bundle-analyzer": "npm:14.2.3"
+    "@next/font": "npm:14.2.3"
     "@tanstack/react-query": "npm:5.32.0"
     "@tanstack/react-query-devtools": "npm:5.32.0"
     "@types/node": "npm:20.12.7"
@@ -6801,13 +6801,13 @@ __metadata:
     "@ydkim/core-service": "npm:*"
     critters: "npm:0.0.22"
     eslint: "npm:9.1.1"
-    eslint-config-next: "npm:14.2.2"
+    eslint-config-next: "npm:14.2.3"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-import: "npm:2.29.1"
     eslint-plugin-jest: "npm:28.2.0"
     eslint-plugin-prettier: "npm:5.1.3"
     express: "npm:4.19.2"
-    next: "npm:14.2.2"
+    next: "npm:14.2.3"
     next-compose-plugins: "npm:2.2.1"
     postcss: "npm:8.4.38"
     postcss-preset-env: "npm:9.5.9"
@@ -6974,10 +6974,10 @@ __metadata:
     "@emotion/babel-plugin": "npm:11.11.0"
     "@emotion/react": "npm:11.11.4"
     "@emotion/styled": "npm:11.11.5"
-    "@next/bundle-analyzer": "npm:14.2.2"
+    "@next/bundle-analyzer": "npm:14.2.3"
     "@playwright/test": "npm:1.43.1"
     "@reduxjs/toolkit": "npm:2.2.3"
-    "@sentry/nextjs": "npm:7.112.1"
+    "@sentry/nextjs": "npm:7.112.2"
     "@tanstack/react-query": "npm:5.32.0"
     "@tanstack/react-query-devtools": "npm:5.32.0"
     "@types/jest": "npm:29.5.12"
@@ -6988,13 +6988,13 @@ __metadata:
     "@typescript-eslint/parser": "npm:5.61.0"
     classnames: "npm:2.5.1"
     eslint: "npm:9.1.1"
-    eslint-config-next: "npm:14.2.2"
+    eslint-config-next: "npm:14.2.3"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-import: "npm:2.29.1"
     eslint-plugin-jest: "npm:28.2.0"
     eslint-plugin-prettier: "npm:5.1.3"
     facepaint: "npm:1.2.1"
-    next: "npm:14.2.2"
+    next: "npm:14.2.3"
     next-compose-plugins: "npm:2.2.1"
     next-images: "npm:1.8.5"
     next-redux-wrapper: "npm:8.1.0"
@@ -7027,19 +7027,19 @@ __metadata:
   dependencies:
     "@emotion/react": "npm:11.11.4"
     "@emotion/styled": "npm:11.11.5"
-    "@next/font": "npm:14.2.2"
+    "@next/font": "npm:14.2.3"
     "@types/node": "npm:20.12.7"
     "@types/react": "npm:18.2.79"
     "@types/react-dom": "npm:18.2.25"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
     eslint: "npm:9.1.1"
-    eslint-config-next: "npm:14.2.2"
+    eslint-config-next: "npm:14.2.3"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-import: "npm:2.29.1"
     eslint-plugin-jest: "npm:28.2.0"
     eslint-plugin-prettier: "npm:5.1.3"
-    next: "npm:14.2.2"
+    next: "npm:14.2.3"
     postcss: "npm:8.4.38"
     postcss-preset-env: "npm:9.5.9"
     postcss-reporter: "npm:7.1.0"
@@ -7129,7 +7129,7 @@ __metadata:
     eslint-plugin-prettier: "npm:5.1.3"
     isbot: "npm:5.1.4"
     jest: "npm:29.7.0"
-    next: "npm:14.2.2"
+    next: "npm:14.2.3"
     ts-node: "npm:10.9.2"
     typescript: "npm:5.4.5"
   languageName: unknown
@@ -9228,12 +9228,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"create-next-app@npm:14.2.2":
-  version: 14.2.2
-  resolution: "create-next-app@npm:14.2.2"
+"create-next-app@npm:14.2.3":
+  version: 14.2.3
+  resolution: "create-next-app@npm:14.2.3"
   bin:
     create-next-app: dist/index.js
-  checksum: 10c0/a0e0e895b90c6382976f4cb816c4cc41d61cddc854764a8cff130aa1ffb8847babad89a5bd68998a50bd52e30eae30f9a1cc45871c089f54fe20d6b71c517a33
+  checksum: 10c0/a76aefed7bca222d34b10382ac4fc8f862d3cbf6f196d93578d37caeeb8335c1a934d17113a58652ee1e3248d3c786872ca45e4fae6e7fe923ec89013e855d64
   languageName: node
   linkType: hard
 
@@ -10606,11 +10606,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:14.2.2":
-  version: 14.2.2
-  resolution: "eslint-config-next@npm:14.2.2"
+"eslint-config-next@npm:14.2.3":
+  version: 14.2.3
+  resolution: "eslint-config-next@npm:14.2.3"
   dependencies:
-    "@next/eslint-plugin-next": "npm:14.2.2"
+    "@next/eslint-plugin-next": "npm:14.2.3"
     "@rushstack/eslint-patch": "npm:^1.3.3"
     "@typescript-eslint/parser": "npm:^5.4.2 || ^6.0.0 || 7.0.0 - 7.2.0"
     eslint-import-resolver-node: "npm:^0.3.6"
@@ -10625,7 +10625,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10c0/5aeee4b58ff922217bf81943c1ea95717a68e7dbe306ff271e762f1546e48b5261d8c240195233b39cc9b584268d7f368e0703001f650422a4bff35691b369f3
+  checksum: 10c0/52a3d48bb783d3e8d76a571a3636f658e4789e1a4a51ebbd14d184b7f6f5dd91281b71d99e49a7bb7e3ab32a2dddd321285110005ca0969a471be5ab2e579887
   languageName: node
   linkType: hard
 
@@ -16105,20 +16105,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:14.2.2":
-  version: 14.2.2
-  resolution: "next@npm:14.2.2"
+"next@npm:14.2.3":
+  version: 14.2.3
+  resolution: "next@npm:14.2.3"
   dependencies:
-    "@next/env": "npm:14.2.2"
-    "@next/swc-darwin-arm64": "npm:14.2.2"
-    "@next/swc-darwin-x64": "npm:14.2.2"
-    "@next/swc-linux-arm64-gnu": "npm:14.2.2"
-    "@next/swc-linux-arm64-musl": "npm:14.2.2"
-    "@next/swc-linux-x64-gnu": "npm:14.2.2"
-    "@next/swc-linux-x64-musl": "npm:14.2.2"
-    "@next/swc-win32-arm64-msvc": "npm:14.2.2"
-    "@next/swc-win32-ia32-msvc": "npm:14.2.2"
-    "@next/swc-win32-x64-msvc": "npm:14.2.2"
+    "@next/env": "npm:14.2.3"
+    "@next/swc-darwin-arm64": "npm:14.2.3"
+    "@next/swc-darwin-x64": "npm:14.2.3"
+    "@next/swc-linux-arm64-gnu": "npm:14.2.3"
+    "@next/swc-linux-arm64-musl": "npm:14.2.3"
+    "@next/swc-linux-x64-gnu": "npm:14.2.3"
+    "@next/swc-linux-x64-musl": "npm:14.2.3"
+    "@next/swc-win32-arm64-msvc": "npm:14.2.3"
+    "@next/swc-win32-ia32-msvc": "npm:14.2.3"
+    "@next/swc-win32-x64-msvc": "npm:14.2.3"
     "@swc/helpers": "npm:0.5.5"
     busboy: "npm:1.6.0"
     caniuse-lite: "npm:^1.0.30001579"
@@ -16159,7 +16159,7 @@ __metadata:
       optional: true
   bin:
     next: dist/bin/next
-  checksum: 10c0/775fe33021051def673946dbd2dea0b3f66c3f550ffc0544e55a6e0411b400b64229fe375730f009588cf7263d69b2b828ca7bb984fd3e3883cdddeaba82c31d
+  checksum: 10c0/2c409154720846d07a7a995cc3bfba24b9ee73c87360ce3266528c8a217f5f1ab6f916cffbe1be83509b4e8d7b1d713921bb5c69338b4ecaa57df3212f79a8c5
   languageName: node
   linkType: hard
 
@@ -22179,7 +22179,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ydkim@workspace:."
   dependencies:
-    create-next-app: "npm:14.2.2"
+    create-next-app: "npm:14.2.3"
     create-react-app: "npm:5.0.1"
     lerna: "npm:8.1.2"
     npm-check-updates: "npm:16.14.18"
