@@ -7085,7 +7085,7 @@ __metadata:
     stylelint-config-standard-scss: "npm:13.1.0"
     stylelint-no-unsupported-browser-features: "npm:8.0.1"
     stylelint-order: "npm:6.0.4"
-    stylelint-scss: "npm:6.3.0"
+    stylelint-scss: "npm:6.3.1"
     typescript: "npm:5.4.5"
   languageName: unknown
   linkType: soft
@@ -7279,7 +7279,7 @@ __metadata:
     stylelint-config-standard-scss: "npm:13.1.0"
     stylelint-no-unsupported-browser-features: "npm:8.0.1"
     stylelint-order: "npm:6.0.4"
-    stylelint-scss: "npm:6.3.0"
+    stylelint-scss: "npm:6.3.1"
     typescript: "npm:5.4.5"
   languageName: unknown
   linkType: soft
@@ -7313,7 +7313,7 @@ __metadata:
     stylelint-config-standard-scss: "npm:13.1.0"
     stylelint-no-unsupported-browser-features: "npm:8.0.1"
     stylelint-order: "npm:6.0.4"
-    stylelint-scss: "npm:6.3.0"
+    stylelint-scss: "npm:6.3.1"
     typescript: "npm:5.4.5"
   languageName: unknown
   linkType: soft
@@ -7368,7 +7368,7 @@ __metadata:
     stylelint-config-standard-scss: "npm:13.1.0"
     stylelint-no-unsupported-browser-features: "npm:8.0.1"
     stylelint-order: "npm:6.0.4"
-    stylelint-scss: "npm:6.3.0"
+    stylelint-scss: "npm:6.3.1"
     ts-node: "npm:10.9.2"
     typescript: "npm:5.4.5"
     vite: "npm:5.2.12"
@@ -7414,7 +7414,7 @@ __metadata:
     stylelint-config-standard-scss: "npm:13.1.0"
     stylelint-no-unsupported-browser-features: "npm:8.0.1"
     stylelint-order: "npm:6.0.4"
-    stylelint-scss: "npm:6.3.0"
+    stylelint-scss: "npm:6.3.1"
   languageName: unknown
   linkType: soft
 
@@ -20683,7 +20683,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-scss@npm:6.3.0, stylelint-scss@npm:^6.0.0":
+"stylelint-scss@npm:6.3.1":
+  version: 6.3.1
+  resolution: "stylelint-scss@npm:6.3.1"
+  dependencies:
+    known-css-properties: "npm:^0.31.0"
+    postcss-media-query-parser: "npm:^0.2.3"
+    postcss-resolve-nested-selector: "npm:^0.1.1"
+    postcss-selector-parser: "npm:^6.1.0"
+    postcss-value-parser: "npm:^4.2.0"
+  peerDependencies:
+    stylelint: ^16.0.2
+  checksum: 10c0/1747227e7c16df6e6a0fb9ee6d88a13351565c1e2811c7fe39559f2ba76f9258515d14ceb0dd894e06f4d4c4b65e164e6ce79a584594d3047fb9f3b969019fdf
+  languageName: node
+  linkType: hard
+
+"stylelint-scss@npm:^6.0.0":
   version: 6.3.0
   resolution: "stylelint-scss@npm:6.3.0"
   dependencies:
