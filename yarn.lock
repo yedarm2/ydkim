@@ -7067,7 +7067,7 @@ __metadata:
     eslint-config-next: "npm:14.2.3"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-import: "npm:2.29.1"
-    eslint-plugin-jest: "npm:28.5.0"
+    eslint-plugin-jest: "npm:28.6.0"
     eslint-plugin-prettier: "npm:5.1.3"
     express: "npm:4.19.2"
     next: "npm:14.2.3"
@@ -7102,7 +7102,7 @@ __metadata:
     eslint: "npm:9.4.0"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-import: "npm:2.29.1"
-    eslint-plugin-jest: "npm:28.5.0"
+    eslint-plugin-jest: "npm:28.6.0"
     eslint-plugin-prettier: "npm:5.1.3"
     jest: "npm:29.7.0"
     ts-node: "npm:10.9.2"
@@ -7124,7 +7124,7 @@ __metadata:
     eslint: "npm:9.4.0"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-import: "npm:2.29.1"
-    eslint-plugin-jest: "npm:28.5.0"
+    eslint-plugin-jest: "npm:28.6.0"
     eslint-plugin-prettier: "npm:5.1.3"
     jest: "npm:29.7.0"
     redux-saga: "npm:1.3.0"
@@ -7152,7 +7152,7 @@ __metadata:
     eslint: "npm:9.4.0"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-import: "npm:2.29.1"
-    eslint-plugin-jest: "npm:28.5.0"
+    eslint-plugin-jest: "npm:28.6.0"
     eslint-plugin-prettier: "npm:5.1.3"
     jest: "npm:29.7.0"
     ts-node: "npm:10.9.2"
@@ -7173,7 +7173,7 @@ __metadata:
     eslint: "npm:9.4.0"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-import: "npm:2.29.1"
-    eslint-plugin-jest: "npm:28.5.0"
+    eslint-plugin-jest: "npm:28.6.0"
     eslint-plugin-prettier: "npm:5.1.3"
     firebase-admin: "npm:12.1.1"
     jest: "npm:29.7.0"
@@ -7197,7 +7197,7 @@ __metadata:
     eslint: "npm:9.4.0"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-import: "npm:2.29.1"
-    eslint-plugin-jest: "npm:28.5.0"
+    eslint-plugin-jest: "npm:28.6.0"
     eslint-plugin-prettier: "npm:5.1.3"
     jest: "npm:29.7.0"
     ts-node: "npm:10.9.2"
@@ -7218,7 +7218,7 @@ __metadata:
     eslint: "npm:9.4.0"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-import: "npm:2.29.1"
-    eslint-plugin-jest: "npm:28.5.0"
+    eslint-plugin-jest: "npm:28.6.0"
     eslint-plugin-prettier: "npm:5.1.3"
     jest: "npm:29.7.0"
     polished: "npm:4.3.1"
@@ -7254,7 +7254,7 @@ __metadata:
     eslint-config-next: "npm:14.2.3"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-import: "npm:2.29.1"
-    eslint-plugin-jest: "npm:28.5.0"
+    eslint-plugin-jest: "npm:28.6.0"
     eslint-plugin-prettier: "npm:5.1.3"
     facepaint: "npm:1.2.1"
     next: "npm:14.2.3"
@@ -7300,7 +7300,7 @@ __metadata:
     eslint-config-next: "npm:14.2.3"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-import: "npm:2.29.1"
-    eslint-plugin-jest: "npm:28.5.0"
+    eslint-plugin-jest: "npm:28.6.0"
     eslint-plugin-prettier: "npm:5.1.3"
     next: "npm:14.2.3"
     postcss: "npm:8.4.38"
@@ -7348,7 +7348,7 @@ __metadata:
     eslint: "npm:9.4.0"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-import: "npm:2.29.1"
-    eslint-plugin-jest: "npm:28.5.0"
+    eslint-plugin-jest: "npm:28.6.0"
     eslint-plugin-prettier: "npm:5.1.3"
     jest: "npm:29.7.0"
     msw-storybook-addon: "npm:2.0.2"
@@ -7388,7 +7388,7 @@ __metadata:
     eslint: "npm:9.4.0"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-import: "npm:2.29.1"
-    eslint-plugin-jest: "npm:28.5.0"
+    eslint-plugin-jest: "npm:28.6.0"
     eslint-plugin-prettier: "npm:5.1.3"
     isbot: "npm:5.1.9"
     jest: "npm:29.7.0"
@@ -7431,7 +7431,7 @@ __metadata:
     eslint: "npm:9.4.0"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-import: "npm:2.29.1"
-    eslint-plugin-jest: "npm:28.5.0"
+    eslint-plugin-jest: "npm:28.6.0"
     eslint-plugin-prettier: "npm:5.1.3"
     fs-extra: "npm:11.2.0"
     jest: "npm:29.7.0"
@@ -10949,9 +10949,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:28.5.0":
-  version: 28.5.0
-  resolution: "eslint-plugin-jest@npm:28.5.0"
+"eslint-plugin-jest@npm:28.6.0":
+  version: 28.6.0
+  resolution: "eslint-plugin-jest@npm:28.6.0"
   dependencies:
     "@typescript-eslint/utils": "npm:^6.0.0 || ^7.0.0"
   peerDependencies:
@@ -10963,7 +10963,7 @@ __metadata:
       optional: true
     jest:
       optional: true
-  checksum: 10c0/c42944b894748226568ff7c3e4876760f1fd6d275eedac8bae89f514a5e52fea002c40004efdfdd819d94059a6306223ed1eafa87ee70b941857ec7a09c6bd30
+  checksum: 10c0/301008d8dd3578a74c92011b3fcbbe4b60d2dbe342f525a31f05b3fcd0e17d514459cf4df65c510062e65b4f19c06b3a27504500a07fe339fd6eb20362620e50
   languageName: node
   linkType: hard
 
