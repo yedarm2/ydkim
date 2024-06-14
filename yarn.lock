@@ -6622,7 +6622,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/css@npm:1.15.2, @vanilla-extract/css@npm:^1.15.2":
+"@vanilla-extract/css@npm:1.15.3":
+  version: 1.15.3
+  resolution: "@vanilla-extract/css@npm:1.15.3"
+  dependencies:
+    "@emotion/hash": "npm:^0.9.0"
+    "@vanilla-extract/private": "npm:^1.0.5"
+    css-what: "npm:^6.1.0"
+    cssesc: "npm:^3.0.0"
+    csstype: "npm:^3.0.7"
+    dedent: "npm:^1.5.3"
+    deep-object-diff: "npm:^1.1.9"
+    deepmerge: "npm:^4.2.2"
+    media-query-parser: "npm:^2.0.2"
+    modern-ahocorasick: "npm:^1.0.0"
+    picocolors: "npm:^1.0.0"
+  checksum: 10c0/57c53e961bc0a273fa792c65c1b6cc6ce45d8f0d3c8b239df6ece4fbf2c58d09764ed70773bf25582e3cc6789ccce2b920c33d177ef276f63c6604c85dbc5c01
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/css@npm:^1.15.2":
   version: 1.15.2
   resolution: "@vanilla-extract/css@npm:1.15.2"
   dependencies:
@@ -6818,7 +6837,7 @@ __metadata:
     "@types/react-dom": "npm:18.3.0"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
-    "@vanilla-extract/css": "npm:1.15.2"
+    "@vanilla-extract/css": "npm:1.15.3"
     "@vanilla-extract/dynamic": "npm:2.1.1"
     "@vanilla-extract/next-plugin": "npm:2.4.1"
     "@ydkim/browser-utils": "npm:*"
