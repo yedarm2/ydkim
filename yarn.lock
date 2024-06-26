@@ -6394,21 +6394,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=13.7.0, @types/node@npm:^20.10.3":
+"@types/node@npm:*, @types/node@npm:20.14.9, @types/node@npm:>=13.7.0, @types/node@npm:^20.10.3":
   version: 20.14.9
   resolution: "@types/node@npm:20.14.9"
   dependencies:
     undici-types: "npm:~5.26.4"
   checksum: 10c0/911ffa444dc032897f4a23ed580c67903bd38ea1c5ec99b1d00fa10b83537a3adddef8e1f29710cbdd8e556a61407ed008e06537d834e48caf449ce59f87d387
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:20.14.7":
-  version: 20.14.7
-  resolution: "@types/node@npm:20.14.7"
-  dependencies:
-    undici-types: "npm:~5.26.4"
-  checksum: 10c0/6211ffe86f769a58617e3bdca58610256021ef54bd99d2c442ee6109196cd6ee8e0bcd1cfac0e39bf4bb353f8900fa5fae540485a03816bd91ad1f86a0e18512
   languageName: node
   linkType: hard
 
@@ -7048,7 +7039,7 @@ __metadata:
     "@next/font": "npm:14.2.4"
     "@tanstack/react-query": "npm:5.48.0"
     "@tanstack/react-query-devtools": "npm:5.48.0"
-    "@types/node": "npm:20.14.7"
+    "@types/node": "npm:20.14.9"
     "@types/react": "npm:18.3.3"
     "@types/react-dom": "npm:18.3.0"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
@@ -7092,7 +7083,7 @@ __metadata:
   resolution: "@ydkim/boilerplate@workspace:boilerplates/boilerplate"
   dependencies:
     "@types/jest": "npm:29.5.12"
-    "@types/node": "npm:20.14.7"
+    "@types/node": "npm:20.14.9"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
     babel-jest: "npm:29.7.0"
@@ -7142,7 +7133,7 @@ __metadata:
   resolution: "@ydkim/core-boilerplate@workspace:boilerplates/core-boilerplate"
   dependencies:
     "@types/jest": "npm:29.5.12"
-    "@types/node": "npm:20.14.7"
+    "@types/node": "npm:20.14.9"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
     babel-jest: "npm:29.7.0"
@@ -7163,7 +7154,7 @@ __metadata:
   dependencies:
     "@prisma/client": "npm:5.16.0"
     "@types/jest": "npm:29.5.12"
-    "@types/node": "npm:20.14.7"
+    "@types/node": "npm:20.14.9"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
     babel-jest: "npm:29.7.0"
@@ -7185,7 +7176,7 @@ __metadata:
   resolution: "@ydkim/core-service@workspace:packages/core-service"
   dependencies:
     "@types/jest": "npm:29.5.12"
-    "@types/node": "npm:20.14.7"
+    "@types/node": "npm:20.14.9"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
     "@ydkim/core-infra": "npm:*"
@@ -7241,7 +7232,7 @@ __metadata:
     "@tanstack/react-query": "npm:5.48.0"
     "@tanstack/react-query-devtools": "npm:5.48.0"
     "@types/jest": "npm:29.5.12"
-    "@types/node": "npm:20.14.7"
+    "@types/node": "npm:20.14.9"
     "@types/react": "npm:18.3.3"
     "@types/react-dom": "npm:18.3.0"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
@@ -7288,7 +7279,7 @@ __metadata:
     "@emotion/react": "npm:11.11.4"
     "@emotion/styled": "npm:11.11.5"
     "@next/font": "npm:14.2.4"
-    "@types/node": "npm:20.14.7"
+    "@types/node": "npm:20.14.9"
     "@types/react": "npm:18.3.3"
     "@types/react-dom": "npm:18.3.0"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
@@ -7333,7 +7324,7 @@ __metadata:
     "@storybook/react-vite": "npm:8.1.10"
     "@storybook/testing-library": "npm:0.2.2"
     "@types/jest": "npm:29.5.12"
-    "@types/node": "npm:20.14.7"
+    "@types/node": "npm:20.14.9"
     "@types/react": "npm:18.3.3"
     "@types/react-dom": "npm:18.3.0"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
@@ -7401,7 +7392,7 @@ __metadata:
   dependencies:
     "@babel/core": "npm:7.24.7"
     "@types/jest": "npm:29.5.12"
-    "@types/node": "npm:20.14.7"
+    "@types/node": "npm:20.14.9"
     "@types/react": "npm:18.3.3"
     "@types/react-dom": "npm:18.3.0"
     postcss-preset-env: "npm:9.5.14"
@@ -7421,7 +7412,7 @@ __metadata:
   dependencies:
     "@types/fs-extra": "npm:11.0.4"
     "@types/jest": "npm:29.5.12"
-    "@types/node": "npm:20.14.7"
+    "@types/node": "npm:20.14.9"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
     babel-jest: "npm:29.7.0"
