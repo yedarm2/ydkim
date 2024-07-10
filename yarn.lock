@@ -6990,7 +6990,7 @@ __metadata:
     stylelint-config-standard-scss: "npm:13.1.0"
     stylelint-no-unsupported-browser-features: "npm:8.0.1"
     stylelint-order: "npm:6.0.4"
-    stylelint-scss: "npm:6.4.0"
+    stylelint-scss: "npm:6.4.1"
     typescript: "npm:5.5.3"
   languageName: unknown
   linkType: soft
@@ -7184,7 +7184,7 @@ __metadata:
     stylelint-config-standard-scss: "npm:13.1.0"
     stylelint-no-unsupported-browser-features: "npm:8.0.1"
     stylelint-order: "npm:6.0.4"
-    stylelint-scss: "npm:6.4.0"
+    stylelint-scss: "npm:6.4.1"
     typescript: "npm:5.5.3"
   languageName: unknown
   linkType: soft
@@ -7218,7 +7218,7 @@ __metadata:
     stylelint-config-standard-scss: "npm:13.1.0"
     stylelint-no-unsupported-browser-features: "npm:8.0.1"
     stylelint-order: "npm:6.0.4"
-    stylelint-scss: "npm:6.4.0"
+    stylelint-scss: "npm:6.4.1"
     typescript: "npm:5.5.3"
   languageName: unknown
   linkType: soft
@@ -7273,7 +7273,7 @@ __metadata:
     stylelint-config-standard-scss: "npm:13.1.0"
     stylelint-no-unsupported-browser-features: "npm:8.0.1"
     stylelint-order: "npm:6.0.4"
-    stylelint-scss: "npm:6.4.0"
+    stylelint-scss: "npm:6.4.1"
     ts-node: "npm:10.9.2"
     typescript: "npm:5.5.3"
     vite: "npm:5.3.3"
@@ -7319,7 +7319,7 @@ __metadata:
     stylelint-config-standard-scss: "npm:13.1.0"
     stylelint-no-unsupported-browser-features: "npm:8.0.1"
     stylelint-order: "npm:6.0.4"
-    stylelint-scss: "npm:6.4.0"
+    stylelint-scss: "npm:6.4.1"
   languageName: unknown
   linkType: soft
 
@@ -20542,9 +20542,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-scss@npm:6.4.0":
-  version: 6.4.0
-  resolution: "stylelint-scss@npm:6.4.0"
+"stylelint-scss@npm:6.4.1":
+  version: 6.4.1
+  resolution: "stylelint-scss@npm:6.4.1"
   dependencies:
     known-css-properties: "npm:^0.34.0"
     postcss-media-query-parser: "npm:^0.2.3"
@@ -20553,7 +20553,7 @@ __metadata:
     postcss-value-parser: "npm:^4.2.0"
   peerDependencies:
     stylelint: ^16.0.2
-  checksum: 10c0/1c06cf5f2c2cc797be320be25df75de2210a818a30448271388b2523a7b37ba33ed898052b4eed78f651f535fb1128d3908bd9bbc09b43ee1cb31753c1c5fef3
+  checksum: 10c0/0ff90a3403cf3a2fc8e2f911389d0ab0d4d611fbb9b2cd902ae0cb68fa0627767816ce715d4db6b2017fbec11764d3097b0215a8f61c0b5fc2e0443cdce32d07
   languageName: node
   linkType: hard
 
