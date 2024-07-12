@@ -5067,14 +5067,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/codemod@npm:8.2.1":
-  version: 8.2.1
-  resolution: "@storybook/codemod@npm:8.2.1"
+"@storybook/codemod@npm:8.2.2":
+  version: 8.2.2
+  resolution: "@storybook/codemod@npm:8.2.2"
   dependencies:
     "@babel/core": "npm:^7.24.4"
     "@babel/preset-env": "npm:^7.24.4"
     "@babel/types": "npm:^7.24.0"
-    "@storybook/core": "npm:8.2.1"
+    "@storybook/core": "npm:8.2.2"
     "@storybook/csf": "npm:0.1.11"
     "@types/cross-spawn": "npm:^6.0.2"
     cross-spawn: "npm:^7.0.3"
@@ -5084,13 +5084,13 @@ __metadata:
     prettier: "npm:^3.1.1"
     recast: "npm:^0.23.5"
     tiny-invariant: "npm:^1.3.1"
-  checksum: 10c0/1b23f6c2b0f3a5cef6694246bb14eab2f6c98a94038e1ca17b32cfe88305ca2845fdb4b4b48ba5aca28a959827b194f2f54b353dcc0fd3147ded7eaba5b38a3e
+  checksum: 10c0/14c841f4d03e3eaf0748680ce22ee74d4f12984326497fd2284fe43e1d953778b49328a88458c87ffc873bdf2d17a62429eb2e17900ad30a4e85cab4582a7b2a
   languageName: node
   linkType: hard
 
-"@storybook/core@npm:8.2.1":
-  version: 8.2.1
-  resolution: "@storybook/core@npm:8.2.1"
+"@storybook/core@npm:8.2.2":
+  version: 8.2.2
+  resolution: "@storybook/core@npm:8.2.2"
   dependencies:
     "@storybook/csf": "npm:0.1.11"
     "@types/express": "npm:^4.17.21"
@@ -5103,7 +5103,7 @@ __metadata:
     recast: "npm:^0.23.5"
     util: "npm:^0.12.4"
     ws: "npm:^8.2.3"
-  checksum: 10c0/99b9a3753a8f54a446e3d7791c8e949e9dff21f87e62e84bc6354dd77cb8e79280de6cbc8d00271414b7c2d6224013b3025dca234ac6db1533e545e7ef1ea7cc
+  checksum: 10c0/f62b1fa67ca6a29600644367e2e39c4c5bf37033316a1b581178d20f42161984a7cde870fb3cf4eb9f81089175cf6e3d9cb07393f9a8a16aaf5d8261c20df35e
   languageName: node
   linkType: hard
 
@@ -6703,7 +6703,7 @@ __metadata:
     sanitize.css: "npm:13.0.0"
     sass: "npm:1.77.8"
     serve: "npm:14.2.3"
-    storybook: "npm:8.2.1"
+    storybook: "npm:8.2.2"
     style-loader: "npm:1.3.0"
     stylelint: "npm:16.6.1"
     stylelint-config-standard-scss: "npm:13.1.0"
@@ -19167,14 +19167,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:8.2.1":
-  version: 8.2.1
-  resolution: "storybook@npm:8.2.1"
+"storybook@npm:8.2.2":
+  version: 8.2.2
+  resolution: "storybook@npm:8.2.2"
   dependencies:
     "@babel/core": "npm:^7.24.4"
     "@babel/types": "npm:^7.24.0"
-    "@storybook/codemod": "npm:8.2.1"
-    "@storybook/core": "npm:8.2.1"
+    "@storybook/codemod": "npm:8.2.2"
+    "@storybook/core": "npm:8.2.2"
     "@types/semver": "npm:^7.3.4"
     "@yarnpkg/fslib": "npm:2.10.3"
     "@yarnpkg/libzip": "npm:2.3.0"
@@ -19203,7 +19203,7 @@ __metadata:
     getstorybook: ./bin/index.cjs
     sb: ./bin/index.cjs
     storybook: ./bin/index.cjs
-  checksum: 10c0/a90ddc8bf1ddf4d0dafae1d4303508acfadb67b56574cf8efe78c9c431fd83fffd706802fc5ded952aa8c1dbc23424222fe002349e19c82911c12acb195d45a7
+  checksum: 10c0/5212328c0311e68de14b29f890c00889a81ec33b83cb7e8bbcefd770d1e8c291c28096493423bd8d86076e4b5006124b0605332319403db2f7baa0d4c3f1bb3f
   languageName: node
   linkType: hard
 
