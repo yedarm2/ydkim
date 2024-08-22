@@ -3201,12 +3201,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/font@npm:14.2.5":
-  version: 14.2.5
-  resolution: "@next/font@npm:14.2.5"
+"@next/font@npm:14.2.6":
+  version: 14.2.6
+  resolution: "@next/font@npm:14.2.6"
   peerDependencies:
     next: "*"
-  checksum: 10c0/3134fd9bd418a72d6a023fa7d98fc4b556a00cc93a229db2e8a5339c0e9310bf88450a9cda17d5084b35a4686805cbfbee595fe884d60d40d34ee1f184b724d8
+  checksum: 10c0/7723c6decf2dff2f336c9616381b917130d61748b0e1aaa79b0b0045ef2ef8c1de98d0de7451296bb3cd707339258794f368bff802a6b01ea8261a226678a97a
   languageName: node
   linkType: hard
 
@@ -6350,7 +6350,7 @@ __metadata:
     "@emotion/react": "npm:11.13.0"
     "@emotion/styled": "npm:11.13.0"
     "@next/bundle-analyzer": "npm:14.2.5"
-    "@next/font": "npm:14.2.5"
+    "@next/font": "npm:14.2.6"
     "@tanstack/react-query": "npm:5.51.24"
     "@tanstack/react-query-devtools": "npm:5.51.24"
     "@types/node": "npm:22.4.1"
@@ -6592,7 +6592,7 @@ __metadata:
   dependencies:
     "@emotion/react": "npm:11.13.0"
     "@emotion/styled": "npm:11.13.0"
-    "@next/font": "npm:14.2.5"
+    "@next/font": "npm:14.2.6"
     "@types/node": "npm:22.4.1"
     "@types/react": "npm:18.3.3"
     "@types/react-dom": "npm:18.3.0"
