@@ -5242,15 +5242,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/react-query-devtools@npm:5.53.1":
-  version: 5.53.1
-  resolution: "@tanstack/react-query-devtools@npm:5.53.1"
+"@tanstack/react-query-devtools@npm:5.53.2":
+  version: 5.53.2
+  resolution: "@tanstack/react-query-devtools@npm:5.53.2"
   dependencies:
     "@tanstack/query-devtools": "npm:5.52.3"
   peerDependencies:
-    "@tanstack/react-query": ^5.53.1
+    "@tanstack/react-query": ^5.53.2
     react: ^18 || ^19
-  checksum: 10c0/aa101fb732377db6b488df35d4348307f3cac357f9feffe1c73f55bc95387fd2648476f44904ccdcc400b84f3692d17568717fac90cceb1c955bda04a51548e9
+  checksum: 10c0/8f6c3fee8f973578f3917abb21029a83890e7ba4881fb1cf64ce07428cdeec9ab6ff40f98c982733c8890010a11b6ffcd23a9ff4c1c15ad17e749447f60df1fc
   languageName: node
   linkType: hard
 
@@ -6368,7 +6368,7 @@ __metadata:
     "@next/bundle-analyzer": "npm:14.2.7"
     "@next/font": "npm:14.2.7"
     "@tanstack/react-query": "npm:5.53.1"
-    "@tanstack/react-query-devtools": "npm:5.53.1"
+    "@tanstack/react-query-devtools": "npm:5.53.2"
     "@types/node": "npm:22.5.1"
     "@types/react": "npm:18.3.5"
     "@types/react-dom": "npm:18.3.0"
@@ -6560,7 +6560,7 @@ __metadata:
     "@reduxjs/toolkit": "npm:2.2.7"
     "@sentry/nextjs": "npm:7.114.0"
     "@tanstack/react-query": "npm:5.53.1"
-    "@tanstack/react-query-devtools": "npm:5.53.1"
+    "@tanstack/react-query-devtools": "npm:5.53.2"
     "@types/jest": "npm:29.5.12"
     "@types/node": "npm:22.5.1"
     "@types/react": "npm:18.3.5"
