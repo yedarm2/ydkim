@@ -5235,22 +5235,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/query-devtools@npm:5.52.3":
-  version: 5.52.3
-  resolution: "@tanstack/query-devtools@npm:5.52.3"
-  checksum: 10c0/da3a1f5a2e272fcf2f06f0b089afbf4e1c3ac65c332c1c25ab59cadc1688ad5d1dca84460e45c8c3a6dd63d8158d2e94cb70c4a2486349010bce48bac720632a
+"@tanstack/query-devtools@npm:5.54.0":
+  version: 5.54.0
+  resolution: "@tanstack/query-devtools@npm:5.54.0"
+  checksum: 10c0/e2fb77eec61d0298ba29f45685fe0a3a02823fd75e46c8899cdf1ff34c19cf97902073f27b81b594ede5311c8d239eacc4d400670b618cdbd69ec35bd57e5ba3
   languageName: node
   linkType: hard
 
-"@tanstack/react-query-devtools@npm:5.53.3":
-  version: 5.53.3
-  resolution: "@tanstack/react-query-devtools@npm:5.53.3"
+"@tanstack/react-query-devtools@npm:5.54.1":
+  version: 5.54.1
+  resolution: "@tanstack/react-query-devtools@npm:5.54.1"
   dependencies:
-    "@tanstack/query-devtools": "npm:5.52.3"
+    "@tanstack/query-devtools": "npm:5.54.0"
   peerDependencies:
-    "@tanstack/react-query": ^5.53.3
+    "@tanstack/react-query": ^5.54.1
     react: ^18 || ^19
-  checksum: 10c0/4c23c71c7871f7511c7ef474f0730a48f5712ebd4c217f001f06de87558ed80f791458b2300a53728817e0cd506656faf123f4e79718f7746f86d5dffea1f750
+  checksum: 10c0/66e2c604c0c4cc71a4bdf993986d8002ccad2cc39ecf1ee3303b360b000939e4a28d7e7c6b13e1381f9c843cb0627234837a5b744651708b8f7fda569ac638fb
   languageName: node
   linkType: hard
 
@@ -6359,7 +6359,7 @@ __metadata:
     "@next/bundle-analyzer": "npm:14.2.7"
     "@next/font": "npm:14.2.7"
     "@tanstack/react-query": "npm:5.53.3"
-    "@tanstack/react-query-devtools": "npm:5.53.3"
+    "@tanstack/react-query-devtools": "npm:5.54.1"
     "@types/node": "npm:22.5.2"
     "@types/react": "npm:18.3.5"
     "@types/react-dom": "npm:18.3.0"
@@ -6551,7 +6551,7 @@ __metadata:
     "@reduxjs/toolkit": "npm:2.2.7"
     "@sentry/nextjs": "npm:7.114.0"
     "@tanstack/react-query": "npm:5.53.3"
-    "@tanstack/react-query-devtools": "npm:5.53.3"
+    "@tanstack/react-query-devtools": "npm:5.54.1"
     "@types/jest": "npm:29.5.12"
     "@types/node": "npm:22.5.2"
     "@types/react": "npm:18.3.5"
