@@ -8618,12 +8618,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"create-next-app@npm:14.2.7":
-  version: 14.2.7
-  resolution: "create-next-app@npm:14.2.7"
+"create-next-app@npm:14.2.8":
+  version: 14.2.8
+  resolution: "create-next-app@npm:14.2.8"
   bin:
     create-next-app: dist/index.js
-  checksum: 10c0/e0ca3f5c17cf554eb2ff56b7b98d5e850662d770241f246c76f45e870955bd53e84a245bcae116be145c3fc22e7ac5a597782d51ed4f955f6dd40bc611de22fc
+  checksum: 10c0/8320b46ca1f0bc6bf5a3d2038773a3d61408eb2aed2064259606347f83d41e3b722d69d8fa505f14a3a0c4f9d8b405ca117f3f494d5df124ead2424188bce2df
   languageName: node
   linkType: hard
 
@@ -20582,7 +20582,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ydkim@workspace:."
   dependencies:
-    create-next-app: "npm:14.2.7"
+    create-next-app: "npm:14.2.8"
     create-react-app: "npm:5.0.1"
     lerna: "npm:8.1.8"
     npm-check-updates: "npm:17.1.1"
