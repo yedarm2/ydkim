@@ -5677,13 +5677,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:29.5.12":
-  version: 29.5.12
-  resolution: "@types/jest@npm:29.5.12"
+"@types/jest@npm:29.5.13":
+  version: 29.5.13
+  resolution: "@types/jest@npm:29.5.13"
   dependencies:
     expect: "npm:^29.0.0"
     pretty-format: "npm:^29.0.0"
-  checksum: 10c0/25fc8e4c611fa6c4421e631432e9f0a6865a8cb07c9815ec9ac90d630271cad773b2ee5fe08066f7b95bebd18bb967f8ce05d018ee9ab0430f9dfd1d84665b6f
+  checksum: 10c0/9c31af0b155387b9860908830de63c6b79011d7c87c8b61b39da124e26e55423dd51b006749aafe4f0ef3a065016619a1f93ef4b055157d43727f448e67824b7
   languageName: node
   linkType: hard
 
@@ -6486,7 +6486,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ydkim/boilerplate@workspace:boilerplates/boilerplate"
   dependencies:
-    "@types/jest": "npm:29.5.12"
+    "@types/jest": "npm:29.5.13"
     "@types/node": "npm:22.5.4"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
@@ -6507,7 +6507,7 @@ __metadata:
   resolution: "@ydkim/browser-utils@workspace:packages/browser-utils"
   dependencies:
     "@reduxjs/toolkit": "npm:2.2.7"
-    "@types/jest": "npm:29.5.12"
+    "@types/jest": "npm:29.5.13"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
     axios: "npm:1.7.7"
@@ -6536,7 +6536,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ydkim/core-boilerplate@workspace:boilerplates/core-boilerplate"
   dependencies:
-    "@types/jest": "npm:29.5.12"
+    "@types/jest": "npm:29.5.13"
     "@types/node": "npm:22.5.4"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
@@ -6557,7 +6557,7 @@ __metadata:
   resolution: "@ydkim/core-infra@workspace:packages/core-infra"
   dependencies:
     "@prisma/client": "npm:5.19.1"
-    "@types/jest": "npm:29.5.12"
+    "@types/jest": "npm:29.5.13"
     "@types/node": "npm:22.5.4"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
@@ -6579,7 +6579,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ydkim/core-service@workspace:packages/core-service"
   dependencies:
-    "@types/jest": "npm:29.5.12"
+    "@types/jest": "npm:29.5.13"
     "@types/node": "npm:22.5.4"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
@@ -6635,7 +6635,7 @@ __metadata:
     "@sentry/nextjs": "npm:7.114.0"
     "@tanstack/react-query": "npm:5.54.1"
     "@tanstack/react-query-devtools": "npm:5.54.1"
-    "@types/jest": "npm:29.5.12"
+    "@types/jest": "npm:29.5.13"
     "@types/node": "npm:22.5.4"
     "@types/react": "npm:18.3.5"
     "@types/react-dom": "npm:18.3.0"
@@ -6727,7 +6727,7 @@ __metadata:
     "@storybook/react": "npm:8.2.9"
     "@storybook/react-vite": "npm:8.2.9"
     "@storybook/testing-library": "npm:0.2.2"
-    "@types/jest": "npm:29.5.12"
+    "@types/jest": "npm:29.5.13"
     "@types/node": "npm:22.5.4"
     "@types/react": "npm:18.3.5"
     "@types/react-dom": "npm:18.3.0"
@@ -6795,7 +6795,7 @@ __metadata:
   resolution: "@ydkim/styles@workspace:packages/styles"
   dependencies:
     "@babel/core": "npm:7.25.2"
-    "@types/jest": "npm:29.5.12"
+    "@types/jest": "npm:29.5.13"
     "@types/node": "npm:22.5.4"
     "@types/react": "npm:18.3.5"
     "@types/react-dom": "npm:18.3.0"
@@ -6815,7 +6815,7 @@ __metadata:
   resolution: "@ydkim/utils@workspace:packages/utils"
   dependencies:
     "@types/fs-extra": "npm:11.0.4"
-    "@types/jest": "npm:29.5.12"
+    "@types/jest": "npm:29.5.13"
     "@types/node": "npm:22.5.4"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
