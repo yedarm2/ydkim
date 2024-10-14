@@ -5851,7 +5851,7 @@ __metadata:
     eslint-plugin-import: "npm:2.31.0"
     eslint-plugin-jest: "npm:28.8.3"
     eslint-plugin-prettier: "npm:5.2.1"
-    firebase-admin: "npm:12.4.0"
+    firebase-admin: "npm:12.6.0"
     jest: "npm:29.7.0"
     prisma: "npm:5.20.0"
     ts-node: "npm:10.9.2"
@@ -9950,9 +9950,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase-admin@npm:12.4.0":
-  version: 12.4.0
-  resolution: "firebase-admin@npm:12.4.0"
+"firebase-admin@npm:12.6.0":
+  version: 12.6.0
+  resolution: "firebase-admin@npm:12.6.0"
   dependencies:
     "@fastify/busboy": "npm:^3.0.0"
     "@firebase/database-compat": "npm:^1.0.2"
@@ -9970,7 +9970,7 @@ __metadata:
       optional: true
     "@google-cloud/storage":
       optional: true
-  checksum: 10c0/d6378201f60b2ab79c44b43bbe6441c88365860f14ed15d9e60e0867a8851fb5aebf3677f435cfdcfc3cbc26088431d86b6c9c3bc464a5c3ee04dbf1b586dcfe
+  checksum: 10c0/c96c2ea58646ad45934fa114b5dc228ce82f12e185eb5b2aee3eef66546df218d4338cb398b6792d268780fc25b55d808e8b93822665dd7a9162742f3ad65b8b
   languageName: node
   linkType: hard
 
