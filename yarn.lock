@@ -5769,7 +5769,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:5.61.0"
     babel-jest: "npm:29.7.0"
     babel-loader: "npm:9.2.1"
-    chromatic: "npm:11.12.6"
+    chromatic: "npm:11.13.0"
     classnames: "npm:2.5.1"
     eslint: "npm:9.12.0"
     eslint-config-prettier: "npm:9.1.0"
@@ -7073,9 +7073,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chromatic@npm:11.12.6":
-  version: 11.12.6
-  resolution: "chromatic@npm:11.12.6"
+"chromatic@npm:11.13.0":
+  version: 11.13.0
+  resolution: "chromatic@npm:11.13.0"
   peerDependencies:
     "@chromatic-com/cypress": ^0.*.* || ^1.0.0
     "@chromatic-com/playwright": ^0.*.* || ^1.0.0
@@ -7088,7 +7088,7 @@ __metadata:
     chroma: dist/bin.js
     chromatic: dist/bin.js
     chromatic-cli: dist/bin.js
-  checksum: 10c0/7d161c52bc239ac6e8380f9a64533dd3792819d8f103d0083a805d5c9ece0844787eedd45c19c41e69d0ef0a3756051fa3e5c1f2fc9630d60f2ada4d5452e929
+  checksum: 10c0/5b290f5d1752c4cadb10a7377684cf970e5d40b7af6e98eb10b0d575991a077383accb79ff0910bd31ea92cfb9e97b896690d0296584622c780e7274b7330d77
   languageName: node
   linkType: hard
 
