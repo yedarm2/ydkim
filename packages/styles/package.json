@@ -29,14 +29,14 @@
 		"test": "echo \"Error: run tests from root\""
 	},
 	"dependencies": {
-		"@types/jest": "29.5.13",
-		"@types/node": "22.7.7",
-		"@types/react": "18.3.11",
+		"@types/jest": "29.5.14",
+		"@types/node": "22.7.9",
+		"@types/react": "18.3.12",
 		"@types/react-dom": "18.3.1",
 		"sanitize.css": "13.0.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.25.8",
+		"@babel/core": "7.25.9",
 		"postcss-preset-env": "10.0.7",
 		"postcss-reporter": "7.1.0",
 		"stylelint": "16.10.0",
