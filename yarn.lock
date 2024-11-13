@@ -4465,6 +4465,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/components@npm:8.4.3":
+  version: 8.4.3
+  resolution: "@storybook/components@npm:8.4.3"
+  peerDependencies:
+    storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+  checksum: 10c0/522898f077975939ea72afa18eb5f9417fffe692f42e876ebdc23786852a794703ab7f3a6f87421d4a2db473385494584a1117893a119c2ac3d64d6b2bda189e
+  languageName: node
+  linkType: hard
+
 "@storybook/core@npm:8.4.2":
   version: 8.4.2
   resolution: "@storybook/core@npm:8.4.2"
@@ -4568,12 +4577,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/manager-api@npm:8.4.3":
+  version: 8.4.3
+  resolution: "@storybook/manager-api@npm:8.4.3"
+  peerDependencies:
+    storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+  checksum: 10c0/56cc7777ff00028b8614cb14351df644a3a0e1676a789f8bf05f3635a4f288dad9cc894971cce9adb9ee5aa75de50777291f1c7b2c70238be5419614ddb21d10
+  languageName: node
+  linkType: hard
+
 "@storybook/preview-api@npm:8.4.2":
   version: 8.4.2
   resolution: "@storybook/preview-api@npm:8.4.2"
   peerDependencies:
     storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
   checksum: 10c0/7b54c1962d27d32f29a3839660098ad8995cfcf31d4bde3662cff69d7a06cc4d315dad92f565901e3b0ebd7bf12fa8995cc625a71f13c34d82a4529412d8f83c
+  languageName: node
+  linkType: hard
+
+"@storybook/preview-api@npm:8.4.3":
+  version: 8.4.3
+  resolution: "@storybook/preview-api@npm:8.4.3"
+  peerDependencies:
+    storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+  checksum: 10c0/f8966d9f0dabf1fa9afb55fcee9a7670789aba54de8d3d8ac3d6ea1adf7df771be678fc398355fa3b550b72006d8534408ee5695fcb1ca2f230e7c57c6d57699
   languageName: node
   linkType: hard
 
@@ -4585,6 +4612,17 @@ __metadata:
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
     storybook: ^8.4.2
   checksum: 10c0/f4cc8d3cb557c8e84f62047680af926570f170a87aec7775830b91c4793c7afee84092ef6cd9c518dbd0ab9311139a4698f1477f35d21bc4d1462c6bd54105c5
+  languageName: node
+  linkType: hard
+
+"@storybook/react-dom-shim@npm:8.4.3":
+  version: 8.4.3
+  resolution: "@storybook/react-dom-shim@npm:8.4.3"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    storybook: ^8.4.3
+  checksum: 10c0/2cbfcdd0ebf304c24404214f75440e26814d8dc13e617c68ef0ab32d83751af03c06e074068f56cd00d8fd8b328c62cfe85ebbf42978fd27d2565a23a54c966c
   languageName: node
   linkType: hard
 
@@ -4635,6 +4673,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/react@npm:8.4.3":
+  version: 8.4.3
+  resolution: "@storybook/react@npm:8.4.3"
+  dependencies:
+    "@storybook/components": "npm:8.4.3"
+    "@storybook/global": "npm:^5.0.0"
+    "@storybook/manager-api": "npm:8.4.3"
+    "@storybook/preview-api": "npm:8.4.3"
+    "@storybook/react-dom-shim": "npm:8.4.3"
+    "@storybook/theming": "npm:8.4.3"
+  peerDependencies:
+    "@storybook/test": 8.4.3
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    storybook: ^8.4.3
+    typescript: ">= 4.2.x"
+  peerDependenciesMeta:
+    "@storybook/test":
+      optional: true
+    typescript:
+      optional: true
+  checksum: 10c0/214cf105ab1822d747398f2aca4b6aae8a0815c7a6aa60f1d35744231eb15849fc42e4006776916ed138eaa5079d4d57dcd702b88e418d38f540c7a7a42fd2fa
+  languageName: node
+  linkType: hard
+
 "@storybook/test@npm:8.4.2":
   version: 8.4.2
   resolution: "@storybook/test@npm:8.4.2"
@@ -4670,6 +4733,15 @@ __metadata:
   peerDependencies:
     storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
   checksum: 10c0/8765a25952273f87f65018159228fa448a0bb6fa38486650344ddc076cd895546ab3b88d35a6e7f80d3223635e28d59f82510922c589a36a7c6afc33c5bcc0d7
+  languageName: node
+  linkType: hard
+
+"@storybook/theming@npm:8.4.3":
+  version: 8.4.3
+  resolution: "@storybook/theming@npm:8.4.3"
+  peerDependencies:
+    storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+  checksum: 10c0/6ca7bf186087a2c6741bbf6e1fe4f5c5a82dc2a8f407b54ac001b777f576509c2c76491e9a52c9ddc2040cf23ad33dabdc66c08248cc2dc3149b3740fc5e9322
   languageName: node
   linkType: hard
 
@@ -6026,7 +6098,7 @@ __metadata:
     "@storybook/addon-links": "npm:8.4.2"
     "@storybook/addon-mdx-gfm": "npm:8.4.2"
     "@storybook/jest": "npm:0.2.3"
-    "@storybook/react": "npm:8.4.2"
+    "@storybook/react": "npm:8.4.3"
     "@storybook/react-vite": "npm:8.4.2"
     "@storybook/testing-library": "npm:0.2.2"
     "@types/jest": "npm:29.5.14"
