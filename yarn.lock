@@ -4233,15 +4233,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:8.4.2":
-  version: 8.4.2
-  resolution: "@storybook/addon-a11y@npm:8.4.2"
+"@storybook/addon-a11y@npm:8.4.4":
+  version: 8.4.4
+  resolution: "@storybook/addon-a11y@npm:8.4.4"
   dependencies:
-    "@storybook/addon-highlight": "npm:8.4.2"
+    "@storybook/addon-highlight": "npm:8.4.4"
     axe-core: "npm:^4.2.0"
   peerDependencies:
-    storybook: ^8.4.2
-  checksum: 10c0/573712fe318ec6ac22d8fa4439f6d1270faad20c197e066fc081d075dc82e20d78b80958f891d40be38fab287ec10e9831db8882f5ff6d7ca16f102b1bc5d287
+    storybook: ^8.4.4
+  checksum: 10c0/19e530cdda82757667271334fac47e944d064e639d0e0b027c78052b0ebb385851d19fb650a868ef3e9c390576f6919e5141dbea8f9cbbaf881662c0ba83ef85
   languageName: node
   linkType: hard
 
@@ -4331,6 +4331,17 @@ __metadata:
   peerDependencies:
     storybook: ^8.4.2
   checksum: 10c0/6838bab4434da65e85de70908f0ca09e9aa93facdb8fa6799100d711a55cbc69744c131f8994e910efd6bf74507bcc035f7ca4f3367c3003fc5799212160fc65
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-highlight@npm:8.4.4":
+  version: 8.4.4
+  resolution: "@storybook/addon-highlight@npm:8.4.4"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+  peerDependencies:
+    storybook: ^8.4.4
+  checksum: 10c0/d552b136d72776b8b596ccd2d40d7a1b013bbe43cc362a7989b61157109c490e90ab9496236ce0020633d3e034c2e84237907f6c6213b4c922e8739836f9be9d
   languageName: node
   linkType: hard
 
@@ -6020,7 +6031,7 @@ __metadata:
     "@emotion/babel-plugin": "npm:11.12.0"
     "@emotion/react": "npm:11.13.3"
     "@emotion/styled": "npm:11.13.0"
-    "@storybook/addon-a11y": "npm:8.4.2"
+    "@storybook/addon-a11y": "npm:8.4.4"
     "@storybook/addon-essentials": "npm:8.4.2"
     "@storybook/addon-interactions": "npm:8.4.2"
     "@storybook/addon-links": "npm:8.4.2"
