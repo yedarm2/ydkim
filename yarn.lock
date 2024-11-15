@@ -5773,7 +5773,7 @@ __metadata:
     react-dom: "npm:18.3.1"
     react-icons: "npm:5.3.0"
     sanitize.css: "npm:13.0.0"
-    sass: "npm:1.80.7"
+    sass: "npm:1.81.0"
     server-only: "npm:0.0.1"
     stylelint: "npm:16.10.0"
     stylelint-config-standard-scss: "npm:13.1.0"
@@ -5967,7 +5967,7 @@ __metadata:
     redux-logger: "npm:3.0.6"
     redux-saga: "npm:1.3.0"
     sanitize.css: "npm:13.0.0"
-    sass: "npm:1.80.7"
+    sass: "npm:1.81.0"
     serve: "npm:14.2.4"
     stylelint: "npm:16.10.0"
     stylelint-config-standard-scss: "npm:13.1.0"
@@ -6002,7 +6002,7 @@ __metadata:
     postcss-reporter: "npm:7.1.0"
     react: "npm:18.3.1"
     react-dom: "npm:18.3.1"
-    sass: "npm:1.80.7"
+    sass: "npm:1.81.0"
     stylelint: "npm:16.10.0"
     stylelint-config-standard-scss: "npm:13.1.0"
     stylelint-no-unsupported-browser-features: "npm:8.0.2"
@@ -6054,7 +6054,7 @@ __metadata:
     react-dom: "npm:18.3.1"
     react-icons: "npm:5.3.0"
     sanitize.css: "npm:13.0.0"
-    sass: "npm:1.80.7"
+    sass: "npm:1.81.0"
     serve: "npm:14.2.4"
     storybook: "npm:8.4.4"
     style-loader: "npm:1.3.0"
@@ -16737,9 +16737,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:1.80.7":
-  version: 1.80.7
-  resolution: "sass@npm:1.80.7"
+"sass@npm:1.81.0":
+  version: 1.81.0
+  resolution: "sass@npm:1.81.0"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     chokidar: "npm:^4.0.0"
@@ -16750,7 +16750,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: 10c0/e0e0df8dc9dd7694826f915196a96cda45fe0fc849be9fc08b43c12aa1250eb512130979ed239e1106476973ace1f52abbcc1d5900a075d3813c282a626dcbf7
+  checksum: 10c0/9c59b3c9b4231c18fcb4583cc232dbc4de501ddc11101b7a025e44833e3f3ce6031546dc1cd109ee9f04ebcfb1fe30ff870810af33b8feb9aa9e36dfba9ec1ef
   languageName: node
   linkType: hard
 
