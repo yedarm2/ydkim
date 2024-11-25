@@ -5572,7 +5572,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/css@npm:1.16.0, @vanilla-extract/css@npm:^1.16.0":
+"@vanilla-extract/css@npm:1.16.0":
   version: 1.16.0
   resolution: "@vanilla-extract/css@npm:1.16.0"
   dependencies:
@@ -5592,6 +5592,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vanilla-extract/css@npm:^1.16.1":
+  version: 1.16.1
+  resolution: "@vanilla-extract/css@npm:1.16.1"
+  dependencies:
+    "@emotion/hash": "npm:^0.9.0"
+    "@vanilla-extract/private": "npm:^1.0.6"
+    css-what: "npm:^6.1.0"
+    cssesc: "npm:^3.0.0"
+    csstype: "npm:^3.0.7"
+    dedent: "npm:^1.5.3"
+    deep-object-diff: "npm:^1.1.9"
+    deepmerge: "npm:^4.2.2"
+    lru-cache: "npm:^10.4.3"
+    media-query-parser: "npm:^2.0.2"
+    modern-ahocorasick: "npm:^1.0.0"
+    picocolors: "npm:^1.0.0"
+  checksum: 10c0/a26236e1a20fd4bb675b01905ccb489978c3cce39902618ee979a830bf3a44929d9183f2a38762ea4d791dccefc3ee8d8022dfec0f8920a5f3a372bf6aac4e70
+  languageName: node
+  linkType: hard
+
 "@vanilla-extract/dynamic@npm:2.1.2":
   version: 2.1.2
   resolution: "@vanilla-extract/dynamic@npm:2.1.2"
@@ -5601,14 +5621,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/integration@npm:^7.1.10":
-  version: 7.1.10
-  resolution: "@vanilla-extract/integration@npm:7.1.10"
+"@vanilla-extract/integration@npm:^7.1.11":
+  version: 7.1.11
+  resolution: "@vanilla-extract/integration@npm:7.1.11"
   dependencies:
     "@babel/core": "npm:^7.23.9"
     "@babel/plugin-syntax-typescript": "npm:^7.23.3"
     "@vanilla-extract/babel-plugin-debug-ids": "npm:^1.1.0"
-    "@vanilla-extract/css": "npm:^1.16.0"
+    "@vanilla-extract/css": "npm:^1.16.1"
     dedent: "npm:^1.5.3"
     esbuild: "npm:esbuild@>=0.17.6 <0.24.0"
     eval: "npm:0.1.8"
@@ -5617,18 +5637,18 @@ __metadata:
     mlly: "npm:^1.4.2"
     vite: "npm:^5.0.11"
     vite-node: "npm:^1.2.0"
-  checksum: 10c0/655bdd14f6b835b20fd36f10611f98b9f17e5d5b3e36ad69d3b4108b067703a16a95ff1adde62a7be0a8d676b8b96471a017c9e51ea3892e741b7b45295d1ef9
+  checksum: 10c0/76a611a59be52cf58f4fe8525ae1a110857b3c26f9d1fe88ee6af0c7bb90ff840e62d6210ec7e832017be9896da2a099b825925528c0adcc19148e77031cc2b8
   languageName: node
   linkType: hard
 
-"@vanilla-extract/next-plugin@npm:2.4.6":
-  version: 2.4.6
-  resolution: "@vanilla-extract/next-plugin@npm:2.4.6"
+"@vanilla-extract/next-plugin@npm:2.4.7":
+  version: 2.4.7
+  resolution: "@vanilla-extract/next-plugin@npm:2.4.7"
   dependencies:
-    "@vanilla-extract/webpack-plugin": "npm:^2.3.14"
+    "@vanilla-extract/webpack-plugin": "npm:^2.3.15"
   peerDependencies:
     next: ">=12.1.7"
-  checksum: 10c0/182078c4649ac739ae177b1a76c68703a7d6050137073a040a953a0bc6d0763bedd0c792906b1c249dcd8b1c53edf714f43ccefb4999d155fc6be406de92bd9a
+  checksum: 10c0/eb2c0dc93aef67303419a94d92b618316a05b86f0afb5fdc4e8e99a52a7bae4e8f227b32cbe2b034f0f9ee057a764fee08b33284ff8418a6f00b758931c41f35
   languageName: node
   linkType: hard
 
@@ -5639,17 +5659,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/webpack-plugin@npm:^2.3.14":
-  version: 2.3.14
-  resolution: "@vanilla-extract/webpack-plugin@npm:2.3.14"
+"@vanilla-extract/webpack-plugin@npm:^2.3.15":
+  version: 2.3.15
+  resolution: "@vanilla-extract/webpack-plugin@npm:2.3.15"
   dependencies:
-    "@vanilla-extract/integration": "npm:^7.1.10"
+    "@vanilla-extract/integration": "npm:^7.1.11"
     debug: "npm:^4.3.1"
     loader-utils: "npm:^2.0.0"
     picocolors: "npm:^1.0.0"
   peerDependencies:
     webpack: ^4.30.0 || ^5.20.2
-  checksum: 10c0/1ddd790e049ec05b7ae9308f2d9c263df9a6aa45e49452d679b133979339dcbf0141cc37ac8ee0547e1d006c4d1ea6c2777331c99f0df75a24eeb64413e0d81b
+  checksum: 10c0/5dca1ac81682637c170f1550fdc1aac9dfcefc9936efbeb7d001ffe8ae73f11df1089f6303d41de7622f6a1ab69ef8350c386eaead515118f0bb258aa122e521
   languageName: node
   linkType: hard
 
@@ -5749,7 +5769,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:5.61.0"
     "@vanilla-extract/css": "npm:1.16.0"
     "@vanilla-extract/dynamic": "npm:2.1.2"
-    "@vanilla-extract/next-plugin": "npm:2.4.6"
+    "@vanilla-extract/next-plugin": "npm:2.4.7"
     "@ydkim/browser-utils": "npm:*"
     "@ydkim/core-infra": "npm:*"
     "@ydkim/core-service": "npm:*"
