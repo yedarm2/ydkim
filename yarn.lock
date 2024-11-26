@@ -4690,10 +4690,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/query-core@npm:5.59.20":
-  version: 5.59.20
-  resolution: "@tanstack/query-core@npm:5.59.20"
-  checksum: 10c0/c93a8d41e21db532e92c1c90916bec578729d32d1f39d655603b9e81a9d5aebc8588a4d6a75928e04d3ddc90e71a1f8dc066a61d0ba24108eaf60cc2ce024a2f
+"@tanstack/query-core@npm:5.61.4":
+  version: 5.61.4
+  resolution: "@tanstack/query-core@npm:5.61.4"
+  checksum: 10c0/7cf56b33c38899629558aba938fe9a5da088502636c25f113d136cfd20bb5ba72bcf08e416fb5af338dbfbefb35eb7d3365cb0ad0bbaa2043e94aa4f00b510eb
   languageName: node
   linkType: hard
 
@@ -4716,14 +4716,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/react-query@npm:5.59.20":
-  version: 5.59.20
-  resolution: "@tanstack/react-query@npm:5.59.20"
+"@tanstack/react-query@npm:5.61.4":
+  version: 5.61.4
+  resolution: "@tanstack/react-query@npm:5.61.4"
   dependencies:
-    "@tanstack/query-core": "npm:5.59.20"
+    "@tanstack/query-core": "npm:5.61.4"
   peerDependencies:
     react: ^18 || ^19
-  checksum: 10c0/fc3342c3a26c51c866d54082d14f86b2f644847ea8f9051000e529a012ea5437e18e35f999fcc453b2eecb0faaf29bd1aaec0956587ade63ba02262d6737800a
+  checksum: 10c0/8b47bcb1b4aa30de72ede76369ae24d384b5406f9aa7d37cad9168fa1b3dbbfa91647c87784ff07cf72a3af96f8acee4e1e5fe77c0212e2560e8962cd3f1e946
   languageName: node
   linkType: hard
 
@@ -5740,7 +5740,7 @@ __metadata:
     "@emotion/styled": "npm:11.13.5"
     "@next/bundle-analyzer": "npm:15.0.3"
     "@next/font": "npm:14.2.15"
-    "@tanstack/react-query": "npm:5.59.20"
+    "@tanstack/react-query": "npm:5.61.4"
     "@tanstack/react-query-devtools": "npm:5.61.0"
     "@types/node": "npm:22.9.1"
     "@types/react": "npm:18.3.12"
@@ -5932,7 +5932,7 @@ __metadata:
     "@playwright/test": "npm:1.49.0"
     "@reduxjs/toolkit": "npm:2.3.0"
     "@sentry/nextjs": "npm:7.114.0"
-    "@tanstack/react-query": "npm:5.59.20"
+    "@tanstack/react-query": "npm:5.61.4"
     "@tanstack/react-query-devtools": "npm:5.61.0"
     "@types/jest": "npm:29.5.14"
     "@types/node": "npm:22.9.1"
@@ -6070,7 +6070,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ydkim/server-utils@workspace:packages/server-utils"
   dependencies:
-    "@tanstack/react-query": "npm:5.59.20"
+    "@tanstack/react-query": "npm:5.61.4"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
     "@ydkim/core-infra": "npm:*"
