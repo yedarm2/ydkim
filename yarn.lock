@@ -4716,22 +4716,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/query-devtools@npm:5.61.4":
-  version: 5.61.4
-  resolution: "@tanstack/query-devtools@npm:5.61.4"
-  checksum: 10c0/44886dbf92849d17729bf779a184a3fd304711d8ce8061c1deccc089a65d168ed8f0cf0da43b59a9a22a9afb7b25fba99de8af47fe44479ac3082d852dcaaf53
+"@tanstack/query-devtools@npm:5.62.9":
+  version: 5.62.9
+  resolution: "@tanstack/query-devtools@npm:5.62.9"
+  checksum: 10c0/214ef366435e3720e4bb23a247c319f13df3bda790c6df4aca7051168ca197b2b1109f6215ab57e17797ca82206d5f6ae9449325f3c3bba249d239a5c60b7f8e
   languageName: node
   linkType: hard
 
-"@tanstack/react-query-devtools@npm:5.62.8":
-  version: 5.62.8
-  resolution: "@tanstack/react-query-devtools@npm:5.62.8"
+"@tanstack/react-query-devtools@npm:5.62.11":
+  version: 5.62.11
+  resolution: "@tanstack/react-query-devtools@npm:5.62.11"
   dependencies:
-    "@tanstack/query-devtools": "npm:5.61.4"
+    "@tanstack/query-devtools": "npm:5.62.9"
   peerDependencies:
-    "@tanstack/react-query": ^5.62.8
+    "@tanstack/react-query": ^5.62.11
     react: ^18 || ^19
-  checksum: 10c0/2d930a84334941a9db8cc4400e0040bddde854c87cf3c16fa32eff742179cf57225d28030ddab47a79b5657b96ab1e4cadc6c7e64589c835aca86dff8a6af322
+  checksum: 10c0/ccb69e7027ad2c65a943e2dbe2b96166a1eba13b54314678a3535c080a8a32ce9127523840cd514083bddf1c4e7189bbccdab6ebe4c0f9ef1eeead8ef9d3e4ea
   languageName: node
   linkType: hard
 
@@ -5763,7 +5763,7 @@ __metadata:
     "@next/bundle-analyzer": "npm:15.1.2"
     "@next/font": "npm:14.2.15"
     "@tanstack/react-query": "npm:5.62.8"
-    "@tanstack/react-query-devtools": "npm:5.62.8"
+    "@tanstack/react-query-devtools": "npm:5.62.11"
     "@types/node": "npm:22.10.2"
     "@types/react": "npm:18.3.12"
     "@types/react-dom": "npm:18.3.1"
@@ -5955,7 +5955,7 @@ __metadata:
     "@reduxjs/toolkit": "npm:2.5.0"
     "@sentry/nextjs": "npm:7.114.0"
     "@tanstack/react-query": "npm:5.62.8"
-    "@tanstack/react-query-devtools": "npm:5.62.8"
+    "@tanstack/react-query-devtools": "npm:5.62.11"
     "@types/jest": "npm:29.5.14"
     "@types/node": "npm:22.10.2"
     "@types/react": "npm:18.3.12"
