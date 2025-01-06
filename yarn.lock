@@ -4723,22 +4723,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/query-devtools@npm:5.62.9":
-  version: 5.62.9
-  resolution: "@tanstack/query-devtools@npm:5.62.9"
-  checksum: 10c0/214ef366435e3720e4bb23a247c319f13df3bda790c6df4aca7051168ca197b2b1109f6215ab57e17797ca82206d5f6ae9449325f3c3bba249d239a5c60b7f8e
+"@tanstack/query-devtools@npm:5.62.16":
+  version: 5.62.16
+  resolution: "@tanstack/query-devtools@npm:5.62.16"
+  checksum: 10c0/21b3e8ad11b752135934c560883926fa0eeecd65ea8d922fc507c13a3e59e1d0b93541a587134dec51537d7b20dd55f59f8acd9795210dc366efda58c12ec4d3
   languageName: node
   linkType: hard
 
-"@tanstack/react-query-devtools@npm:5.62.11":
-  version: 5.62.11
-  resolution: "@tanstack/react-query-devtools@npm:5.62.11"
+"@tanstack/react-query-devtools@npm:5.62.16":
+  version: 5.62.16
+  resolution: "@tanstack/react-query-devtools@npm:5.62.16"
   dependencies:
-    "@tanstack/query-devtools": "npm:5.62.9"
+    "@tanstack/query-devtools": "npm:5.62.16"
   peerDependencies:
-    "@tanstack/react-query": ^5.62.11
+    "@tanstack/react-query": ^5.62.16
     react: ^18 || ^19
-  checksum: 10c0/ccb69e7027ad2c65a943e2dbe2b96166a1eba13b54314678a3535c080a8a32ce9127523840cd514083bddf1c4e7189bbccdab6ebe4c0f9ef1eeead8ef9d3e4ea
+  checksum: 10c0/43546c659bcbdbd0cd5239dcf2ed76d29089f94142346749b5a10188f90d793dd5e640eb1b62ee9220c36eb20c487af5485f4f9cdc726b5d8df43cc7d6cee098
   languageName: node
   linkType: hard
 
@@ -5750,7 +5750,7 @@ __metadata:
     "@next/bundle-analyzer": "npm:15.1.3"
     "@next/font": "npm:14.2.15"
     "@tanstack/react-query": "npm:5.62.11"
-    "@tanstack/react-query-devtools": "npm:5.62.11"
+    "@tanstack/react-query-devtools": "npm:5.62.16"
     "@types/node": "npm:22.10.3"
     "@types/react": "npm:18.3.12"
     "@types/react-dom": "npm:18.3.1"
@@ -5942,7 +5942,7 @@ __metadata:
     "@reduxjs/toolkit": "npm:2.5.0"
     "@sentry/nextjs": "npm:7.114.0"
     "@tanstack/react-query": "npm:5.62.11"
-    "@tanstack/react-query-devtools": "npm:5.62.11"
+    "@tanstack/react-query-devtools": "npm:5.62.16"
     "@types/jest": "npm:29.5.14"
     "@types/node": "npm:22.10.3"
     "@types/react": "npm:18.3.12"
