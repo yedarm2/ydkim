@@ -4131,20 +4131,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-links@npm:8.5.2":
-  version: 8.5.2
-  resolution: "@storybook/addon-links@npm:8.5.2"
+"@storybook/addon-links@npm:8.5.3":
+  version: 8.5.3
+  resolution: "@storybook/addon-links@npm:8.5.3"
   dependencies:
     "@storybook/csf": "npm:0.1.12"
     "@storybook/global": "npm:^5.0.0"
     ts-dedent: "npm:^2.0.0"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    storybook: ^8.5.2
+    storybook: ^8.5.3
   peerDependenciesMeta:
     react:
       optional: true
-  checksum: 10c0/60f29c2ff9bb1887cb84a81fb29af9dc8f24cb424210a2619dbda3ba361d40f7b799f6084780b4244714c5785d0dcd936303acda548e1d72f955411a0c668647
+  checksum: 10c0/70f93d75247f9208d01866f354f03fa3c5058f70f867729b1d54c1b712f8412f9d04b6312baadfbd447bd86b02fe8c9bcd01c1f0141c679acbe90fdbc2799e37
   languageName: node
   linkType: hard
 
@@ -5795,7 +5795,7 @@ __metadata:
     "@storybook/addon-a11y": "npm:8.5.2"
     "@storybook/addon-essentials": "npm:8.5.2"
     "@storybook/addon-interactions": "npm:8.5.2"
-    "@storybook/addon-links": "npm:8.5.2"
+    "@storybook/addon-links": "npm:8.5.3"
     "@storybook/addon-mdx-gfm": "npm:8.5.2"
     "@storybook/jest": "npm:0.2.3"
     "@storybook/react": "npm:8.5.2"
