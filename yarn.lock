@@ -5563,7 +5563,7 @@ __metadata:
     stylelint-no-unsupported-browser-features: "npm:8.0.4"
     stylelint-order: "npm:6.0.4"
     stylelint-scss: "npm:6.11.1"
-    typescript: "npm:5.7.3"
+    typescript: "npm:5.8.2"
   languageName: unknown
   linkType: soft
 
@@ -5583,7 +5583,7 @@ __metadata:
     eslint-plugin-prettier: "npm:5.2.3"
     jest: "npm:29.7.0"
     ts-node: "npm:10.9.2"
-    typescript: "npm:5.7.3"
+    typescript: "npm:5.8.2"
   languageName: unknown
   linkType: soft
 
@@ -5607,7 +5607,7 @@ __metadata:
     redux-saga: "npm:1.3.0"
     ts-jest: "npm:29.2.6"
     ts-node: "npm:10.9.2"
-    typescript: "npm:5.7.3"
+    typescript: "npm:5.8.2"
   languageName: unknown
   linkType: soft
 
@@ -5633,7 +5633,7 @@ __metadata:
     eslint-plugin-prettier: "npm:5.2.3"
     jest: "npm:29.7.0"
     ts-node: "npm:10.9.2"
-    typescript: "npm:5.7.3"
+    typescript: "npm:5.8.2"
   languageName: unknown
   linkType: soft
 
@@ -5656,7 +5656,7 @@ __metadata:
     jest: "npm:29.7.0"
     prisma: "npm:6.4.1"
     ts-node: "npm:10.9.2"
-    typescript: "npm:5.7.3"
+    typescript: "npm:5.8.2"
   languageName: unknown
   linkType: soft
 
@@ -5678,7 +5678,7 @@ __metadata:
     eslint-plugin-prettier: "npm:5.2.3"
     jest: "npm:29.7.0"
     ts-node: "npm:10.9.2"
-    typescript: "npm:5.7.3"
+    typescript: "npm:5.8.2"
   languageName: unknown
   linkType: soft
 
@@ -5702,7 +5702,7 @@ __metadata:
     react: "npm:18.3.1"
     react-wrap-balancer: "npm:1.1.1"
     ts-node: "npm:10.9.2"
-    typescript: "npm:5.7.3"
+    typescript: "npm:5.8.2"
     vaul: "npm:1.1.2"
   languageName: unknown
   linkType: soft
@@ -5757,7 +5757,7 @@ __metadata:
     stylelint-no-unsupported-browser-features: "npm:8.0.4"
     stylelint-order: "npm:6.0.4"
     stylelint-scss: "npm:6.11.1"
-    typescript: "npm:5.7.3"
+    typescript: "npm:5.8.2"
   languageName: unknown
   linkType: soft
 
@@ -5791,7 +5791,7 @@ __metadata:
     stylelint-no-unsupported-browser-features: "npm:8.0.4"
     stylelint-order: "npm:6.0.4"
     stylelint-scss: "npm:6.11.1"
-    typescript: "npm:5.7.3"
+    typescript: "npm:5.8.2"
   languageName: unknown
   linkType: soft
 
@@ -5847,7 +5847,7 @@ __metadata:
     stylelint-order: "npm:6.0.4"
     stylelint-scss: "npm:6.11.1"
     ts-node: "npm:10.9.2"
-    typescript: "npm:5.7.3"
+    typescript: "npm:5.8.2"
     vite: "npm:6.2.0"
   languageName: unknown
   linkType: soft
@@ -5871,7 +5871,7 @@ __metadata:
     jest: "npm:29.7.0"
     next: "npm:15.2.0"
     ts-node: "npm:10.9.2"
-    typescript: "npm:5.7.3"
+    typescript: "npm:5.8.2"
   languageName: unknown
   linkType: soft
 
@@ -5913,7 +5913,7 @@ __metadata:
     fs-extra: "npm:11.3.0"
     jest: "npm:29.7.0"
     ts-node: "npm:10.9.2"
-    typescript: "npm:5.7.3"
+    typescript: "npm:5.8.2"
   languageName: unknown
   linkType: soft
 
@@ -18463,7 +18463,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:5.7.3, typescript@npm:>=3 < 6":
+"typescript@npm:5.8.2":
+  version: 5.8.2
+  resolution: "typescript@npm:5.8.2"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 10c0/5c4f6fbf1c6389b6928fe7b8fcd5dc73bb2d58cd4e3883f1d774ed5bd83b151cbac6b7ecf11723de56d4676daeba8713894b1e9af56174f2f9780ae7848ec3c6
+  languageName: node
+  linkType: hard
+
+"typescript@npm:>=3 < 6":
   version: 5.7.3
   resolution: "typescript@npm:5.7.3"
   bin:
@@ -18473,7 +18483,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A5.7.3#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A>=3 < 6#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>":
+  version: 5.8.2
+  resolution: "typescript@patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5adc0c"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 10c0/8a6cd29dfb59bd5a978407b93ae0edb530ee9376a5b95a42ad057a6f80ffb0c410489ccd6fe48d1d0dfad6e8adf5d62d3874bbd251f488ae30e11a1ce6dabd28
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@npm%3A>=3 < 6#optional!builtin<compat/typescript>":
   version: 5.7.3
   resolution: "typescript@patch:typescript@npm%3A5.7.3#optional!builtin<compat/typescript>::version=5.7.3&hash=5adc0c"
   bin:
