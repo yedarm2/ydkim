@@ -4380,22 +4380,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/query-devtools@npm:5.65.0":
-  version: 5.65.0
-  resolution: "@tanstack/query-devtools@npm:5.65.0"
-  checksum: 10c0/7d223e267d7d807d8d597edf08403dbd08e033079fe235e1a37e1449a9922a00cf68d4d1feeb2852f99e2efe386d0c3242856cb0568da0f574778a3187e67a38
+"@tanstack/query-devtools@npm:5.67.2":
+  version: 5.67.2
+  resolution: "@tanstack/query-devtools@npm:5.67.2"
+  checksum: 10c0/85172bb7cbca204e62507ffb72add4ff8f204b034ea0c6bb82cc44a00756ab196bd8a688b5e857911274aa5e7c467cdda6a393ebce6ba36ce8d471d5b52060fb
   languageName: node
   linkType: hard
 
-"@tanstack/react-query-devtools@npm:5.67.1":
-  version: 5.67.1
-  resolution: "@tanstack/react-query-devtools@npm:5.67.1"
+"@tanstack/react-query-devtools@npm:5.67.3":
+  version: 5.67.3
+  resolution: "@tanstack/react-query-devtools@npm:5.67.3"
   dependencies:
-    "@tanstack/query-devtools": "npm:5.65.0"
+    "@tanstack/query-devtools": "npm:5.67.2"
   peerDependencies:
-    "@tanstack/react-query": ^5.67.1
+    "@tanstack/react-query": ^5.67.3
     react: ^18 || ^19
-  checksum: 10c0/0d675185419016507ed19916b508a6579c824422e96e77d4fae9b53fea42a52e60af00720860487fce368e970a54034ee24d51fcad6c5e7d7828c807e0320e59
+  checksum: 10c0/0b67e3dc9ea1b92227cac0c27b3d52657612f549eeff105f3d35cab4f57f79f4c416c49990eb7c5cd7baf8ba766265980289a082ea39a98968f57c76002e7108
   languageName: node
   linkType: hard
 
@@ -5415,7 +5415,7 @@ __metadata:
     "@next/bundle-analyzer": "npm:15.2.1"
     "@next/font": "npm:14.2.15"
     "@tanstack/react-query": "npm:5.67.1"
-    "@tanstack/react-query-devtools": "npm:5.67.1"
+    "@tanstack/react-query-devtools": "npm:5.67.3"
     "@types/node": "npm:22.13.9"
     "@types/react": "npm:18.3.12"
     "@types/react-dom": "npm:18.3.1"
@@ -5607,7 +5607,7 @@ __metadata:
     "@reduxjs/toolkit": "npm:2.6.0"
     "@sentry/nextjs": "npm:7.114.0"
     "@tanstack/react-query": "npm:5.67.1"
-    "@tanstack/react-query-devtools": "npm:5.67.1"
+    "@tanstack/react-query-devtools": "npm:5.67.3"
     "@types/jest": "npm:29.5.14"
     "@types/node": "npm:22.13.9"
     "@types/react": "npm:18.3.12"
