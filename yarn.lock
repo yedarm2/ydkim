@@ -5500,7 +5500,7 @@ __metadata:
     "@types/jest": "npm:29.5.14"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
-    axios: "npm:1.8.2"
+    axios: "npm:1.8.3"
     babel-jest: "npm:29.7.0"
     classnames: "npm:2.5.1"
     eslint: "npm:9.22.0"
@@ -6380,7 +6380,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:1.8.2, axios@npm:^1.7.4":
+"axios@npm:1.8.3":
+  version: 1.8.3
+  resolution: "axios@npm:1.8.3"
+  dependencies:
+    follow-redirects: "npm:^1.15.6"
+    form-data: "npm:^4.0.0"
+    proxy-from-env: "npm:^1.1.0"
+  checksum: 10c0/de75da9859adf0a6481d4af2b687db357a054d20f0d69b99d502b71dae3578326b1fdc0951dabaef769827484941cda93d3f89150bf9e04f05f6615fb8316780
+  languageName: node
+  linkType: hard
+
+"axios@npm:^1.7.4":
   version: 1.8.2
   resolution: "axios@npm:1.8.2"
   dependencies:
