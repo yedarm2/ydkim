@@ -5463,7 +5463,7 @@ __metadata:
     sanitize.css: "npm:13.0.0"
     sass: "npm:1.85.1"
     server-only: "npm:0.0.1"
-    stylelint: "npm:16.15.0"
+    stylelint: "npm:16.16.0"
     stylelint-config-standard-scss: "npm:14.0.0"
     stylelint-no-unsupported-browser-features: "npm:8.0.4"
     stylelint-order: "npm:6.0.4"
@@ -5657,7 +5657,7 @@ __metadata:
     sanitize.css: "npm:13.0.0"
     sass: "npm:1.85.1"
     serve: "npm:14.2.4"
-    stylelint: "npm:16.15.0"
+    stylelint: "npm:16.16.0"
     stylelint-config-standard-scss: "npm:14.0.0"
     stylelint-no-unsupported-browser-features: "npm:8.0.4"
     stylelint-order: "npm:6.0.4"
@@ -5691,7 +5691,7 @@ __metadata:
     react: "npm:18.3.1"
     react-dom: "npm:18.3.1"
     sass: "npm:1.85.1"
-    stylelint: "npm:16.15.0"
+    stylelint: "npm:16.16.0"
     stylelint-config-standard-scss: "npm:14.0.0"
     stylelint-no-unsupported-browser-features: "npm:8.0.4"
     stylelint-order: "npm:6.0.4"
@@ -5746,7 +5746,7 @@ __metadata:
     serve: "npm:14.2.4"
     storybook: "npm:8.6.4"
     style-loader: "npm:1.3.0"
-    stylelint: "npm:16.15.0"
+    stylelint: "npm:16.16.0"
     stylelint-config-standard-scss: "npm:14.0.0"
     stylelint-no-unsupported-browser-features: "npm:8.0.4"
     stylelint-order: "npm:6.0.4"
@@ -5792,7 +5792,7 @@ __metadata:
     postcss-preset-env: "npm:10.1.5"
     postcss-reporter: "npm:7.1.0"
     sanitize.css: "npm:13.0.0"
-    stylelint: "npm:16.15.0"
+    stylelint: "npm:16.16.0"
     stylelint-config-standard-scss: "npm:14.0.0"
     stylelint-no-unsupported-browser-features: "npm:8.0.4"
     stylelint-order: "npm:6.0.4"
@@ -9386,7 +9386,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"file-entry-cache@npm:^10.0.6":
+"file-entry-cache@npm:^10.0.7":
   version: 10.0.7
   resolution: "file-entry-cache@npm:10.0.7"
   dependencies:
@@ -17507,9 +17507,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint@npm:16.15.0":
-  version: 16.15.0
-  resolution: "stylelint@npm:16.15.0"
+"stylelint@npm:16.16.0":
+  version: 16.16.0
+  resolution: "stylelint@npm:16.16.0"
   dependencies:
     "@csstools/css-parser-algorithms": "npm:^3.0.4"
     "@csstools/css-tokenizer": "npm:^3.0.3"
@@ -17524,7 +17524,7 @@ __metadata:
     debug: "npm:^4.3.7"
     fast-glob: "npm:^3.3.3"
     fastest-levenshtein: "npm:^1.0.16"
-    file-entry-cache: "npm:^10.0.6"
+    file-entry-cache: "npm:^10.0.7"
     global-modules: "npm:^2.0.0"
     globby: "npm:^11.1.0"
     globjoin: "npm:^0.1.4"
@@ -17551,7 +17551,7 @@ __metadata:
     write-file-atomic: "npm:^5.0.1"
   bin:
     stylelint: bin/stylelint.mjs
-  checksum: 10c0/32dee221fe8980e08adcdc7c48ddab51eac263784b0cc2f4eb9c029e3589ad6ce7dae710ec2aadb57bdbfecec579326c75918686f1563576715cbd3095c5dd12
+  checksum: 10c0/7884a347fbaf04215f205bb9630bce91c72a3d08ddd5aec1d1ad7ccfdff50854bb6ad995945d5d6a6a4052a1c5fadb3fd4929e8e7db4cde5a6ce0f7dbe537800
   languageName: node
   linkType: hard
 
