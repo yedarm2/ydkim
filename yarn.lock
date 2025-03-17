@@ -4868,13 +4868,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prop-types@npm:*":
-  version: 15.7.14
-  resolution: "@types/prop-types@npm:15.7.14"
-  checksum: 10c0/1ec775160bfab90b67a782d735952158c7e702ca4502968aa82565bd8e452c2de8601c8dfe349733073c31179116cf7340710160d3836aa8a1ef76d1532893b1
-  languageName: node
-  linkType: hard
-
 "@types/qs@npm:*":
   version: 6.9.18
   resolution: "@types/qs@npm:6.9.18"
@@ -4907,13 +4900,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.3.12":
-  version: 18.3.12
-  resolution: "@types/react@npm:18.3.12"
+"@types/react@npm:19.0.11":
+  version: 19.0.11
+  resolution: "@types/react@npm:19.0.11"
   dependencies:
-    "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10c0/8bae8d9a41619804561574792e29112b413044eb0d53746dde2b9720c1f9a59f71c895bbd7987cd8ce9500b00786e53bc032dced38cddf42910458e145675290
+  checksum: 10c0/386cdde579b60e22160d6894a985655742703346bdc71fed9809f8f90ca87e2dd0252e86b81f92621a2c1de8d0fbf35e3963996db8c451cc670570061ed62f29
   languageName: node
   linkType: hard
 
@@ -5435,7 +5427,7 @@ __metadata:
     "@tanstack/react-query": "npm:5.68.0"
     "@tanstack/react-query-devtools": "npm:5.68.0"
     "@types/node": "npm:22.13.10"
-    "@types/react": "npm:18.3.12"
+    "@types/react": "npm:19.0.11"
     "@types/react-dom": "npm:18.3.1"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
@@ -5458,7 +5450,7 @@ __metadata:
     postcss: "npm:8.5.3"
     postcss-preset-env: "npm:10.1.5"
     postcss-reporter: "npm:7.1.0"
-    react: "npm:18.3.1"
+    react: "npm:19.0.0"
     react-dom: "npm:18.3.1"
     react-icons: "npm:5.5.0"
     sanitize.css: "npm:13.0.0"
@@ -5605,7 +5597,7 @@ __metadata:
     eslint-plugin-prettier: "npm:5.2.3"
     jest: "npm:29.7.0"
     polished: "npm:4.3.1"
-    react: "npm:18.3.1"
+    react: "npm:19.0.0"
     react-wrap-balancer: "npm:1.1.1"
     ts-node: "npm:10.9.2"
     typescript: "npm:5.8.2"
@@ -5628,7 +5620,7 @@ __metadata:
     "@tanstack/react-query-devtools": "npm:5.68.0"
     "@types/jest": "npm:29.5.14"
     "@types/node": "npm:22.13.10"
-    "@types/react": "npm:18.3.12"
+    "@types/react": "npm:19.0.11"
     "@types/react-dom": "npm:18.3.1"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
@@ -5649,7 +5641,7 @@ __metadata:
     postcss: "npm:8.5.3"
     postcss-preset-env: "npm:10.1.5"
     postcss-reporter: "npm:7.1.0"
-    react: "npm:18.3.1"
+    react: "npm:19.0.0"
     react-dom: "npm:18.3.1"
     react-redux: "npm:9.2.0"
     redux: "npm:5.0.1"
@@ -5675,7 +5667,7 @@ __metadata:
     "@emotion/styled": "npm:11.14.0"
     "@next/font": "npm:14.2.15"
     "@types/node": "npm:22.13.10"
-    "@types/react": "npm:18.3.12"
+    "@types/react": "npm:19.0.11"
     "@types/react-dom": "npm:18.3.1"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
@@ -5689,7 +5681,7 @@ __metadata:
     postcss: "npm:8.5.3"
     postcss-preset-env: "npm:10.1.5"
     postcss-reporter: "npm:7.1.0"
-    react: "npm:18.3.1"
+    react: "npm:19.0.0"
     react-dom: "npm:18.3.1"
     sass: "npm:1.85.1"
     stylelint: "npm:16.16.0"
@@ -5720,7 +5712,7 @@ __metadata:
     "@storybook/testing-library": "npm:0.2.2"
     "@types/jest": "npm:29.5.14"
     "@types/node": "npm:22.13.10"
-    "@types/react": "npm:18.3.12"
+    "@types/react": "npm:19.0.11"
     "@types/react-dom": "npm:18.3.1"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
@@ -5739,7 +5731,7 @@ __metadata:
     postcss: "npm:8.5.3"
     postcss-preset-env: "npm:10.1.5"
     postcss-reporter: "npm:7.1.0"
-    react: "npm:18.3.1"
+    react: "npm:19.0.0"
     react-dom: "npm:18.3.1"
     react-icons: "npm:5.5.0"
     sanitize.css: "npm:13.0.0"
@@ -5788,7 +5780,7 @@ __metadata:
     "@babel/core": "npm:7.26.10"
     "@types/jest": "npm:29.5.14"
     "@types/node": "npm:22.13.10"
-    "@types/react": "npm:18.3.12"
+    "@types/react": "npm:19.0.11"
     "@types/react-dom": "npm:18.3.1"
     postcss-preset-env: "npm:10.1.5"
     postcss-reporter: "npm:7.1.0"
@@ -15774,16 +15766,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.3.1":
-  version: 18.3.1
-  resolution: "react@npm:18.3.1"
-  dependencies:
-    loose-envify: "npm:^1.1.0"
-  checksum: 10c0/283e8c5efcf37802c9d1ce767f302dd569dd97a70d9bb8c7be79a789b9902451e0d16334b05d73299b20f048cbc3c7d288bbbde10b701fa194e2089c237dbea3
-  languageName: node
-  linkType: hard
-
-"react@npm:^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0":
+"react@npm:19.0.0, react@npm:^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0":
   version: 19.0.0
   resolution: "react@npm:19.0.0"
   checksum: 10c0/9cad8f103e8e3a16d15cb18a0d8115d8bd9f9e1ce3420310aea381eb42aa0a4f812cf047bb5441349257a05fba8a291515691e3cb51267279b2d2c3253f38471
