@@ -7592,9 +7592,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"create-react-app@npm:5.0.1":
-  version: 5.0.1
-  resolution: "create-react-app@npm:5.0.1"
+"create-react-app@npm:5.1.0":
+  version: 5.1.0
+  resolution: "create-react-app@npm:5.1.0"
   dependencies:
     chalk: "npm:^4.1.2"
     commander: "npm:^4.1.1"
@@ -7609,7 +7609,7 @@ __metadata:
     validate-npm-package-name: "npm:^3.0.0"
   bin:
     create-react-app: index.js
-  checksum: 10c0/24f6eee9108495474ce93bf089a876d57d9c1f821d26f2ea601b88ebbf474e69ca4e644b982f6792f6c719fa2d63d25c978b67db478b03ba289d7438a8ce55d2
+  checksum: 10c0/e0ac6ab82d98493a271534ac54534d89998c9942ac2959084e53e86fda4e7443bb3fe7c44c0741a598eed1a34d95718a67870bd772d2b905bf6c5aa812cfdb11
   languageName: node
   linkType: hard
 
@@ -19139,7 +19139,7 @@ __metadata:
   resolution: "ydkim@workspace:."
   dependencies:
     create-next-app: "npm:15.2.2"
-    create-react-app: "npm:5.0.1"
+    create-react-app: "npm:5.1.0"
     lerna: "npm:8.2.1"
     npm-check-updates: "npm:17.1.15"
     prettier: "npm:3.5.3"
