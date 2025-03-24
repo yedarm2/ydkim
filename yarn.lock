@@ -13968,13 +13968,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-check-updates@npm:17.1.15":
-  version: 17.1.15
-  resolution: "npm-check-updates@npm:17.1.15"
+"npm-check-updates@npm:17.1.16":
+  version: 17.1.16
+  resolution: "npm-check-updates@npm:17.1.16"
   bin:
     ncu: build/cli.js
     npm-check-updates: build/cli.js
-  checksum: 10c0/c570ca9f8f8748e688b053e875d9e5381902c8e94fae8f2fb467f0ea99874ee577e5a4aa46faf31780c05d44c36cb1f8fbd89e7873d810a00411616cdf4a4c93
+  checksum: 10c0/443ca7a96a991b7c60fcc90913a685bee5c2365086773c3a0efe584b081459f46760454a4d3459627e42498120cdbd5fcc5857b0f3970c70e2a4e67adf706a77
   languageName: node
   linkType: hard
 
@@ -19141,7 +19141,7 @@ __metadata:
     create-next-app: "npm:15.2.2"
     create-react-app: "npm:5.0.1"
     lerna: "npm:8.2.1"
-    npm-check-updates: "npm:17.1.15"
+    npm-check-updates: "npm:17.1.16"
     prettier: "npm:3.5.3"
     rimraf: "npm:6.0.1"
     sort-package-json: "npm:3.0.0"
