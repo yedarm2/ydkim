@@ -4425,22 +4425,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/query-devtools@npm:5.67.2":
-  version: 5.67.2
-  resolution: "@tanstack/query-devtools@npm:5.67.2"
-  checksum: 10c0/85172bb7cbca204e62507ffb72add4ff8f204b034ea0c6bb82cc44a00756ab196bd8a688b5e857911274aa5e7c467cdda6a393ebce6ba36ce8d471d5b52060fb
+"@tanstack/query-devtools@npm:5.71.5":
+  version: 5.71.5
+  resolution: "@tanstack/query-devtools@npm:5.71.5"
+  checksum: 10c0/22ca20fb8f5fdfe62e35bc9903d86a42ce7be93d53b631102d8780e8fd4b7995f23d21617c8bd4bf800beb064844ab7410ca779c7773c617a40c4dafd74206c2
   languageName: node
   linkType: hard
 
-"@tanstack/react-query-devtools@npm:5.71.1":
-  version: 5.71.1
-  resolution: "@tanstack/react-query-devtools@npm:5.71.1"
+"@tanstack/react-query-devtools@npm:5.71.5":
+  version: 5.71.5
+  resolution: "@tanstack/react-query-devtools@npm:5.71.5"
   dependencies:
-    "@tanstack/query-devtools": "npm:5.67.2"
+    "@tanstack/query-devtools": "npm:5.71.5"
   peerDependencies:
-    "@tanstack/react-query": ^5.71.1
+    "@tanstack/react-query": ^5.71.5
     react: ^18 || ^19
-  checksum: 10c0/48100df0c406cdec9a08b209d8b33305f9681a7fc6c73490c9da2c5b9ca679e8cdea932f7edae137f4aab67915a3641021c19cf8b52ed0ee70403038b78622cc
+  checksum: 10c0/e44d57314bbdc5cf4b1833575183fe3f0aa4b6788cd01c79042116f26c79554e736807cba74b3a1acd3c08391e9b1be3bb66283f693513843f321f7a3a6d70b9
   languageName: node
   linkType: hard
 
@@ -5567,7 +5567,7 @@ __metadata:
     "@next/bundle-analyzer": "npm:15.2.4"
     "@next/font": "npm:14.2.15"
     "@tanstack/react-query": "npm:5.71.1"
-    "@tanstack/react-query-devtools": "npm:5.71.1"
+    "@tanstack/react-query-devtools": "npm:5.71.5"
     "@types/node": "npm:22.13.17"
     "@types/react": "npm:18.3.12"
     "@types/react-dom": "npm:18.3.1"
@@ -5759,7 +5759,7 @@ __metadata:
     "@reduxjs/toolkit": "npm:2.6.1"
     "@sentry/nextjs": "npm:7.114.0"
     "@tanstack/react-query": "npm:5.71.1"
-    "@tanstack/react-query-devtools": "npm:5.71.1"
+    "@tanstack/react-query-devtools": "npm:5.71.5"
     "@types/jest": "npm:29.5.14"
     "@types/node": "npm:22.13.17"
     "@types/react": "npm:18.3.12"
