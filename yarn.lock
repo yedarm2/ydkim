@@ -5105,24 +5105,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:5.61.0":
-  version: 5.61.0
-  resolution: "@typescript-eslint/parser@npm:5.61.0"
-  dependencies:
-    "@typescript-eslint/scope-manager": "npm:5.61.0"
-    "@typescript-eslint/types": "npm:5.61.0"
-    "@typescript-eslint/typescript-estree": "npm:5.61.0"
-    debug: "npm:^4.3.4"
-  peerDependencies:
-    eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: 10c0/4fd5a589b0e27a931f32296cc020e7b6052337ceb8312008e5cacbbcd6706f12b2bc481398c40d6e8c482770929593564a6ed2a3b681e7a7634282bd9c12afc4
-  languageName: node
-  linkType: hard
-
-"@typescript-eslint/parser@npm:^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0":
+"@typescript-eslint/parser@npm:8.29.0, @typescript-eslint/parser@npm:^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0":
   version: 8.29.0
   resolution: "@typescript-eslint/parser@npm:8.29.0"
   dependencies:
@@ -5581,7 +5564,7 @@ __metadata:
     "@types/react": "npm:18.3.12"
     "@types/react-dom": "npm:18.3.1"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
-    "@typescript-eslint/parser": "npm:5.61.0"
+    "@typescript-eslint/parser": "npm:8.29.0"
     "@vanilla-extract/css": "npm:1.17.1"
     "@vanilla-extract/dynamic": "npm:2.1.2"
     "@vanilla-extract/next-plugin": "npm:2.4.10"
@@ -5623,7 +5606,7 @@ __metadata:
     "@types/jest": "npm:29.5.14"
     "@types/node": "npm:22.14.0"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
-    "@typescript-eslint/parser": "npm:5.61.0"
+    "@typescript-eslint/parser": "npm:8.29.0"
     babel-jest: "npm:29.7.0"
     eslint: "npm:9.23.0"
     eslint-config-prettier: "npm:10.1.1"
@@ -5643,7 +5626,7 @@ __metadata:
     "@reduxjs/toolkit": "npm:2.6.1"
     "@types/jest": "npm:29.5.14"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
-    "@typescript-eslint/parser": "npm:5.61.0"
+    "@typescript-eslint/parser": "npm:8.29.0"
     axios: "npm:1.8.4"
     babel-jest: "npm:29.7.0"
     classnames: "npm:2.5.1"
@@ -5673,7 +5656,7 @@ __metadata:
     "@types/jest": "npm:29.5.14"
     "@types/node": "npm:22.14.0"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
-    "@typescript-eslint/parser": "npm:5.61.0"
+    "@typescript-eslint/parser": "npm:8.29.0"
     babel-jest: "npm:29.7.0"
     eslint: "npm:9.23.0"
     eslint-config-prettier: "npm:10.1.1"
@@ -5694,7 +5677,7 @@ __metadata:
     "@types/jest": "npm:29.5.14"
     "@types/node": "npm:22.14.0"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
-    "@typescript-eslint/parser": "npm:5.61.0"
+    "@typescript-eslint/parser": "npm:8.29.0"
     babel-jest: "npm:29.7.0"
     eslint: "npm:9.23.0"
     eslint-config-prettier: "npm:10.1.1"
@@ -5716,7 +5699,7 @@ __metadata:
     "@types/jest": "npm:29.5.14"
     "@types/node": "npm:22.14.0"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
-    "@typescript-eslint/parser": "npm:5.61.0"
+    "@typescript-eslint/parser": "npm:8.29.0"
     "@ydkim/core-infra": "npm:*"
     "@ydkim/server-utils": "npm:*"
     babel-jest: "npm:29.7.0"
@@ -5736,7 +5719,7 @@ __metadata:
   resolution: "@ydkim/hooks@workspace:packages/hooks"
   dependencies:
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
-    "@typescript-eslint/parser": "npm:5.61.0"
+    "@typescript-eslint/parser": "npm:8.29.0"
     babel-jest: "npm:29.7.0"
     chroma-js: "npm:3.1.2"
     classnames: "npm:2.5.1"
@@ -5774,7 +5757,7 @@ __metadata:
     "@types/react": "npm:18.3.12"
     "@types/react-dom": "npm:18.3.1"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
-    "@typescript-eslint/parser": "npm:5.61.0"
+    "@typescript-eslint/parser": "npm:8.29.0"
     classnames: "npm:2.5.1"
     eslint: "npm:9.23.0"
     eslint-config-next: "npm:15.2.4"
@@ -5821,7 +5804,7 @@ __metadata:
     "@types/react": "npm:18.3.12"
     "@types/react-dom": "npm:18.3.1"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
-    "@typescript-eslint/parser": "npm:5.61.0"
+    "@typescript-eslint/parser": "npm:8.29.0"
     eslint: "npm:9.23.0"
     eslint-config-next: "npm:15.2.4"
     eslint-config-prettier: "npm:10.1.1"
@@ -5866,7 +5849,7 @@ __metadata:
     "@types/react": "npm:18.3.12"
     "@types/react-dom": "npm:18.3.1"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
-    "@typescript-eslint/parser": "npm:5.61.0"
+    "@typescript-eslint/parser": "npm:8.29.0"
     babel-jest: "npm:29.7.0"
     babel-loader: "npm:10.0.0"
     chromatic: "npm:11.27.0"
@@ -5907,7 +5890,7 @@ __metadata:
   dependencies:
     "@tanstack/react-query": "npm:5.71.5"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
-    "@typescript-eslint/parser": "npm:5.61.0"
+    "@typescript-eslint/parser": "npm:8.29.0"
     "@ydkim/core-infra": "npm:*"
     babel-jest: "npm:29.7.0"
     classnames: "npm:2.5.1"
@@ -5952,7 +5935,7 @@ __metadata:
     "@types/jest": "npm:29.5.14"
     "@types/node": "npm:22.14.0"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
-    "@typescript-eslint/parser": "npm:5.61.0"
+    "@typescript-eslint/parser": "npm:8.29.0"
     babel-jest: "npm:29.7.0"
     eslint: "npm:9.23.0"
     eslint-config-prettier: "npm:10.1.1"
