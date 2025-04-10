@@ -13,10 +13,10 @@
 	"dependencies": {
 		"@emotion/react": "11.14.0",
 		"@emotion/styled": "11.14.0",
-		"@next/bundle-analyzer": "15.2.4",
+		"@next/bundle-analyzer": "15.3.0",
 		"@next/font": "14.2.15",
-		"@tanstack/react-query": "5.71.10",
-		"@tanstack/react-query-devtools": "5.71.10",
+		"@tanstack/react-query": "5.72.2",
+		"@tanstack/react-query-devtools": "5.72.2",
 		"@types/node": "22.14.0",
 		"@types/react": "18.3.12",
 		"@types/react-dom": "18.3.1",
@@ -27,7 +27,7 @@
 		"@ydkim/core-service": "*",
 		"critters": "0.0.25",
 		"express": "5.1.0",
-		"next": "15.2.4",
+		"next": "15.3.0",
 		"next-compose-plugins": "2.2.1",
 		"react": "18.3.1",
 		"react-dom": "18.3.1",
@@ -40,7 +40,7 @@
 		"@typescript-eslint/parser": "5.61.0",
 		"@vanilla-extract/next-plugin": "2.4.10",
 		"eslint": "9.24.0",
-		"eslint-config-next": "15.2.4",
+		"eslint-config-next": "15.3.0",
 		"eslint-config-prettier": "10.1.1",
 		"eslint-plugin-import": "2.31.0",
 		"eslint-plugin-jest": "28.11.0",
@@ -49,11 +49,11 @@
 		"postcss-preset-env": "10.1.5",
 		"postcss-reporter": "7.1.0",
 		"sass": "1.86.3",
-		"stylelint": "16.17.0",
+		"stylelint": "16.18.0",
 		"stylelint-config-standard-scss": "14.0.0",
 		"stylelint-no-unsupported-browser-features": "8.0.4",
 		"stylelint-order": "6.0.4",
 		"stylelint-scss": "6.11.1",
-		"typescript": "5.8.2"
+		"typescript": "5.8.3"
 	}
 }
