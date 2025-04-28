@@ -4895,12 +4895,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:22.15.2":
-  version: 22.15.2
-  resolution: "@types/node@npm:22.15.2"
+"@types/node@npm:22.15.3":
+  version: 22.15.3
+  resolution: "@types/node@npm:22.15.3"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10c0/39da31d5fc63b14fabd217bb8a921c4a7fc3d99f233440209f9fc2d5d736e8773f7efc65223e2fd0e8db8390b0baab9c0cd2e951c2ece8b237f07313ab3cf295
+  checksum: 10c0/2879f012d1aeba0bfdb5fed80d165f4f2cb3d1f2e1f98a24b18d4a211b4ace7d64bf2622784c78355982ffc1081ba79d0934efc2fb8353913e5871a63609661f
   languageName: node
   linkType: hard
 
@@ -5591,7 +5591,7 @@ __metadata:
     "@next/font": "npm:14.2.15"
     "@tanstack/react-query": "npm:5.74.4"
     "@tanstack/react-query-devtools": "npm:5.74.4"
-    "@types/node": "npm:22.15.2"
+    "@types/node": "npm:22.15.3"
     "@types/react": "npm:18.3.12"
     "@types/react-dom": "npm:18.3.1"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
@@ -5635,7 +5635,7 @@ __metadata:
   resolution: "@ydkim/boilerplate@workspace:boilerplates/boilerplate"
   dependencies:
     "@types/jest": "npm:29.5.14"
-    "@types/node": "npm:22.15.2"
+    "@types/node": "npm:22.15.3"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
     babel-jest: "npm:29.7.0"
@@ -5685,7 +5685,7 @@ __metadata:
   resolution: "@ydkim/core-boilerplate@workspace:boilerplates/core-boilerplate"
   dependencies:
     "@types/jest": "npm:29.5.14"
-    "@types/node": "npm:22.15.2"
+    "@types/node": "npm:22.15.3"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
     babel-jest: "npm:29.7.0"
@@ -5706,7 +5706,7 @@ __metadata:
   dependencies:
     "@prisma/client": "npm:6.6.0"
     "@types/jest": "npm:29.5.14"
-    "@types/node": "npm:22.15.2"
+    "@types/node": "npm:22.15.3"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
     babel-jest: "npm:29.7.0"
@@ -5728,7 +5728,7 @@ __metadata:
   resolution: "@ydkim/core-service@workspace:packages/core-service"
   dependencies:
     "@types/jest": "npm:29.5.14"
-    "@types/node": "npm:22.15.2"
+    "@types/node": "npm:22.15.3"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
     "@ydkim/core-infra": "npm:*"
@@ -5784,7 +5784,7 @@ __metadata:
     "@tanstack/react-query": "npm:5.74.4"
     "@tanstack/react-query-devtools": "npm:5.74.4"
     "@types/jest": "npm:29.5.14"
-    "@types/node": "npm:22.15.2"
+    "@types/node": "npm:22.15.3"
     "@types/react": "npm:18.3.12"
     "@types/react-dom": "npm:18.3.1"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
@@ -5831,7 +5831,7 @@ __metadata:
     "@emotion/react": "npm:11.14.0"
     "@emotion/styled": "npm:11.14.0"
     "@next/font": "npm:14.2.15"
-    "@types/node": "npm:22.15.2"
+    "@types/node": "npm:22.15.3"
     "@types/react": "npm:18.3.12"
     "@types/react-dom": "npm:18.3.1"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
@@ -5876,7 +5876,7 @@ __metadata:
     "@storybook/react-vite": "npm:8.6.12"
     "@storybook/testing-library": "npm:0.2.2"
     "@types/jest": "npm:29.5.14"
-    "@types/node": "npm:22.15.2"
+    "@types/node": "npm:22.15.3"
     "@types/react": "npm:18.3.12"
     "@types/react-dom": "npm:18.3.1"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
@@ -5944,7 +5944,7 @@ __metadata:
   dependencies:
     "@babel/core": "npm:7.26.10"
     "@types/jest": "npm:29.5.14"
-    "@types/node": "npm:22.15.2"
+    "@types/node": "npm:22.15.3"
     "@types/react": "npm:18.3.12"
     "@types/react-dom": "npm:18.3.1"
     postcss-preset-env: "npm:10.1.6"
@@ -5964,7 +5964,7 @@ __metadata:
   dependencies:
     "@types/fs-extra": "npm:11.0.4"
     "@types/jest": "npm:29.5.14"
-    "@types/node": "npm:22.15.2"
+    "@types/node": "npm:22.15.3"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
     babel-jest: "npm:29.7.0"
