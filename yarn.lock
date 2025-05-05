@@ -4642,14 +4642,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/react-query@npm:5.75.0":
-  version: 5.75.0
-  resolution: "@tanstack/react-query@npm:5.75.0"
+"@tanstack/react-query@npm:5.75.2":
+  version: 5.75.2
+  resolution: "@tanstack/react-query@npm:5.75.2"
   dependencies:
     "@tanstack/query-core": "npm:5.75.0"
   peerDependencies:
     react: ^18 || ^19
-  checksum: 10c0/beebb9470337eb2c2ce0a1166cbdad6522e4386f9db1057f81fd0d642afee5fb7bd2857f0b2fa85fc61b12054a23c53b472b5d8241e8e7daf033721b38eb7a2d
+  checksum: 10c0/b265a89f9166747589ce80019505be24a43a6cffc7af09700fadb35a91d28a0da380f7e18bcf2ffb7396cd0f2ca45d3322f5f3758d3265b68533a59dad6dd487
   languageName: node
   linkType: hard
 
@@ -5778,7 +5778,7 @@ __metadata:
     "@emotion/styled": "npm:11.14.0"
     "@next/bundle-analyzer": "npm:15.3.1"
     "@next/font": "npm:14.2.15"
-    "@tanstack/react-query": "npm:5.75.0"
+    "@tanstack/react-query": "npm:5.75.2"
     "@tanstack/react-query-devtools": "npm:5.75.0"
     "@types/node": "npm:22.15.3"
     "@types/react": "npm:18.3.12"
@@ -5970,7 +5970,7 @@ __metadata:
     "@playwright/test": "npm:1.52.0"
     "@reduxjs/toolkit": "npm:2.7.0"
     "@sentry/nextjs": "npm:7.114.0"
-    "@tanstack/react-query": "npm:5.75.0"
+    "@tanstack/react-query": "npm:5.75.2"
     "@tanstack/react-query-devtools": "npm:5.75.0"
     "@types/jest": "npm:29.5.14"
     "@types/node": "npm:22.15.3"
@@ -6108,7 +6108,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ydkim/server-utils@workspace:packages/server-utils"
   dependencies:
-    "@tanstack/react-query": "npm:5.75.0"
+    "@tanstack/react-query": "npm:5.75.2"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
     "@ydkim/core-infra": "npm:*"
