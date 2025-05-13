@@ -5612,7 +5612,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/css@npm:1.17.1, @vanilla-extract/css@npm:^1.17.1":
+"@vanilla-extract/css@npm:1.17.1":
   version: 1.17.1
   resolution: "@vanilla-extract/css@npm:1.17.1"
   dependencies:
@@ -5632,6 +5632,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vanilla-extract/css@npm:^1.17.2":
+  version: 1.17.2
+  resolution: "@vanilla-extract/css@npm:1.17.2"
+  dependencies:
+    "@emotion/hash": "npm:^0.9.0"
+    "@vanilla-extract/private": "npm:^1.0.7"
+    css-what: "npm:^6.1.0"
+    cssesc: "npm:^3.0.0"
+    csstype: "npm:^3.0.7"
+    dedent: "npm:^1.5.3"
+    deep-object-diff: "npm:^1.1.9"
+    deepmerge: "npm:^4.2.2"
+    lru-cache: "npm:^10.4.3"
+    media-query-parser: "npm:^2.0.2"
+    modern-ahocorasick: "npm:^1.0.0"
+    picocolors: "npm:^1.0.0"
+  checksum: 10c0/b4e4b706b05c7274ef50e7eef5fa978b5f6d246e5b0befbec37991485f50b24417a66c61b99c9d93cf3626a12b0a594ac87c2f2afda9f241ac67c717afa93c75
+  languageName: node
+  linkType: hard
+
 "@vanilla-extract/dynamic@npm:2.1.2":
   version: 2.1.2
   resolution: "@vanilla-extract/dynamic@npm:2.1.2"
@@ -5641,32 +5661,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/integration@npm:^8.0.1":
-  version: 8.0.1
-  resolution: "@vanilla-extract/integration@npm:8.0.1"
+"@vanilla-extract/integration@npm:^8.0.2":
+  version: 8.0.2
+  resolution: "@vanilla-extract/integration@npm:8.0.2"
   dependencies:
     "@babel/core": "npm:^7.23.9"
     "@babel/plugin-syntax-typescript": "npm:^7.23.3"
     "@vanilla-extract/babel-plugin-debug-ids": "npm:^1.2.0"
-    "@vanilla-extract/css": "npm:^1.17.1"
+    "@vanilla-extract/css": "npm:^1.17.2"
     dedent: "npm:^1.5.3"
     esbuild: "npm:esbuild@>=0.17.6 <0.26.0"
     eval: "npm:0.1.8"
     find-up: "npm:^5.0.0"
     javascript-stringify: "npm:^2.0.1"
     mlly: "npm:^1.4.2"
-  checksum: 10c0/ba075c5a330bf6634f55ed687073bdb16b86dfac44ddc9af0e35b6f8613b1cf6434dcc4717b110078beffe85b44e59c06cb35265d1f1c3032c1e441c0677d8c5
+  checksum: 10c0/c0c5a7a4c75711eefa8193bf21a2e50f469a286a4b0d06bbe21c0561b0f1588cf503202604d78d582f8489a46f16d7ee9fabfc3907ff8bae5033f83f0f83e09e
   languageName: node
   linkType: hard
 
-"@vanilla-extract/next-plugin@npm:2.4.10":
-  version: 2.4.10
-  resolution: "@vanilla-extract/next-plugin@npm:2.4.10"
+"@vanilla-extract/next-plugin@npm:2.4.11":
+  version: 2.4.11
+  resolution: "@vanilla-extract/next-plugin@npm:2.4.11"
   dependencies:
-    "@vanilla-extract/webpack-plugin": "npm:^2.3.18"
+    "@vanilla-extract/webpack-plugin": "npm:^2.3.19"
   peerDependencies:
     next: ">=12.1.7"
-  checksum: 10c0/d5f1ed28587e60e06a52a22a627a0ecc291f6bc60025fb52831fcb87132f0621492e4ad7b17841172eb6850497021727f9c5119e5c3389906ef901356938d8f1
+  checksum: 10c0/d87d17e10bdd014bd021376f9e829229468d1f44f75a48ab37fff615e6b98b9e9d4468af9474656787dadb8d6d1e4d18e94463453ca1fb359a7a940af8b82f89
   languageName: node
   linkType: hard
 
@@ -5677,17 +5697,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/webpack-plugin@npm:^2.3.18":
-  version: 2.3.18
-  resolution: "@vanilla-extract/webpack-plugin@npm:2.3.18"
+"@vanilla-extract/private@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "@vanilla-extract/private@npm:1.0.7"
+  checksum: 10c0/2f17527819603f6f1ad7912a92226bd59c0e74d0fe896a7825e24296c9450413a043d0ca1ce8f46dca384b7a87e8a1160163d5f98f49f59dd38a71ea3fceefc0
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/webpack-plugin@npm:^2.3.19":
+  version: 2.3.19
+  resolution: "@vanilla-extract/webpack-plugin@npm:2.3.19"
   dependencies:
-    "@vanilla-extract/integration": "npm:^8.0.1"
+    "@vanilla-extract/integration": "npm:^8.0.2"
     debug: "npm:^4.3.1"
     loader-utils: "npm:^2.0.0"
     picocolors: "npm:^1.0.0"
   peerDependencies:
     webpack: ^4.30.0 || ^5.20.2
-  checksum: 10c0/941c7b0a498a7a4c73a0d109d8df27d1ab129d75ba3d89b1cc134e833fc801ac3c451229787c1b1620b0cbe9202c58002a17fbeaadac1b63771d9b1178548737
+  checksum: 10c0/a7f73ef5d24c19456e1e26130d7b79bed66ef2e1f2fd2488f956fe8db59a8fc2eb56324ed81c781c9c0498724a0c0c2aa7771da5fb93ef88895e934b6cb7ee42
   languageName: node
   linkType: hard
 
@@ -5787,7 +5814,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:5.61.0"
     "@vanilla-extract/css": "npm:1.17.1"
     "@vanilla-extract/dynamic": "npm:2.1.2"
-    "@vanilla-extract/next-plugin": "npm:2.4.10"
+    "@vanilla-extract/next-plugin": "npm:2.4.11"
     "@ydkim/browser-utils": "npm:*"
     "@ydkim/core-infra": "npm:*"
     "@ydkim/core-service": "npm:*"
