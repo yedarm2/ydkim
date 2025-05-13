@@ -5632,12 +5632,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/dynamic@npm:2.1.2":
-  version: 2.1.2
-  resolution: "@vanilla-extract/dynamic@npm:2.1.2"
+"@vanilla-extract/dynamic@npm:2.1.3":
+  version: 2.1.3
+  resolution: "@vanilla-extract/dynamic@npm:2.1.3"
   dependencies:
-    "@vanilla-extract/private": "npm:^1.0.6"
-  checksum: 10c0/7361863bbc1260fda447be80e888e3ad5dea09957651288d7aba81ba7f59594d11476a840c9162adc452f9a43dbc379b58621b5b500a49f537b0efc7737aac9c
+    "@vanilla-extract/private": "npm:^1.0.7"
+  checksum: 10c0/3d3ff7f3ccf1002860283b7a3a7be0fe4afde4160963c87c706c4bc274f6cca3f9be79e6e25765e860a378bc1057b639faf376cb7f4ed0720a8b2ff6de3e67d6
   languageName: node
   linkType: hard
 
@@ -5674,6 +5674,13 @@ __metadata:
   version: 1.0.6
   resolution: "@vanilla-extract/private@npm:1.0.6"
   checksum: 10c0/f1c4d9f32f509f664b2d073ea114ff0a83f154bd3cdae429cade64ad1ca0fdc1ba745f2811496cc6a6f8e5513a9a0fa3798ffc41e6ff8868aa7f06c825f615ef
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/private@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "@vanilla-extract/private@npm:1.0.7"
+  checksum: 10c0/2f17527819603f6f1ad7912a92226bd59c0e74d0fe896a7825e24296c9450413a043d0ca1ce8f46dca384b7a87e8a1160163d5f98f49f59dd38a71ea3fceefc0
   languageName: node
   linkType: hard
 
@@ -5786,7 +5793,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
     "@typescript-eslint/parser": "npm:5.61.0"
     "@vanilla-extract/css": "npm:1.17.1"
-    "@vanilla-extract/dynamic": "npm:2.1.2"
+    "@vanilla-extract/dynamic": "npm:2.1.3"
     "@vanilla-extract/next-plugin": "npm:2.4.10"
     "@ydkim/browser-utils": "npm:*"
     "@ydkim/core-infra": "npm:*"
