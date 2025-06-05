@@ -2420,12 +2420,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/bundle-analyzer@npm:15.3.2":
-  version: 15.3.2
-  resolution: "@next/bundle-analyzer@npm:15.3.2"
+"@next/bundle-analyzer@npm:15.3.3":
+  version: 15.3.3
+  resolution: "@next/bundle-analyzer@npm:15.3.3"
   dependencies:
     webpack-bundle-analyzer: "npm:4.10.1"
-  checksum: 10c0/8763beb780d6b4d1c3dcf9de11a5c58d542d18bdb4d0b426bbc726f5618dcb8f3255c9dc1db2cf15bad5488d9b0ccd3930a726afac644248fc2aea8fb8553a93
+  checksum: 10c0/18210d6e65f3a8e384b0bb474bc2ad844dd87934b172b53bc4c0765ceba61080b5fd4ceec5f8174941decc01a9d3bdefad9a0408434cecd5533553bd41d27851
   languageName: node
   linkType: hard
 
@@ -5783,7 +5783,7 @@ __metadata:
   dependencies:
     "@emotion/react": "npm:11.14.0"
     "@emotion/styled": "npm:11.14.0"
-    "@next/bundle-analyzer": "npm:15.3.2"
+    "@next/bundle-analyzer": "npm:15.3.3"
     "@next/font": "npm:14.2.15"
     "@tanstack/react-query": "npm:5.80.5"
     "@tanstack/react-query-devtools": "npm:5.80.5"
@@ -5973,7 +5973,7 @@ __metadata:
     "@emotion/babel-plugin": "npm:11.13.5"
     "@emotion/react": "npm:11.14.0"
     "@emotion/styled": "npm:11.14.0"
-    "@next/bundle-analyzer": "npm:15.3.2"
+    "@next/bundle-analyzer": "npm:15.3.3"
     "@playwright/test": "npm:1.52.0"
     "@reduxjs/toolkit": "npm:2.8.2"
     "@sentry/nextjs": "npm:7.114.0"
