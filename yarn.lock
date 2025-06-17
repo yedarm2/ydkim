@@ -3173,9 +3173,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prisma/client@npm:6.9.0":
-  version: 6.9.0
-  resolution: "@prisma/client@npm:6.9.0"
+"@prisma/client@npm:6.10.0":
+  version: 6.10.0
+  resolution: "@prisma/client@npm:6.10.0"
   peerDependencies:
     prisma: "*"
     typescript: ">=5.1.0"
@@ -3184,7 +3184,7 @@ __metadata:
       optional: true
     typescript:
       optional: true
-  checksum: 10c0/4877d9d0f93ca404c066ce0536f4c2180a8a16a2b0ade8f15df9dd5286c74db55c5a99f4632f13b32045b966cb5f01e010806edda865aa22bbb0aef65f8b6e9f
+  checksum: 10c0/f2c68af2cd4ebd508efafd898538ee059e6b2f82578d61b7f37e866bedd80e050f253d59b25beb6899fe469770446690312d12a105fa861d170a6d1a7a7839c4
   languageName: node
   linkType: hard
 
@@ -5900,7 +5900,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ydkim/core-infra@workspace:packages/core-infra"
   dependencies:
-    "@prisma/client": "npm:6.9.0"
+    "@prisma/client": "npm:6.10.0"
     "@types/jest": "npm:29.5.14"
     "@types/node": "npm:22.15.29"
     "@typescript-eslint/eslint-plugin": "npm:5.61.0"
