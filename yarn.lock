@@ -6087,7 +6087,7 @@ __metadata:
     eslint-plugin-jest: "npm:28.12.0"
     eslint-plugin-prettier: "npm:5.4.1"
     jest: "npm:29.7.0"
-    msw-storybook-addon: "npm:2.0.4"
+    msw-storybook-addon: "npm:2.0.6"
     polished: "npm:4.3.1"
     postcss: "npm:8.5.4"
     postcss-preset-env: "npm:10.2.0"
@@ -13934,14 +13934,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"msw-storybook-addon@npm:2.0.4":
-  version: 2.0.4
-  resolution: "msw-storybook-addon@npm:2.0.4"
+"msw-storybook-addon@npm:2.0.6":
+  version: 2.0.6
+  resolution: "msw-storybook-addon@npm:2.0.6"
   dependencies:
     is-node-process: "npm:^1.0.1"
   peerDependencies:
     msw: ^2.0.0
-  checksum: 10c0/91cd85b0d6e3bdf8cc4f519b29da644d4df324a3fc6753a98b472488986aee888dfe4fc6a216a41057b01d10899e1e3a16ad253f63d7ae06f3dc3560fe5e561d
+  checksum: 10c0/e108e8bf247326f5475c1914fdcfaaa6603f1e46f0920ed40d1f1725e2c2f62698658ff8b7d75aee0a0ea1fc0a9714fd6caaf5278426b6dcefd5da381f462c8e
   languageName: node
   linkType: hard
 
