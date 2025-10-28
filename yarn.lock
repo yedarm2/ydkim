@@ -4164,17 +4164,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:8.6.14":
-  version: 8.6.14
-  resolution: "@storybook/addon-a11y@npm:8.6.14"
+"@storybook/addon-a11y@npm:10.0.0":
+  version: 10.0.0
+  resolution: "@storybook/addon-a11y@npm:10.0.0"
   dependencies:
-    "@storybook/addon-highlight": "npm:8.6.14"
     "@storybook/global": "npm:^5.0.0"
-    "@storybook/test": "npm:8.6.14"
     axe-core: "npm:^4.2.0"
   peerDependencies:
-    storybook: ^8.6.14
-  checksum: 10c0/bc1ea6bc4f4229f2a88f40a1fc768628cad7744ca39676228a99656211942d96783d1d20aa475ac03bc653c29ed896a6179b3b17c8226effb598111cd8c8d146
+    storybook: ^10.0.0
+  checksum: 10c0/041a0f08d6a91e15664180af82c758e6ad01c2c2c6b7289e2d500578563402559b473827fb9f15487458723564cc9ddd4651f0ae4d7525a3c99f03b5e824ea6d
   languageName: node
   linkType: hard
 
@@ -6062,7 +6060,7 @@ __metadata:
     "@emotion/babel-plugin": "npm:11.13.5"
     "@emotion/react": "npm:11.14.0"
     "@emotion/styled": "npm:11.14.0"
-    "@storybook/addon-a11y": "npm:8.6.14"
+    "@storybook/addon-a11y": "npm:10.0.0"
     "@storybook/addon-essentials": "npm:8.6.14"
     "@storybook/addon-interactions": "npm:8.6.14"
     "@storybook/addon-links": "npm:8.6.14"
